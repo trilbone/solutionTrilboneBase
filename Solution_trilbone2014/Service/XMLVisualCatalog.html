@@ -1,0 +1,672 @@
+﻿<html xmlns:functx="http://www.functx.com">
+  <style type="text/css">
+        /* CSS Document */
+        /*body*/
+        .body_color {
+        background-color:#cebf96;
+        }
+        .main_block {
+        background-color:#d3cfb1;
+        border-style: ridge;
+        border-color: rgb(78,63,33);
+        }
+        /*caption*/
+        .caption_sample {
+        font-family: "Bodoni MT";
+        font-size: x-large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: bold;
+        color: rgb(78,63,33);
+        text-align:center;
+        vertical-align:top;
+        }
+
+        /*found in*/
+        .locality {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*age field*/
+        .age {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        background-color: #c7acbd;
+        text-align:center;
+        }
+
+        /*vid description*/
+        .described {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style:normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        text-align:left;
+        }
+
+        /*size*/
+        .size {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*remarks*/
+        .remarks {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*addtext*/
+        .addtext {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*barcode*/
+        .bartext {
+        font-family: "Bodoni MT";
+        font-size: 10pt;
+        font-style: normal;
+        line-height: normal;
+        font-weight: lighter;
+        color: rgb(78,63,33);
+        }
+
+        /*Arrow*/
+        .arrow
+        {
+        width: 20px;
+        height: 20px;
+
+
+        }
+
+        /*body_color*/
+        .body_color {
+        background-color:#cebf96;
+        font-family: "Bodoni MT";
+        line-height: normal;
+        font-size:small;
+        color: rgb(78,63,33);
+        }
+
+
+
+        .hr_sample{
+        height: 5px;
+        background-color: rgb(78,63,33);
+        }
+
+
+
+        .hr_catalog{
+        height: 7px;
+        background-color: rgb(78,63,33);
+        }
+
+
+
+        .caption_catalog {
+        background-color: #C0C0C0;
+        font-size: x-large;
+        font-weight: bold;
+        text-align:center;
+        vertical-align:top;
+        }
+
+
+
+        .div_main
+        {
+        display:block;
+        left: 5%;
+        top: 0px;
+        height: 100%;
+        }
+
+
+        .NUMBER
+        {
+        font-size: x-small;
+        font-weight: lighter;
+        }
+
+        .alt
+        {
+        font-size: medium;
+        font-weight: bold;
+        }
+
+
+        .div_title
+        {
+        /*background-color: #C0C0C0;*/
+        /*padding-left: 140px;*/
+        font-size: large;
+        align=center
+        /*font-weight: bold;*/
+        /*border : 1px inset #000000;*/
+        }
+
+
+        .div_upperright
+        {
+        font-size: medium;
+        }
+
+
+
+        .div_upperleft
+        {
+        font-size: medium;
+        }
+
+
+        .div_down
+        {
+        font-size: medium;
+        }
+
+
+        .div_image
+        {
+        width: 100%;
+        }
+
+
+        .sample_image
+        {
+        height : 171px;
+        border : medium double #000000;
+        }
+
+
+        .summary
+        {
+        font-size: x-large;
+        font-weight: bold;
+        }
+
+      </style>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <title>105215-1</title>
+    <link rel=" icon" href="favicon.ico" type="image/x-icon"><script type="text/javascript"><!--
+            
+var _elem = new Array;
+var _markSum = 0;
+var _markCount = 0;
+
+
+function showItems(itemnumberid, startnameid) {
+    //??? ????? ?????? ??????
+    var cbid = itemnumberid + startnameid + 1;
+    //??? ????? 
+    var cb = document.getElementById(cbid);
+    var sample = document.getElementById(itemnumberid);
+    var allPtag = document.getElementsByTagName("p");
+    var resultNo = new Array;
+
+    //???? 
+    if (cb.checked == false) {
+        var tmp = document.getElementById("btShowAll");
+        tmp.disabled = true;
+
+        tmp = document.getElementById("btShowAllup");
+        tmp.disabled = true;
+
+        tmp = document.getElementById("ShowAllup");
+        tmp.style.display = "none";
+
+        tmp = document.getElementById("ShowAll");
+        tmp.style.display = "none";
+
+        for (var i = 0; i < _elem.length; i++) {
+            _elem[i].style.display = "block";
+        };
+        _elem = new Array;
+         return
+       
+    }
+    //??? ??????? P
+
+    //????????? ??? ? ??????? ?????? ? ?????? ??????(?? ??????? ?????)
+
+    for (var i = 0; i < allPtag.length; i++) {
+        var litem = allPtag.item(i).parentNode.parentNode.parentNode.parentNode;
+        if (allPtag.item(i).getAttribute("name") != null) {
+            if (allPtag.item(i).getAttribute("name") != startnameid & litem.tagName == "TBODY") {//? ????????? ?????? ??????????????? ???? table
+                _elem.push(litem.parentNode.parentNode);
+                litem.parentNode.parentNode.style.display = "none";
+            }
+            else {
+                var tmp = document.getElementById("btShowAll");
+                tmp.disabled = false;
+
+                tmp = document.getElementById("btShowAllup");
+                tmp.disabled = false;
+
+                tmp = document.getElementById("ShowAllup");
+                tmp.style.display = "block";
+
+                tmp = document.getElementById("ShowAll");
+                tmp.style.display = "block";
+                
+            }
+
+
+        }
+    }
+
+
+
+}
+
+function MarkItem(itemnumberid, startnameid) {
+    var cbid = itemnumberid + startnameid + 2;
+    var cb = document.getElementById(cbid);
+    var sample = document.getElementById(itemnumberid);
+    var _tmpid = itemnumberid + "PRICE";
+    var _tmp = document.getElementById(_tmpid);
+
+    if (cb.checked) {
+        sample.style.color = "red"
+        if (_tmp != null) {
+
+            if (_tmp.hasChildNodes()) {
+                var children = _tmp.lastChild;
+                var value = children.nodeValue;
+
+                if (value != null) {
+                    value = value.replace(/[^0-9.]/g, "");
+                    _markSum = _markSum + parseFloat(value);
+                    _tmp = document.getElementById("totalselected");
+                    _tmp.lastChild.nodeValue = "Total selected: " + _markSum;
+                    _markCount = _markCount + 1;
+                    _tmp = document.getElementById("countselected");
+                    _tmp.lastChild.nodeValue = "Count selected: " + _markCount;
+
+                    if (_markCount > 0) {
+                        _tmp = document.getElementById("selected");
+                        _tmp.style.display = "block";
+                    }
+
+                 
+                    return
+                }
+            }
+        }
+    }
+
+
+    else {
+        sample.style.color = "rgb(78, 63, 33)";
+        if (_tmp != null) {
+
+            if (_tmp.hasChildNodes()) {
+                var children = _tmp.lastChild;
+                var value = children.nodeValue;
+
+                if (value != null) {
+                    value = value.replace(/[^0-9.]/g, "");
+                    _markSum = _markSum - parseFloat(value);
+                    if (_markSum < 0) _markSum = 0;
+                    _tmp = document.getElementById("totalselected");
+                    _tmp.lastChild.nodeValue = "Total selected: " + _markSum;
+                    _markCount = _markCount - 1;
+                     if (_markCount < 0) _markCount = 0;
+                    _tmp = document.getElementById("countselected");
+                    _tmp.lastChild.nodeValue = "Count selected: " + _markCount;
+
+                   
+
+                    if (_markCount == 0) {
+                        _tmp = document.getElementById("selected");
+                        _tmp.style.display = "none";
+                    }
+
+                    return
+                }
+            }
+        }
+
+    }
+
+}
+function showall() {
+    var elem = document.getElementsByName("CheckBox")
+    for (var i = 0; i < elem.length; i++) elem.item(i).checked = false;
+
+    var tmp = document.getElementById("btShowAll");
+    tmp.disabled = true;
+
+    tmp = document.getElementById("btShowAllup");
+    tmp.disabled = true;
+
+    tmp = document.getElementById("ShowAllup");
+    tmp.style.display = "none";
+
+    tmp = document.getElementById("ShowAll");
+    tmp.style.display = "none";
+
+    for (var i = 0; i < _elem.length; i++) {
+        _elem[i].style.display = "block";
+    };
+    _elem = new Array;
+
+    return
+    
+
+}
+          
+          
+          --></script></head>
+  <body class="body_color">
+    <div class="div_main">
+      <div class="div_caption">
+        <p class="caption_catalog">New offer from Trilbone  <small>10.12.2015</small></p>
+      </div>
+      <div id="ShowAllup" style="display:none"><button id="btShowAllup" name="btShowAllup" disabled onClick="showall();">Show all specimens..</button></div>
+      <div id="hr8029000020469">
+        <hr class="hr_sample">
+        <table id="8029000020469" style="width:100%;" border="0">
+          <tr>
+            <td id="title_block" style="width: 50%" valign="top">
+              <div>
+                <form name="fmChecks"><input name="CheckBox" type="checkbox" id="8029000020469Albumares1" value="Albumares" onchange="showItems(&quot;8029000020469&quot;,&quot;Albumares&quot;);">filter same name items  <input name="CheckBox" type="checkbox" id="8029000020469Albumares2" value="Albumares" onchange="MarkItem(&quot;8029000020469&quot;,&quot;Albumares&quot;);">mark item<span><br><button name="btOrderSample" disabled formaction="http://www.trilbone.com/order" formenctype="text" formmethod="GET" value="number=8029000020469;catalognumber=105215-1">Order now</button>  Use label for order: 8-2046</span></form>
+              </div>
+              <div class="div_title"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Specimen name:	</font>Albumares brunsae (Fedonkin, 1976)</span><br></div><br><div class="div_upperleft"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Size of Albumares brunsae:	</font>1,3x1,3cm</span><br></div>
+            </td>
+            <td id="upperleft_block" valign="top">
+              <div class="div_upperright"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Block size:	</font>18,0x19,0x3,0cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Net weight:	</font>1,318kg<br><span id="bw"><font class="alt">Gross weight:	<font style="font-size: x-small;">1516g</font>
+                    </font></span></span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td id="down_block" colspan="2">
+              <div class="div_down"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>Coelomata-> phylum Tribrachidia (McCall,2005)-> family Tribrachidia (McCall,2005)-> Albumares brunsae (Fedonkin, 1976)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Locality:	</font>Arkhangelsk region, Summer Coast, Solza river</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Stratigraphy:	</font>Belomorian stage (558-550,2 MA)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Price:	</font>$1,051.00</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Discount:	</font>0%</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Your price:	</font>$1,051.00</span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="http://info.trilbone.com/img/arhive/365649589/3-IMG_7662.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/365649589/3-IMG_7662.JPG"></a><a href="http://info.trilbone.com/img/arhive/365649589/1-IMG_7593_m.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/365649589/1-IMG_7593_m.JPG"></a><a href="http://info.trilbone.com/img/arhive/365649589/1-IMG_7593.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/365649589/1-IMG_7593.JPG"></a><a href="http://info.trilbone.com/img/arhive/365649589/1-IMG_7661.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/365649589/1-IMG_7661.JPG"></a></td>
+          </tr>
+        </table>
+      </div>
+      <div id="hr8029000027963">
+        <hr class="hr_sample">
+        <table id="8029000027963" style="width:100%;" border="0">
+          <tr>
+            <td id="title_block" style="width: 50%" valign="top">
+              <div>
+                <form name="fmChecks"><input name="CheckBox" type="checkbox" id="8029000027963Andiva1" value="Andiva" onchange="showItems(&quot;8029000027963&quot;,&quot;Andiva&quot;);">filter same name items  <input name="CheckBox" type="checkbox" id="8029000027963Andiva2" value="Andiva" onchange="MarkItem(&quot;8029000027963&quot;,&quot;Andiva&quot;);">mark item<span><br><button name="btOrderSample" disabled formaction="http://www.trilbone.com/order" formenctype="text" formmethod="GET" value="number=8029000027963;catalognumber=105215-1">Order now</button>  Use label for order: 8-2796</span></form>
+              </div>
+              <div class="div_title"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Specimen name:	</font>Andiva ivantsovi (Fedonkin,2002)</span><br></div><br><div class="div_upperleft"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">(1)Size of Andiva ivantsovi:	</font>10,0x6,0cm</span><br></div>
+            </td>
+            <td id="upperleft_block" valign="top">
+              <div class="div_upperright"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Block size:	</font>27,0x21,0x4,0cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Net weight:	</font>3,020kg<br><span id="bw"><font class="alt">Gross weight:	<font style="font-size: x-small;">3473g</font>
+                    </font></span></span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td id="down_block" colspan="2">
+              <div class="div_down"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>phylum Proarticulata (Fedonkin,1985)-> class Dipleurozoa-> Andiva ivantsovi (Fedonkin,2002)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Locality:	</font>Arkhangelsk region, Winter Coast, Erga stream</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Stratigraphy:	</font>Kotlian stage (550.2-540.61 MA)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Price:	</font>$2,806.00</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Discount:	</font>0%</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Your price:	</font>$2,806.00</span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="http://info.trilbone.com/img/arhive/320758104/3-IMG_1542.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/320758104/3-IMG_1542.JPG"></a><a href="http://info.trilbone.com/img/arhive/320758104/1-IMG_1538.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/320758104/1-IMG_1538.JPG"></a><a href="http://info.trilbone.com/img/arhive/320758104/2-IMG_1539.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/320758104/2-IMG_1539.JPG"></a></td>
+          </tr>
+        </table>
+      </div>
+      <div id="hr8029000039225">
+        <hr class="hr_sample">
+        <table id="8029000039225" style="width:100%;" border="0">
+          <tr>
+            <td id="title_block" style="width: 50%" valign="top">
+              <div>
+                <form name="fmChecks"><input name="CheckBox" type="checkbox" id="8029000039225Andiva1" value="Andiva" onchange="showItems(&quot;8029000039225&quot;,&quot;Andiva&quot;);">filter same name items  <input name="CheckBox" type="checkbox" id="8029000039225Andiva2" value="Andiva" onchange="MarkItem(&quot;8029000039225&quot;,&quot;Andiva&quot;);">mark item<span><br><button name="btOrderSample" disabled formaction="http://www.trilbone.com/order" formenctype="text" formmethod="GET" value="number=8029000039225;catalognumber=105215-1">Order now</button>  Use label for order: 8-3922</span></form>
+              </div>
+              <div class="div_title"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Specimen name:	</font>Andiva ivantsovi (Fedonkin,2002)</span><br></div><br><div class="div_upperleft"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[1]Size of Andiva ivantsovi:	</font>9,5x5,5cm</span><br></div>
+            </td>
+            <td id="upperleft_block" valign="top">
+              <div class="div_upperright"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Block size:	</font>26,0x24,3x2,5cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Net weight:	</font>1,679kg<br><span id="bw"><font class="alt">Gross weight:	<font style="font-size: x-small;">1931g</font>
+                    </font></span></span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td id="down_block" colspan="2">
+              <div class="div_down"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>phylum Proarticulata (Fedonkin,1985)-> class Dipleurozoa-> Andiva ivantsovi (Fedonkin,2002)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Locality:	</font>Arkhangelsk region, Winter Coast, Erga stream</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Stratigraphy:	</font>Kotlian stage (550.2-540.61 MA)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Price:	</font>$3,160.00</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Discount:	</font>0%</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Your price:	</font>$3,160.00</span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="http://info.trilbone.com/img/arhive/744310854/1-IMG_4372.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/744310854/1-IMG_4372.JPG"></a><a href="http://info.trilbone.com/img/arhive/744310854/10-IMG_6293.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/744310854/10-IMG_6293.JPG"></a><a href="http://info.trilbone.com/img/arhive/744310854/11-IMG_6294.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/744310854/11-IMG_6294.JPG"></a><a href="http://info.trilbone.com/img/arhive/744310854/2-IMG_4371.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/744310854/2-IMG_4371.JPG"></a><a href="http://info.trilbone.com/img/arhive/744310854/3-IMG_4373.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/744310854/3-IMG_4373.JPG"></a><a href="http://info.trilbone.com/img/arhive/744310854/4-IMG_4374.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/744310854/4-IMG_4374.JPG"></a><a href="http://info.trilbone.com/img/arhive/744310854/5-IMG_4379.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/744310854/5-IMG_4379.JPG"></a><a href="http://info.trilbone.com/img/arhive/744310854/6-IMG_4376.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/744310854/6-IMG_4376.JPG"></a><a href="http://info.trilbone.com/img/arhive/744310854/7-IMG_4380.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/744310854/7-IMG_4380.JPG"></a><a href="http://info.trilbone.com/img/arhive/744310854/8-IMG_4382.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/744310854/8-IMG_4382.JPG"></a><a href="http://info.trilbone.com/img/arhive/744310854/9-IMG_6291.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/744310854/9-IMG_6291.JPG"></a></td>
+          </tr>
+        </table>
+      </div>
+      <div id="hr8029000039683">
+        <hr class="hr_sample">
+        <table id="8029000039683" style="width:100%;" border="0">
+          <tr>
+            <td id="title_block" style="width: 50%" valign="top">
+              <div>
+                <form name="fmChecks"><input name="CheckBox" type="checkbox" id="8029000039683Andiva1" value="Andiva" onchange="showItems(&quot;8029000039683&quot;,&quot;Andiva&quot;);">filter same name items  <input name="CheckBox" type="checkbox" id="8029000039683Andiva2" value="Andiva" onchange="MarkItem(&quot;8029000039683&quot;,&quot;Andiva&quot;);">mark item<span><br><button name="btOrderSample" disabled formaction="http://www.trilbone.com/order" formenctype="text" formmethod="GET" value="number=8029000039683;catalognumber=105215-1">Order now</button>  Use label for order: 8-3968</span></form>
+              </div>
+              <div class="div_title"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Specimen name:	</font>Andiva ivantsovi (Fedonkin,2002)</span><br></div><br><div class="div_upperleft"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">(1)Size of Andiva ivantsovi:	</font>18,4x7,6cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">(2)Size of Pseudorhizostomites howchini:	</font>4,2x2,6cm</span><br></div>
+            </td>
+            <td id="upperleft_block" valign="top">
+              <div class="div_upperright"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Block size:	</font>31,3x21,4x3,7cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Net weight:	</font>2,857kg<br><span id="bw"><font class="alt">Gross weight:	<font style="font-size: x-small;">3286g</font>
+                    </font></span></span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td id="down_block" colspan="2">
+              <div class="div_down"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>phylum Proarticulata (Fedonkin,1985)-> class Dipleurozoa-> Andiva ivantsovi (Fedonkin,2002)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>phylum uncertain-> group radial symmetric form-> Pseudorhizostomites howchini(Sprigg,1949)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Locality:	</font>Arkhangelsk region, Winter Coast, Erga stream</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Stratigraphy:	</font>Kotlian stage (550.2-540.61 MA)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Price:	</font>$6,646.00</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Discount:	</font>0%</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Your price:	</font>$6,646.00</span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="http://info.trilbone.com/img/arhive/330397144/03-IMG_5119.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/330397144/03-IMG_5119.JPG"></a><a href="http://info.trilbone.com/img/arhive/330397144/01-IMG_5108.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/330397144/01-IMG_5108.JPG"></a><a href="http://info.trilbone.com/img/arhive/330397144/02-IMG_5110.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/330397144/02-IMG_5110.JPG"></a><a href="http://info.trilbone.com/img/arhive/330397144/02-IMG_5110_m.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/330397144/02-IMG_5110_m.JPG"></a><a href="http://info.trilbone.com/img/arhive/330397144/04-IMG_5143.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/330397144/04-IMG_5143.JPG"></a><a href="http://info.trilbone.com/img/arhive/330397144/05-IMG_5131.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/330397144/05-IMG_5131.JPG"></a><a href="http://info.trilbone.com/img/arhive/330397144/06-IMG_5134.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/330397144/06-IMG_5134.JPG"></a><a href="http://info.trilbone.com/img/arhive/330397144/07-IMG_5138.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/330397144/07-IMG_5138.JPG"></a><a href="http://info.trilbone.com/img/arhive/330397144/08-IMG_5122.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/330397144/08-IMG_5122.JPG"></a></td>
+          </tr>
+        </table>
+      </div>
+      <div id="hr8029000039676">
+        <hr class="hr_sample">
+        <table id="8029000039676" style="width:100%;" border="0">
+          <tr>
+            <td id="title_block" style="width: 50%" valign="top">
+              <div>
+                <form name="fmChecks"><input name="CheckBox" type="checkbox" id="8029000039676Andiva1" value="Andiva" onchange="showItems(&quot;8029000039676&quot;,&quot;Andiva&quot;);">filter same name items  <input name="CheckBox" type="checkbox" id="8029000039676Andiva2" value="Andiva" onchange="MarkItem(&quot;8029000039676&quot;,&quot;Andiva&quot;);">mark item<span><br><button name="btOrderSample" disabled formaction="http://www.trilbone.com/order" formenctype="text" formmethod="GET" value="number=8029000039676;catalognumber=105215-1">Order now</button>  Use label for order: 8-3967</span></form>
+              </div>
+              <div class="div_title"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Specimen name:	</font>Andiva ivantsovi (Fedonkin,2002)</span><br></div><br><div class="div_upperleft"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[1]Size of Andiva ivantsovi:	</font>8,4x5,2cm</span><br></div>
+            </td>
+            <td id="upperleft_block" valign="top">
+              <div class="div_upperright"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Block size:	</font>20,5x17,3x3,0cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Net weight:	</font>1,873kg<br><span id="bw"><font class="alt">Gross weight:	<font style="font-size: x-small;">2154g</font>
+                    </font></span></span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td id="down_block" colspan="2">
+              <div class="div_down"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>phylum Proarticulata (Fedonkin,1985)-> class Dipleurozoa-> Andiva ivantsovi (Fedonkin,2002)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Locality:	</font>Arkhangelsk region, Winter Coast, Erga stream</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Stratigraphy:	</font>Kotlian stage (550.2-540.61 MA)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Price:	</font>$3,416.00</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Discount:	</font>0%</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Your price:	</font>$3,416.00</span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="http://info.trilbone.com/img/arhive/1522038237/1-IMG_5064.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1522038237/1-IMG_5064.JPG"></a><a href="http://info.trilbone.com/img/arhive/1522038237/2-IMG_5070.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1522038237/2-IMG_5070.JPG"></a><a href="http://info.trilbone.com/img/arhive/1522038237/2-IMG_5070_m.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1522038237/2-IMG_5070_m.JPG"></a><a href="http://info.trilbone.com/img/arhive/1522038237/3-IMG_5074.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1522038237/3-IMG_5074.JPG"></a><a href="http://info.trilbone.com/img/arhive/1522038237/4-IMG_5077.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1522038237/4-IMG_5077.JPG"></a><a href="http://info.trilbone.com/img/arhive/1522038237/5-IMG_5080.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1522038237/5-IMG_5080.JPG"></a><a href="http://info.trilbone.com/img/arhive/1522038237/6-IMG_5083.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1522038237/6-IMG_5083.JPG"></a><a href="http://info.trilbone.com/img/arhive/1522038237/7-IMG_5086.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1522038237/7-IMG_5086.JPG"></a><a href="http://info.trilbone.com/img/arhive/1522038237/8-IMG_5089.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1522038237/8-IMG_5089.JPG"></a><a href="http://info.trilbone.com/img/arhive/1522038237/9-IMG_5092.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1522038237/9-IMG_5092.JPG"></a></td>
+          </tr>
+        </table>
+      </div>
+      <div id="hr8029000017766">
+        <hr class="hr_sample">
+        <table id="8029000017766" style="width:100%;" border="0">
+          <tr>
+            <td id="title_block" style="width: 50%" valign="top">
+              <div>
+                <form name="fmChecks"><input name="CheckBox" type="checkbox" id="8029000017766Andiva,1" value="Andiva," onchange="showItems(&quot;8029000017766&quot;,&quot;Andiva,&quot;);">filter same name items  <input name="CheckBox" type="checkbox" id="8029000017766Andiva,2" value="Andiva," onchange="MarkItem(&quot;8029000017766&quot;,&quot;Andiva,&quot;);">mark item<span><br><button name="btOrderSample" disabled formaction="http://www.trilbone.com/order" formenctype="text" formmethod="GET" value="number=8029000017766;catalognumber=105215-1">Order now</button>  Use label for order: 8-1776</span></form>
+              </div>
+              <div class="div_title"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Specimen name:	</font>Andiva, Tribrachidium, Kimberella, Parvancorina</span><br></div><br><div class="div_upperleft"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">(1)Size of Andiva ivantsovi:	</font>8,7x4,0cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">(2)Size of Tribrachidium heraldicum:	</font>1,3x1,3cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">(3)Size of Kimberella quadrata:	</font>2,3x1,2cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">(4)Size of Parvancorina saggitta:	</font>1,3x0,6cm</span><br></div>
+            </td>
+            <td id="upperleft_block" valign="top">
+              <div class="div_upperright"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Block size:	</font>50,0x23,0x3,5cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Net weight:	</font>5,500kg<br><span id="bw"><font class="alt">Gross weight:	<font style="font-size: x-small;">6325g</font>
+                    </font></span></span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td id="down_block" colspan="2">
+              <div class="div_down"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>phylum Proarticulata (Fedonkin,1985)-> class Dipleurozoa-> Andiva ivantsovi (Fedonkin,2002)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>Coelomata-> phylum Tribrachidia (McCall,2005)-> family Tribrachidia (McCall,2005)-> Tribrachidium heraldicum (Glaessner,1959)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>Coelenterata-> phylum Cnidaria-> сlass Cubozoa-> order Carybdeida (Gegenbaur, 1857)-> Kimberella quadrata (Glaessner,Wade,1966)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>Coelomata-> phylum Arthropoda-> family Parvancorinidae-> Parvancorina saggitta (Ivantsov,2004)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Locality:	</font>Arkhangelsk region, Winter Coast, Erga stream</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Stratigraphy:	</font>Kotlian stage (550.2-540.61 MA)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Price:	</font>$4,266.00</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Discount:	</font>0%</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Your price:	</font>$4,266.00</span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="http://info.trilbone.com/img/arhive/771096960/02-IMG_4581_m.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/02-IMG_4581_m.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/01-IMG_4580.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/01-IMG_4580.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/02-IMG_4581.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/02-IMG_4581.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/03-IMG_4583.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/03-IMG_4583.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/04-IMG_4584.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/04-IMG_4584.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/04-IMG_4584_m.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/04-IMG_4584_m.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/05-IMG_4586.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/05-IMG_4586.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/05-IMG_4586_m.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/05-IMG_4586_m.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/06-IMG_4588.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/06-IMG_4588.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/06-IMG_4588_m.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/06-IMG_4588_m.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/08-IMG_4594.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/08-IMG_4594.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/09-IMG_4595.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/09-IMG_4595.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/09-IMG_4595_m.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/09-IMG_4595_m.JPG"></a><a href="http://info.trilbone.com/img/arhive/771096960/11-IMG_4602.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/771096960/11-IMG_4602.JPG"></a></td>
+          </tr>
+        </table>
+      </div>
+      <div id="hr7029000002855">
+        <hr class="hr_sample">
+        <table id="7029000002855" style="width:100%;" border="0">
+          <tr>
+            <td id="title_block" style="width: 50%" valign="top">
+              <div>
+                <form name="fmChecks"><input name="CheckBox" type="checkbox" id="7029000002855Assemblage1" value="Assemblage" onchange="showItems(&quot;7029000002855&quot;,&quot;Assemblage&quot;);">filter same name items  <input name="CheckBox" type="checkbox" id="7029000002855Assemblage2" value="Assemblage" onchange="MarkItem(&quot;7029000002855&quot;,&quot;Assemblage&quot;);">mark item<span><br><button name="btOrderSample" disabled formaction="http://www.trilbone.com/order" formenctype="text" formmethod="GET" value="number=7029000002855;catalognumber=105215-1">Order now</button>  Use label for order: 7-285</span></form>
+              </div>
+              <div class="div_title"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Specimen name:	</font>Assemblage of Irridinitus sp</span><br></div><br><div class="div_upperleft"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[1]Size of Irridinitus multiradiatus:	</font>2,0x2,0cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[10]Size of Irridinitus multiradiatus:	</font>1,1x1,3cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[11]Size of Irridinitus multiradiatus:	</font>0,6x0,6cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[2]Size of Irridinitus multiradiatus:	</font>1,0x1,0cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[3]Size of Irridinitus multiradiatus:	</font>1,5x0,9cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[4]Size of Irridinitus multiradiatus:	</font>2,0x1,9cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[5]Size of Irridinitus multiradiatus:	</font>2,0x1,0cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[6]Size of Irridinitus multiradiatus:	</font>1,5x1,5cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[7]Size of Irridinitus multiradiatus:	</font>0,9x0,8cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[8]Size of Irridinitus multiradiatus:	</font>1,2x1,1cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[9]Size of Irridinitus multiradiatus:	</font>1,1x1,0cm</span><br></div>
+            </td>
+            <td id="upperleft_block" valign="top">
+              <div class="div_upperright"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Block size:	</font>24,5x12,0x3,0cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Net weight:	</font>1,294kg<br><span id="bw"><font class="alt">Gross weight:	<font style="font-size: x-small;">1488g</font>
+                    </font></span></span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td id="down_block" colspan="2">
+              <div class="div_down"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>phylum uncertain-> bilateral symmetric form-> Irridinitus multiradiatus (Fedonkin,1983)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Locality:	</font>Arkhangelsk region, Summer Coast, Solza river, Solza upper stream</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Stratigraphy:	</font>Belomorian stage (558-550,2 MA)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Price:	</font>$919.00</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Discount:	</font>0%</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Your price:	</font>$919.00</span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0993.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0993.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0971.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0971.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0972.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0972.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0972_m.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0972_m.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0985.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0985.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0986.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0986.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0987.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0987.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0988.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0988.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0989.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0989.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0990.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0990.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0991.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0991.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0992.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0992.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0994.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0994.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0995.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0995.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0996.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0996.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0997.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0997.JPG"></a><a href="http://info.trilbone.com/img/arhive/1468744102/IMG_0998.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1468744102/IMG_0998.JPG"></a></td>
+          </tr>
+        </table>
+      </div>
+      <div id="hr2209300004178">
+        <hr class="hr_sample">
+        <table id="2209300004178" style="width:100%;" border="0">
+          <tr>
+            <td id="title_block" style="width: 50%" valign="top">
+              <div>
+                <form name="fmChecks"><input name="CheckBox" type="checkbox" id="2209300004178Beltanelliformis1" value="Beltanelliformis" onchange="showItems(&quot;2209300004178&quot;,&quot;Beltanelliformis&quot;);">filter same name items  <input name="CheckBox" type="checkbox" id="2209300004178Beltanelliformis2" value="Beltanelliformis" onchange="MarkItem(&quot;2209300004178&quot;,&quot;Beltanelliformis&quot;);">mark item<span><br><button name="btOrderSample" disabled formaction="http://www.trilbone.com/order" formenctype="text" formmethod="GET" value="number=2209300004178;catalognumber=105215-1">Order now</button>  Use label for order: 220-417</span></form>
+              </div>
+              <div class="div_title"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Specimen name:	</font>Beltanelliformis brunsae(Menner,1974)</span><br></div><br><div class="div_upperleft"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[1]Size of Beltanelliformis brunsae:	</font>1,7x1,7cm</span><br></div>
+            </td>
+            <td id="upperleft_block" valign="top">
+              <div class="div_upperright"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Размер блока:	</font>14,0x10,0x2,0cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Net weight:	</font>0,364kg<br><span id="bw"><font class="alt">Gross weight:	<font style="font-size: x-small;">419g</font>
+                    </font></span></span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td id="down_block" colspan="2">
+              <div class="div_down"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>phylum uncertain-> colonial Cnidria possibly related to Pennatulacea-> Beltanelliformis brunsae(Menner,1974)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Locality:	</font>Arkhangelsk region, Summer Coast, Solza river</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Stratigraphy:	</font>Belomorian stage (558-550,2 MA)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Price:	</font>$282.00</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Discount:	</font>0%</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Your price:	</font>$282.00</span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="http://info.trilbone.com/img/arhive/1674202557/IMG_0999.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1674202557/IMG_0999.JPG"></a><a href="http://info.trilbone.com/img/arhive/1674202557/IMG_0970.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1674202557/IMG_0970.JPG"></a><a href="http://info.trilbone.com/img/arhive/1674202557/IMG_1000.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1674202557/IMG_1000.JPG"></a><a href="http://info.trilbone.com/img/arhive/1674202557/IMG_8597.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1674202557/IMG_8597.JPG"></a><a href="http://info.trilbone.com/img/arhive/1674202557/IMG_8598.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/1674202557/IMG_8598.JPG"></a></td>
+          </tr>
+        </table>
+      </div>
+      <div id="hr8029000005831">
+        <hr class="hr_sample">
+        <table id="8029000005831" style="width:100%;" border="0">
+          <tr>
+            <td id="title_block" style="width: 50%" valign="top">
+              <div>
+                <form name="fmChecks"><input name="CheckBox" type="checkbox" id="8029000005831Charniodiscus1" value="Charniodiscus" onchange="showItems(&quot;8029000005831&quot;,&quot;Charniodiscus&quot;);">filter same name items  <input name="CheckBox" type="checkbox" id="8029000005831Charniodiscus2" value="Charniodiscus" onchange="MarkItem(&quot;8029000005831&quot;,&quot;Charniodiscus&quot;);">mark item<span><br><button name="btOrderSample" disabled formaction="http://www.trilbone.com/order" formenctype="text" formmethod="GET" value="number=8029000005831;catalognumber=105215-1">Order now</button>  Use label for order: 8-583</span></form>
+              </div>
+              <div class="div_title"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Specimen name:	</font>Charniodiscus sp.</span><br></div><br><div class="div_upperleft"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">(1)Size of Charniodiscus sp.:	</font>3,5x3,0cm</span><br></div>
+            </td>
+            <td id="upperleft_block" valign="top">
+              <div class="div_upperright"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Block size:	</font>12,0x12,0x3,0cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Net weight:	</font>0,400kg<br><span id="bw"><font class="alt">Gross weight:	<font style="font-size: x-small;">460g</font>
+                    </font></span></span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td id="down_block" colspan="2">
+              <div class="div_down"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>phylum uncertain-> colonial Cnidria possibly related to Pennatulacea-> Charniodiscus sp.</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Locality:	</font>Arkhangelsk region, Summer Coast, Solza river, Solza lower stream</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Stratigraphy:	</font>Belomorian stage (558-550,2 MA)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Price:	</font>$81.00</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Discount:	</font>0%</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Your price:	</font>$81.00</span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="http://info.trilbone.com/img/arhive/332977715/4-IMG_9430.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/332977715/4-IMG_9430.JPG"></a><a href="http://info.trilbone.com/img/arhive/332977715/1-IMG_9411.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/332977715/1-IMG_9411.JPG"></a><a href="http://info.trilbone.com/img/arhive/332977715/2-IMG_9428.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/332977715/2-IMG_9428.JPG"></a><a href="http://info.trilbone.com/img/arhive/332977715/3-IMG_9429.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/332977715/3-IMG_9429.JPG"></a><a href="http://info.trilbone.com/img/arhive/332977715/5-IMG_9431.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/332977715/5-IMG_9431.JPG"></a></td>
+          </tr>
+        </table>
+      </div>
+      <div id="hr8029000006449">
+        <hr class="hr_sample">
+        <table id="8029000006449" style="width:100%;" border="0">
+          <tr>
+            <td id="title_block" style="width: 50%" valign="top">
+              <div>
+                <form name="fmChecks"><input name="CheckBox" type="checkbox" id="8029000006449Charniodiscus1" value="Charniodiscus" onchange="showItems(&quot;8029000006449&quot;,&quot;Charniodiscus&quot;);">filter same name items  <input name="CheckBox" type="checkbox" id="8029000006449Charniodiscus2" value="Charniodiscus" onchange="MarkItem(&quot;8029000006449&quot;,&quot;Charniodiscus&quot;);">mark item<span><br><button name="btOrderSample" disabled formaction="http://www.trilbone.com/order" formenctype="text" formmethod="GET" value="number=8029000006449;catalognumber=105215-1">Order now</button>  Use label for order: 8-644</span></form>
+              </div>
+              <div class="div_title"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Specimen name:	</font>Charniodiscus sp.</span><br></div><br><div class="div_upperleft"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">[1]Size of Charniodiscus sp.:	</font>15,5x14,2cm</span><br></div>
+            </td>
+            <td id="upperleft_block" valign="top">
+              <div class="div_upperright"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Block size:	</font>18,0x17,0x3,0cm</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Net weight:	</font>0,972kg<br><span id="bw"><font class="alt">Gross weight:	<font style="font-size: x-small;">1118g</font>
+                    </font></span></span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td id="down_block" colspan="2">
+              <div class="div_down"><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Systematica:	</font>phylum uncertain-> group colonial Cnidria possibly related to Pennatulacea-> Charniodiscus sp.</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Locality:	</font>Arkhangelsk region, Summer Coast, Solza river, Solza lower stream</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Stratigraphy:	</font>Belomorian stage (558-550,2 MA)</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Price:	</font>$287.00</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Discount:	</font>0%</span><br><span style="border: 0px outset rgb(78,63,33); "><font class="alt">Your price:	</font>$287.00</span><br></div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><a href="http://info.trilbone.com/img/arhive/752312055/IMG_9786.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/752312055/IMG_9786.JPG"></a><a href="http://info.trilbone.com/img/arhive/752312055/IMG_9787.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/752312055/IMG_9787.JPG"></a><a href="http://info.trilbone.com/img/arhive/752312055/IMG_9795.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/752312055/IMG_9795.JPG"></a><a href="http://info.trilbone.com/img/arhive/752312055/IMG_9796.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/752312055/IMG_9796.JPG"></a><a href="http://info.trilbone.com/img/arhive/752312055/IMG_9797.JPG" target="_blank"><img class="sample_image" alt="image" src="http://info.trilbone.com/img/arhive/752312055/IMG_9797.JPG"></a></td>
+          </tr>
+        </table>
+      </div>
+      <hr class="hr_catalog">
+      <div class="summary">
+        <p>
+          <pre>Qty:	10 pcs</pre>
+        </p>
+        <p>
+          <pre>Total: $22914.00</pre>
+        </p>
+        <p>
+          <pre style="font-size: small;">Total net weight:	19.3 kg</pre>
+        </p>
+        <p>
+          <pre>Your total:	$22914.00</pre>
+        </p>
+        <hr>
+        <p>
+          <pre style="font-size: small;">Your discount:		$0.00</pre>
+        </p>
+        <hr>
+        <div id="selected" style="display:none">
+          <p id="totalselected">Total selected:	</p>
+          <p id="countselected">Count selected:	</p>
+        </div>
+        <div id="ShowAll" style="display:none"><button id="btShowAll" name="btShowAll" disabled onClick="showall();">Show all specimens</button></div>
+        <hr>
+      </div>
+    </div>
+  </body>
+</html>

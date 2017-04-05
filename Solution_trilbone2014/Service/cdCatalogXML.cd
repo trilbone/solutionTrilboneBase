@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Trilbone.CATALOG">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABAABCAiQgQABIAsAIBCIgAggAAUQAhAAAAAYCAAAAA=</HashCode>
+      <FileName>XMLVisualCatalog.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LEFTPANEL" />
+      <Property Name="SAMPLE" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trilbone.CATALOGSAMPLE">
+    <Position X="7" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ACACDSACICBAAAAEBAhAAAgAkKEAACAAABBAACIAAAI=</HashCode>
+      <FileName>XMLVisualCatalog.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IMAGES" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="DATA" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trilbone.CATALOGLEFTPANEL">
+    <Position X="4" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAQAAAAAgAAAAAAAAAAgCAAABAA=</HashCode>
+      <FileName>XMLVisualCatalog.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="item" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trilbone.CATALOGLEFTPANELItem">
+    <Position X="4" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQCAAAAAEAAAAAAAAAAgAAAEAgAAAAAAACAAAA=</HashCode>
+      <FileName>XMLVisualCatalog.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trilbone.CATALOGSAMPLEELEMENT">
+    <Position X="13.75" Y="0.5" Width="2.25" />
+    <NestedTypes>
+      <Enum Name="Trilbone.CATALOGSAMPLEELEMENT.emPosition" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>XMLVisualCatalog.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gABABBRDBIAAogQmgIAAYABAgAAEAIAAAAEACACAAAA=</HashCode>
+      <FileName>XMLVisualCatalog.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trilbone.CATALOGSAMPLEIMAGES">
+    <Position X="11" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAACAABAEAAEAAAAAAAAkAAAAEAAAAECAABCAAI=</HashCode>
+      <FileName>XMLVisualCatalog.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="IMAGE" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trilbone.CATALOGSAMPLEIMAGESIMAGE">
+    <Position X="10.5" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAABEAAAAAAAAgAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>XMLVisualCatalog.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Photo_reader.fmSampleData">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>DAwAQECBAGAAYYAGBkDAAAACAoCkoIAAgAAIQUBAAAQ=</HashCode>
+      <FileName>fmSampleData.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Photo_reader.dsPhotoData">
+    <Position X="4.25" Y="0.5" Width="4.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Photo_reader.dsPhotoData.GetFossilsCountInSampleRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Photo_reader.dsPhotoData.Select_tb_Samples_photo_dataRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Photo_reader.dsPhotoData.Select_tb_Samples_FossilsRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Photo_reader.dsPhotoData.Select_tb_Samples_photo_dataRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="Photo_reader.dsPhotoData.GetFossilsCountInSampleRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="Photo_reader.dsPhotoData.Select_tb_Samples_photo_dataRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="Photo_reader.dsPhotoData.Select_tb_Samples_FossilsRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="Photo_reader.dsPhotoData.Select_tb_Samples_FossilsRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="Photo_reader.dsPhotoData.GetFossilsCountInSampleDataTable" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Photo_reader.dsPhotoData.Select_tb_Samples_FossilsDataTable" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Photo_reader.dsPhotoData.GetFossilsCountInSampleRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Photo_reader.dsPhotoData.Select_tb_Samples_photo_dataDataTable" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AABAAAAgAwCAAAJABAACQAAAAAhCQBoAAAQAACMABBA=</HashCode>
+      <FileName>dsPhotoData.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

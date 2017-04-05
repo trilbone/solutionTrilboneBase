@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<CATALOGSAMPLE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" bar="8029000031618" version="2">
+  <DATA>
+    <ELEMENT hash="1157002719" name="NUMBER" order="1" alt="false" position="down" border="0" underline="false">8-3161</ELEMENT>
+    <ELEMENT hash="593227003" name="NAME" order="1" alt="Specimen name" position="title" border="0" underline="false">Gerastos granulosus (Goldfuss, 1843) �������</ELEMENT>
+    <ELEMENT hash="-950224312" name="MATRIXSIZE" order="1" alt="Block size" position="upperright" border="0" underline="false">6,0x4,0x3,0cm</ELEMENT>
+    <ELEMENT hash="746245437" name="WEIGHT" order="2" alt="Net weight" position="upperright" border="0" underline="false">0,120kg</ELEMENT>
+    <ELEMENT hash="1652927799" name="FOSSILSIZE" order="1" alt="Size of Gerastos granulosus (Goldfuss, 1843) �������" position="upperleft" border="0" underline="false">3,0x1,8cm</ELEMENT>
+    <ELEMENT hash="1925064812" name="SYSTEMATICA" order="2" alt="Systematica" position="down" border="0" underline="false">class Trilobita (Walch 1771)-&gt; order Proetida (Fortey &amp;amp; Owens, 1975)-&gt; suborder Proetina (Fortey &amp;amp; Owens 1975)-&gt; superfamily Proetoidea (Hawle &amp;amp; Corda, 1847)-&gt; family Proetidae (Salter, 1864)-&gt; subfamily Proetinae (HAWLE &amp;amp; CORDA, 1847)-&gt; genus Gerastos (Goldfuss, 1843)-&gt; Gerastos granulosus (Goldfuss, 1843)</ELEMENT>
+    <ELEMENT hash="757602046" name="SYSTEMATICADESCR" order="1" alt="" position="info" border="0" underline="false">Gerastos granulosus, which is sometimes called Proetus granulosus - small trilobite existed since the Devonian period up to the Upper Permian . It is known from the findings in the Atlas Mountains in Morocco.
+
+The most outstanding feature is the kind of high granularity ( granularity - hence the species name ) its onion- convex glabella - the middle of the head shield - and very short sch�chnye spikes. Length adult trilobite reached 5.5 cm, width 4.5 cm and height of 2.5 cm</ELEMENT>
+    <ELEMENT hash="1699463536" name="TIMESCALE" order="3" alt="Age" position="down" border="0" underline="false">Devonian, middle devonian (393.3 � 382.7 Ma), Eifelian stage(393.3 � 387.7 Ma)</ELEMENT>
+    <ELEMENT hash="2005553651" name="LOCALITY" order="4" alt="Locality" position="down" border="0" underline="false">Germany, Eifel Region, Ahrdorf formation</ELEMENT>
+  </DATA>
+</CATALOGSAMPLE>

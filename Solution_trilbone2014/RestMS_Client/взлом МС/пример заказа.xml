@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection total="1" start="0" count="1000">
+<customerOrder 
+[!!сумма заказа]reservedSum="3636000.0" 
+[!!статус]stateUuid="3ab42ff2-7bd6-11e4-90a2-8ecb0016aa97" 
+
+[!!компания Paleotravel MyCompany]targetAgentUuid="b148afea-489b-11e3-48e7-7054d21a8d1e" 
+это Nordstar {5a4ba7b2-4993-11e3-ce8c-7054d21a8d1e}
+
+[!!заказчик Company]sourceAgentUuid="19f222ca-b774-11e4-90a2-8ecb0014e519" 
+applicable="true" 
+moment="2015-02-18T16:42:00+03:00" 
+targetAccountUuid="f46345bd-8626-11e4-90a2-8ecb001701ad" 
+sourceAccountUuid="19f225ad-b774-11e4-90a2-8ecb0014e51a" 
+payerVat="false" 
+[!!валюта заказа]currencyUuid="a487d989-4c83-11e3-ce68-7054d21a8d1e"
+ rate="60.6"
+ vatIncluded="true"
+ created="2015-02-18T16:44:04.096+03:00"
+ createdBy="admin@trilbone"
+[!!Номер заказа] name="0004"
+ updated="2015-02-18T16:46:55.437+03:00"
+ updatedBy="admin@trilbone"
+ readMode="SELF"
+ changeMode="SELF">
+[UUID заказа]<uuid>заказ для trilbone // 0004 // 3915d00d-b774-11e4-7a40-e897003d709a</uuid>
+{заказ для nordstarfossils // 0005// bae9f066-b795-11e4-90a2-8ecb0017662a}
+
+<externalcode>4Jw-FsHVjk7uGQyekjwhI2</externalcode>
+
+<description>ПРОГРАММНЫЙ для резервации выставленных камней</description>
+
+!!! указываются все пользовательские поля, кроме буленовых, значение не важно - и пустые тоже.
+но entityValueUuid есть только у полей с установленным значением!!!
+<attribute 
+[это копия кода заказа]operationUuid="3915d00d-b774-11e4-7a40-e897003d709a" 
+[запрос по этому (фильтру entitymetadataUuid) дает список обьектор CustomEntityMetadata, всех наших справочников.]metadataUuid="0e742186-db63-11e3-7bb0-002590a28eca" 
+[код элемента пользовательского справочника]entityValueUuid="97c20675-db61-11e3-a884-002590a28eca" updated="2015-02-18T16:44:04.098+03:00" updatedBy="admin@trilbone" readMode="SELF" changeMode="SELF">
+<accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid>
+<accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId>
+<uuid>39162705-b774-11e4-7a40-e897003d709c</uuid></attribute>
+
+<attribute operationUuid="3915d00d-b774-11e4-7a40-e897003d709a" metadataUuid="0e932c7e-e802-11e3-8658-002590a28eca" booleanValue="false" updated="2015-02-18T16:44:04.098+03:00" updatedBy="admin@trilbone" readMode="SELF" changeMode="SELF">
+<uuid>3916281d-b774-11e4-7a40-e897003d709d</uuid></attribute>
+
+<attribute operationUuid="3915d00d-b774-11e4-7a40-e897003d709a" metadataUuid="99312d52-e802-11e3-081d-002590a28eca" booleanValue="false" updated="2015-02-18T16:44:04.098+03:00" updatedBy="admin@trilbone" readMode="SELF" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>391628ff-b774-11e4-7a40-e897003d709f</uuid></attribute>
+
+<attribute operationUuid="3915d00d-b774-11e4-7a40-e897003d709a" metadataUuid="a79cefcf-280c-11e4-fab6-002590a28eca" booleanValue="false" updated="2015-02-18T16:44:04.098+03:00" updatedBy="admin@trilbone" readMode="SELF" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>3916289b-b774-11e4-7a40-e897003d709e</uuid></attribute>
+
+<attribute operationUuid="3915d00d-b774-11e4-7a40-e897003d709a" metadataUuid="619a10ee-0dc4-11e4-6f23-002590a28eca" booleanValue="false" updated="2015-02-18T16:44:04.098+03:00" updatedBy="admin@trilbone" readMode="SELF" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>39162960-b774-11e4-7a40-e897003d70a0</uuid></attribute>
+
+<sum sum="3636000.0" sumInCurrency="60000.0"/>
+<demandsUuid/><invoicesOutUuid/><paymentsUuid/>
+---------------
+<customerOrderPosition 
+discount="0.0" 
+quantity="1.0"
+
+[это позиция в заказе] consignmentUuid="5a5f8e50-9f0e-11e4-7a07-673d00459e9a" 
+[товар]  goodUuid="5a5f89c1-9f0e-11e4-7a07-673d00459e98" vat="0" readMode="SELF" changeMode="SELF">
+
+<uuid>84e52ad7-b774-11e4-90a2-8ecb0014ef92</uuid>
+
+<basePrice 
+sum="3636000.0"
+sumInCurrency="60000.0"
+/>
+ 
+ <price 
+ sum="3636000.0"
+ sumInCurrency="60000.0"
+ />
+ <things/>
+ [!!резерв]<reserve>1.0</reserve>
+ </customerOrderPosition>
+ --------------------
+ 
+<purchaseOrdersUuid/>
+
+</customerOrder>
+
+
+</collection>

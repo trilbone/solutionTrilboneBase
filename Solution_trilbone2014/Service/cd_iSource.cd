@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Service.clsFileSystemConnectionBase">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Service.clsFileSystemConnectionBase.emCodeType">
+        <TypeIdentifier>
+          <NewMemberFileName>clsConnection.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Delegate Name="Service.clsFileSystemConnectionBase.WriteContentCall">
+        <TypeIdentifier>
+          <NewMemberFileName>clsConnection.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsFileSystemConnectionBase.ReadContentCall">
+        <TypeIdentifier>
+          <NewMemberFileName>clsConnection.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAwEAAAAIAQcBUAkIACAAQAAAAAwAAQCAAGAAAAAg=</HashCode>
+      <FileName>clsConnection.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsFtpConnection">
+    <Position X="12.75" Y="5.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Service.clsFtpConnection.TrilboneFtpUpLoader">
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Class Name="Service.clsFtpConnection.TrilboneFtpUpLoader.FtpState" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>clsConnection.vb</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+          <Class Name="Service.clsFtpConnection.TrilboneFtpUpLoader.UploadEventArgs" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>clsConnection.vb</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>clsConnection.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACAAAEAAAACAAUBUCMCAAAAQAAAQAQAAQCAAkAAAAAg=</HashCode>
+      <FileName>clsConnection.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsFSlocal">
+    <Position X="4" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACAAAMAAAAQAAEAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsConnection.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsFSFreePath">
+    <Position X="4" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEAAAAAAAEAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsConnection.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsFSOrder">
+    <Position X="4" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEAAAAAAAEAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsConnection.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsFilesSources">
+    <Position X="4" Y="10" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Service.clsFilesSources.emSources">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEBBQiABgAAAgQEgAAAgIBAABIAAIAAAEBAAAAAAgE=</HashCode>
+      <FileName>PhotoDriveObject.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Service.clsSamplePhotoManager">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Service.clsSamplePhotoManager.clsListViewItemComparer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Enum Name="Service.clsSamplePhotoManager.emJpegQuality" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="Service.clsSamplePhotoManager.RepositoryNotConnectedEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Service.clsSamplePhotoManager.ContentReadyForReadEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Service.clsSamplePhotoManager._IdContentBufferItem">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACgQBAAEAABEgAACCBiCABI+CQuAkACQAQgKFBAIAgE=</HashCode>
+      <FileName>PhotoDriveObject.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsIDcontent">
+    <Position X="17.25" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Service.clsIDcontent.emContentType">
+        <TypeIdentifier>
+          <NewMemberFileName>clsConnection.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Service.clsIDcontent.emImageExtention">
+        <TypeIdentifier>
+          <NewMemberFileName>clsConnection.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Service.clsIDcontent.emTextExtention">
+        <TypeIdentifier>
+          <NewMemberFileName>clsConnection.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Service.clsIDcontent.emJpegQuality" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsConnection.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Service.clsIDcontent.emBinaryExtention">
+        <TypeIdentifier>
+          <NewMemberFileName>clsConnection.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AgIABAAQCgEEEAgGhQMAgAQIBAASAIAAAAARACAAAAA=</HashCode>
+      <FileName>clsConnection.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsConnectionBase">
+    <Position X="10" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ADgUAkAUABAgAQEQiMgCAAAWAQAAAQTAQDAAEAAgAAg=</HashCode>
+      <FileName>clsConnection.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Service.clsAzureConnection">
+    <Position X="12.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BCAAgEQAAAAAQQAUCMAAAAAQAAAAAQAAQCAAGAAAAAg=</HashCode>
+      <FileName>Azure.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsFSSystemVolume">
+    <Position X="4" Y="7" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEAAAAAAAEAQCAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsConnection.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsFreeFtpConnection">
+    <Position X="15.25" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsConnection.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Service.iSource">
+    <Position X="15" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACgEAkAAAAAAAQAQCMAAAAAUAAAAAQCAQCAAAAAAAAg=</HashCode>
+      <FileName>clsConnection.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PriceCalculator.clsLotCalculatorData">
+    <Position X="1.25" Y="0.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EIAAGChAACEsBgAmCAgIIQAAgCBKYgAEGIQQAgRgAA0=</HashCode>
+      <FileName>clsData.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PriceCalculator.clsCalculatorService">
+    <Position X="5.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsCalculatorService.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceCalculator.clsPriceCalculatorData">
+    <Position X="8.25" Y="0.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="PriceCalculator.clsPriceCalculatorData.emSheetType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsPriceCalculatorData.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="PriceCalculator.clsPriceCalculatorData.emScheme" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsPriceCalculatorData.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="PriceCalculator.clsPriceCalculatorData.emRole" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsPriceCalculatorData.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="PriceCalculator.clsPriceCalculatorData.emPriceType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsPriceCalculatorData.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="PriceCalculator.clsPriceCalculatorData.strType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsPriceCalculatorData.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Class Name="PriceCalculator.clsPriceCalculatorData.clsPayOut" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsPriceCalculatorData.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="PriceCalculator.clsPriceCalculatorData.emOutPriceType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsPriceCalculatorData.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="PriceCalculator.clsPriceCalculatorData.clsPrices" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsPriceCalculatorData.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACEAgCASAAAiAQCAgAAAAAgCAAIABIgAQAAgBAAIA=</HashCode>
+      <FileName>clsPriceCalculatorData.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9.75" />
+</ClassDiagram>

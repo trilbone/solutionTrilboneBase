@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="eurCource" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">68</Value>
+    </Setting>
+    <Setting Name="koeffkat1" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.4</Value>
+    </Setting>
+    <Setting Name="filename" Type="System.String" Scope="User">
+      <Value Profile="(Default)">калькулятор цен 2013.xls</Value>
+    </Setting>
+    <Setting Name="sheetname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">диаграмма</Value>
+    </Setting>
+    <Setting Name="fullPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Nakladnye" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="fullPathPrice" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="filenamePrice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Рассчет продажи 2015.xlsx</Value>
+    </Setting>
+    <Setting Name="sheetnamePrice_tariff" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Тарифы</Value>
+    </Setting>
+    <Setting Name="sheetnamePrice_Prices" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Цены</Value>
+    </Setting>
+    <Setting Name="sheetnamePrice_Pays" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Выплаты</Value>
+    </Setting>
+    <Setting Name="WholeMaximumDiscount" Description="Допустимая оптовая скидка" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="SalerCost" Description="расходы продавца в % от общей суммы расходов" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="ExhibitionCost" Description="средние выставочные накладные" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="PayPalFee_Full" Description="тариф обналички PAYPAL" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10.5</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

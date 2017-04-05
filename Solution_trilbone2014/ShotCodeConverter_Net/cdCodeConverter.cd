@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ShotCodeConverter_Net.fmSelectMaterial">
+    <Position X="3.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAIAAAAACAAAACAAAAAAAIABAAABAAAAA=</HashCode>
+      <FileName>fmSelectMaterial.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShotCodeConverter_Net.clsCode">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ShotCodeConverter_Net.clsCode.emCodeType">
+        <TypeIdentifier>
+          <NewMemberFileName>clsCodeConverter2.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AABABADAAAQIAAAEhEAAAAAAAAAAAAAICAAAFAAAAAU=</HashCode>
+      <FileName>clsCodeConverter2.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShotCodeConverter_Net.FmCodeConverter">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABACEAAAAAEACCAoACAAAAgAAIEAAQQCABwAA=</HashCode>
+      <FileName>FmCodeConverter.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

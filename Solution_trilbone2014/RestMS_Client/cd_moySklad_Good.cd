@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="uom=ед.изм">
+    <Position X="6.771" Y="4.807" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="code=код товара">
+    <Position X="17.19" Y="2.779" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="productcode=артикул">
+    <Position X="10.206" Y="3.678" Height="0.75" Width="1.365" />
+  </Comment>
+  <Class Name="RestMS_Client.MoySkladAPI.good">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAwCAAAAACAAAFBAAEAEAAASAAAACgAAAJAAADgAE=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="pack" />
+      <Property Name="preferences" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.abstractGood">
+    <Position X="4.75" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQQAAAAAAAwQAACIEAgAEQAIAQAAAAAAAGhACAI=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="barcode" />
+      <Property Name="salePrices" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.goodFolder">
+    <Position X="8.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgAMAgAAAAAAAAAggCAAQAAAACAAQQAAAAAAAIAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="attribute" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.classifier">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.legendEntity">
+    <Position X="15.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIIAIAAAAIAAEAAAEAAAAAAAABAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.infoEntity">
+    <Position X="15.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAALAAABAAAAAEAAAAAAAAQBgAAAAAAAAAAUAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.entity">
+    <Position X="11.25" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAIAAAAAAAgCBAAAAAEAAAAAAAACAAkCAAQAAAACAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.goodSlotPreference">
+    <Position X="0.5" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.goodPack">
+    <Position X="3.75" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAQAAAIAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.barcode">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.abstractBarcode">
+    <Position X="8.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAABAAACAAIACAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.price">
+    <Position X="5.75" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAgAAAIgAAEAAAAAAAACECAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.goodAttributeValue">
+    <Position X="11.75" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAQAAAAAAAE=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.attributeValue">
+    <Position X="14" Y="9.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>iAAAABGAEwAgCCCDUgAADoEACRAKAABABARhIBAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="file" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.attachmentDocument">
+    <Position X="11.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.document">
+    <Position X="11.25" Y="12" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AEAAAABggQAAAAAAAQAAAAAABAQAAQAAAAEAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.uom">
+    <Position X="19" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABCAAAAAAAQAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.predefinedLegendableEntity">
+    <Position X="19.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.accountEntity">
+    <Position X="23" Y="4" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACABACAQAAAAAAAAAAgAABAAAAACAAQAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="RestMS_Client.MoySkladAPI.uomType">
+    <Position X="19.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9.75" />
+</ClassDiagram>

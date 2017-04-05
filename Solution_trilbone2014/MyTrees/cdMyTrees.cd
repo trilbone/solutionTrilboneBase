@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="открыт для пользователей&#xD;&#xA;Не использовать остальное!!">
+    <Position X="22.282" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="Trilbone.NodeObject">
+    <Position X="0.75" Y="8" Width="2" />
+    <NestedTypes>
+      <Class Name="Trilbone.NodeObject.clsImageList">
+        <TypeIdentifier>
+          <NewMemberFileName>ClsHirhial.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Trilbone.NodeObject.NodeObjectSubTree">
+        <TypeIdentifier>
+          <NewMemberFileName>ClsHirhial.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AMEggJAQAAggEAQEgAgCQAoBAADAAKAQQwIEIAKgAhA=</HashCode>
+      <FileName>ClsHirhial.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trilbone.ClsTree">
+    <Position X="3.25" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Trilbone.ClsTree.TreeNameChangedEventArgs">
+        <TypeIdentifier>
+          <NewMemberFileName>ClsHirhial.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>JEIQSAEIACAEAEAsQEIAQAAk4iCLYDQQAAoJEAgAAQA=</HashCode>
+      <FileName>ClsHirhial.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trilbone.ucHierarhy">
+    <Position X="8.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Trilbone.ucHierarhy.SelectedNodeChangedArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ucHierarhy.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>i5WRKXgVXfCwjd3locDLALGGS3ZGeQOz4ORlaxrIW/k=</HashCode>
+      <FileName>ucHierarhy.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trilbone.clsTreeManager">
+    <Position X="5.75" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Trilbone.clsTreeManager.clsListOfImportsObj" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsHierManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Trilbone.clsTreeManager.clsImportsObj" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsHierManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Trilbone.clsTreeManager.TreeChangedEventArg">
+        <TypeIdentifier>
+          <NewMemberFileName>clsHierManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ANAYEBQIAAAAGAABBAGAEAzMAaAGQCSAZIAIZQhCBGA=</HashCode>
+      <FileName>clsHierManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trilbone.fmDescription">
+    <Position X="11.75" Y="0.5" Width="2.25" />
+    <NestedTypes>
+      <Class Name="Trilbone.fmDescription.TreeFiles" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>fmDescription.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>GAALJGAklizkQBIVMALTAAEKRAMQJQwKjHQ7QEAHBQg=</HashCode>
+      <FileName>fmDescription.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trilbone.fmLinks">
+    <Position X="16.5" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IQAQoAAAE6CYQEQQAJGBAANCAwBgIQAATZSAAgoAwAA=</HashCode>
+      <FileName>fmLinks.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trilbone.clsTreeService">
+    <Position X="19" Y="0.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Trilbone.clsTreeService.NodeCreatedEventArg" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsTreeService.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Trilbone.clsTreeService.AddLabelToPrintEventArg" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsTreeService.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Trilbone.clsTreeService.DescriptionAcceptEventArg" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsTreeService.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Trilbone.clsTreeService.clsDescriptionElement">
+        <TypeIdentifier>
+          <NewMemberFileName>clsTreeService.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>oAIERAAAAAAAgABSUIACAAAMlAgAQEAAEABAYAwBRAA=</HashCode>
+      <FileName>clsTreeService.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Trilbone.fmAddLink">
+    <Position X="14.25" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAEIBkAFCCQAAEABICDAgECMgBAIQJAqWQAAAIBQZA=</HashCode>
+      <FileName>fmAddLink.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trilbone.SerializableNodeObject">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAQIABAAEAAAAABwgsFgAAAAAREAAYAAABhA=</HashCode>
+      <FileName>ClsHirhial.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

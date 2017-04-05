@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RestMS_Client.fmMoySklad">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>f7eWn0+p//+9+37eq+n2v9///7v/+3/td33uqE2b5/8=</HashCode>
+      <FileName>fmMoySklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.Form1">
+    <Position X="4.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAECAAAAAAAACAEBACgAgQIAIAAAAAgAABEAA=</HashCode>
+      <FileName>Form1.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

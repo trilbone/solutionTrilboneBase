@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ModelSampleList.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ModelSampleListStoreContainer">
+    <EntitySet Name="SampleListCollection" EntityType="ModelSampleList.Store.SampleListCollection" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ListLineCollection" EntityType="ModelSampleList.Store.ListLineCollection" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ListTypeCollection" EntityType="ModelSampleList.Store.ListTypeCollection" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SampleInListCollection" EntityType="ModelSampleList.Store.SampleInListCollection" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SampleParameterCollection" EntityType="ModelSampleList.Store.SampleParameterCollection" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SampleListParameterCollection" EntityType="ModelSampleList.Store.SampleListParameterCollection" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SampleAndListCollection" EntityType="ModelSampleList.Store.SampleAndListCollection" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ListLineSampleList" Association="ModelSampleList.Store.ListLineSampleList">
+      <End Role="ListLine" EntitySet="ListLineCollection" />
+      <End Role="SampleList" EntitySet="SampleListCollection" />
+    </AssociationSet>
+    <AssociationSet Name="ListTypeSampleList" Association="ModelSampleList.Store.ListTypeSampleList">
+      <End Role="ListType" EntitySet="ListTypeCollection" />
+      <End Role="SampleList" EntitySet="SampleListCollection" />
+    </AssociationSet>
+    <AssociationSet Name="SampleInListSampleParameter" Association="ModelSampleList.Store.SampleInListSampleParameter">
+      <End Role="SampleInList" EntitySet="SampleInListCollection" />
+      <End Role="SampleParameter" EntitySet="SampleParameterCollection" />
+    </AssociationSet>
+    <AssociationSet Name="SampleListSampleListParameter" Association="ModelSampleList.Store.SampleListSampleListParameter">
+      <End Role="SampleList" EntitySet="SampleListCollection" />
+      <End Role="SampleListParameter" EntitySet="SampleListParameterCollection" />
+    </AssociationSet>
+    <AssociationSet Name="SampleInListSampleAndList" Association="ModelSampleList.Store.SampleInListSampleAndList">
+      <End Role="SampleInList" EntitySet="SampleInListCollection" />
+      <End Role="SampleAndList" EntitySet="SampleAndListCollection" />
+    </AssociationSet>
+    <AssociationSet Name="SampleListSampleAndList" Association="ModelSampleList.Store.SampleListSampleAndList">
+      <End Role="SampleList" EntitySet="SampleListCollection" />
+      <End Role="SampleAndList" EntitySet="SampleAndListCollection" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SampleListCollection">
+    <Key>
+      <PropertyRef Name="IDList" />
+    </Key>
+    <Property Name="IDList" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ListName" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="IDListLine" Type="int" Nullable="true" />
+    <Property Name="IDListType" Type="int" Nullable="true" />
+    <Property Name="IsActiveFlag" Type="bit" Nullable="false" DefaultValue="true" />
+    <Property Name="OpenDate" Type="datetime" Nullable="false" />
+    <Property Name="CloseDate" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="ListLineCollection">
+    <Key>
+      <PropertyRef Name="IDListLine" />
+    </Key>
+    <Property Name="IDListLine" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ListLineName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsActiveFlag" Type="bit" Nullable="false" DefaultValue="true" />
+  </EntityType>
+  <EntityType Name="ListTypeCollection">
+    <Key>
+      <PropertyRef Name="IDListType" />
+    </Key>
+    <Property Name="IDListType" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ListTypeName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SampleInListCollection">
+    <Key>
+      <PropertyRef Name="IDSample" />
+    </Key>
+    <Property Name="IDSample" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SampleNumber" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="IsLockedFlag" Type="bit" Nullable="false" DefaultValue="false" />
+  </EntityType>
+  <EntityType Name="SampleParameterCollection">
+    <Key>
+      <PropertyRef Name="IDSParameter" />
+    </Key>
+    <Property Name="IDSParameter" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParameterName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ParameterValue" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ParameterType" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ParameterNETtype" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IDSample" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SampleListParameterCollection">
+    <Key>
+      <PropertyRef Name="IDLParameter" />
+    </Key>
+    <Property Name="IDLParameter" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParameterName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ParameterValue" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ParameterType" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ParameterNETtype" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IDList" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SampleAndListCollection">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDSample" Type="int" Nullable="false" />
+    <Property Name="IDList" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ListLineSampleList">
+    <End Role="ListLine" Type="ModelSampleList.Store.ListLineCollection" Multiplicity="0..1" />
+    <End Role="SampleList" Type="ModelSampleList.Store.SampleListCollection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListLine">
+        <PropertyRef Name="IDListLine" />
+      </Principal>
+      <Dependent Role="SampleList">
+        <PropertyRef Name="IDListLine" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ListTypeSampleList">
+    <End Role="ListType" Type="ModelSampleList.Store.ListTypeCollection" Multiplicity="0..1" />
+    <End Role="SampleList" Type="ModelSampleList.Store.SampleListCollection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListType">
+        <PropertyRef Name="IDListType" />
+      </Principal>
+      <Dependent Role="SampleList">
+        <PropertyRef Name="IDListType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SampleInListSampleParameter">
+    <End Role="SampleInList" Type="ModelSampleList.Store.SampleInListCollection" Multiplicity="1" />
+    <End Role="SampleParameter" Type="ModelSampleList.Store.SampleParameterCollection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SampleInList">
+        <PropertyRef Name="IDSample" />
+      </Principal>
+      <Dependent Role="SampleParameter">
+        <PropertyRef Name="IDSample" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SampleListSampleListParameter">
+    <End Role="SampleList" Type="ModelSampleList.Store.SampleListCollection" Multiplicity="1" />
+    <End Role="SampleListParameter" Type="ModelSampleList.Store.SampleListParameterCollection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SampleList">
+        <PropertyRef Name="IDList" />
+      </Principal>
+      <Dependent Role="SampleListParameter">
+        <PropertyRef Name="IDList" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SampleInListSampleAndList">
+    <End Role="SampleInList" Type="ModelSampleList.Store.SampleInListCollection" Multiplicity="1" />
+    <End Role="SampleAndList" Type="ModelSampleList.Store.SampleAndListCollection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SampleInList">
+        <PropertyRef Name="IDSample" />
+      </Principal>
+      <Dependent Role="SampleAndList">
+        <PropertyRef Name="IDSample" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SampleListSampleAndList">
+    <End Role="SampleList" Type="ModelSampleList.Store.SampleListCollection" Multiplicity="1" />
+    <End Role="SampleAndList" Type="ModelSampleList.Store.SampleAndListCollection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SampleList">
+        <PropertyRef Name="IDList" />
+      </Principal>
+      <Dependent Role="SampleAndList">
+        <PropertyRef Name="IDList" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModelSampleList" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="ModelSampleListContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SampleListCollection" EntityType="ModelSampleList.SampleList" />
+          <EntitySet Name="ListLineCollection" EntityType="ModelSampleList.ListLine" />
+          <EntitySet Name="ListTypeCollection" EntityType="ModelSampleList.ListType" />
+          <AssociationSet Name="ListLineSampleList" Association="ModelSampleList.ListLineSampleList">
+            <End Role="ListLine" EntitySet="ListLineCollection" />
+            <End Role="SampleList" EntitySet="SampleListCollection" />
+          </AssociationSet>
+          <AssociationSet Name="ListTypeSampleList" Association="ModelSampleList.ListTypeSampleList">
+            <End Role="ListType" EntitySet="ListTypeCollection" />
+            <End Role="SampleList" EntitySet="SampleListCollection" />
+          </AssociationSet>
+          <EntitySet Name="SampleInListCollection" EntityType="ModelSampleList.SampleInList" />
+          <EntitySet Name="SampleParameterCollection" EntityType="ModelSampleList.SampleParameter" />
+          <AssociationSet Name="SampleInListSampleParameter" Association="ModelSampleList.SampleInListSampleParameter">
+            <End Role="SampleInList" EntitySet="SampleInListCollection" />
+            <End Role="SampleParameter" EntitySet="SampleParameterCollection" />
+          </AssociationSet>
+          <EntitySet Name="SampleListParameterCollection" EntityType="ModelSampleList.SampleListParameter" />
+          <AssociationSet Name="SampleListSampleListParameter" Association="ModelSampleList.SampleListSampleListParameter">
+            <End Role="SampleList" EntitySet="SampleListCollection" />
+            <End Role="SampleListParameter" EntitySet="SampleListParameterCollection" />
+          </AssociationSet>
+          <EntitySet Name="SampleAndListCollection" EntityType="ModelSampleList.SampleAndList" />
+          <AssociationSet Name="SampleInListSampleAndList" Association="ModelSampleList.SampleInListSampleAndList">
+            <End Role="SampleInList" EntitySet="SampleInListCollection" />
+            <End Role="SampleAndList" EntitySet="SampleAndListCollection" />
+          </AssociationSet>
+          <AssociationSet Name="SampleListSampleAndList" Association="ModelSampleList.SampleListSampleAndList">
+            <End Role="SampleList" EntitySet="SampleListCollection" />
+            <End Role="SampleAndList" EntitySet="SampleAndListCollection" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="SampleList">
+          <Key>
+            <PropertyRef Name="IDList" />
+          </Key>
+          <Property Type="Int32" Name="IDList" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ListName" Nullable="false" FixedLength="false" Unicode="true" MaxLength="40" />
+          <NavigationProperty Name="ListLine" Relationship="ModelSampleList.ListLineSampleList" FromRole="SampleList" ToRole="ListLine" />
+          <Property Type="Int32" Name="IDListLine" Nullable="true" />
+          <Property Type="Int32" Name="IDListType" Nullable="true" />
+          <NavigationProperty Name="ListType" Relationship="ModelSampleList.ListTypeSampleList" FromRole="SampleList" ToRole="ListType" />
+          <Property Type="Boolean" Name="IsActiveFlag" Nullable="false" DefaultValue="True" />
+          <Property Type="DateTime" Name="OpenDate" Nullable="false" />
+          <Property Type="DateTime" Name="CloseDate" Nullable="true" />
+          <NavigationProperty Name="SampleListParameter" Relationship="ModelSampleList.SampleListSampleListParameter" FromRole="SampleList" ToRole="SampleListParameter" />
+          <NavigationProperty Name="SampleAndList" Relationship="ModelSampleList.SampleListSampleAndList" FromRole="SampleList" ToRole="SampleAndList" />
+        </EntityType>
+        <EntityType Name="ListLine">
+          <Key>
+            <PropertyRef Name="IDListLine" />
+          </Key>
+          <Property Type="Int32" Name="IDListLine" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ListLineName" Nullable="false" />
+          <NavigationProperty Name="SampleList" Relationship="ModelSampleList.ListLineSampleList" FromRole="ListLine" ToRole="SampleList" />
+          <Property Type="Boolean" Name="IsActiveFlag" Nullable="false" DefaultValue="true" />
+        </EntityType>
+        <EntityType Name="ListType">
+          <Key>
+            <PropertyRef Name="IDListType" />
+          </Key>
+          <Property Type="Int32" Name="IDListType" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ListTypeName" Nullable="false" />
+          <NavigationProperty Name="SampleList" Relationship="ModelSampleList.ListTypeSampleList" FromRole="ListType" ToRole="SampleList" />
+        </EntityType>
+        <Association Name="ListLineSampleList">
+          <End Type="ModelSampleList.ListLine" Role="ListLine" Multiplicity="0..1" />
+          <End Type="ModelSampleList.SampleList" Role="SampleList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ListLine">
+              <PropertyRef Name="IDListLine" />
+            </Principal>
+            <Dependent Role="SampleList">
+              <PropertyRef Name="IDListLine" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ListTypeSampleList">
+          <End Type="ModelSampleList.ListType" Role="ListType" Multiplicity="0..1" />
+          <End Type="ModelSampleList.SampleList" Role="SampleList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ListType">
+              <PropertyRef Name="IDListType" />
+            </Principal>
+            <Dependent Role="SampleList">
+              <PropertyRef Name="IDListType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SampleInList">
+          <Key>
+            <PropertyRef Name="IDSample" />
+          </Key>
+          <Property Type="Int32" Name="IDSample" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="SampleNumber" Nullable="true" />
+          <Property Type="Boolean" Name="IsLockedFlag" Nullable="false" DefaultValue="false" />
+          <NavigationProperty Name="SampleParameter" Relationship="ModelSampleList.SampleInListSampleParameter" FromRole="SampleInList" ToRole="SampleParameter" />
+          <NavigationProperty Name="SampleAndList" Relationship="ModelSampleList.SampleInListSampleAndList" FromRole="SampleInList" ToRole="SampleAndList" />
+        </EntityType>
+        <EntityType Name="SampleParameter">
+          <Key>
+            <PropertyRef Name="IDSParameter" />
+          </Key>
+          <Property Type="Int32" Name="IDSParameter" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ParameterName" Nullable="false" />
+          <Property Type="String" Name="ParameterValue" Nullable="false" />
+          <Property Type="String" Name="ParameterType" Nullable="true" />
+          <Property Type="String" Name="ParameterNETtype" Nullable="false" />
+          <Property Type="Int32" Name="IDSample" Nullable="false" />
+          <NavigationProperty Name="SampleInList" Relationship="ModelSampleList.SampleInListSampleParameter" FromRole="SampleParameter" ToRole="SampleInList" />
+        </EntityType>
+        <Association Name="SampleInListSampleParameter">
+          <End Type="ModelSampleList.SampleInList" Role="SampleInList" Multiplicity="1" />
+          <End Type="ModelSampleList.SampleParameter" Role="SampleParameter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SampleInList">
+              <PropertyRef Name="IDSample" />
+            </Principal>
+            <Dependent Role="SampleParameter">
+              <PropertyRef Name="IDSample" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SampleListParameter">
+          <Key>
+            <PropertyRef Name="IDLParameter" />
+          </Key>
+          <Property Type="Int32" Name="IDLParameter" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ParameterName" Nullable="false" />
+          <Property Type="String" Name="ParameterValue" Nullable="false" />
+          <Property Type="String" Name="ParameterType" Nullable="true" />
+          <Property Type="String" Name="ParameterNETtype" Nullable="false" />
+          <Property Type="Int32" Name="IDList" Nullable="false" />
+          <NavigationProperty Name="SampleList" Relationship="ModelSampleList.SampleListSampleListParameter" FromRole="SampleListParameter" ToRole="SampleList" />
+        </EntityType>
+        <Association Name="SampleListSampleListParameter">
+          <End Type="ModelSampleList.SampleList" Role="SampleList" Multiplicity="1" />
+          <End Type="ModelSampleList.SampleListParameter" Role="SampleListParameter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SampleList">
+              <PropertyRef Name="IDList" />
+            </Principal>
+            <Dependent Role="SampleListParameter">
+              <PropertyRef Name="IDList" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SampleAndList">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IDSample" Nullable="false" />
+          <Property Type="Int32" Name="IDList" Nullable="false" />
+          <NavigationProperty Name="SampleInList" Relationship="ModelSampleList.SampleInListSampleAndList" FromRole="SampleAndList" ToRole="SampleInList" />
+          <NavigationProperty Name="SampleList" Relationship="ModelSampleList.SampleListSampleAndList" FromRole="SampleAndList" ToRole="SampleList" />
+        </EntityType>
+        <Association Name="SampleInListSampleAndList">
+          <End Type="ModelSampleList.SampleInList" Role="SampleInList" Multiplicity="1" />
+          <End Type="ModelSampleList.SampleAndList" Role="SampleAndList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SampleInList">
+              <PropertyRef Name="IDSample" />
+            </Principal>
+            <Dependent Role="SampleAndList">
+              <PropertyRef Name="IDSample" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SampleListSampleAndList">
+          <End Type="ModelSampleList.SampleList" Role="SampleList" Multiplicity="1" />
+          <End Type="ModelSampleList.SampleAndList" Role="SampleAndList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SampleList">
+              <PropertyRef Name="IDList" />
+            </Principal>
+            <Dependent Role="SampleAndList">
+              <PropertyRef Name="IDList" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelSampleListStoreContainer" CdmEntityContainer="ModelSampleListContainer">
+    <EntitySetMapping Name="SampleListCollection">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelSampleList.SampleList)">
+        <MappingFragment StoreEntitySet="SampleListCollection">
+          <ScalarProperty Name="IDList" ColumnName="IDList" />
+          <ScalarProperty Name="ListName" ColumnName="ListName" />
+          <ScalarProperty Name="IDListLine" ColumnName="IDListLine" />
+          <ScalarProperty Name="IDListType" ColumnName="IDListType" />
+          <ScalarProperty Name="IsActiveFlag" ColumnName="IsActiveFlag" />
+          <ScalarProperty Name="OpenDate" ColumnName="OpenDate" />
+          <ScalarProperty Name="CloseDate" ColumnName="CloseDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListLineCollection">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelSampleList.ListLine)">
+        <MappingFragment StoreEntitySet="ListLineCollection">
+          <ScalarProperty Name="IDListLine" ColumnName="IDListLine" />
+          <ScalarProperty Name="ListLineName" ColumnName="ListLineName" />
+          <ScalarProperty Name="IsActiveFlag" ColumnName="IsActiveFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListTypeCollection">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelSampleList.ListType)">
+        <MappingFragment StoreEntitySet="ListTypeCollection">
+          <ScalarProperty Name="IDListType" ColumnName="IDListType" />
+          <ScalarProperty Name="ListTypeName" ColumnName="ListTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SampleInListCollection">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelSampleList.SampleInList)">
+        <MappingFragment StoreEntitySet="SampleInListCollection">
+          <ScalarProperty Name="IDSample" ColumnName="IDSample" />
+          <ScalarProperty Name="SampleNumber" ColumnName="SampleNumber" />
+          <ScalarProperty Name="IsLockedFlag" ColumnName="IsLockedFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SampleParameterCollection">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelSampleList.SampleParameter)">
+        <MappingFragment StoreEntitySet="SampleParameterCollection">
+          <ScalarProperty Name="IDSParameter" ColumnName="IDSParameter" />
+          <ScalarProperty Name="ParameterName" ColumnName="ParameterName" />
+          <ScalarProperty Name="ParameterValue" ColumnName="ParameterValue" />
+          <ScalarProperty Name="ParameterType" ColumnName="ParameterType" />
+          <ScalarProperty Name="ParameterNETtype" ColumnName="ParameterNETtype" />
+          <ScalarProperty Name="IDSample" ColumnName="IDSample" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SampleListParameterCollection">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelSampleList.SampleListParameter)">
+        <MappingFragment StoreEntitySet="SampleListParameterCollection">
+          <ScalarProperty Name="IDLParameter" ColumnName="IDLParameter" />
+          <ScalarProperty Name="ParameterName" ColumnName="ParameterName" />
+          <ScalarProperty Name="ParameterValue" ColumnName="ParameterValue" />
+          <ScalarProperty Name="ParameterType" ColumnName="ParameterType" />
+          <ScalarProperty Name="ParameterNETtype" ColumnName="ParameterNETtype" />
+          <ScalarProperty Name="IDList" ColumnName="IDList" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SampleAndListCollection">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelSampleList.SampleAndList)">
+        <MappingFragment StoreEntitySet="SampleAndListCollection">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDSample" ColumnName="IDSample" />
+          <ScalarProperty Name="IDList" ColumnName="IDList" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="ModelSampleList" >
+        <EntityTypeShape EntityType="ModelSampleList.SampleList" Width="2.375" PointX="1.125" PointY="1" Height="2.71580078125" />
+        <EntityTypeShape EntityType="ModelSampleList.ListLine" Width="2.125" PointX="4.625" PointY="1" Height="1.768331705729167" />
+        <EntityTypeShape EntityType="ModelSampleList.ListType" Width="2" PointX="5" PointY="4.375" Height="1.5788378906249996" />
+        <AssociationConnector Association="ModelSampleList.ListLineSampleList">
+          <ConnectorPoint PointX="4.625" PointY="1.8841658528645837" />
+          <ConnectorPoint PointX="3.5" PointY="1.8841658528645837" />
+        </AssociationConnector>
+        <AssociationConnector Association="ModelSampleList.ListTypeSampleList">
+          <ConnectorPoint PointX="6.90625" PointY="4.375" />
+          <ConnectorPoint PointX="6.90625" PointY="3.4628100585937496" />
+          <ConnectorPoint PointX="3.5" PointY="3.4628100585937496" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ModelSampleList.SampleInList" Width="2.25" PointX="10.5" PointY="0.75" Height="1.9578255208333331" />
+        <EntityTypeShape EntityType="ModelSampleList.SampleParameter" Width="2" PointX="10.5" PointY="3.75" Height="2.3368131510416665" />
+        <AssociationConnector Association="ModelSampleList.SampleInListSampleParameter">
+          <ConnectorPoint PointX="11.5" PointY="2.7078255208333331" />
+          <ConnectorPoint PointX="11.5" PointY="3.75" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ModelSampleList.SampleListParameter" Width="2.5" PointX="1" PointY="5" Height="2.3368131510416665" />
+        <AssociationConnector Association="ModelSampleList.SampleListSampleListParameter">
+          <ConnectorPoint PointX="2.3125" PointY="4.0947884114583326" />
+          <ConnectorPoint PointX="2.3125" PointY="5" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ModelSampleList.SampleAndList" Width="1.75" PointX="7.875" PointY="2.375" Height="1.9578255208333326" />
+        <AssociationConnector Association="ModelSampleList.SampleInListSampleAndList">
+          <ConnectorPoint PointX="10.5" PointY="1.5624995" />
+          <ConnectorPoint PointX="8.75" PointY="1.5624995" />
+          <ConnectorPoint PointX="8.75" PointY="2.375" />
+        </AssociationConnector>
+        <AssociationConnector Association="ModelSampleList.SampleListSampleAndList">
+          <ConnectorPoint PointX="3.5" PointY="3.0843208821614585" />
+          <ConnectorPoint PointX="7.875" PointY="3.0843208821614585" />
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

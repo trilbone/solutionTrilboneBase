@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DESCR>
+  <LOCALITYS>
+      <COUNTRY name ="Russia">
+    <LANG lg="ru" value="Россия"/>
+    <REGION name="St.Petersburg">
+      <LANG lg="ru" value="Санкт-Петербург"/>
+      <FORMATION name="simankovo">
+        <LANG lg="ru" value="симанково"/>
+      </FORMATION>
+      <FORMATION name="siniavino">
+        <LANG lg="ru" value="синявинская"/>
+      </FORMATION>
+      <Locality name="vilpovicy quarry">
+        <LANG lg="ru" value="карьер вильповицы"/>
+      </Locality>
+      <Locality name="volkhov river">
+        <LANG lg="ru" value="река волхов"/>
+      </Locality>
+    </REGION>
+    <REGION name="Arkhangelsk">
+      <LANG lg="ru" value="Архангельск"/>
+      <FORMATION name="verkhovka">
+        <LANG lg="ru" value="верховка"/>
+      </FORMATION>
+      <FORMATION name="zimnie Gory">
+        <LANG lg="ru" value="зименгорская"/>
+      </FORMATION>
+      <Locality name="Solza river">
+        <LANG lg="ru" value="река Солза"/>
+      </Locality>
+      <Locality name="Zimnie Gory">
+        <LANG lg="ru" value="Зимние горы"/>
+      </Locality>
+    </REGION>
+  </COUNTRY>
+  <COUNTRY name ="Morroco">
+    <LANG lg="ru" value="Морроко"/>
+  </COUNTRY>
+
+  </LOCALITYS>
+  <AGES>
+   <PERIOD name="middle ordovician">
+    <LANG lg="ru" value="средний ордовик"/>
+    <STAGE name="darrilivian stage">
+      <LANG lg="ru" value="дариливийский"/>
+      <HORIZON name="Asery horizon">
+        <LANG lg="ru" value="горизонт азери"/>
+        <INDEX>C1a</INDEX>
+      </HORIZON>
+      <HORIZON name="Kunda horizon">
+        <LANG lg="ru" value="кундаский горизонт"/>
+        <INDEX>Biiia</INDEX>
+        <INDEX>Biiib</INDEX>
+        <INDEX>Biiiy</INDEX>
+      </HORIZON>
+    </STAGE>
+  </PERIOD>
+   
+  </AGES>
+  <REMARKS>
+    <REMARK1>It makes a wonderful addition to any rare trilobite collection
+    <LANG lg="ru" value="Лучшее добавление для коллекции"/>
+    </REMARK1>
+    <REMARK1>It makes a wonderful addition to any rare enrolled trilobite collection.</REMARK1>
+    <REMARK1>It makes a wonderful addition to any trilobite collection.</REMARK1>
+    <REMARK1>Rare ITEM of ordovician Asaphidae trilobites from St.Petersburg region</REMARK1>
+    <REMARK1>Original ITEM of ordovician Asaphidae trilobites from St.Petersburg region</REMARK1>
+    <REMARK1>Huge trilobite!</REMARK1>
+    <REMARK1>High preserved. Original surface. Main non-trilobite ITEM of deposits of Asery horizon age.</REMARK1>
+    <REMARK1>Unusually beautiful ITEM of ordovician Asaphidae trilobites from St.Petersburg region</REMARK1>
+    <REMARK1>It's subITEM with shot eyes</REMARK1>
+    <REMARK1>It's direct ancestor of Asaphus kowalewskii!</REMARK1>
+    <REMARK1>Two similar ITEM in one stone!!!</REMARK1>
+    <REMARK1>It's ITEM with gena spines!</REMARK1>
+    <REMARK1>Big trilobite!</REMARK1>
+    <REMARK1>Best safety!</REMARK1>
+    <REMARK1>Beautiful stone!!</REMARK1>
+    <REMARK1>Original preparation!!</REMARK1>
+    <REMARK1>Excellent preparation!!</REMARK1>
+    <REMARK1>It's subITEM with long eyes</REMARK1>
+    <REMARK1>RARE! Intravital injury of left eye!!!</REMARK1>
+    <REMARK1>Rare ITEM of ordovician trilobites from St.Petersburg region</REMARK1>
+    <REMARK1>Newest described!!!!</REMARK1>
+    <REMARK1>Absolutely fine</REMARK1>
+    <REMARK1>Original safety of fossils - clustered trilobites shell only one ITEM together. It has not reconstraction of matrix - the position of trilobites is original! The shell of trilobites has little reconstraction nearly 5%.</REMARK1>
+    <REMARK1>Original preparation!! Two ITEM in one stone!!</REMARK1>
+    <REMARK1>It makes a wonderful addition to any enrolled trilobite collection.</REMARK1>
+    <REMARK1>Two ITEM in one stone!!!</REMARK1>
+    <REMARK1>It's subITEM with shot eyes!</REMARK1>
+  </REMARKS>
+  <SPECIES>
+    
+      - <ITEM name="Asaphus kowalewskii">
+        <RECONSTRUCTION uri="" image="kowalewskii.jpg"></RECONSTRUCTION>
+        <RECONSTRUCTION uri="http:\\www.trilbone.com\imagekow1.jpg" image=""></RECONSTRUCTION>
+        <DESCR>Described by: Lawrow, 1856, p. 239, pl. 5 , fig.a-c.
+        <LANG lg="ru" value="Описал Лавров в 1856 году. стр. 239, табл. 5"/>
+        </DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus punctatus">
+        <DESCR>Described by: Lesnikova, 1949, p.283, pl.70, fig. 2a and 2b.</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus latus">
+        <DESCR>Described by: Schmidt, 1901, p.61, pl. 5 , fig.10a and 10b.</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus plautini plautini">
+        <DESCR>Described as Asaphus latus var. plautini by Schmidt, 1901, p.64, pl. 6 , figs.1 and 2 // Revision as Asaphus plautini plautini by Ivantsov, 2003, p.S313, pl.14, figs. 5-7</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus expansus">
+        <DESCR>Described by Wahlenberg, 1821; // Final revision by Ivantsov, 2002, p. S271, pl.2, figs.1-5</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus raniceps">
+        <DESCR>Described by Dalman, 1828 as Asaphus expansus var. ranicepcs // Late described by Angelin, 1854 as Asaphus ranicepcs // Final revision by Ivantsov, 2002, p. S279, pl.4, figs.1-4</DESCR>
+      </ITEM>
+      - <ITEM name="Subasaphus spinifer">
+        <DESCR>Described by Lesnikova and Weber, 1949, pl.69, fig.4 as Asaphus platiurus // Revision by Ivantsov, 2000, p.52, pl.9, figs.2 and 3 as Subasaphus spinifer.</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus cornutus">
+        <DESCR>Described by: Pander, 1830, p.137; Schmidt, 1901, pl. 4 , fig. 4 .</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus intermedius">
+        <DESCR>Described by Balashova, 1953, p.409, pl.4, figs.12-15 // Revision by Ivantsov, 2002, pl.12, figs.1-3</DESCR>
+      </ITEM>
+      - <ITEM name="Subasaphus latisegmentatus">
+        <DESCR>Described as Asaphus latisegmentatus by Nieszkowskii, 1857, p.39, pl. 2 , fig.1 // Revision as Asaphus platyurus latisegmentatus by Jaanusson, 1953b, p.475, pl.2, figs. 4-6 // Revision as Subasaphus latisegmentatus by Ivantsov, 2003, p.S323, pl. 18, figs. 3-8.</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus kotlukovi">
+        <DESCR>Described by: Ivantsov, 2003, p.S299, pl. 10 , figs.3-7.</DESCR>
+      </ITEM>
+      - <ITEM name="Echinosphaerites aurantium">
+        <DESCR>Described by WAHLENBERG, 1821, vol. VIII p.52; fig. see Friedrich Quenstedt, 1852, tab. 55.</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus sulevi">
+        <DESCR>Described as Asaphus eichwaldi by Schmidt, 1901, p.41, pl.4, figs. 6,9 and 10. // Described as Asaphus sulevi by Jaanusson, 1953, p.393 // Revision by Ivantsov, 2002, pl.7, figs.1-4</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus kotlukovi tumidus">
+        <DESCR>Described by: Ivantsov, 2003, p.S299, pl. 10 , figs.3-7.</DESCR>
+      </ITEM>
+      - <ITEM name="Pliomera fisheri">
+        <DESCR>Described by Eichwald, 1840, p.70 as Amphion fisheri // Revision by F.Schmidt, 1881, p.191, pl.XII, figs.1-8 as Pliomera fisheri</DESCR>
+      </ITEM>
+      - <ITEM name="Delphasaphus delphinus">
+        <DESCR>Described as Asaphus delphinus by Lawrow, 1856, p.238, pl.4, figs. a-c. Revision as Delphasaphus delphinus by Ivantsov, 2003, p.S332, pl. 19, figs. 1-4</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus holmi">
+        <DESCR>Described as Asaphus cornutus var. holmi by Schmidt, 1901, pp. 50-52, pl.4, figs. 8a and 8b. // Revision as Asaphus holmi by Ivantsov, 2003, p.S310, pl.15, figs. 4 and 5.</DESCR>
+      </ITEM>
+      - <ITEM name="Cybele worty">
+        <DESCR>Described by: Eichwald, Fr.Schmidt XXX №1, 1881, pl.XII , fig.14-17.</DESCR>
+      </ITEM>
+      - <ITEM name="Subasaphus laticaudatus">
+        <DESCR>Described by: Schmidt, 1901, p.61, pl. 5 , fig.10a and 10b.</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus ingrianus">
+        <DESCR>Described by Jaanusson, 1953a, p.393 // Revision by Ivantsov, 2002, pl.8, figs.1-4</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus laevissimus">
+        <DESCR>Described by F.Schmidt, 1901, p.58, pl.5, figs.1-6 // Revision by Ivantsov, 2002, pl.8, figs.5-6</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus kotlukovi kotlukovi">
+        <DESCR>Described by: Balashova, 1953, p.407, pl. 4 , fig.8-11.</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus latus">
+        <DESCR>Described by Pander, 1830, p.136 // Revision by Ivantsov, 2003, p.S313, pl.16, figs. 4-9.</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus striatus striatus">
+        <DESCR>Described by Boeck, 1838, p.102; Stormer, 1940, p. 141, pl. 3, figs. 12-15 // Recision by Ivantsov, 2002, p. s283, pl. 5, figs. 1-3</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus (? Subasaphus) sp. nov.">
+        <DESCR>Undescribed ITEM of genus Subasaphus (?). For the first time was identified at 2006 year. Earlier this ITEM was indentified as variation of Asaphus cornutus. It's occurence together with Asaphus intermedius and Asaphus kowalewskii</DESCR>
+      </ITEM>
+      - <ITEM name="Megalaspis hyorhina mickwitzi">
+        <DESCR>Described by F.Schmidt, 1906, p.40, figs.11, ; Revision by Balashova, 1976</DESCR>
+      </ITEM>
+      - <ITEM name="Hoplolyhas conicotuberculata">
+        <DESCR>Described by: Nieszkowskii, 1858, p.364, pl.1, fig.7-10. Revision by Schmidt, 1885, p.82, pl.3, fig. 13-25</DESCR>
+      </ITEM>
+      - <ITEM name="Encrinuroides regularis">
+        <DESCR>Described by: Opik and Balashova 1966, p.20, pl.1, fig.7 as Krattaspis viridatus; Revision by:Helje Parnaste, 2005, p.161 as Encrinuroides regularis.</DESCR>
+      </ITEM>
+      - <ITEM name="Chasmops praecurrens">
+        <DESCR>Described by Schmidt, 1881, p. s90, tabl. 2, fig. 14</DESCR>
+      </ITEM>
+      - <ITEM name="Megistaspis triangularis">
+        <DESCR>Described by Schmidt, 1906, tabl. 6, figs. 4, 4a</DESCR>
+      </ITEM>
+      - <ITEM name="Megistaspis acuticauda var. triangularis">
+        <DESCR>Described by Schmidt, 1906, tabl. 6, figs. 4, 4a</DESCR>
+      </ITEM>
+      - <ITEM name="Basilicus lawrowi">
+        <DESCR>Described by Schmidt, 1904, p.3, tab. 4, fig. 1-7</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus heckeri">
+        <DESCR>Described by Ivantsov, 2000, p. 50, pl.9, fig.1</DESCR>
+      </ITEM>
+      - <ITEM name="Undescribed ITEM of genus of Asaphus">
+        <DESCR>Not described at last time</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus laticaudatus">
+        <DESCR>Described by: Schmidt, 1901, p.61, pl. 5 , fig.10a and 10b.</DESCR>
+      </ITEM>
+      - <ITEM name="Illaenus tauricornis">
+        <DESCR>Described by Mikhail Kutorga, 1848</DESCR>
+      </ITEM>
+      - <ITEM name="Paraceraurus (Cheirurus) exsul">
+        <DESCR>Described by: Beyrich, 1846, p.3, T.4, F.6. Revision by: Schmidt, 1881, p.137</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus minutus">
+        <DESCR>Described by Ivantsov, 2003, p. S285, plate 6, fig. 1</DESCR>
+      </ITEM>
+      - <ITEM name="Panderia triquetra">
+        <DESCR>Described by Volborth, 1863. Revision by Jaanusson, 1952, p.565, abb. 11.</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus uralicus sp.nov.">
+        <DESCR>Not described at last time. Undescribed ITEM of genus Subasaphus (?). For the first time was identified at 2006 year. Earlier this ITEM was indentified as variation of Asaphus cornutus. It's occurence together with Asaphus intermedius and Asaphus kowalewskii</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus pachyophthalmus">
+        <DESCR>Described by: Schmidt, 1898, p.20; 1901, p.37, pl. 2 , figs.8-10. Also described by Lamanskii, Lesnikova and Weber, Balashova. Newest described by Ivantsov, 2003, p. S284, pl.5, figs. 4-6</DESCR>
+      </ITEM>
+      - <ITEM name="Pliomera fischeri">
+        <DESCR>Described by Eichwald, 1840, p.70 as Amphion fisheri; Revision by F.Schmidt, 1881, p.191, pl.XII, figs.1-8</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus plautini polyxenus">
+        <DESCR>Described by: Ivantsov, 2003, p.S313, pl. 14 , figs.1-4.</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus uralicus (? Subasaphus) sp. nov.">
+        <DESCR>Undescribed ITEM of genus Subasaphus (?). For the first time was identified at 2006 year. Earlier this ITEM was indentified as variation of Asaphus cornutus. It's occurence together with Asaphus intermedius and Asaphus kowalewskii</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus broeggeri">
+        <DESCR>Described by Schmidt, 1898, p.20; also 1901, p.21, plate 2, figs. 4-7; next described Balashova, 1953, p. 388, pl.1, fig. 1, pl. 2, figs. 1 and 2; next described Jaanusson, 1953a; last-described Ivantsov, 2003, p. S318, pl. 16, figs. 1-3.</DESCR>
+      </ITEM>
+      - <ITEM name="Xenasaphus devexus">
+        <DESCR>Described by: Eichwald, 1840, p.79. Latest revision by Ivantsov, 2003, p.329, pl. 20, figs. 5-7.</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus uralicus">
+        <DESCR>Undescribed ITEM of genus Subasaphus (?). For the first time was identified at 2006 year. Earlier this ITEM was indentified as variation of Asaphus cornutus. It's occurence together with Asaphus intermedius and Asaphus kowalewskii</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus uralicus nov.">
+        <DESCR>Undescribed ITEM of genus Subasaphus (?). For the first time was identified at 2006 year. Earlier this ITEM was indentified as variation of Asaphus cornutus. It's occurence together with Asaphus intermedius and Asaphus kowalewskii</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus knyrkoi">
+        <DESCR>Described by Schmidt and Jaanusson as Asaphus eichwaldi var.knyrkoi, described by Balashova and Ivantsov (latest revision) as Asaphus knyrkoi</DESCR>
+      </ITEM>
+      - <ITEM name="Asaphus lepidurus">
+        <DESCR>First described by Niezkowskii, 1859 as Asaphus lepidurus, latest described by Ivantsov, 2003.</DESCR>
+      </ITEM>
+      - <ITEM name="Pseudoasaphus janischewskyi">
+        <DESCR>Described by Balashova 1976.</DESCR>
+      </ITEM>
+      - <ITEM name="Metaptyhopyge praecurrens">
+        <DESCR>Described by Balashova, 1974. Coming from BIIb level. Occurrence together with Asaphus broeggeri.</DESCR>
+      </ITEM>
+   
+  </SPECIES>
+</DESCR> 

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<!--this is marker file of drive contains photo. Do not delete this file-->
+<PHOTODRIVEMARKER version="1.0">
+  <ACCESS access="public" publickey="3FE45"></ACCESS>
+  
+  <FOLDER name="photo" access="public" publickey="3FE45">
+    <STRUCTURED flag="0"/>
+    <CONTENTS type="EAN-13">
+      <FILE type="jpg"></FILE>
+    </CONTENTS>
+  </FOLDER>
+  
+  <FOLDER name="arhive_photo" access="public" publickey="3FE45">
+    <!--описание структуры-->
+    <STRUCTURED flag="1">
+      <LEVEL order="0" template="000" type="virtual" value="владелец"/>
+      <LEVEL order="1" template="000" type="virtual" value="разбиение по сотням"/>
+      <LEVEL order="2" template="0000000000000" type="contents" value="код образца"/>
+    </STRUCTURED>
+    <!--описание содержания-->
+    <CONTENTS type="EAN-13">
+      <FILE type="jpg"></FILE>
+    </CONTENTS>
+  </FOLDER>
+</PHOTODRIVEMARKER>

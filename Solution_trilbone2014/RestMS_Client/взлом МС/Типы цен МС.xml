@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection total="8" start="0" count="1000">
+<priceType index="4" name="Почтовая(PayPal)" updated="2015-10-15T21:04:18.335+03:00" updatedBy="admin@trilbone"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>2d6c826c-7367-11e5-7a40-e8970074da9a</uuid></priceType>
+
+  <priceType index="5" name="Буржуи на выставке" updated="2015-10-15T21:04:18.335+03:00" updatedBy="admin@trilbone"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>2d6c838b-7367-11e5-7a40-e8970074da9b</uuid></priceType>
+
+  <priceType index="6" name="EBAY" updated="2015-10-15T21:04:18.335+03:00" updatedBy="admin@trilbone"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>2d6c8412-7367-11e5-7a40-e8970074da9c</uuid></priceType>
+
+  <priceType index="7" name="Инвойс" updated="2015-10-15T21:04:18.335+03:00" updatedBy="admin@trilbone"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>372ae149-6d67-11e3-bbb4-7054d21a8d1e</uuid></priceType>
+
+  <priceType index="3" name="Почтовая(банк)" updated="2015-10-15T21:04:18.335+03:00" updatedBy="admin@trilbone"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5059049d-7f30-11e4-90a2-8ecb00196e51</uuid></priceType>
+
+  <priceType index="2" name="Буржуи в офисе" updated="2015-10-15T21:04:18.335+03:00" updatedBy="admin@trilbone"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>99d007d3-7bdc-11e4-90a2-8ecb00172326</uuid></priceType>
+
+  <priceType index="1" name="Розничная в офисе" updated="2015-10-15T21:15:11.915+03:00" updatedBy="admin@trilbone"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>a56b78f5-4af6-11e3-12e9-7054d21a8d1e</uuid></priceType>
+
+<priceType index="0" name="Розничная цена в магазине" updated="2015-10-15T21:15:11.914+03:00" updatedBy="admin@trilbone"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>b14b6444-489b-11e3-36cc-7054d21a8d1e</uuid></priceType>
+</collection>

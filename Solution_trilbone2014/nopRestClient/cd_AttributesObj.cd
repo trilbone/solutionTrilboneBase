@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="nopRestClient.clsSAObjectValueCollection">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIABAAAAAAAAABAAAAABIAAAAAAABAQAAAAACAEAAA=</HashCode>
+      <FileName>clsSpecificAttributeName.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nopRestClient.clsSAObjectCollection">
+    <Position X="8" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAIABAAAAAAAAEAgAQAAAAAAAAAAABAAAAAAACAACAA=</HashCode>
+      <FileName>clsSpecificAttributeName.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nopRestClient.clsSAObject">
+    <Position X="5.5" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="nopRestClient.clsSAObject.emAttributeType">
+        <TypeIdentifier>
+          <NewMemberFileName>clsSpecificAttributeName.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABAIBQAAAAAQAAAAEQQAAAAABAAAAAAAABAgACAQWCA=</HashCode>
+      <FileName>clsSpecificAttributeName.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Value" />
+      <Property Name="ValuesCollection" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="nopRestClient.clsSAObjectValue">
+    <Position X="1.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAQAAAAAAAAAAQABAAACAAAAA=</HashCode>
+      <FileName>clsSpecificAttributeName.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

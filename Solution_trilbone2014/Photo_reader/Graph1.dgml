@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="ForceDirected" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @2 @3 Member=(Name=GetfmImage OverloadingParameters=[(@5 Namespace=System.Drawing Type=Image),(@6 Namespace=System Type=String)]))" Category="CodeSchema_Method" Bounds="-55.8466666666667,35,238.31,26" CodeSchemaProperty_IsPrivate="True" CodeSchemaProperty_IsStatic="True" Icon="Microsoft.VisualStudio.Method.Private" Label="GetfmImage‎(Image‎, String‎) As fmImage" />
+    <Node Id="(@1 @2 @3 Member=.ctor)" Category="CodeSchema_Method" Bounds="-263.846666666667,173,70.7166666666667,26" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Icon="Microsoft.VisualStudio.Method.Public" Label="New‎(‎)" UseManualLocation="True" />
+    <Node Id="(@1 @2 @3 Member=GetDigiKey)" Category="CodeSchema_Property" Bounds="-32.1916666666667,182.5,144.006666666667,26" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" Icon="Microsoft.VisualStudio.Property.Public" Label="GetDigiKey As Object" />
+    <Node Id="@4" Category="CodeSchema_Class" Bounds="-322.846666666667,-30,116.066666666667,26" Icon="Microsoft.VisualStudio.Class.Public" Label="clsPhotoService" />
+  </Nodes>
+  <Links>
+    <Link Source="@4" Target="(@1 @2 @3 Member=(Name=GetfmImage OverloadingParameters=[(@5 Namespace=System.Drawing Type=Image),(@6 Namespace=System Type=String)]))" Category="Contains" Bounds="-207.140003759821,-5.57507198362906,195.995562014975,38.826181947672" />
+    <Link Source="@4" Target="(@1 @2 @3 Member=.ctor)" Category="Contains" Bounds="-262.487102379509,-4,30.0872418881912,168.140718746559" />
+    <Link Source="@4" Target="(@1 @2 @3 Member=GetDigiKey)" Category="Contains" Bounds="-246.177450980392,-4,259.971762172998,181.350839431307" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Class" Label="Класс" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Классы" />
+    <Category Id="CodeSchema_Member" Label="Член" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Члены" />
+    <Category Id="CodeSchema_Method" Label="Метод" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" NavigationActionLabel="Методы" />
+    <Category Id="CodeSchema_Property" Label="Свойство" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Property" NavigationActionLabel="Свойства" />
+    <Category Id="CodeSchema_Type" Label="Тип" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Типы" />
+    <Category Id="Contains" Label="Содержит" Description="Указывает, содержит ли источник связи целевой объект" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Содержится в" IsContainment="True" OutgoingActionLabel="Содержит" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsConstructor" Label="Является конструктором" Description="Флаг, указывающий, что метод является конструктором" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="Является Private" Description="Флаг, указывающий на область видимости Private" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Является Public" Description="Флаг, указывающий на область видимости Public" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsSpecialName" Label="Является особым именем" Description="Флаг, указывающий, что некоторые компиляторы обрабатывают этот метод особым образом" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsStatic" Label="Является статическим" Description="Флаг, указывающий, что член является статическим" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Icon" Label="Значок" Description="Значок" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="Метка" Description="Отображаемая метка аннотируемого объекта" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Сборка" ValueType="Uri" />
+    <Name Id="Member" Label="Член" ValueType="System.Object" />
+    <Name Id="Name" Label="Имя" ValueType="System.String" />
+    <Name Id="Namespace" Label="Пространство имен" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="Параметр" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="Type" Label="Тип" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(81d7cea2-91e8-458f-a1bc-fc6069fcc0d2.OutputPathUri)" />
+    <Alias n="2" Id="Namespace=Photo_reader" />
+    <Alias n="3" Id="Type=clsPhotoService" />
+    <Alias n="4" Id="(@1 @2 @3)" />
+    <Alias n="5" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/System.Drawing.dll" />
+    <Alias n="6" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="81d7cea2-91e8-458f-a1bc-fc6069fcc0d2.OutputPathUri" Value="file:///D:/TEAMPROJECTS/SolutionTrilboneBase/Solution_trilbone2014/Photo_reader/bin/x86/Debug/Photo_reader.exe" />
+    <Path Id="FxReferenceAssembliesUri" Value="file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework" />
+  </Paths>
+</DirectedGraph>

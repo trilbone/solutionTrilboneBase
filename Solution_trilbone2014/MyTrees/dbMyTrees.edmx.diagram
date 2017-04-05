@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6f317237fabc4838ae6f4807ab491584" Name="Diagram1" ZoomLevel="86" >
+        <EntityTypeShape EntityType="dbMyTrees.edmNodeObject" Width="2" PointX="13.125" PointY="0.5" />
+        <EntityTypeShape EntityType="dbMyTrees.edmVirtualTree" Width="2" PointX="6" PointY="3.375" />
+        <EntityTypeShape EntityType="dbMyTrees.edmFile" Width="1.75" PointX="3.25" PointY="7.125" />
+        <EntityTypeShape EntityType="dbMyTrees.edmNodeImage" Width="1.875" PointX="9.75" PointY="0.5" />
+        <EntityTypeShape EntityType="dbMyTrees.edmPrivateTree" Width="2.5" PointX="5.875" PointY="7.25" />
+        <AssociationConnector Association="dbMyTrees.edmBlockTreeedmVolume" />
+        <EntityTypeShape EntityType="dbMyTrees.edmUser" Width="2.625" PointX="0.5" PointY="0.5" />
+        <AssociationConnector Association="dbMyTrees.edmUseredmBlockTree" />
+        <EntityTypeShape EntityType="dbMyTrees.edmTag" Width="2" PointX="16.375" PointY="0.625" />
+        <AssociationConnector Association="dbMyTrees.edmNodeObjectedmTag" />
+        <AssociationConnector Association="dbMyTrees.edmVirtualTreeedmPrivateTree" />
+        <AssociationConnector Association="dbMyTrees.edmOwnerNode" />
+        <EntityTypeShape EntityType="dbMyTrees.edmAttachedNode" Width="2.75" PointX="4.75" PointY="10.5" />
+        <EntityTypeShape EntityType="dbMyTrees.edmNodePosition" Width="2.25" PointX="9.5" PointY="6.375" />
+        <AssociationConnector Association="dbMyTrees.edmPrivateTreeedmNodePosition" />
+        <AssociationConnector Association="dbMyTrees.edmVirtualTreeedmNodePosition" />
+        <AssociationConnector Association="dbMyTrees.edmNodeObjectedmNodePosition" />
+        <AssociationConnector Association="dbMyTrees.edmNodePositionedmNodePosition" />
+        <AssociationConnector Association="dbMyTrees.edmLinkedNodeedmNodePosition" />
+        <AssociationConnector Association="dbMyTrees.edmUseredmNodePosition" ManuallyRouted="true" >
+          <ConnectorPoint PointX="1.4511841355897996" PointY="3.441793619791667" />
+          <ConnectorPoint PointX="1.4511841355897996" PointY="6.5156224999999921" />
+          <ConnectorPoint PointX="1.8746953700513662" PointY="6.5156224999999912" />
+          <ConnectorPoint PointX="2.041362036718033" PointY="6.5156224999999921" />
+          <ConnectorPoint PointX="2.3815399378462656" PointY="6.5156224999999912" />
+          <ConnectorPoint PointX="2.5482066045129326" PointY="6.5156224999999921" />
+          <ConnectorPoint PointX="2.7428558022564657" PointY="6.5156224999999912" />
+          <ConnectorPoint PointX="2.9095224689231327" PointY="6.5156224999999921" />
+          <ConnectorPoint PointX="4.041666666666667" PointY="6.5156224999999912" />
+          <ConnectorPoint PointX="4.208333333333333" PointY="6.5156224999999921" />
+          <ConnectorPoint PointX="5.5260441666666669" PointY="6.5156224999999912" />
+          <ConnectorPoint PointX="5.6927108333333329" PointY="6.5156224999999921" />
+          <ConnectorPoint PointX="6.916666666666667" PointY="6.5156224999999912" />
+          <ConnectorPoint PointX="7.083333333333333" PointY="6.5156224999999921" />
+          <ConnectorPoint PointX="8.1354166666666661" PointY="6.5156224999999912" />
+          <ConnectorPoint PointX="8.3020833333333339" PointY="6.5156224999999921" />
+          <ConnectorPoint PointX="9.5" PointY="6.5156224999999921" />
+        </AssociationConnector>
+        <AssociationConnector Association="dbMyTrees.edmUseredmLinkedNode" />
+        <AssociationConnector Association="dbMyTrees.edmUseredmNodeImage" />
+        <EntityTypeShape EntityType="dbMyTrees.edmImagePosition" Width="1.875" PointX="9.5" PointY="3.625" />
+        <AssociationConnector Association="dbMyTrees.edmUseredmImagePosition" />
+        <AssociationConnector Association="dbMyTrees.edmNodeImageedmImagePosition" />
+        <AssociationConnector Association="dbMyTrees.edmNodeObjectedmImagePosition" />
+        <AssociationConnector Association="dbMyTrees.edmUseredmAttachedNode" />
+        <AssociationConnector Association="dbMyTrees.edmUseredmFile" />
+        <EntityTypeShape EntityType="dbMyTrees.edmResource" Width="1.75" PointX="12.75" PointY="4.625" />
+        <AssociationConnector Association="dbMyTrees.edmNodeImageedmResource" />
+        <AssociationConnector Association="dbMyTrees.edmNodeObjectedmResource" />
+        <AssociationConnector Association="dbMyTrees.edmVirtualTreeedmResource" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="dbMyTrees.edmPrivateTreeedmResource" />
+        <AssociationConnector Association="dbMyTrees.edmAttachedNodeedmResource" />
+        <AssociationConnector Association="dbMyTrees.edmFileedmResource" ManuallyRouted="true" >
+          <ConnectorPoint PointX="4.125" PointY="7.125" />
+          <ConnectorPoint PointX="4.125" PointY="5.5573167049153529" />
+          <ConnectorPoint PointX="6.916666666666667" PointY="5.557316704915352" />
+          <ConnectorPoint PointX="7.083333333333333" PointY="5.5573167049153529" />
+          <ConnectorPoint PointX="11.447916666666666" PointY="5.557316704915352" />
+          <ConnectorPoint PointX="11.723958333333334" PointY="5.5573167049153529" />
+          <ConnectorPoint PointX="12.75" PointY="5.5573167049153529" />
+        </AssociationConnector>
+        <AssociationConnector Association="dbMyTrees.edmUseredmResource" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

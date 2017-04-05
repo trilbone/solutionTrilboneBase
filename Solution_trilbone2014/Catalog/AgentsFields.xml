@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<AUCTIONAGENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1">
+  <!--==========================================================================================
+  ==============================================================================================
+ ===============================================================================================-->
+  <AGENT name="ebay" account="trilbone" date="20.12.2014" requestURI="https://api.ebay.com/wsapi" AgentImageUploadURI="https://api.sandbox.ebay.com/ws/api.dll" token="AgAAAA**AQAAAA**aAAAAA**2TueVA**nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wGkoOkCZKHpwidj6x9nY+seQ**cKICAA**AAMAAA**DBvMD/xKiCslzJmR2kqzhVn2zaUPbmNonS9iESJc6gTd2eaApknxsNOU9Rqm/CeX892lljyEITzEd6NC+qLwmyFgzBKxmOboNlxQRElja2/G+3L83dTQS5/zaULCJi7Pi+uWN7Fr3j1NzF5QtEZ0zQAHuOVU9tBY+Eyitg8yDaJ47Gblj7uJuao3oVRhxaSfZciIg8qKxV3XVoPExY2NTE7Zc/RypiElQqhO54sEULcRznm49/NL7PzoxrQaZDPrPQaTuPbAK4FUoSaPDwVnuoprWP8rz9QdBXoQY8f9Psp0p9eOc7cZPJCQzxaP0XmsrRW4w+NUceBtdpxdUYLwX9b3TKSr/qhzDUUCTtz5qbhtXjoEIPnAJaLep7ZvHipf9qouVGdBTztScmx+WAhcRAtNvMSpxL2Q/zCLXIlAq0rVYbs9HmuOhPLYX2jyA4X2vXCvESTe0jgzqeO1Jrb1QS/c8CTsGs+qii5oFMfQzsgidaMY4TDAvHHXGFUmFYZJbOIFqc5Fx8QSnOBURpB5995LlZOKw5oF24bMB29jc/oD/TbIweYGWeKEe/r1EtaWq8Ec23A36ELlcKqXSDgRnadYXiKPQvls7RTQyYKrMlTmrMJIbvaipY/xg9GpUsK/dAN3HeDolM/rEdI7U/j6AoD1H9MYN7ymYTChcOhRrRbnbEcW6ywGYodz21zjNUrM3PoyQWU0aQVn9kiXbKq5pSx/6l3O7tjA0rt+N4B5YEyCvKtNtwm6PC3019FSrxhG">
+    <!--lbTitles fill-->
+     <FIELD name="title" datatype="string" requered="true">
+       <ITEM value="Not specifed" order="0" ></ITEM>
+       <ITEM value="Trilobite #n Russian ordovician fossil from Trilbone"  order="1"></ITEM>
+       <ITEM value="Trilobite #n Russian cambrian fossil from Trilbone" order="2"></ITEM>
+       <ITEM value="Crinoidea Ophiocistia Volchovia mobilis Russian ordovician fossil from Trilbone"  order="3"></ITEM>
+       <ITEM value="Crinoidea #n Russian ordovician fossil from Trilbone"  order="4"></ITEM>
+       <ITEM value="Cystoidea #n Russian ordovician fossil from Trilbone"  order="5"></ITEM>
+       <ITEM value="Eocrinoidea #n Russian ordovician fossil from Trilbone"  order="6"></ITEM>
+       <ITEM value="Crinoidea #n Russian carboniferous fossil from Trilbone"  order="7"></ITEM>
+       <ITEM value="Crinoidea #n Russian carboniferous fossil from Trilbone"  order="8"></ITEM>
+       <ITEM value="Ammonite #n Russian cretaceous Aptian fossil from Trilbone"  order="9"></ITEM>
+       <ITEM value="Pyrite Ammonite #n Russian jurassic fossil from Trilbone"  order="10"></ITEM>
+       <ITEM value="Petrified wood  Russian Devonian fossil from Trilbone"  order="11"></ITEM>
+       <ITEM value="Belemnite #n Russian jurassic Callovian fossil from Trilbone"  order="12"></ITEM>
+       <ITEM value="Bone Fish #n Russian Adygea Miocene fossil from Trilbone"  order="13"></ITEM>
+       <ITEM value="Artropode (aff trilobite) Phytophilaspis Russian cambrian fossil from Trilbone"  order="14"></ITEM>
+     </FIELD>
+    <!--cbCategory and cbCategory2 fill-->
+    <FIELD name="category" datatype="string" requered="true" agentIDDataType="integer">
+      <ITEM value="Not specifed" agentID="0" order="0" ></ITEM>
+      <ITEM value="Fossils > Arthropods > Trilobites" agentID="165707" order="0" ></ITEM>
+      <ITEM value="Fossils > Arthropods > Crustaceans" agentID="165706" order="1" ></ITEM>
+      <ITEM value="Fossils > Arthropods > Insects,Hexapods" agentID="3218" order="2" ></ITEM>
+      <ITEM value="Fossils > Arthropods > Other" agentID="165708" order="3" ></ITEM>
+      <ITEM value="Fossils > Echinoderms > Echinoids" agentID="122561" order="4" ></ITEM>
+      <ITEM value="Fossils > Echinoderms > Crinoids" agentID="165717" order="5" ></ITEM>
+      <ITEM value="Fossils > Echinoderms > Other" agentID="165718" order="6" ></ITEM>
+      <ITEM value="Fossils > Molluscs > Ammonites" agentID="3217" order="7" ></ITEM>
+      <ITEM value="Fossils > Molluscs > Bivalves" agentID="165711" order="8" ></ITEM>
+      <ITEM value="Fossils > Molluscs > Gastropods" agentID="165712" order="9" ></ITEM>
+      <ITEM value="Fossils > Molluscs > Nautiloids" agentID="165713" order="10" ></ITEM>
+      <ITEM value="Fossils > Molluscs > Other" agentID="165714" order="11" ></ITEM>
+      <ITEM value="Fossils > Vegetation > Other" agentID="165721" order="12" ></ITEM>
+      <ITEM value="Fossils > Vegetation > Petrified Wood" agentID="165721" order="13" ></ITEM>
+      <ITEM value="Fossils > Vegetation > Plants" agentID="165721" order="14" ></ITEM>
+      <ITEM value="Fossils > Verberates > Other" agentID="165724" order="15" ></ITEM>
+      <ITEM value="Fossils > Verberates > Amphibian_reptile_Dinosaur" agentID="15915" order="16" ></ITEM>
+      <ITEM value="Fossils > Verberates > Birds" agentID="165723" order="17" ></ITEM>
+      <ITEM value="Fossils > Verberates > Bony Fish" agentID="15916" order="18" ></ITEM>
+      <ITEM value="Fossils > Verberates > Mammals" agentID="3216" order="19" ></ITEM>
+      <ITEM value="Fossils > Verberates > Shark Teeth" agentID="15917" order="20" ></ITEM>
+      <ITEM value="Fossils > Brachiopods" agentID="165709" order="21" ></ITEM>
+      <ITEM value="Fossils > Coral" agentID="165715" order="22" ></ITEM>
+      <ITEM value="Fossils > Other" agentID="3214" order="23" ></ITEM>
+      <ITEM value="Fossils > Unknown" agentID="165725" order="24" ></ITEM>
+      <ITEM value="Fossils > Tools_Supplies" agentID="165726" order="25" ></ITEM>
+      <ITEM value="Fossils > Reproduction" agentID="155295" order="26" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Other" agentID="3220" order="27" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Crystals" agentID="3226" order="28" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Decorator Pieces" agentID="3227" order="29" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Dysplay Specimens" agentID="3225" order="30" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Fluorescent Minerals" agentID="3223" order="31" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Precious Metals" agentID="3229" order="32" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Rare Specimens" agentID="3224" order="33" ></ITEM>
+      <ITEM value="Rock_fossil_mineral > Other" agentID="415" order="34" ></ITEM>
+      <ITEM value="Rock_fossil_mineral > Stone Carvings(резьба по камню)" agentID="12525" order="35" ></ITEM>
+      <ITEM value="Rock_fossil_mineral > Publications" agentID="4259" order="36" ></ITEM>
+      <ITEM value="Rock_fossil_mineral > Meteorites_tektites" agentID="3239" order="37" ></ITEM>
+      
+    </FIELD>
+    <!--cbCountry fill and generate as values to first item specifics (Origin country: agentID)-->
+    <FIELD name="Origin country" datatype="string" requered="true" agentIDDataType="string">
+      <ITEM value="Not specifed" agentID="0" order="0" ></ITEM>
+      <ITEM value="Russian" agentID="Russian Federation"  order="0"></ITEM>
+      <ITEM value="Russian Adygea" agentID="Russian Federation"  order="1"></ITEM>
+      <ITEM value="Russian Siberian" agentID="Russian Federation"  order="2"></ITEM>
+      <ITEM value="Estonian" agentID="Estonia" order="3"></ITEM>
+      <ITEM value="Kazakhstan" agentID="Kazakhstan" order="4"></ITEM>
+      <ITEM value="Uzbekistan" agentID="Uzbekistan" order="5"></ITEM>
+    </FIELD>
+    
+    <!--cbGeologyAge fill and generate as values to second item specifics (Geological age: agentID)-->
+    <FIELD name="Geological age" datatype="string" requered="true" agentIDDataType="string">
+      <ITEM value="not specifed" agentID="0"  order="0"></ITEM>
+      <ITEM value="Vendian" agentID="Ediacaran (635-541 Ma)"  order="0"></ITEM>
+      <ITEM value="Cambrian" agentID="Cambrian (541-486 Ma)"  order="0"></ITEM>
+      <ITEM value="Ordovician" agentID="Ordovician (486-443 Ma)"  order="0"></ITEM>
+      <ITEM value="Silurian" agentID="Silurian (443-419 Ma)"  order="0"></ITEM>
+      <ITEM value="Devonian" agentID="Devonian (419-359 Ma)"  order="0"></ITEM>
+      <ITEM value="Carboniferous" agentID="Carboniferous (359-299 Ma)"  order="0"></ITEM>
+      <ITEM value="Permian" agentID="Permian (299-252 Ma)"  order="0"></ITEM>
+      <ITEM value="Triassic" agentID="Triassic (252-201 Ma)"  order="0"></ITEM>
+      <ITEM value="Jurassic" agentID="Jurassic (201-145 Ma)"  order="0"></ITEM>
+      <ITEM value="Cretaceous" agentID="Cretaceous (145-66 Ma)"  order="0"></ITEM>
+      <ITEM value="Paleogene" agentID="Paleogene (66-23 Ma)"  order="0"></ITEM>
+      <ITEM value="Neogene" agentID="Neogene (23.03-2.58 Ma)"  order="0"></ITEM>
+      <ITEM value="Pleistocene" agentID="Pleistocene (2.58-0.0117 Ma)"  order="0"></ITEM>
+      <ITEM value="Holocene" agentID="Holocene (117 000 year)"  order="0"></ITEM>
+    </FIELD>
+    
+    
+   <!-- <FIELD name="itemspecifics" datatype="string" requered="false">
+      <ITEM value="Country/Region of Manufacture" order="0"></ITEM>
+    </FIELD>--> 
+    
+    
+    <!--cbStoreCategory and cbStoreCategory2 fill-->
+    <FIELD name="storecategory" datatype="string"  agentIDDataType="integer" requered="true">
+      <ITEM value="not specifed" agentID="0"  order="0"></ITEM>
+      <ITEM value="Russian ordovician fossils" agentID="6123499014" order="0"></ITEM>
+      <ITEM value="Russian ordovician fossils -> from Kukruse horizon (CII)" agentID="6245402014" order="0"></ITEM>
+      <ITEM value="Russian ordovician fossils -> from Uhaku horizon (CIy)" agentID="6245403014" order="0"></ITEM>
+      <ITEM value="Russian ordovician fossils -> from Lasnamae horizon (CIb)" agentID="6245404014" order="0"></ITEM>
+      <ITEM value="Russian ordovician fossils -> from Aseri horizon (CIa)" agentID="6245405014" order="0"></ITEM>
+      <ITEM value="from Aseri horizon (CIa) -> CIa (lower Duboviki formation)" agentID="6245447014" order="0"></ITEM>
+      <ITEM value="from Aseri horizon (CIa) -> CIa (Simankovo formation)" agentID="6245448014" order="0"></ITEM>
+      <ITEM value="from Aseri horizon (CIa) -> CIa (upper Duboviki formation)" agentID="6245446014" order="0"></ITEM>
+      <ITEM value="Russian ordovician fossils -> from Kunda horizon (BIII)" agentID="6245406014" order="0"></ITEM>
+      <ITEM value="from Kunda horizon (BIII) -> BIIIa (Lynna formation)" agentID="6245426014" order="0"></ITEM>
+      <ITEM value="from Kunda horizon (BIII) -> BIIIa (Sillaoru formation)" agentID="6245425014" order="0"></ITEM>
+      <ITEM value="from Kunda horizon (BIII) -> BIIIb (Obukhovo formation)" agentID="6245424014" order="0"></ITEM>
+      <ITEM value="from Kunda horizon (BIII) -> BIIIy (Simankovo formation)" agentID="6245422014" order="0"></ITEM>
+      <ITEM value="from Kunda horizon (BIII) -> BIIIy (Siniavino formation)" agentID="6245423014" order="0"></ITEM>
+      <ITEM value="Russian ordovician fossils -> from Volkhov horizon (BII)" agentID="6245407014" order="0"></ITEM>
+      <ITEM value="from Volkhov horizon (BII) -> BIIa (upper Dikari unit)" agentID="6245413014" order="0"></ITEM>
+      <ITEM value="from Volkhov horizon (BII) -> BIIb (Zheltiaky unit)" agentID="6245412014" order="0"></ITEM>
+      <ITEM value="from Volkhov horizon (BII) -> BIIy (Frizy unit)" agentID="6245411014" order="0"></ITEM>
+      <ITEM value="Russian ordovician fossils -> from Billingen horizon (BI)" agentID="6245408014" order="0"></ITEM>
+      <ITEM value="from Billingen horizon (BI) -> BIa (Maekula unit)" agentID="6245445014" order="0"></ITEM>
+      <ITEM value="from Billingen horizon (BI) -> BIb (Dikari unit)" agentID="6245443014" order="0"></ITEM>
+      <ITEM value="from Billingen horizon (BI) -> BIb (Vassilkovo unit)" agentID="6245444014" order="0"></ITEM>
+      <ITEM value="Russian cambrian fossils" agentID="6245410014" order="0"></ITEM>
+      <ITEM value="Russian devonian fossils" agentID="6245452014" order="0"></ITEM>
+      <ITEM value="Russian jurassic ammonites" agentID="6123501014" order="0"></ITEM>
+      <ITEM value="Russian carboniferous fossils" agentID="6245451014" order="0"></ITEM>
+      <ITEM value="Russian aptian ammonites" agentID="6123500014" order="0"></ITEM>
+      <ITEM value="Russian miocene fishes" agentID="6148320014" order="0"></ITEM>
+      <ITEM value="Crystal Ball Sphere" agentID="6463056014" order="0"></ITEM>
+    </FIELD>
+    
+   <!--cbsubTitles fill-->
+    <FIELD name="subtitle" datatype="string" requered="false">
+      <ITEM value="not specifed" agentID="0"  order="0"></ITEM>
+      <ITEM value="RAREST FOSSIL" order="0"></ITEM>
+    </FIELD>
+    
+    <!--cbListingTYPE fill-->
+     <FIELD name="ListigType" datatype="string" requered="true">
+      <ITEM value="GTS" order="0"></ITEM>
+      <ITEM value="Auction" order="1"></ITEM>
+      <ITEM value="30 day" order="2"></ITEM>
+      <ITEM value="10 day" order="3"></ITEM>
+      <ITEM value="7 day" order="4"></ITEM>
+      <ITEM value="5 day" order="5"></ITEM>
+      <ITEM value="3 day" order="6"></ITEM>
+    </FIELD>
+    
+    <!--for generate radiobutton on panel pnAuctionType . Должно называться AuctionType!!!-->
+    <FIELD name="AuctionType" datatype="string" requered="true">
+      <ITEM value="No Auction" order="0"></ITEM>
+      <ITEM value="Auction 10 day" order="0"></ITEM>
+      <ITEM value="Auction 7 day" order="1"></ITEM>
+      <ITEM value="Auction 5 day" order="2"></ITEM>
+      <ITEM value="Auction 3 day" order="3"></ITEM>
+      <ITEM value="Auction 1 day" order="4"></ITEM>
+    </FIELD>
+    
+    
+    <!--cbPayPal fill-->
+    <FIELD name="paypal" datatype="string" requered="true">
+      <ITEM value="eugeny.litvinov@mail.ru" order="0"></ITEM>
+      <ITEM value="fossilcollecting@gmail.com" order="1"></ITEM>
+    </FIELD>
+  
+     
+    <!--lblPhotoSources fill with checking of photos-->
+    <FIELD name="ImageSource" datatype="string" requered="true">
+      <ITEM value="Ebay Storage" order="0" agentID="10"></ITEM>
+      <ITEM value="TrilboneFTP" order="1" agentID="7"></ITEM>
+      <ITEM value="TrilboneAzure" order="2" agentID="5"></ITEM>
+    </FIELD>
+  </AGENT>
+
+
+  <!--==========================================================================================
+  ==============================================================================================
+ ===============================================================================================-->
+  <AGENT name="ebay" account="nordstarfossils" date="26.12.2014">
+   
+      <!--lbTitles fill-->
+      <FIELD name="title" datatype="string" requered="true">
+        <ITEM value="Not specifed" order="0" ></ITEM>
+        <ITEM value="Trilobite #n Russian ordovician fossil from Trilbone"  order="1"></ITEM>
+        <ITEM value="Trilobite #n Russian cambrian fossil from Trilbone" order="2"></ITEM>
+        <ITEM value="Crinoidea Ophiocistia Volchovia mobilis Russian ordovician fossil from Trilbone"  order="3"></ITEM>
+        <ITEM value="Crinoidea #n Russian ordovician fossil from Trilbone"  order="4"></ITEM>
+        <ITEM value="Cystoidea #n Russian ordovician fossil from Trilbone"  order="5"></ITEM>
+        <ITEM value="Eocrinoidea #n Russian ordovician fossil from Trilbone"  order="6"></ITEM>
+        <ITEM value="Crinoidea #n Russian carboniferous fossil from Trilbone"  order="7"></ITEM>
+        <ITEM value="Crinoidea #n Russian carboniferous fossil from Trilbone"  order="8"></ITEM>
+        <ITEM value="Ammonite #n Russian cretaceous Aptian fossil from Trilbone"  order="9"></ITEM>
+        <ITEM value="Pyrite Ammonite #n Russian jurassic fossil from Trilbone"  order="10"></ITEM>
+        <ITEM value="Petrified wood  Russian Devonian fossil from Trilbone"  order="11"></ITEM>
+        <ITEM value="Belemnite #n Russian jurassic Callovian fossil from Trilbone"  order="12"></ITEM>
+        <ITEM value="Bone Fish #n Russian Adygea Miocene fossil from Trilbone"  order="13"></ITEM>
+        <ITEM value="Artropode (aff trilobite) Phytophilaspis Russian cambrian fossil from Trilbone"  order="14"></ITEM>
+      </FIELD>
+      <!--cbCategory and cbCategory2 fill-->
+      <FIELD name="category" datatype="string" requered="true" agentIDDataType="integer">
+        <ITEM value="Not specifed" agentID="0" order="0" ></ITEM>
+        <ITEM value="Fossils > Arthropods > Trilobites" agentID="165707" order="0" ></ITEM>
+        <ITEM value="Fossils > Arthropods > Crustaceans" agentID="165706" order="1" ></ITEM>
+        <ITEM value="Fossils > Arthropods > Insects,Hexapods" agentID="3218" order="2" ></ITEM>
+        <ITEM value="Fossils > Arthropods > Other" agentID="165708" order="3" ></ITEM>
+        <ITEM value="Fossils > Echinoderms > Echinoids" agentID="122561" order="4" ></ITEM>
+        <ITEM value="Fossils > Echinoderms > Crinoids" agentID="165717" order="5" ></ITEM>
+        <ITEM value="Fossils > Echinoderms > Other" agentID="165718" order="6" ></ITEM>
+        <ITEM value="Fossils > Molluscs > Ammonites" agentID="3217" order="7" ></ITEM>
+        <ITEM value="Fossils > Molluscs > Bivalves" agentID="165711" order="8" ></ITEM>
+        <ITEM value="Fossils > Molluscs > Gastropods" agentID="165712" order="9" ></ITEM>
+        <ITEM value="Fossils > Molluscs > Nautiloids" agentID="165713" order="10" ></ITEM>
+        <ITEM value="Fossils > Molluscs > Other" agentID="165714" order="11" ></ITEM>
+        <ITEM value="Fossils > Vegetation > Other" agentID="165721" order="12" ></ITEM>
+        <ITEM value="Fossils > Vegetation > Petrified Wood" agentID="165721" order="13" ></ITEM>
+        <ITEM value="Fossils > Vegetation > Plants" agentID="165721" order="14" ></ITEM>
+        <ITEM value="Fossils > Verberates > Other" agentID="165724" order="15" ></ITEM>
+        <ITEM value="Fossils > Verberates > Amphibian_reptile_Dinosaur" agentID="15915" order="16" ></ITEM>
+        <ITEM value="Fossils > Verberates > Birds" agentID="165723" order="17" ></ITEM>
+        <ITEM value="Fossils > Verberates > Bony Fish" agentID="15916" order="18" ></ITEM>
+        <ITEM value="Fossils > Verberates > Mammals" agentID="3216" order="19" ></ITEM>
+        <ITEM value="Fossils > Verberates > Shark Teeth" agentID="15917" order="20" ></ITEM>
+        <ITEM value="Fossils > Brachiopods" agentID="165709" order="21" ></ITEM>
+        <ITEM value="Fossils > Coral" agentID="165715" order="22" ></ITEM>
+        <ITEM value="Fossils > Other" agentID="3214" order="23" ></ITEM>
+        <ITEM value="Fossils > Unknown" agentID="165725" order="24" ></ITEM>
+        <ITEM value="Fossils > Tools_Supplies" agentID="165726" order="25" ></ITEM>
+        <ITEM value="Fossils > Reproduction" agentID="155295" order="26" ></ITEM>
+        <ITEM value="Crystals_mineral specimens > Other" agentID="3220" order="27" ></ITEM>
+        <ITEM value="Crystals_mineral specimens > Crystals" agentID="3226" order="28" ></ITEM>
+        <ITEM value="Crystals_mineral specimens > Decorator Pieces" agentID="3227" order="29" ></ITEM>
+        <ITEM value="Crystals_mineral specimens > Dysplay Specimens" agentID="3225" order="30" ></ITEM>
+        <ITEM value="Crystals_mineral specimens > Fluorescent Minerals" agentID="3223" order="31" ></ITEM>
+        <ITEM value="Crystals_mineral specimens > Precious Metals" agentID="3229" order="32" ></ITEM>
+        <ITEM value="Crystals_mineral specimens > Rare Specimens" agentID="3224" order="33" ></ITEM>
+        <ITEM value="Rock_fossil_mineral > Other" agentID="415" order="34" ></ITEM>
+        <ITEM value="Rock_fossil_mineral > Stone Carvings(резьба по камню)" agentID="12525" order="35" ></ITEM>
+        <ITEM value="Rock_fossil_mineral > Publications" agentID="4259" order="36" ></ITEM>
+        <ITEM value="Rock_fossil_mineral > Meteorites_tektites" agentID="3239" order="37" ></ITEM>
+
+      </FIELD>
+      <!--cbCountry fill and generate as values to first item specifics (Origin country: agentID)-->
+      <FIELD name="Origin country" datatype="string" requered="true" agentIDDataType="string">
+        <ITEM value="Not specifed" agentID="0" order="0" ></ITEM>
+        <ITEM value="Russian" agentID="Russian Federation"  order="0"></ITEM>
+        <ITEM value="Russian Adygea" agentID="Russian Federation"  order="1"></ITEM>
+        <ITEM value="Russian Siberian" agentID="Russian Federation"  order="2"></ITEM>
+        <ITEM value="Estonian" agentID="Estonia" order="3"></ITEM>
+        <ITEM value="Kazakhstan" agentID="Kazakhstan" order="4"></ITEM>
+        <ITEM value="Uzbekistan" agentID="Uzbekistan" order="5"></ITEM>
+      </FIELD>
+
+      <!--cbGeologyAge fill and generate as values to second item specifics (Geological age: agentID)-->
+      <FIELD name="Geological age" datatype="string" requered="true" agentIDDataType="string">
+        <ITEM value="not specifed" agentID="0"  order="0"></ITEM>
+        <ITEM value="Vendian" agentID="Ediacaran (635-541 Ma)"  order="0"></ITEM>
+        <ITEM value="Cambrian" agentID="Cambrian (541-486 Ma)"  order="0"></ITEM>
+        <ITEM value="Ordovician" agentID="Ordovician (486-443 Ma)"  order="0"></ITEM>
+        <ITEM value="Silurian" agentID="Silurian (443-419 Ma)"  order="0"></ITEM>
+        <ITEM value="Devonian" agentID="Devonian (419-359 Ma)"  order="0"></ITEM>
+        <ITEM value="Carboniferous" agentID="Carboniferous (359-299 Ma)"  order="0"></ITEM>
+        <ITEM value="Permian" agentID="Permian (299-252 Ma)"  order="0"></ITEM>
+        <ITEM value="Triassic" agentID="Triassic (252-201 Ma)"  order="0"></ITEM>
+        <ITEM value="Jurassic" agentID="Jurassic (201-145 Ma)"  order="0"></ITEM>
+        <ITEM value="Cretaceous" agentID="Cretaceous (145-66 Ma)"  order="0"></ITEM>
+        <ITEM value="Paleogene" agentID="Paleogene (66-23 Ma)"  order="0"></ITEM>
+        <ITEM value="Neogene" agentID="Neogene (23.03-2.58 Ma)"  order="0"></ITEM>
+        <ITEM value="Pleistocene" agentID="Pleistocene (2.58-0.0117 Ma)"  order="0"></ITEM>
+        <ITEM value="Holocene" agentID="Holocene (117 000 year)"  order="0"></ITEM>
+      </FIELD>
+
+
+      <!-- <FIELD name="itemspecifics" datatype="string" requered="false">
+      <ITEM value="Country/Region of Manufacture" order="0"></ITEM>
+    </FIELD>-->
+
+
+      <!--cbStoreCategory and cbStoreCategory2 fill-->
+      <FIELD name="storecategory" datatype="string"  agentIDDataType="integer" requered="true">
+        <ITEM value="not specifed" agentID="0"  order="0"></ITEM>
+      
+      </FIELD>
+
+      <!--cbsubTitles fill-->
+      <FIELD name="subtitle" datatype="string" requered="false">
+        <ITEM value="not specifed" agentID="0"  order="0"></ITEM>
+        <ITEM value="RAREST FOSSIL" order="0"></ITEM>
+      </FIELD>
+
+      <!--cbListingTYPE fill-->
+      <FIELD name="ListigType" datatype="string" requered="true">
+        <ITEM value="GTS" order="0"></ITEM>
+        <ITEM value="Auction" order="1"></ITEM>
+        <ITEM value="30 day" order="2"></ITEM>
+        <ITEM value="10 day" order="3"></ITEM>
+        <ITEM value="7 day" order="4"></ITEM>
+        <ITEM value="5 day" order="5"></ITEM>
+        <ITEM value="3 day" order="6"></ITEM>
+      </FIELD>
+
+    <!--for generate radiobutton on panel pnAuctionType-->
+    <FIELD name="AuctionType" datatype="string" requered="true">
+      <ITEM value="No Auction" order="0"></ITEM>
+      <ITEM value="Auction 10 day" order="0"></ITEM>
+      <ITEM value="Auction 7 day" order="1"></ITEM>
+      <ITEM value="Auction 5 day" order="2"></ITEM>
+      <ITEM value="Auction 3 day" order="3"></ITEM>
+      <ITEM value="Auction 1 day" order="4"></ITEM>
+    </FIELD>
+
+
+      <!--cbPayPal fill-->
+      <FIELD name="paypal" datatype="string" requered="true">
+        <ITEM value="eugeny.litvinov@mail.ru" order="0"></ITEM>
+        <ITEM value="fossilcollecting@gmail.com" order="1"></ITEM>
+      </FIELD>
+
+
+      <!--lblPhotoSources fill with checking of photos-->
+      <FIELD name="ImageSource" datatype="string" requered="true">
+        <ITEM value="Ebay Storage" order="0" agentID="10"></ITEM>
+        <ITEM value="TrilboneFTP" order="1" agentID="7"></ITEM>
+        <ITEM value="TrilboneAzure" order="2" agentID="5"></ITEM>
+      </FIELD>
+    </AGENT>
+  <!--==========================================================================================
+  ==============================================================================================
+ ===============================================================================================-->
+  <AGENT name="ebay" account="trilbone_test" date="26.12.2014" requestURI="https://api.sandbox.ebay.com/wsapi" AgentImageUploadURI="https://api.sandbox.ebay.com/ws/api.dll" token="AgAAAA**AQAAAA**aAAAAA**SWCPVA**nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wFk4GhDZCKpg+dj6x9nY+seQ**FSoDAA**AAMAAA**MjtzNjz4ukM/EQy/P3I5sND7/NGU+d6ec5C3HRs06YH92nu2q6veXj8yDMVQgLorj//XaKxJc9MdEvPTzBHKgm8wT1gykvDO25P9BMH1yJpchudnl7VKMYpVSOyOgRATZLkvrEw6I1Imnp/MA05Xt2yuRVu7ISBH6NDNsSZg2rvcFx7F3HZMdg2zOUKNP7OpSiB4yUh7b3tC9C/s1Tzo3Su4TN1qIeM8N7iFuL78fOQwb3FjNPgLxIZK1K2VLXzO/pnexKlCl1PZB1BnpP5iNkGFe21LMvWaay4BItw+MxY3eNiONVXTJSi4clwSIWB/iQllHWVnFcJB+OOoaROG8Mn4tJzjvFtHj9P6JiE/qFaueSsuj60Ur9pJwYjcXlfdrU/J3E2rPrnn9bcKTeBmjXt6tAASK1oaTo6K5ZCDlzHa9O6tUuPkxAJUAEygLYQJHKkCXrz0ohdiLZPiWJ7nyPuzuMfCB5MpNk8IlIOfrRtTOyOXEUfh116DYTdWjNZOh8UA9wO28eS6Z/d2OWkWyNN7xlKvnS6Po2NO+vIuyZMcBZ/tmehqsaawL7XzJQSGHkD+qbgfG8pLNl06cKH8gUK0pvzEOy15PbkqlA90pbANgro934zKLUG+zOQiEVV8XLXEOkbnUQKZatUHgfehXjA0ccLc8/eIPF+t03/Q5mvEPF4TBBrK3du2zlXffDudZDYgpdKKSDa/igIlsS9+CwQBWVU4uS/OU+obopKA/gyPM7zsQvkx6TD4plxl1dlu">
+    <!--lbTitles fill-->
+    <FIELD name="title" datatype="string" requered="true">
+      <ITEM value="Not specifed" order="0" ></ITEM>
+      <ITEM value="Trilobite #n Russian ordovician fossil from Trilbone"  order="1"></ITEM>
+      <ITEM value="Trilobite #n Russian cambrian fossil from Trilbone" order="2"></ITEM>
+      <ITEM value="Crinoidea Ophiocistia Volchovia mobilis Russian ordovician fossil from Trilbone"  order="3"></ITEM>
+      <ITEM value="Crinoidea #n Russian ordovician fossil from Trilbone"  order="4"></ITEM>
+      <ITEM value="Cystoidea #n Russian ordovician fossil from Trilbone"  order="5"></ITEM>
+      <ITEM value="Eocrinoidea #n Russian ordovician fossil from Trilbone"  order="6"></ITEM>
+      <ITEM value="Crinoidea #n Russian carboniferous fossil from Trilbone"  order="7"></ITEM>
+      <ITEM value="Crinoidea #n Russian carboniferous fossil from Trilbone"  order="8"></ITEM>
+      <ITEM value="Ammonite #n Russian cretaceous Aptian fossil from Trilbone"  order="9"></ITEM>
+      <ITEM value="Pyrite Ammonite #n Russian jurassic fossil from Trilbone"  order="10"></ITEM>
+      <ITEM value="Petrified wood  Russian Devonian fossil from Trilbone"  order="11"></ITEM>
+      <ITEM value="Belemnite #n Russian jurassic Callovian fossil from Trilbone"  order="12"></ITEM>
+      <ITEM value="Bone Fish #n Russian Adygea Miocene fossil from Trilbone"  order="13"></ITEM>
+      <ITEM value="Artropode (aff trilobite) Phytophilaspis Russian cambrian fossil from Trilbone"  order="14"></ITEM>
+    </FIELD>
+    <!--cbCategory and cbCategory2 fill-->
+    <FIELD name="category" datatype="string" requered="true" agentIDDataType="integer">
+      <ITEM value="Not specifed" agentID="0" order="0" ></ITEM>
+      <ITEM value="Fossils > Arthropods > Trilobites" agentID="165707" order="0" ></ITEM>
+      <ITEM value="Fossils > Arthropods > Crustaceans" agentID="165706" order="1" ></ITEM>
+      <ITEM value="Fossils > Arthropods > Insects,Hexapods" agentID="3218" order="2" ></ITEM>
+      <ITEM value="Fossils > Arthropods > Other" agentID="165708" order="3" ></ITEM>
+      <ITEM value="Fossils > Echinoderms > Echinoids" agentID="122561" order="4" ></ITEM>
+      <ITEM value="Fossils > Echinoderms > Crinoids" agentID="165717" order="5" ></ITEM>
+      <ITEM value="Fossils > Echinoderms > Other" agentID="165718" order="6" ></ITEM>
+      <ITEM value="Fossils > Molluscs > Ammonites" agentID="3217" order="7" ></ITEM>
+      <ITEM value="Fossils > Molluscs > Bivalves" agentID="165711" order="8" ></ITEM>
+      <ITEM value="Fossils > Molluscs > Gastropods" agentID="165712" order="9" ></ITEM>
+      <ITEM value="Fossils > Molluscs > Nautiloids" agentID="165713" order="10" ></ITEM>
+      <ITEM value="Fossils > Molluscs > Other" agentID="165714" order="11" ></ITEM>
+      <ITEM value="Fossils > Vegetation > Other" agentID="165721" order="12" ></ITEM>
+      <ITEM value="Fossils > Vegetation > Petrified Wood" agentID="165721" order="13" ></ITEM>
+      <ITEM value="Fossils > Vegetation > Plants" agentID="165721" order="14" ></ITEM>
+      <ITEM value="Fossils > Verberates > Other" agentID="165724" order="15" ></ITEM>
+      <ITEM value="Fossils > Verberates > Amphibian_reptile_Dinosaur" agentID="15915" order="16" ></ITEM>
+      <ITEM value="Fossils > Verberates > Birds" agentID="165723" order="17" ></ITEM>
+      <ITEM value="Fossils > Verberates > Bony Fish" agentID="15916" order="18" ></ITEM>
+      <ITEM value="Fossils > Verberates > Mammals" agentID="3216" order="19" ></ITEM>
+      <ITEM value="Fossils > Verberates > Shark Teeth" agentID="15917" order="20" ></ITEM>
+      <ITEM value="Fossils > Brachiopods" agentID="165709" order="21" ></ITEM>
+      <ITEM value="Fossils > Coral" agentID="165715" order="22" ></ITEM>
+      <ITEM value="Fossils > Other" agentID="3214" order="23" ></ITEM>
+      <ITEM value="Fossils > Unknown" agentID="165725" order="24" ></ITEM>
+      <ITEM value="Fossils > Tools_Supplies" agentID="165726" order="25" ></ITEM>
+      <ITEM value="Fossils > Reproduction" agentID="155295" order="26" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Other" agentID="3220" order="27" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Crystals" agentID="3226" order="28" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Decorator Pieces" agentID="3227" order="29" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Dysplay Specimens" agentID="3225" order="30" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Fluorescent Minerals" agentID="3223" order="31" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Precious Metals" agentID="3229" order="32" ></ITEM>
+      <ITEM value="Crystals_mineral specimens > Rare Specimens" agentID="3224" order="33" ></ITEM>
+      <ITEM value="Rock_fossil_mineral > Other" agentID="415" order="34" ></ITEM>
+      <ITEM value="Rock_fossil_mineral > Stone Carvings(резьба по камню)" agentID="12525" order="35" ></ITEM>
+      <ITEM value="Rock_fossil_mineral > Publications" agentID="4259" order="36" ></ITEM>
+      <ITEM value="Rock_fossil_mineral > Meteorites_tektites" agentID="3239" order="37" ></ITEM>
+
+    </FIELD>
+    <!--cbCountry fill and generate as values to first item specifics (Origin country: agentID)-->
+    <FIELD name="Origin country" datatype="string" requered="true" agentIDDataType="string">
+      <ITEM value="Not specifed" agentID="0" order="0" ></ITEM>
+      <ITEM value="Russian" agentID="Russian Federation"  order="0"></ITEM>
+      <ITEM value="Russian Adygea" agentID="Russian Federation"  order="1"></ITEM>
+      <ITEM value="Russian Siberian" agentID="Russian Federation"  order="2"></ITEM>
+      <ITEM value="Estonian" agentID="Estonia" order="3"></ITEM>
+      <ITEM value="Kazakhstan" agentID="Kazakhstan" order="4"></ITEM>
+      <ITEM value="Uzbekistan" agentID="Uzbekistan" order="5"></ITEM>
+    </FIELD>
+
+    <!--cbGeologyAge fill and generate as values to second item specifics (Geological age: agentID)-->
+    <FIELD name="Geological age" datatype="string" requered="true" agentIDDataType="string">
+      <ITEM value="not specifed" agentID="0"  order="0"></ITEM>
+      <ITEM value="Vendian" agentID="Ediacaran (635-541 Ma)"  order="0"></ITEM>
+      <ITEM value="Cambrian" agentID="Cambrian (541-486 Ma)"  order="0"></ITEM>
+      <ITEM value="Ordovician" agentID="Ordovician (486-443 Ma)"  order="0"></ITEM>
+      <ITEM value="Silurian" agentID="Silurian (443-419 Ma)"  order="0"></ITEM>
+      <ITEM value="Devonian" agentID="Devonian (419-359 Ma)"  order="0"></ITEM>
+      <ITEM value="Carboniferous" agentID="Carboniferous (359-299 Ma)"  order="0"></ITEM>
+      <ITEM value="Permian" agentID="Permian (299-252 Ma)"  order="0"></ITEM>
+      <ITEM value="Triassic" agentID="Triassic (252-201 Ma)"  order="0"></ITEM>
+      <ITEM value="Jurassic" agentID="Jurassic (201-145 Ma)"  order="0"></ITEM>
+      <ITEM value="Cretaceous" agentID="Cretaceous (145-66 Ma)"  order="0"></ITEM>
+      <ITEM value="Paleogene" agentID="Paleogene (66-23 Ma)"  order="0"></ITEM>
+      <ITEM value="Neogene" agentID="Neogene (23.03-2.58 Ma)"  order="0"></ITEM>
+      <ITEM value="Pleistocene" agentID="Pleistocene (2.58-0.0117 Ma)"  order="0"></ITEM>
+      <ITEM value="Holocene" agentID="Holocene (117 000 year)"  order="0"></ITEM>
+    </FIELD>
+
+
+    <!-- <FIELD name="itemspecifics" datatype="string" requered="false">
+      <ITEM value="Country/Region of Manufacture" order="0"></ITEM>
+    </FIELD>-->
+
+
+    <!--cbStoreCategory and cbStoreCategory2 fill-->
+    <FIELD name="storecategory" datatype="string"  agentIDDataType="integer" requered="true">
+      <ITEM value="not specifed" agentID="0"  order="0"></ITEM>
+    
+    </FIELD>
+
+    <!--cbsubTitles fill-->
+    <FIELD name="subtitle" datatype="string" requered="false">
+      <ITEM value="not specifed" agentID="0"  order="0"></ITEM>
+      <ITEM value="RAREST FOSSIL" order="0"></ITEM>
+    </FIELD>
+
+    <!--cbListingTYPE fill-->
+    <FIELD name="ListigType" datatype="string" requered="true">
+      <ITEM value="GTS" order="0"></ITEM>
+      <ITEM value="Auction" order="1"></ITEM>
+      <ITEM value="30 day" order="2"></ITEM>
+      <ITEM value="10 day" order="3"></ITEM>
+      <ITEM value="7 day" order="4"></ITEM>
+      <ITEM value="5 day" order="5"></ITEM>
+      <ITEM value="3 day" order="6"></ITEM>
+    </FIELD>
+
+    <!--for generate radiobutton on panel pnAuctionType-->
+    <FIELD name="AuctionType" datatype="string" requered="true">
+      <ITEM value="No Auction" order="0"></ITEM>
+      <ITEM value="Auction 10 day" order="0"></ITEM>
+      <ITEM value="Auction 7 day" order="1"></ITEM>
+      <ITEM value="Auction 5 day" order="2"></ITEM>
+      <ITEM value="Auction 3 day" order="3"></ITEM>
+      <ITEM value="Auction 1 day" order="4"></ITEM>
+    </FIELD>
+
+
+    <!--cbPayPal fill-->
+    <FIELD name="paypal" datatype="string" requered="true">
+      <ITEM value="eugeny.litvinov@mail.ru" order="0"></ITEM>
+      <ITEM value="fossilcollecting@gmail.com" order="1"></ITEM>
+    </FIELD>
+
+
+    <!--lblPhotoSources fill with checking of photos-->
+    <FIELD name="ImageSource" datatype="string" requered="true">
+      <ITEM value="Ebay Storage" order="0" agentID="10"></ITEM>
+      <ITEM value="TrilboneFTP" order="1" agentID="7"></ITEM>
+      <ITEM value="TrilboneAzure" order="2" agentID="5"></ITEM>
+    </FIELD>
+  </AGENT>
+
+
+</AUCTIONAGENT>

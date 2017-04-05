@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Service.clsNopDataBuilder">
+    <Position X="0.75" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAEABAAAEAAABAAAAgAAAAQAAAQAAAAAICABAAAA=</HashCode>
+      <FileName>clsNopDataBuilder.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Service.iNopDataProvider">
+    <Position X="3.25" Y="0.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Service.iNopDataProvider.clsNopRole" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>iNopDataProvider.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Service.iNopDataProvider.clsNopCategory" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>iNopDataProvider.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Service.iNopDataProvider.clsNopStore" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>iNopDataProvider.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Service.iNopDataProvider.clsNopACL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>iNopDataProvider.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Service.iNopDataProvider.clsNopProduct" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>iNopDataProvider.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAABAAAEAAABAAAAgAAAAQAAAQAAAAAICABAAAA=</HashCode>
+      <FileName>iNopDataProvider.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

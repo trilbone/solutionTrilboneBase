@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Service.PhotoDriveMarker.PHOTODRIVEMARKERFOLDER">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAQAAAAAQAAIMAAAQACAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PhotoDriveMarker.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="access" />
+      <Property Name="STRUCTURED" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Service.PhotoDriveMarker.PHOTODRIVEMARKERFOLDERSTRUCTURED">
+    <Position X="8" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAQAAAAAAAIAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>PhotoDriveMarker.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LEVEL" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Service.PhotoDriveMarker.PHOTODRIVEMARKERFOLDERSTRUCTUREDLEVEL">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAACAABAAAAAQAAAAAADADAAAAAAAAAAAAA=</HashCode>
+      <FileName>PhotoDriveMarker.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Service.PhotoDriveMarker.PHOTODRIVEMARKER">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACBAAABAAAAgAAAAAAAAgAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>PhotoDriveMarker.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ACCESS" />
+      <Property Name="FOLDER" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Service.PhotoDriveMarker.PHOTODRIVEMARKERFOLDERCONTENTS">
+    <Position X="0.5" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAACAAAAAAAAAAAABAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>PhotoDriveMarker.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="type" />
+      <Property Name="FILE" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Service.PhotoDriveMarker.PHOTODRIVEMARKERFOLDERCONTENTSFILE">
+    <Position X="4.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PhotoDriveMarker.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.PhotoDriveMarker.PHOTODRIVEMARKERACCESS">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAQAAAAAAAAAAAAAQACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PhotoDriveMarker.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="access" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Service.PhotoDriveMarker.access" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PhotoDriveMarker.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Service.PhotoDriveMarker.levelType" Collapsed="true">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PhotoDriveMarker.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Service.PhotoDriveMarker.contentsType" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAQAAAAAEAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>PhotoDriveMarker.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="9.75" />
+</ClassDiagram>

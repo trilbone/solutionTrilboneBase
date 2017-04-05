@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:fc="http://www.trilbone.com"
+           >
+  
+  <xs:simpleType name="levelType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="virtual"></xs:enumeration>
+      <xs:enumeration value="contents"></xs:enumeration>
+      <xs:enumeration value="owner"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="access">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="public"></xs:enumeration>
+      <xs:enumeration value="private"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="contentsType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EAN-13"></xs:enumeration>
+      <xs:enumeration value="String"></xs:enumeration>
+      <xs:enumeration value="Digit"></xs:enumeration>
+      <xs:enumeration value="String-digit"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:element name="PHOTODRIVEMARKER">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ACCESS" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:attribute name="access" type="access" use="required" />
+            <xs:attribute name="publickey" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="FOLDER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STRUCTURED" minOccurs="1" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0">
+                    <xs:element maxOccurs="10" name="LEVEL">
+                      <xs:complexType>
+                        <xs:attribute name="order" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="template" type="xs:string" use="required" />
+                        <xs:attribute name="type" type="levelType" use="required"/>
+                        <xs:attribute name="value" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="flag" type="xs:boolean" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="1" maxOccurs="1" name="CONTENTS">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="FILE">
+                      <xs:complexType>
+                        <xs:attribute name="type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="type" type="contentsType" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required" />
+            <xs:attribute name="access" type="access" use="required" />
+            <xs:attribute name="publickey" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

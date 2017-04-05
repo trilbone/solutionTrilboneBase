@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F930B68-B5D0-487D-AB04-CB0089A8CB88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RestMS_Client.My.MyApplication</StartupObject>
+    <RootNamespace>RestMS_Client</RootNamespace>
+    <AssemblyName>RestMS_Client</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>RestMS_Client.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RestMS_Client.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveSwitch.TextControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TextControl\bin\x86\Debug\LiveSwitch.TextControl.exe</HintPath>
+    </Reference>
+    <Reference Include="nopTypes, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\nopTypes\bin\x86\Debug\nopTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.0.1\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsBulkEnterObj.vb" />
+    <Compile Include="clsMoyScladAPI.vb" />
+    <Compile Include="clsMskladObj.vb" />
+    <Compile Include="clsPage.vb" />
+    <Compile Include="clsRestMS_service.vb" />
+    <Compile Include="fmCondition.Designer.vb">
+      <DependentUpon>fmCondition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fmCondition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmMoySklad.Designer.vb">
+      <DependentUpon>fmMoySklad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fmMoySklad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmOptions.Designer.vb">
+      <DependentUpon>fmOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fmOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmAdminTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmAdminTest.Designer.vb">
+      <DependentUpon>fmAdminTest.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MOYsklad.vb" />
+    <Compile Include="MOYsklad_extentions.vb" />
+    <Compile Include="MOYSklagExtentions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ver1.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fmCondition.resx">
+      <DependentUpon>fmCondition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmMoySklad.resx">
+      <DependentUpon>fmMoySklad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmOptions.resx">
+      <DependentUpon>fmOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmAdminTest.resx">
+      <DependentUpon>fmAdminTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="cdMoySkladAPI.cd" />
+    <None Include="cdUsingMoySkladAPI.cd" />
+    <None Include="cd_MoySkladForm.cd" />
+    <None Include="cd_moysklad_Order.cd" />
+    <None Include="cd_moysklad_SerialObj.cd" />
+    <None Include="cd_moySklad_Good.cd" />
+    <None Include="cd_MoySklad_stockIN.cd" />
+    <None Include="cd_moysklad_stockOut.cd" />
+    <None Include="cd_Page.cd" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\clsBulkEnterObj.datasource" />
+    <None Include="My Project\DataSources\clsGoodLocation.datasource" />
+    <None Include="My Project\DataSources\clsGoodLocation.strGoodQty.datasource" />
+    <None Include="My Project\DataSources\clsMSGood.datasource" />
+    <None Include="My Project\DataSources\RestMS_Client.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\RestMS_Client.SerialObj.refTO.datasource" />
+    <None Include="My Project\DataSources\Service.ucPriceCalc+clsPriceData.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\MOYsklad.xsd">
+    </None>
+    <None Include="Resources\ver1.xsd">
+    </None>
+    <None Include="Resources\ver2.xsd">
+    </None>
+    <Content Include="взлом МС\Метаданные пользов. справочников.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="взлом МС\пример заказа полного.xml" />
+    <Content Include="взлом МС\пример заказа.xml" />
+    <Content Include="взлом МС\пример клиента.xml" />
+    <Content Include="взлом МС\Пример пользов. справочника.xml" />
+    <Content Include="взлом МС\Типы цен МС.xml" />
+    <Content Include="Списки аукционов.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyTrees\MyTrees.vbproj">
+      <Project>{0cf43206-31d4-45ef-99cd-c7268fc9146c}</Project>
+      <Name>MyTrees</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nopRestClient\nopRestClient.vbproj">
+      <Project>{26860B85-6B6C-4D04-86AE-DF92DBC0FC74}</Project>
+      <Name>nopRestClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service\Service.vbproj">
+      <Project>{d5c9dc73-04fe-4f8c-937c-a7fe91d4bec7}</Project>
+      <Name>Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShotCodeConverter_Net\ShotCodeConverter_Net.vbproj">
+      <Project>{3174983d-ca17-47b7-a6f6-20a14136bf06}</Project>
+      <Name>ShotCodeConverter_Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OrdersAndClients.fmSampleInfo">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <NestedTypes>
+      <Struct Name="OrdersAndClients.fmSampleInfo.SampleStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>fmSampleInfo.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gALHQ0YgsOEV8xt0FO+nU/JeNag+pOH8QgGIyDCFAAI=</HashCode>
+      <FileName>fmSampleInfo.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="9.75" />
+</ClassDiagram>

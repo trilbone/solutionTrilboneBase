@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OrdersAndClients.SampleOnSale">
+    <Position X="0.5" Y="0.5" Width="4.25" />
+    <NestedTypes>
+      <Delegate Name="OrdersAndClients.SampleOnSale.Select_tb_SamplesOnSaleRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="OrdersAndClients.SampleOnSale.Select_OnSale_tb_SamplesOnSaleRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="OrdersAndClients.SampleOnSale.Select_tb_SamplesOnSaleDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="OrdersAndClients.SampleOnSale.Select_OnSale_tb_SamplesOnSaleDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="OrdersAndClients.SampleOnSale.Select_tb_SamplesOnSaleRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="OrdersAndClients.SampleOnSale.Select_OnSale_tb_SamplesOnSaleRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="OrdersAndClients.SampleOnSale.Select_tb_SamplesOnSaleRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="OrdersAndClients.SampleOnSale.Select_OnSale_tb_SamplesOnSaleRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAA4AAAAJABAAQQAAAAAgCQBggAAAAQAMABBA=</HashCode>
+      <FileName>dsSampleOnSale.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="9.75" />
+</ClassDiagram>

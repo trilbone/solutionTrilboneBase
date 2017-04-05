@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<USER>
+  <WOKER id="1" name="Евгений Литвинов" pin="6361" pass="2157579" role="admin" roletype="owner">
+    <OFFICEACCESS officename="petrogradka" role="admin" roletype="owner" sidkey="jsdsv455aefs551cs">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="trilbone" resource="Вход в trilbone">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="trilbone" resource="Оформление образца">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="trilbone" resource="Управление фото">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="moysklad" resource="цена инвойса">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="moysklad" resource="склад внутренний питер">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="moysklad" resource="склад внутренний нарва" >
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <PHISYCALACCESS room="офис" roomid="0"  timelimitfrom="10:00:00" timelimitto="22:00:00"></PHISYCALACCESS>
+      <PHISYCALACCESS room="перпараторская внизу" roomid="1" ></PHISYCALACCESS>
+    </OFFICEACCESS>
+    <OFFICEACCESS officename="narva" role="admin" roletype="owner" sidkey="jsdsv455aefs551cs"></OFFICEACCESS>
+    <OFFICEACCESS officename="zvenigorodskayashop" role="admin" roletype="owner" sidkey="jsdsv455aefs551cs"></OFFICEACCESS>
+  </WOKER>
+
+  <WOKER id="2" name="Игорь Пахомов" pin="1223" pass="2157579" role="admin" roletype="owner">
+    <OFFICEACCESS officename="petrogradka" role="admin" roletype="owner" sidkey="jsdsv455aefs551cs">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="trilbone" resource="Вход в trilbone">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="trilbone" resource="Оформление образца">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="trilbone" resource="Управление фото">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="moysklad" resource="цена инвойса">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="moysklad" resource="склад внутренний питер">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <ACCESS product="moysklad" resource="склад внутренний нарва" >
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+      <PHISYCALACCESS room="офис" roomid="0"  timelimitfrom="10:00:00" timelimitto="22:00:00"></PHISYCALACCESS>
+      <PHISYCALACCESS room="перпараторская внизу" roomid="1" ></PHISYCALACCESS>
+    </OFFICEACCESS>
+    <OFFICEACCESS officename="narva" role="admin" roletype="owner" sidkey="jsdsv455aefs551cs"></OFFICEACCESS>
+    <OFFICEACCESS officename="zvenigorodskayashop" role="admin" roletype="owner" sidkey="jsdsv455aefs551cs"></OFFICEACCESS>
+  </WOKER>
+
+  <WOKER id="3" name="Людмила Чернова" pin="5612" pass="" role="employee" roletype="preparator">
+    <OFFICEACCESS officename="petrogradka" role="employee" roletype="preparator">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+    </OFFICEACCESS>
+  </WOKER>
+  <WOKER id="4" name="Дмитрий Малиновский" pin="4123" pass="" role="employee" roletype="preparator">
+    <OFFICEACCESS officename="petrogradka" role="employee" roletype="preparator">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+    </OFFICEACCESS>
+  </WOKER>
+  <WOKER id="5" name="Михаил" pin="6589" pass="" role="employee" roletype="preparator">
+    <OFFICEACCESS officename="petrogradka" role="employee" roletype="preparator">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+    </OFFICEACCESS>
+  </WOKER>
+  <WOKER id="6" name="Анастасия Ильясова" pin="6523" pass="" role="employee" roletype="preparator">
+    <OFFICEACCESS officename="petrogradka" role="employee" roletype="preparator">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+    </OFFICEACCESS>
+  </WOKER>
+  <WOKER id="7" name="Анастасия Маркелова" pin="8956" pass="" role="employee" roletype="preparator">
+    <OFFICEACCESS officename="petrogradka" role="employee" roletype="preparator">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+    </OFFICEACCESS>
+  </WOKER>
+  <WOKER id="8" name="Анастасия Павлицкая" pin="7589" pass="" role="employee" roletype="preparator">
+    <OFFICEACCESS officename="petrogradka" role="employee" roletype="preparator">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+    </OFFICEACCESS>
+  </WOKER>
+  <WOKER id="9" name="Шавкат" pin="1256" pass="" role="employee" roletype="preparator">
+    <OFFICEACCESS officename="petrogradka" role="employee" roletype="preparator">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+    </OFFICEACCESS>
+  </WOKER>
+  <WOKER id="10" name="Natalia Linnik" pin="6895" pass="" role="employee" roletype="preparator">
+    <OFFICEACCESS officename="narva" role="employee" roletype="preparator">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+    </OFFICEACCESS>
+  </WOKER>
+  <WOKER id="10" name="Pavel Linnik" pin="8563" pass="" role="employee" roletype="preparator">
+    <OFFICEACCESS officename="narva" role="employee" roletype="preparator">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+    </OFFICEACCESS>
+  </WOKER>
+
+
+  <WOKER id="3" name="Владимир Гаслов" pin="5696" pass="" role="employee" roletype="saler">
+    <OFFICEACCESS officename="zvenigorodskayashop" role="employee" roletype="saler">
+      <ACCESS product="trilbone" resource="Вход в систему">
+        <COMPUTER name="ALL"></COMPUTER>
+      </ACCESS>
+    </OFFICEACCESS>
+  </WOKER>
+
+
+</USER>

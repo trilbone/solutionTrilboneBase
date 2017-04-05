@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8ee0b558819b4f9a94337ec185b751b4" Name="Diagram1" >
+        <EntityTypeShape EntityType="ModelNop350.AclRecord" Width="1.5" PointX="3.5" PointY="0.5" />
+        <EntityTypeShape EntityType="ModelNop350.Category" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="ModelNop350.CustomerRole" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="ModelNop350.Product" Width="1.5" PointX="3.375" PointY="5.125" />
+        <AssociationConnector Association="ModelNop350.AclRecord_CustomerRole" />
+        <EntityTypeShape EntityType="ModelNop350.Currency" Width="1.5" PointX="8" PointY="4.125" />
+        <EntityTypeShape EntityType="ModelNop350.Store" Width="1.5" PointX="7.5" PointY="0.5" />
+        <EntityTypeShape EntityType="ModelNop350.TierPrice" Width="1.5" PointX="7.375" PointY="8.875" />
+        <AssociationConnector Association="ModelNop350.TierPrice_CustomerRole" />
+        <AssociationConnector Association="ModelNop350.TierPrice_Product" />
+        <EntityTypeShape EntityType="ModelNop350.StoreMapping" Width="1.5" PointX="9.75" PointY="1.125" />
+        <AssociationConnector Association="ModelNop350.StoreMapping_Store" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

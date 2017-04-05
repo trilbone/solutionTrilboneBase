@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Service.clsApplicationTypes">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Service.clsApplicationTypes._getImage" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="Service.clsApplicationTypes.emTemplateType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="Service.clsApplicationTypes.clsSampleNumber">
+        <Compartments>
+          <Compartment Name="Fields" Collapsed="true" />
+          <Compartment Name="Events" Collapsed="true" />
+          <Compartment Name="Properties" Collapsed="true" />
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Struct Name="Service.clsApplicationTypes.clsSampleNumber.strPrices" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+            </TypeIdentifier>
+          </Struct>
+          <Class Name="Service.clsApplicationTypes.clsSampleNumber.strGoodInfo">
+            <TypeIdentifier>
+              <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+          <Class Name="Service.clsApplicationTypes.clsSampleNumber.clsExtendedSampleInfo">
+            <TypeIdentifier>
+              <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+          <Class Name="Service.clsApplicationTypes.clsSampleNumber.HistoryChangeEventArgs" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Delegate Name="Service.clsApplicationTypes.GetClientsFromMSDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="Service.clsApplicationTypes.clsMail" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="Service.clsApplicationTypes.GetSampleListFromMSDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsApplicationTypes.OnSaleSampleListDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsApplicationTypes.AddSampleDataIntoDBDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Enum Name="Service.clsApplicationTypes.emCatalogFolderType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Delegate Name="Service.clsApplicationTypes.AddSampleInOrderDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsApplicationTypes.OrdersNonClosedListDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="Service.clsApplicationTypes.clsSendingParameter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="Service.clsApplicationTypes.GetSampleInfoTextDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="Service.clsApplicationTypes.fmImageCopyEventArg" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="Service.clsApplicationTypes.emFormsList" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Delegate Name="Service.clsApplicationTypes.GetTemplatesListDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="Service.clsApplicationTypes.clsMailListItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="Service.clsApplicationTypes.fmImageDeleteDelegat" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="Service.clsApplicationTypes.fmImageDelEventArg" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="Service.clsApplicationTypes.fmImageCopyDelegat" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Enum Name="Service.clsApplicationTypes.emStoreSourses" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Service.clsApplicationTypes.emCurrencyList" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Delegate Name="Service.clsApplicationTypes.SetSampleToDemandMSDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsApplicationTypes.GetTransformDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsApplicationTypes.AddSampleOnSaleIntoDBDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="Service.clsApplicationTypes.clsOrder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Delegate Name="Service.clsApplicationTypes.TreesNameListFromFileDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsApplicationTypes.SynchroSampleDataDboDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsApplicationTypes.TreeFossilNamesDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsApplicationTypes.ApplicationFormDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsApplicationTypes.GetSampleInfoTransformedDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsApplicationTypes.RemoveSampleOnSiteDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="Service.clsApplicationTypes.clsMailList" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="Service.clsApplicationTypes.OrdersListDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Service.clsApplicationTypes.ActiveOrderDelegateFunction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsApplicationTypes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>TipxSOo+s53FrGrGXAD2kKnl3FMMEi+dmA5m+I4PKZg=</HashCode>
+      <FileName>ApplicationTypes.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsSamplePhotoManager">
+    <Position X="4" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Service.clsSamplePhotoManager.clsListViewItemComparer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Enum Name="Service.clsSamplePhotoManager.emJpegQuality" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="Service.clsSamplePhotoManager.RepositoryNotConnectedEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Service.clsSamplePhotoManager.ContentReadyForReadEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Service.clsSamplePhotoManager._IdContentBufferItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACgQBAAEAABEgAACCBiCABI+CQuA0ACQAQgKFBAIAgE=</HashCode>
+      <FileName>PhotoDriveObject.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.SampleSourceImageList">
+    <Position X="7" Y="13.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Service.SampleSourceImageList.LoadImageEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="Service.SampleSourceImageList.LoadImageEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PhotoDriveObject.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIAAgAAgABAAABAAAAAAUAEAAAAgBACAAMAIBCAAAA=</HashCode>
+      <FileName>PhotoDriveObject.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsSampleDataManager">
+    <Position X="7" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Service.clsSampleDataManager.emSLOperation" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsSampleInfoManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Service.clsSampleDataManager.emSLResource" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsSampleInfoManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Service.clsSampleDataManager.emWTimeOperation" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsSampleInfoManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Service.clsSampleDataManager.emWTimeRecordType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsSampleInfoManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="Service.clsSampleDataManager.clsSampleHistory" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsSampleInfoManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Service.clsSampleDataManager.clsDataQweryHelper(Of T)" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsSampleInfoManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CABgACBEoABQAABGogooKIAlChAQAAIICEREGgUQEAA=</HashCode>
+      <FileName>clsSampleInfoManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsRestMS_CustomerOrder">
+    <Position X="10" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Service.clsRestMS_CustomerOrder.strPrices">
+        <TypeIdentifier>
+          <NewMemberFileName>clsRestMS_CustomerOrder.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAASAAAAAAIAAAAIAAAAAA=</HashCode>
+      <FileName>clsRestMS_CustomerOrder.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsUser">
+    <Position X="10" Y="5.25" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Service.clsUser.clsSchema">
+        <TypeIdentifier>
+          <NewMemberFileName>clsUser.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABAgAABCAAIAkgBEABACQQwAiAEBAAQAQAAAgBUAIQA=</HashCode>
+      <FileName>clsUser.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Service.clsNetworkTime">
+    <Position X="13.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAEABAAAA=</HashCode>
+      <FileName>clsNetworkTime.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsEmailBase">
+    <Position X="13.5" Y="2.5" Width="2" />
+    <NestedTypes>
+      <Enum Name="Service.clsEmailBase.emServers" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsMailTrilbone.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="Service.clsEmailBase.MailSendedEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsMailTrilbone.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEgBAEAAAAIAEACAIIggABAAADAAAAAAAAAABAAAAI=</HashCode>
+      <FileName>clsMailTrilbone.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

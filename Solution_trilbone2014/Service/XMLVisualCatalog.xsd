@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CATALOG">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element name="LEFTPANEL" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="item">
+                <xs:complexType>
+                  <xs:attribute name="tagname" type="xs:string" use="required" />
+                  <xs:attribute name="sorting" type="xs:boolean" use="required" />
+                  <xs:attribute name="alt" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="visible" type="xs:boolean" use="required" />
+          </xs:complexType>
+        </xs:element>
+                  <xs:element name="SAMPLE" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATA" minOccurs="1" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="ELEMENT">
+                      <xs:complexType mixed="true">
+                        <xs:sequence minOccurs="0">
+                          <xs:element name="ENVIRONMENT">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="IMAGE" minOccurs ="0" maxOccurs ="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="src" type="xs:string" use="required" />
+                                    <xs:attribute name="from" type="xs:string" use="required" />
+                                    <xs:attribute name="layout" type="xs:string" use="required" />
+                                    <xs:attribute name="alt" type="xs:string" use="required" />
+                                    <xs:attribute name="position" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="href" type="xs:string" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="hash" type="xs:string" use="optional" />
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                        <xs:attribute name="order" type="xs:string" use="optional" />
+                        <xs:attribute name="alt" type="xs:string" use="optional" />
+                        <xs:attribute name="position" type="xs:string" use="optional" />
+                        <xs:attribute name="border" type="xs:unsignedByte" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="IMAGES" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="IMAGE">
+                      <xs:complexType>
+                        <xs:attribute name="src" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="titleimage" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="bar" type="xs:unsignedLong" use="required" />
+            <xs:attribute name="version" type="xs:unsignedByte" use="required" />
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="date" type="xs:string" use="required" />
+      <xs:attribute name="title" type="xs:string" use="optional" />
+      <xs:attribute name="numberstring" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

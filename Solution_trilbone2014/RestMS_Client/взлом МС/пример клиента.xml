@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection total="1" start="0" count="1000">
+<company 
+payerVat="true"
+ companyType="URLI"
+ 
+ Персональная скидка
+ discount="30.0"
+ 
+ autoDiscount="0.0"
+ 
+ discountCardNumber="номер дисконтной карты"
+ 
+ discountCorrection="0.0"
+ 
+ 
+ employeeUuid="b14d201d-489b-11e3-321c-7054d21a8d1e"
+ 
+ ==Цены справочник priceType - Розничная цена
+ priceTypeUuid="b14b6444-489b-11e3-36cc-7054d21a8d1e"
+ 
+ archived="false"
+ created="2015-02-18T16:43:20.733+03:00"
+ 
+ name="абстрактный покупатель аукционов"
+ 
+ updated="2015-02-20T13:22:22.387+03:00"
+ updatedBy="admin@trilbone"
+ readMode="ALL"
+ changeMode="SELF">
+
+<accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId>
+
+<uuid>19f222ca-b774-11e4-90a2-8ecb0014e519</uuid>
+
+<code>код клиента</code>
+<externalcode>hDWxQrtVghzntMIweDciV2</externalcode>
+
+<description>комментарий</description>
+
+почта  волость
+<attribute agentUuid="19f222ca-b774-11e4-90a2-8ecb0014e519" metadataUuid="c44b2a2b-865d-11e4-90a2-8ecb001810f7" valueString="почта  волость" updated="2015-02-20T13:22:22.386+03:00" updatedBy="admin@trilbone" readMode="ALL" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5f1dd64b-b8ea-11e4-90a2-8ecb00288bc9</uuid></attribute>
+
+==Где узнали клиента справочник
+<attribute agentUuid="19f222ca-b774-11e4-90a2-8ecb0014e519" metadataUuid="bfdcbde0-a004-11e3-205b-002590a28eca" !!!entityValueUuid="833c63d4-a006-11e3-0a04-002590a28eca" updated="2015-02-20T13:22:22.386+03:00" updatedBy="admin@trilbone" readMode="ALL" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5f1dd49c-b8ea-11e4-90a2-8ecb00288bc8</uuid></attribute>
+
+подробные интересы клиента
+<attribute agentUuid="19f222ca-b774-11e4-90a2-8ecb0014e519" metadataUuid="607af338-a004-11e3-df68-002590a28eca" valueText="подробные интересы клиента" updated="2015-02-20T13:22:22.386+03:00" updatedBy="admin@trilbone" readMode="ALL" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5f1dd72c-b8ea-11e4-90a2-8ecb00288bca</uuid></attribute>
+
+==страна справочник
+<attribute agentUuid="19f222ca-b774-11e4-90a2-8ecb0014e519" metadataUuid="0de9c0d7-b28d-11e3-cc1a-002590a28eca" entityValueUuid="002defac-b51b-11e3-36b4-002590a28eca" updated="2015-02-20T13:22:22.386+03:00" updatedBy="admin@trilbone" readMode="ALL" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5f1dd805-b8ea-11e4-90a2-8ecb00288bcb</uuid></attribute>
+
+почта страна
+<attribute agentUuid="19f222ca-b774-11e4-90a2-8ecb0014e519" metadataUuid="d2d87f24-966a-11e4-90a2-8ecb00867134" valueString="почта страна" updated="2015-02-20T13:22:22.386+03:00" updatedBy="admin@trilbone" readMode="ALL" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5f1dd8d7-b8ea-11e4-90a2-8ecb00288bcc</uuid></attribute>
+
+почтовое имя
+<attribute agentUuid="19f222ca-b774-11e4-90a2-8ecb0014e519" metadataUuid="4d014991-865e-11e4-90a2-8ecb00181219" valueString="почтовое имя" updated="2015-02-20T13:22:22.387+03:00" updatedBy="admin@trilbone" readMode="ALL" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5f1dda9f-b8ea-11e4-90a2-8ecb00288bce</uuid></attribute>
+
+==интересы клиента справочник
+<attribute agentUuid="19f222ca-b774-11e4-90a2-8ecb0014e519" metadataUuid="607af140-a004-11e3-1a62-002590a28eca" entityValueUuid="f2d47ec1-a00a-11e3-25ff-002590a28eca" updated="2015-02-20T13:22:22.386+03:00" updatedBy="admin@trilbone" readMode="ALL" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5f1dd9c7-b8ea-11e4-90a2-8ecb00288bcd</uuid></attribute>
+
+почта город
+<attribute agentUuid="19f222ca-b774-11e4-90a2-8ecb0014e519" metadataUuid="c44b28db-865d-11e4-90a2-8ecb001810f6" valueString="почта город" updated="2015-02-20T13:22:22.387+03:00" updatedBy="admin@trilbone" readMode="ALL" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5f1ddb7c-b8ea-11e4-90a2-8ecb00288bcf</uuid></attribute>
+
+почта улица
+<attribute agentUuid="19f222ca-b774-11e4-90a2-8ecb0014e519" metadataUuid="c44b2721-865d-11e4-90a2-8ecb001810f5" valueString="почта улица" updated="2015-02-20T13:22:22.387+03:00" updatedBy="admin@trilbone" readMode="ALL" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5f1ddd0b-b8ea-11e4-90a2-8ecb00288bd1</uuid></attribute>
+
+почта  индекс
+<attribute agentUuid="19f222ca-b774-11e4-90a2-8ecb0014e519" metadataUuid="c44b2b78-865d-11e4-90a2-8ecb001810f8" valueString="почта  индекс" updated="2015-02-20T13:22:22.387+03:00" updatedBy="admin@trilbone" readMode="ALL" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5f1ddc43-b8ea-11e4-90a2-8ecb00288bd0</uuid></attribute>
+
+фактический адрес
+<requisite legalTitle="" legalAddress="" actualAddress="фактический адрес" inn="" kpp="" okpo="" ogrn="" ogrnip="" nomerSvidetelstva=""/>
+
+<bankAccount accountNumber="" bankLocation="" bankName="" bic="" correspondentAccount="" isDefault="true" updated="2015-02-18T16:43:20.734+03:00" updatedBy="admin@trilbone" readMode="ALL" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>19f225ad-b774-11e4-90a2-8ecb0014e51a</uuid></bankAccount>
+
+<contact address="" phones="телефон клиента" faxes="" mobiles="" email="емайл клиента"/><tags><tag>поставщики</tag><tag>клиенты имп</tag></tags></company>
+
+</collection>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Photo_reader.ucFossilTabPage">
+    <Position X="0.75" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Photo_reader.ucFossilTabPage.FossilTab">
+        <TypeIdentifier>
+          <NewMemberFileName>ucFossilTabPage.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAQAAAAAAKAAAACAgAAAEAAEIAAAABAAAA=</HashCode>
+      <FileName>ucFossilTabPage.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Photo_reader.clsPhotoService">
+    <Position X="4" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>YoFAAAIAAAAAAAAAAEgAIAgAAAAIACAAAAAAAAAAAIA=</HashCode>
+      <FileName>PhotoService.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Photo_reader.fmListManager">
+    <Position X="7.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>CoEAAAEAEC+AAAFAIQCUIAAGIABAAAIAQgAEhA6ACiA=</HashCode>
+      <FileName>fmListManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Service.clsSampleListManager">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAABKAAAgAAAAAAEAAEAAAFAAQKBAAACgAAACAAAAE=</HashCode>
+      <FileName>clsSampleListManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsSampleListItem">
+    <Position X="6.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAwTAAQBEgAAAAAQECQAAgIEAAAQAAAAAAAA=</HashCode>
+      <FileName>clsSampleList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsSampleList">
+    <Position X="3.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAgAAAEgQAARAAAAAABAIAAAAgAAAAQIAA=</HashCode>
+      <FileName>clsSampleList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.clsWriteSampleToListEventsArg">
+    <Position X="0.5" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsSampleList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Service.iListSampleDataProvider">
+    <Position X="3.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsSampleList.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="System" Size="8.01" />
+</ClassDiagram>

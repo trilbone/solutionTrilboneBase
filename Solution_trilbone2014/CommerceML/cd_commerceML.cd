@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CommerceML.commerceML.КоммерческаяИнформация1" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.КоммерческаяИнформация" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACCgAAAiAAAAAAAIAAAgAAAAAAAAAgAEEAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Классификатор" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAACAAAAAGAAAAACAIAAkAAAEAEAAAEAIAAAjIA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Контрагент" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhgACCAAAAKABQAAABAIAAgAAAGEEAAAAAAABABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Адрес" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAACQAAAAgBQAAAAAAAAgAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommerceML.commerceML.АдресАдресноеПоле" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAABggAAAAAAKAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ДопРасход" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAAAAAACAAAAAABQAAAAAIgAgAQAEAEAgAAAAABgAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Скидка" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAAAAAACAAAAAABQAAAAAIgAgAQAEAEAgAAAAABgAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ОстаткиПоСкладам" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAAACACgAAAAABAAAAgAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Цена" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAgAAIQiEMAAgAAIAAAAAAAAgAEBCAJAwABAAAAAACA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ЗначениеРеквизита" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAIAAggAAAAEAIAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Склад" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABgAACAAAAAABQAAAAAIAAgAAAGEEAAAAAAAAABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommerceML.commerceML.КонтактнаяИнформацияКонтакт" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAABQAAAAAAABggAAAAAAKAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ЗначенияСвойства" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAIAAggAAEAEAIAAAAAAABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Товар" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAgqQgkAAGAUgpAGAIAlgABAEhEChRBAIAAAhBE=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ТоварБазоваяЕдиница" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBICBABCAAQAAAAAIAAAQAAAgAAAAAAAgAAACAAABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ТоварБазоваяЕдиницаПересчет" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAiAIAAAAAIAAAAAAAAgAAAAAAAgABAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ТоварСтавкаНалога" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAACAAAAAAAAAAAAAIAQgAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ТоварАкциз" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgACEAAAAAAAAAAAAIAAgAAACAEAACAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ТоварКомплектующее" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAEAAAAAEAAAAAAAIAAAAAAwAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.ТоварАналог" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAEAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.ХарактеристикиТовараХарактеристикаТовара" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAIAAggAAEAEAIAAAAAAABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Подписант" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAABEBCEIAAAABQAIAAFhAAgACAAAgIAAAIAgAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ПодписантУдостоверениеЛичности" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgACgAAAAAAAAQAACAAEgIAAEAAAgCAAAABAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ПодписантМестоРаботы" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAICBCEAASABECiQgAFAgAADIoAAIgwIAAAACAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Руководитель" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAhFBCEAAAAAAAAAAAAhAAgACACAgIAAAAAAAAAgA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.РуководительУдостоверениеЛичности" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgACgAAAAAAAAQAACAAEgIAAEAAAgCAAAABAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.РасчетныйСчет" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAACAAABAABQAAAAAAAAgAAAgAAAACAAAEAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Банк" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABgAACAAAACAAAAAAAAIQEgAAACGEAAAAgAAAEAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.БанкАдрес" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.Налог" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAAAAAAKAAAAAAAQAAAAAIAIgAAAAAEAgAAAAAIgAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ТипЦены" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEEACEAAAAAAAAAACAIAAgAAAGAEAAAAAIAAABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ТипЦеныНалог" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.Свойство" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACGAAACBABAAiiACAAiBIIAwgAgECMAAIBAIYAABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.СвойствоВариантыЗначений" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIACAAAAAAAAAAAAAABAggAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.СвойствоВариантыЗначенийСправочник" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACCABAAAAAAAAAAAAAggAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Группа" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAGAAAAACAIAAgAAAEAEAAAAAIAAADAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Представитель" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhgACSAAAACABQAAABAIAAgAAAGGEAAAAAAAAABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.КонтрагентОрганизация" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAICBCEAASABECiQgAFAgAADIoAAIgwIAAAACAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.КонтрагентРасчетныеСчета" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAgAAAAAAAAABgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.КонтрагентУдостоверениеЛичности" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgACgAAAAAAAAQAACAAEgIAAEAAAgCAAAABAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Документ" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQIAkAICEkAAAEBRAgQDAAAEkBwIOCAAAJgAAAQBBJA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ДокументКонтрагент" Collapsed="true">
+    <Position X="6.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAgAAAAABgAABAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.ДокументНалог" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAQAAQAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.ДокументТовар" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>iAAAGIAgAMAEkCAKAFgAAABAgIQAGABC0AhAQgABABA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.ДокументТоварНалог" Collapsed="true">
+    <Position X="6" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAQAAQAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.ДокументТоварСкидка" Collapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.ДокументТоварСклад" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAEAAAAAAAIAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.ИзмененияПакетаПредложений" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAACCAAAAAAAAAAAAAAQiAAAEBAAwAAAgAAABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ИзмененияПакетаПредложенийПредложение" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAACAAgAEAAAgMAAAAABkIAAEAAAKAgAQAAABhA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.Каталог" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAKAACCAAEAAAAAAACAIAAmAAAEDEAAAAAoAQABIA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ПакетПредложений" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEAKAAiCAAEAAAAAAAiAIAQmAEFMBEAwAkAoAAAhJA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ПакетПредложенийТипыЦен" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAACAAAEAAAAAAAAAAAAgAIAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ПакетПредложенийПредложение" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAEAAgAABAIAAAAAAAAgAQAAAAgA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CommerceML.commerceML.АдресТип" Collapsed="true">
+    <Position X="17.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAQAABAIEIAAABAAAAAAAAAAQAAAAACABAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CommerceML.commerceML.КонтактТип" Collapsed="true">
+    <Position X="19" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAENAAAgAAACAAAAAAABAAAJQAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CommerceML.commerceML.СтатусТип" Collapsed="true">
+    <Position X="15.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CommerceML.commerceML.ItemChoiceType" Collapsed="true">
+    <Position X="12" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CommerceML.commerceML.ОбязательностьСвойствТип" Collapsed="true">
+    <Position X="20.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CommerceML.commerceML.ТипЗначенийТип" Collapsed="true">
+    <Position X="17.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAABAAAAIAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CommerceML.commerceML.ПолТип" Collapsed="true">
+    <Position X="12" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CommerceML.commerceML.ItemsChoiceType1" Collapsed="true">
+    <Position X="15.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAhEJAEIAAACABAIiAApEAAAADIIAAAAgAAAAACAE=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CommerceML.commerceML.ItemsChoiceType" Collapsed="true">
+    <Position X="13.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAhEJAEIAAACABAIiAApEAAAADIIAAAAgAAAAACAE=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CommerceML.commerceML.ХозОперацияТип" Collapsed="true">
+    <Position X="19" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgBAAAAQQAAQAACQAAAABAgSAAAAAAABEAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CommerceML.commerceML.РольТип" Collapsed="true">
+    <Position X="13.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEQQAAAAAAAAAAgAAAEAABAAAAAAAAIAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CommerceML.commerceML.Товар">
+    <Position X="1" Y="0.75" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAMAAAgqQgkAAGAUgpAGAIAlgABAEhEChRBAIAAAhBE=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Аналоги" />
+      <Property Name="БазоваяЕдиница" />
+      <Property Name="СтавкиНалогов" />
+      <Property Name="Статус" />
+      <Property Name="ХарактеристикиТовара" />
+      <Property Name="ЗначенияСвойств" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ТоварАналог" Collapsed="true">
+    <Position X="5.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAEAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommerceML.commerceML.ТоварБазоваяЕдиница">
+    <Position X="8.5" Y="1.25" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CBICBABCAAQAAAAAIAAAQAAAgAAAAAAAgAAACAAABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ТоварСтавкаНалога">
+    <Position X="6.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAACAAAAAAAAAAAAAIAQgAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ХарактеристикиТовараХарактеристикаТовара" Collapsed="true">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAIAAggAAEAEAIAAAAAAABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CommerceML.commerceML.ЗначенияСвойства" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAIAAggAAEAEAIAAAAAAABAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="CommerceML.commerceML.СтатусТип">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CML208.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

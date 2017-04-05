@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Service.tbSMOperation">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Service.tbSMOperation.clsSMoperation" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>cls_partial_tbSMOperation.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ielAdoEQISFl1AWsaEIFYADQDoAGIAIACJhNgEDEQRA=</HashCode>
+      <FileName>cls_partial_tbSMOperation.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

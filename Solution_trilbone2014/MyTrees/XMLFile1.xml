@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DATA name="te">
+<HierObj id="0">
+  <name>test</name>
+  <nameRUS>тест</nameRUS>
+  <descr>descr</descr>
+  <descrRUS>опис</descrRUS>
+  <info></info>
+  <fullpath></fullpath>
+</HierObj>
+</DATA>

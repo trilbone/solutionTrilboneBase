@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Service.FindByWeight_Result">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAQAAAwYEECABoJEoUQAAoEKECgAABmCgAEQEIAqAAA=</HashCode>
+      <FileName>clsSampleInfoManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.Select_tb_Fossils_byname_Result">
+    <Position X="3.5" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>RAIAgAgYIACAgAFAIUAAAIkEACAAABGAgAAADAAgAAA=</HashCode>
+      <FileName>clsSampleInfoManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Service.Select_SampleInfo_Result">
+    <Position X="6.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAAwYEEDABoJEoUQAAoEKECgAAJmCgAEQEIAqAAg=</HashCode>
+      <FileName>clsSampleInfoManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

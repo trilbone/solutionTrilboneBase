@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Service.clsRfidManager">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <NestedTypes>
+      <Class Name="Service.clsRfidManager.clsCardInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsRfidManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Service.clsRfidManager.ScannerStatusChangedEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsRfidManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Service.clsRfidManager.TagsStringCollectionChangedEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>clsRfidManager.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AgBEhIACADAAAQABAApAAAAggAAQAQAAAAAgQgUgAAQ=</HashCode>
+      <FileName>clsRfidManager.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Service.UC_rfid">
+    <Position X="4.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAEAABIAEWAAAABACAKIAAAKBAAAAAAAIIIAIAABAAQ=</HashCode>
+      <FileName>UC_rfid.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

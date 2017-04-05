@@ -1,0 +1,32 @@
+<DATA>
+  <LABELINFO id="1683246433" group="MRTrilobites.tree" treename="Systematica" rootnode="Systematica" nodeid="321" order="1" lang="en-US">class Trilobita (Walch 1771), order Proetida (Fortey &amp;amp; Owens, 1975), suborder Proetina (Fortey &amp;amp; Owens 1975), superfamily Proetoidea (Hawle &amp;amp; Corda, 1847), family Proetidae (Salter, 1864), subfamily Proetinae (HAWLE &amp;amp; CORDA, 1847), genus Gerastos (Goldfuss, 1843), Gerastos granulosus (Goldfuss, 1843)</LABELINFO>
+  
+  <LABELINFO id="-1064547380" group="MRTrilobites.tree" treename="Systematica" rootnode="Систематика" nodeid="321" order="1" lang="ru-RU">Класс Trilobita (Walch 1771),  отряд Proetida (Fortey &amp;amp; Owens, 1975),  подотряд Proetina (Fortey &amp;amp; Owens 1975), надсемейство Proetoidea (Hawle &amp;amp; Corda, 1847), семейство Proetidae (Salter, 1864), subfamily Proetinae (HAWLE &amp;amp; CORDA, 1847),  род Gerastos (Goldfuss, 1843), Gerastos granulosus (Goldfuss, 1843)</LABELINFO>
+  
+  <LABELINFO id="1347615846" group="MRTrilobites.tree" treename="TimeScale" rootnode="TimeScale" nodeid="269" order="2" lang="en-US">Devonian, middle devonian (393.3 – 382.7 Ma), Eifelian stage(393.3 – 387.7 Ma)</LABELINFO>
+  
+  <LABELINFO id="-192218421" group="MRTrilobites.tree" treename="TimeScale" rootnode="Геологический возраст" nodeid="269" order="2" lang="ru-RU">девон, средний девон (393.3 – 382.7 млн.лет), Эйфельский ярус(393.3 – 387.7 млн.лет)</LABELINFO>
+  
+  <LABELINFO id="1633921593" group="MRTrilobites.tree" treename="Locality" rootnode="Locality" nodeid="326" order="3" lang="en-US">Germany, Eifel Region, Ahrdorf formation</LABELINFO>
+  
+  <LABELINFO id="-977556332" group="MRTrilobites.tree" treename="Locality" rootnode="Местонахождение" nodeid="326" order="3" lang="ru-RU">Германия, район Эйфель, формация Ahrdorf</LABELINFO>
+  
+  <LABEL id="-1064547380" group="MRTrilobites.tree" lang="en-US">
+    <NODE order="1" treename="Systematica" rootnode="Systematica" combined="False">
+      <NODEID labelinfoid="1683246433" nodeid="321"></NODEID>class Trilobita (Walch 1771), order Proetida (Fortey &amp;amp; Owens, 1975), suborder Proetina (Fortey &amp;amp; Owens 1975), superfamily Proetoidea (Hawle &amp;amp; Corda, 1847), family Proetidae (Salter, 1864), subfamily Proetinae (HAWLE &amp;amp; CORDA, 1847), genus Gerastos (Goldfuss, 1843), Gerastos granulosus (Goldfuss, 1843)</NODE>
+    <NODE order="2" treename="TimeScale" rootnode="TimeScale" combined="False">
+      <NODEID labelinfoid="1347615846" nodeid="269"></NODEID>Devonian, middle devonian (393.3 – 382.7 Ma), Eifelian stage(393.3 – 387.7 Ma)</NODE>
+    <NODE order="3" treename="Locality" rootnode="Locality" combined="False">
+      <NODEID labelinfoid="1633921593" nodeid="326"></NODEID>Germany, Eifel Region, Ahrdorf formation</NODE>
+  </LABEL>
+  
+  <LABEL id="-1064547380" group="MRTrilobites.tree" lang="ru-RU">
+    <NODE order="1" treename="Systematica" rootnode="Систематика" combined="False">
+      <NODEID labelinfoid="-1064547380" nodeid="321"></NODEID>Класс Trilobita (Walch 1771),  отряд Proetida (Fortey &amp;amp; Owens, 1975),  подотряд Proetina (Fortey &amp;amp; Owens 1975), надсемейство Proetoidea (Hawle &amp;amp; Corda, 1847), семейство Proetidae (Salter, 1864), subfamily Proetinae (HAWLE &amp;amp; CORDA, 1847),  род Gerastos (Goldfuss, 1843), Gerastos granulosus (Goldfuss, 1843)</NODE>
+    <NODE order="2" treename="TimeScale" rootnode="Геологический возраст" combined="False">
+      <NODEID labelinfoid="-192218421" nodeid="269"></NODEID>девон, средний девон (393.3 – 382.7 млн.лет), Эйфельский ярус(393.3 – 387.7 млн.лет)</NODE>
+    <NODE order="3" treename="Locality" rootnode="Местонахождение" combined="False">
+      <NODEID labelinfoid="-977556332" nodeid="326"></NODEID>Германия, район Эйфель, формация Ahrdorf</NODE>
+  </LABEL>
+  
+</DATA>

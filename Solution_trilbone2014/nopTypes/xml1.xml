@@ -1,0 +1,1663 @@
+<Products Version="3.50">
+  <Product>
+    <ProductId>0</ProductId>
+    <ProductTypeId>5</ProductTypeId>
+    <ParentGroupedProductId>0</ParentGroupedProductId>
+    <VisibleIndividually>true</VisibleIndividually>
+    <Names>
+      <NameValue lang="invariant">Kimberella quadrata (Glaessner,Wade,1966)</NameValue>
+      <NameValue lang="ru-RU">Kimberella quadrata (Glaessner,Wade,1966)</NameValue>
+      <NameValue lang="en-US">Kimberella quadrata (Glaessner,Wade,1966)</NameValue>
+    </Names>
+    <ShortDescriptions />
+    <FullDescriptions>
+      <FullDescriptionValue lang="invariant">
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;META http-equiv="Content-Type" content="text/html; charset=windows-1251" /&gt;
+        &lt;title&gt;Kimberella quadrata (Glaessner,Wade,1966)&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+        /* CSS Document */
+        /*body*/
+        .body_color {
+        background-color:#cebf96;
+        }
+        .main_block {
+        background-color:#d3cfb1;
+        border-style: ridge;
+        border-color: rgb(78,63,33);
+        }
+        /*caption*/
+        .caption_sample {
+        font-family: "Bodoni MT";
+        font-size: x-large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: bold;
+        color: rgb(78,63,33);
+        text-align:center;
+        vertical-align:top;
+        }
+
+        /*found in*/
+        .locality {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*age field*/
+        .age {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        background-color: #c7acbd;
+        text-align:center;
+        }
+
+        /*vid description*/
+        .described {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style:normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        text-align:left;
+        }
+
+        /*size*/
+        .size {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*remarks*/
+        .remarks {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*addtext*/
+        .addtext {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*barcode*/
+        .bartext {
+        font-family: "Bodoni MT";
+        font-size: 10pt;
+        font-style: normal;
+        line-height: normal;
+        font-weight: lighter;
+        color: rgb(78,63,33);
+        }
+
+        /*Arrow*/
+        .arrow
+        {
+        width: 20px;
+        height: 20px;
+
+
+        }
+
+        /*body_color*/
+        .body_color {
+        background-color:#cebf96;
+        font-family: "Bodoni MT";
+        line-height: normal;
+        font-size:small;
+        color: rgb(78,63,33);
+        }
+
+
+
+        .hr_sample{
+        height: 5px;
+        background-color: rgb(78,63,33);
+        }
+
+
+
+        .hr_catalog{
+        height: 7px;
+        background-color: rgb(78,63,33);
+        }
+
+
+
+        .caption_catalog {
+        background-color: #C0C0C0;
+        font-size: x-large;
+        font-weight: bold;
+        text-align:center;
+        vertical-align:top;
+        }
+
+
+
+        .div_main
+        {
+        display:block;
+        left: 5%;
+        top: 0px;
+        height: 100%;
+        }
+
+
+        .NUMBER
+        {
+        font-size: x-small;
+        font-weight: lighter;
+        }
+
+        .alt
+        {
+        font-size: medium;
+        font-weight: bold;
+        }
+
+
+        .div_title
+        {
+        /*background-color: #C0C0C0;*/
+        /*padding-left: 140px;*/
+        font-size: large;
+        align=center
+        /*font-weight: bold;*/
+        /*border : 1px inset #000000;*/
+        }
+
+
+        .div_upperright
+        {
+        font-size: medium;
+        }
+
+
+
+        .div_upperleft
+        {
+        font-size: medium;
+        }
+
+
+        .div_down
+        {
+        font-size: medium;
+        }
+
+
+        .div_image
+        {
+        width: 100%;
+        }
+
+
+        .sample_image
+        {
+        height : 171px;
+        border : medium double #000000;
+        }
+
+
+        .summary
+        {
+        font-size: x-large;
+        font-weight: bold;
+        }
+
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;div class="main_block"&gt;
+        &lt;table&gt;
+        &lt;tr&gt;
+        &lt;td&gt;
+        &lt;table style="width:100%;"&gt;
+        &lt;tr&gt;
+        &lt;td id="title_block" style="width: 50%" valign="top"&gt;
+        &lt;div class="div_title" align="left"&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Название:	&lt;/font&gt;Kimberella quadrata (Glaessner,Wade,1966)&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;/div&gt;
+        &lt;br /&gt;
+        &lt;div class="div_upperleft"&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Размер Kimberella quadrata (Glaessner,Wade,1966):	&lt;/font&gt;3,3x1,9см&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Размер блока:	&lt;/font&gt;12,0x10,5x2,5см&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Вес образца:	&lt;/font&gt;0,510кг&lt;br /&gt;&lt;span id="bw"&gt;&lt;font class="alt"&gt;Brutto weight:	&lt;font style="font-size: x-small;"&gt;use Net weight + 20% to calculate the combine shipping [&lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-usd" target="_blank"&gt;Postage rates(usd)&lt;/a&gt;] [&lt;/span&gt;&lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-eur" target="_blank"&gt;Postage rates(eur)&lt;/a&gt;&lt;/span&gt;])&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;/div&gt;
+        &lt;br /&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td id="63" /&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td id="64" /&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td id="down_block" colspan="2"&gt;
+        &lt;div class="div_down"&gt;
+        &lt;ul&gt;
+        &lt;li&gt;
+        &lt;p class="alt" style="text-decoration: underline;"&gt;Information about item: &lt;/p&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Систематика:	&lt;/font&gt;Кишечнополостные-&gt; Тип Стрекающие-&gt; Класс Кубомедузы-&gt; Order Carybdeida-&gt; Kimberella quadrata (Glaessner,Wade,1966)&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Местонахождение:	&lt;/font&gt;Архангельск, Зимний Берег, ручей Ерга&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Стратиграфия:	&lt;/font&gt;Егринская свита&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/td&gt;
+        &lt;td valign="top"&gt;
+        &lt;ul&gt;
+        &lt;li&gt;
+        &lt;a href="#shipping"&gt;Combine shipping to worldwide&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#deliveryterms"&gt;Shipping terms&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#parceltracking"&gt;Parcel tracking&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#parcelinsurance"&gt;Parcel insurance&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#damagesondelivery"&gt;Damages on delivery terms&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#return"&gt;Returns and money back terms&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#other"&gt;Other our items&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;span /&gt;
+        &lt;a name="ourpolicy" /&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p class="remarks"&gt;
+        All samples offered by us undergo obligatory checking for authenticity. We guarantee lack of fakes in our assortment.For all samples we try to provide the fullest and accurate information on location, geological age and the name of species. Unfortunately, in connection with a certain complexity of definition of paleontological samples various opinions in the name are possible. If you don't agree with our definition, please, contact us.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="shipping" class="size" align="center"&gt;
+        &lt;strong&gt;WE COMBINE SH&amp;H TO WORLDWIDE&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        We combine shipping the items bought within one week. Buying from us more than one items, you can significantly save on shipping.
+        To calculate the cost of the combined shipping, please, add up the &lt;span&gt;&lt;a href="#bw"&gt;brutto&lt;/a&gt;&lt;/span&gt; weight of each item and look total shipping costs in the postage pricelist [
+        &lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-usd" target="_blank"&gt;Postage rates(usd)&lt;/a&gt;&lt;/span&gt;
+        ]		[
+        &lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-eur" target="_blank"&gt;	Postage rates(eur)&lt;/a&gt;&lt;/span&gt;].
+        Please, be attentive, it is necessary to add the brutto weight of items.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="deliveryterms" class="size" align="center"&gt;
+        &lt;strong&gt;SHIPPING TERMS&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        Your purchase will be shipped within 2-7 days after we receive payment.  We surely send the mail with shipping confirmation and track number. The parcel will posted necessarily with track number. We post an item with Estonian company EESTI POST, thus, when receiving a parcel outside EU additional customs payments are possible. Please, specify the amount of customs payments in your customs department.&lt;br /&gt;&lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="parceltracking" class="size" align="center"&gt;
+        &lt;strong&gt;PARCEL TRACKING&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        Typically, the time of parcel delivery, rarely exceed 14 days. In case of a delay, please, check status of delivery follow link &lt;span&gt;&lt;a href="http://www.track-trace.com/post" target="_blank"&gt;www.track-trace.com&lt;/a&gt;&lt;/span&gt;. The track number you can see in the mail on confirmation of sending your purchase. In case of difficulty, please contact us specifying the track number.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="parcelinsurance" class="size" align="center"&gt;
+        &lt;strong&gt;PARCEL INSURANCE&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        You can order the parcel insurance by your additional request. The cost of insurance services is 10% of a cost for parcel up to 2 kg brutto weight, and 5% of a cost for parcel more than 2 kg brutto weight. If you want to book insurance the parcel, please contact us immediately after winning the auction.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="damagesondelivery" class="size" align="center"&gt;
+        &lt;strong&gt;DAMAGES ON DELIVERY TERMS&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        If in the course of delivery the item is damaged through our fault, we completely compensate the item cost, cost of shipping and cost of the return posting of an item. In this case free repair of an item and 100% compensation of postage are possible too (on your choice).
+        If the item is damaged because of the post company, that, regardless of insurance existence, we will offer you FREE repair an item in our laboratory. In this case, unfortunately, we cannot compensate you postage.
+        Please contact us before you leave negative feedback, and we will do our best to remedy the situation by providing a full refund of the auction price.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="return" class="size" align="center"&gt;
+        &lt;strong&gt;RETURNS AND MONEY BACK TERMS&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        We guarantee 100% money back of the purchase within 14 days of your receipt of purchase. If for whatever reason, the item that you receive does not match the auction description, we are happy to work with you on resolving the issue. Please contact us before you leave negative feedback, and we will do our best to remedy the situation by providing a full refund of the auction price. Below are the pre-conditions for refunds on returned items:
+        &lt;/p&gt;
+        &lt;span class="remarks"&gt;
+        &lt;ul&gt;
+        &lt;li&gt;
+        Please return item to address shown on package.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Return item must also be in its original condition including box and packaging.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Return shipping is at the buyer's expense.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Shipping and handling is non-refundable.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Please be aware that although some of our items are offered with free shipping, our actual outbound shipping costs will be deducted from the return refund.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Refund is carried out within 3 days after we receive the sample.
+        &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/span&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="other" class="remarks" align="center"&gt;You may be interested in our other listings on eBay:&lt;/p&gt;
+        &lt;table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"&gt;
+        &lt;tr&gt;
+        &lt;td&gt;
+        &lt;script language="JavaScript" type="text/javascript"&gt;
+        &lt;!--
+
+        function scrapeCat(){
+        var are = /.+\/category(\d+?)\//im; var ama = document.body.innerHTML.match(are); if (ama != null &amp;&amp; ama.length == 2) { return ama[1]; } else { return '-1'; } }function passpara(){return '&amp;id=1138098&amp;itembgcolor=0xFFFFFF&amp;bordercolor=0x000006&amp;storewindowbgcolor=0xCEBF96&amp;toptextcolor=0xFFFFFF&amp;bottomtextcolor=0xFFFFFF&amp;stripcolor=0x4E3F21&amp;auctionclosemessagecolor=0x4E3F21&amp;emptyboxmessagecolor=0x4E3F21&amp;buttovercolor=0x4E3F21&amp;buttoutcolor=0x4E3F21&amp;searchtitlecolor=0xFFFFFF&amp;searchbuttbgcolor=0xFFFFFF&amp;searchbutttextcolor=0x4E3F21&amp;searchbuttbordercolor=0xCEBF96&amp;itemhighlightcolor=0xCEBF96&amp;navbuttonactivecolor=0xCEBF96&amp;navbuttonoutlinecolor=0xCEBF96&amp;navbuttoninactivebgcolor=0xCEBF96&amp;siteid=0&amp;cat=' + scrapeCat() + '&amp;baseurl='+escape(location.href.substring(0, location.href.lastIndexOf('/') + 1));
+        }
+        --&gt;
+        &lt;/script&gt;
+        &lt;script language="JavaScript" type="text/javascript"&gt;
+        &lt;!--
+
+
+        var flashVersion = window.flashVersion ? window.flashVersion : 0;
+        if (flashVersion &lt;= 0)
+        {
+        var agent = navigator.userAgent.toLowerCase();
+        if (navigator.plugins != null &amp;&amp; navigator.plugins.length &gt; 0)
+        {
+        var flashPlugin = navigator.plugins['Shockwave Flash'];
+        if (typeof flashPlugin == 'object')
+        {
+        /*
+        need flash version 6 or higher (this code should work with future flash plugins.)
+        */
+        if (flashPlugin.description.indexOf(' 5.') != -1)
+        flashVersion = 5;
+        else if (flashPlugin.description.indexOf(' 4.') != -1)
+        flashVersion = 4;
+        else if (flashPlugin.description.indexOf(' 3.') != -1)
+        flashVersion = 3;
+        else if (flashPlugin.description.indexOf(' 2.') != -1)
+        flashVersion = 2;
+        else if (flashPlugin.description.indexOf(' 1.') != -1)
+        flashVersion = 1;
+        else  if (flashPlugin.description.indexOf(' 6.') != -1)
+        flashVersion = 6;
+        else  if (flashPlugin.description.indexOf(' 7.') != -1)
+        flashVersion = 7;
+        else
+        flashVersion = 8;
+        }
+        }
+        else if (agent.indexOf('msie') != -1 &amp;&amp; parseInt(navigator.appVersion) &gt;= 4 &amp;&amp; agent.indexOf('win')!=-1 &amp;&amp; agent.indexOf('16bit')==-1)
+        {
+        if (window.sqHasFlash || typeof(window.andale_fv) != 'undefined')
+        {
+        if (window.sqHasFlash || andale_fv &gt;= 6)
+        {
+        flashVersion = 6;
+        }
+        }
+        else
+        {
+        document.writeln('&lt;scr' + 'ipt language="VBScript"&gt;');
+        document.writeln('on error resume next');
+        document.writeln('dim obFlash ');
+        document.writeln('set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.7")');
+        document.writeln('if IsObject(obFlash) then ');
+        document.writeln('flashVersion = 7 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.6") end if ');
+        document.writeln('if flashVersion &lt; 7 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 6 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.5") end if ');
+        document.writeln('if flashVersion &lt; 6 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 5 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.4") end if ');
+        document.writeln('if flashVersion &lt; 5 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 4 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.3") end if ');
+        document.writeln('if flashVersion &lt; 4 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 3 ');
+        document.writeln('end if ');
+        document.writeln('&lt;/scr' + 'ipt&gt;');
+        }
+        }
+        }
+
+        if (flashVersion &gt;= 6)
+        {
+        document.writeln('&lt;table align="center" valign="top" border="0" cellspacing="0" cellpadding="0"&gt;');document.writeln('&lt;tr&gt;&lt;td width="247"&gt;&lt;tr&gt;&lt;td align="right" valign="top"&gt;');document.writeln('&lt;OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="752" HEIGHT="320" id="auctivastorewindow" ALIGN="middle"&gt;');document.writeln('&lt;PARAM NAME=movie VALUE="http://asw.auctiva.com/StoreWindow_Slim.swf"&gt;');document.writeln('&lt;PARAM NAME=FlashVars VALUE="'+passpara()+'"&gt;');document.writeln('&lt;PARAM NAME=quality VALUE=high&gt;');
+        document.writeln('&lt;PARAM NAME=wmode VALUE=transparent&gt;');
+        document.writeln('&lt;PARAM NAME=allowScriptAccess VALUE=always&gt;');document.writeln('&lt;EMBED src="http://asw.auctiva.com/StoreWindow_Slim.swf" FlashVars="'+passpara()+'"quality=high ');document.writeln('WIDTH="752" HEIGHT="320" NAME="auctivastorewindow" ALIGN="middle"');document.writeln('TYPE="application/x-shockwave-flash"');document.writeln('PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"&gt;');document.writeln('&lt;/EMBED&gt;');
+        document.writeln('&lt;/OBJECT&gt;');
+        document.writeln('&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;');
+        }
+        else
+        {document.write('&lt;a href="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank"&gt;&lt;img src="http://www.auctiva.com/images/StoreWin_NoFlashPlayer_Hor.jpg" border="0"&gt;&lt;/a&gt;&lt;div style="text-align:center"&gt;&lt;table align="center"&gt;&lt;tr&gt;&lt;td&gt;&lt;a style="text-decoration:none" href="http://store.auctiva.com/trilbone"&gt;&lt;img src="http://ti2.auctiva.com/sw/browse2.gif" border="0"&gt;&lt;/a&gt;&lt;/td&gt;&lt;td height="21px" valign="middle" align="center"&gt;&lt;font face="arial" size="2"&gt;&lt;b&gt;&lt;a href="http://store.auctiva.com/trilbone"&gt;trilbone&lt;/a&gt; Store&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;');}
+
+
+        --&gt;
+        &lt;/script&gt;
+        &lt;noscript&gt;
+        &lt;p class="remarks" align="center"&gt;Please enable JavaScipt for view..&lt;/p&gt;
+        &lt;/noscript&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </FullDescriptionValue>
+      <FullDescriptionValue lang="ru-RU">
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;META http-equiv="Content-Type" content="text/html; charset=windows-1251" /&gt;
+        &lt;title&gt;Kimberella quadrata (Glaessner,Wade,1966)&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+        /* CSS Document */
+        /*body*/
+        .body_color {
+        background-color:#cebf96;
+        }
+        .main_block {
+        background-color:#d3cfb1;
+        border-style: ridge;
+        border-color: rgb(78,63,33);
+        }
+        /*caption*/
+        .caption_sample {
+        font-family: "Bodoni MT";
+        font-size: x-large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: bold;
+        color: rgb(78,63,33);
+        text-align:center;
+        vertical-align:top;
+        }
+
+        /*found in*/
+        .locality {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*age field*/
+        .age {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        background-color: #c7acbd;
+        text-align:center;
+        }
+
+        /*vid description*/
+        .described {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style:normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        text-align:left;
+        }
+
+        /*size*/
+        .size {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*remarks*/
+        .remarks {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*addtext*/
+        .addtext {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*barcode*/
+        .bartext {
+        font-family: "Bodoni MT";
+        font-size: 10pt;
+        font-style: normal;
+        line-height: normal;
+        font-weight: lighter;
+        color: rgb(78,63,33);
+        }
+
+        /*Arrow*/
+        .arrow
+        {
+        width: 20px;
+        height: 20px;
+
+
+        }
+
+        /*body_color*/
+        .body_color {
+        background-color:#cebf96;
+        font-family: "Bodoni MT";
+        line-height: normal;
+        font-size:small;
+        color: rgb(78,63,33);
+        }
+
+
+
+        .hr_sample{
+        height: 5px;
+        background-color: rgb(78,63,33);
+        }
+
+
+
+        .hr_catalog{
+        height: 7px;
+        background-color: rgb(78,63,33);
+        }
+
+
+
+        .caption_catalog {
+        background-color: #C0C0C0;
+        font-size: x-large;
+        font-weight: bold;
+        text-align:center;
+        vertical-align:top;
+        }
+
+
+
+        .div_main
+        {
+        display:block;
+        left: 5%;
+        top: 0px;
+        height: 100%;
+        }
+
+
+        .NUMBER
+        {
+        font-size: x-small;
+        font-weight: lighter;
+        }
+
+        .alt
+        {
+        font-size: medium;
+        font-weight: bold;
+        }
+
+
+        .div_title
+        {
+        /*background-color: #C0C0C0;*/
+        /*padding-left: 140px;*/
+        font-size: large;
+        align=center
+        /*font-weight: bold;*/
+        /*border : 1px inset #000000;*/
+        }
+
+
+        .div_upperright
+        {
+        font-size: medium;
+        }
+
+
+
+        .div_upperleft
+        {
+        font-size: medium;
+        }
+
+
+        .div_down
+        {
+        font-size: medium;
+        }
+
+
+        .div_image
+        {
+        width: 100%;
+        }
+
+
+        .sample_image
+        {
+        height : 171px;
+        border : medium double #000000;
+        }
+
+
+        .summary
+        {
+        font-size: x-large;
+        font-weight: bold;
+        }
+
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;div class="main_block"&gt;
+        &lt;table&gt;
+        &lt;tr&gt;
+        &lt;td&gt;
+        &lt;table style="width:100%;"&gt;
+        &lt;tr&gt;
+        &lt;td id="title_block" style="width: 50%" valign="top"&gt;
+        &lt;div class="div_title" align="left"&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Название:	&lt;/font&gt;Kimberella quadrata (Glaessner,Wade,1966)&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;/div&gt;
+        &lt;br /&gt;
+        &lt;div class="div_upperleft"&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Размер Kimberella quadrata (Glaessner,Wade,1966):	&lt;/font&gt;3,3x1,9см&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Размер блока:	&lt;/font&gt;12,0x10,5x2,5см&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Вес образца:	&lt;/font&gt;0,510кг&lt;br /&gt;&lt;span id="bw"&gt;&lt;font class="alt"&gt;Brutto weight:	&lt;font style="font-size: x-small;"&gt;use Net weight + 20% to calculate the combine shipping [&lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-usd" target="_blank"&gt;Postage rates(usd)&lt;/a&gt;] [&lt;/span&gt;&lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-eur" target="_blank"&gt;Postage rates(eur)&lt;/a&gt;&lt;/span&gt;])&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;/div&gt;
+        &lt;br /&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td id="63" /&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td id="64" /&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td id="down_block" colspan="2"&gt;
+        &lt;div class="div_down"&gt;
+        &lt;ul&gt;
+        &lt;li&gt;
+        &lt;p class="alt" style="text-decoration: underline;"&gt;Information about item: &lt;/p&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Систематика:	&lt;/font&gt;Кишечнополостные-&gt; Тип Стрекающие-&gt; Класс Кубомедузы-&gt; Order Carybdeida-&gt; Kimberella quadrata (Glaessner,Wade,1966)&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Местонахождение:	&lt;/font&gt;Архангельск, Зимний Берег, ручей Ерга&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Стратиграфия:	&lt;/font&gt;Егринская свита&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/td&gt;
+        &lt;td valign="top"&gt;
+        &lt;ul&gt;
+        &lt;li&gt;
+        &lt;a href="#shipping"&gt;Combine shipping to worldwide&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#deliveryterms"&gt;Shipping terms&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#parceltracking"&gt;Parcel tracking&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#parcelinsurance"&gt;Parcel insurance&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#damagesondelivery"&gt;Damages on delivery terms&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#return"&gt;Returns and money back terms&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#other"&gt;Other our items&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;span /&gt;
+        &lt;a name="ourpolicy" /&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p class="remarks"&gt;
+        All samples offered by us undergo obligatory checking for authenticity. We guarantee lack of fakes in our assortment.For all samples we try to provide the fullest and accurate information on location, geological age and the name of species. Unfortunately, in connection with a certain complexity of definition of paleontological samples various opinions in the name are possible. If you don't agree with our definition, please, contact us.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="shipping" class="size" align="center"&gt;
+        &lt;strong&gt;WE COMBINE SH&amp;H TO WORLDWIDE&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        We combine shipping the items bought within one week. Buying from us more than one items, you can significantly save on shipping.
+        To calculate the cost of the combined shipping, please, add up the &lt;span&gt;&lt;a href="#bw"&gt;brutto&lt;/a&gt;&lt;/span&gt; weight of each item and look total shipping costs in the postage pricelist [
+        &lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-usd" target="_blank"&gt;Postage rates(usd)&lt;/a&gt;&lt;/span&gt;
+        ]		[
+        &lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-eur" target="_blank"&gt;	Postage rates(eur)&lt;/a&gt;&lt;/span&gt;].
+        Please, be attentive, it is necessary to add the brutto weight of items.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="deliveryterms" class="size" align="center"&gt;
+        &lt;strong&gt;SHIPPING TERMS&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        Your purchase will be shipped within 2-7 days after we receive payment.  We surely send the mail with shipping confirmation and track number. The parcel will posted necessarily with track number. We post an item with Estonian company EESTI POST, thus, when receiving a parcel outside EU additional customs payments are possible. Please, specify the amount of customs payments in your customs department.&lt;br /&gt;&lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="parceltracking" class="size" align="center"&gt;
+        &lt;strong&gt;PARCEL TRACKING&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        Typically, the time of parcel delivery, rarely exceed 14 days. In case of a delay, please, check status of delivery follow link &lt;span&gt;&lt;a href="http://www.track-trace.com/post" target="_blank"&gt;www.track-trace.com&lt;/a&gt;&lt;/span&gt;. The track number you can see in the mail on confirmation of sending your purchase. In case of difficulty, please contact us specifying the track number.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="parcelinsurance" class="size" align="center"&gt;
+        &lt;strong&gt;PARCEL INSURANCE&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        You can order the parcel insurance by your additional request. The cost of insurance services is 10% of a cost for parcel up to 2 kg brutto weight, and 5% of a cost for parcel more than 2 kg brutto weight. If you want to book insurance the parcel, please contact us immediately after winning the auction.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="damagesondelivery" class="size" align="center"&gt;
+        &lt;strong&gt;DAMAGES ON DELIVERY TERMS&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        If in the course of delivery the item is damaged through our fault, we completely compensate the item cost, cost of shipping and cost of the return posting of an item. In this case free repair of an item and 100% compensation of postage are possible too (on your choice).
+        If the item is damaged because of the post company, that, regardless of insurance existence, we will offer you FREE repair an item in our laboratory. In this case, unfortunately, we cannot compensate you postage.
+        Please contact us before you leave negative feedback, and we will do our best to remedy the situation by providing a full refund of the auction price.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="return" class="size" align="center"&gt;
+        &lt;strong&gt;RETURNS AND MONEY BACK TERMS&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        We guarantee 100% money back of the purchase within 14 days of your receipt of purchase. If for whatever reason, the item that you receive does not match the auction description, we are happy to work with you on resolving the issue. Please contact us before you leave negative feedback, and we will do our best to remedy the situation by providing a full refund of the auction price. Below are the pre-conditions for refunds on returned items:
+        &lt;/p&gt;
+        &lt;span class="remarks"&gt;
+        &lt;ul&gt;
+        &lt;li&gt;
+        Please return item to address shown on package.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Return item must also be in its original condition including box and packaging.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Return shipping is at the buyer's expense.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Shipping and handling is non-refundable.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Please be aware that although some of our items are offered with free shipping, our actual outbound shipping costs will be deducted from the return refund.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Refund is carried out within 3 days after we receive the sample.
+        &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/span&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="other" class="remarks" align="center"&gt;You may be interested in our other listings on eBay:&lt;/p&gt;
+        &lt;table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"&gt;
+        &lt;tr&gt;
+        &lt;td&gt;
+        &lt;script language="JavaScript" type="text/javascript"&gt;
+        &lt;!--
+
+        function scrapeCat(){
+        var are = /.+\/category(\d+?)\//im; var ama = document.body.innerHTML.match(are); if (ama != null &amp;&amp; ama.length == 2) { return ama[1]; } else { return '-1'; } }function passpara(){return '&amp;id=1138098&amp;itembgcolor=0xFFFFFF&amp;bordercolor=0x000006&amp;storewindowbgcolor=0xCEBF96&amp;toptextcolor=0xFFFFFF&amp;bottomtextcolor=0xFFFFFF&amp;stripcolor=0x4E3F21&amp;auctionclosemessagecolor=0x4E3F21&amp;emptyboxmessagecolor=0x4E3F21&amp;buttovercolor=0x4E3F21&amp;buttoutcolor=0x4E3F21&amp;searchtitlecolor=0xFFFFFF&amp;searchbuttbgcolor=0xFFFFFF&amp;searchbutttextcolor=0x4E3F21&amp;searchbuttbordercolor=0xCEBF96&amp;itemhighlightcolor=0xCEBF96&amp;navbuttonactivecolor=0xCEBF96&amp;navbuttonoutlinecolor=0xCEBF96&amp;navbuttoninactivebgcolor=0xCEBF96&amp;siteid=0&amp;cat=' + scrapeCat() + '&amp;baseurl='+escape(location.href.substring(0, location.href.lastIndexOf('/') + 1));
+        }
+        --&gt;
+        &lt;/script&gt;
+        &lt;script language="JavaScript" type="text/javascript"&gt;
+        &lt;!--
+
+
+        var flashVersion = window.flashVersion ? window.flashVersion : 0;
+        if (flashVersion &lt;= 0)
+        {
+        var agent = navigator.userAgent.toLowerCase();
+        if (navigator.plugins != null &amp;&amp; navigator.plugins.length &gt; 0)
+        {
+        var flashPlugin = navigator.plugins['Shockwave Flash'];
+        if (typeof flashPlugin == 'object')
+        {
+        /*
+        need flash version 6 or higher (this code should work with future flash plugins.)
+        */
+        if (flashPlugin.description.indexOf(' 5.') != -1)
+        flashVersion = 5;
+        else if (flashPlugin.description.indexOf(' 4.') != -1)
+        flashVersion = 4;
+        else if (flashPlugin.description.indexOf(' 3.') != -1)
+        flashVersion = 3;
+        else if (flashPlugin.description.indexOf(' 2.') != -1)
+        flashVersion = 2;
+        else if (flashPlugin.description.indexOf(' 1.') != -1)
+        flashVersion = 1;
+        else  if (flashPlugin.description.indexOf(' 6.') != -1)
+        flashVersion = 6;
+        else  if (flashPlugin.description.indexOf(' 7.') != -1)
+        flashVersion = 7;
+        else
+        flashVersion = 8;
+        }
+        }
+        else if (agent.indexOf('msie') != -1 &amp;&amp; parseInt(navigator.appVersion) &gt;= 4 &amp;&amp; agent.indexOf('win')!=-1 &amp;&amp; agent.indexOf('16bit')==-1)
+        {
+        if (window.sqHasFlash || typeof(window.andale_fv) != 'undefined')
+        {
+        if (window.sqHasFlash || andale_fv &gt;= 6)
+        {
+        flashVersion = 6;
+        }
+        }
+        else
+        {
+        document.writeln('&lt;scr' + 'ipt language="VBScript"&gt;');
+        document.writeln('on error resume next');
+        document.writeln('dim obFlash ');
+        document.writeln('set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.7")');
+        document.writeln('if IsObject(obFlash) then ');
+        document.writeln('flashVersion = 7 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.6") end if ');
+        document.writeln('if flashVersion &lt; 7 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 6 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.5") end if ');
+        document.writeln('if flashVersion &lt; 6 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 5 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.4") end if ');
+        document.writeln('if flashVersion &lt; 5 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 4 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.3") end if ');
+        document.writeln('if flashVersion &lt; 4 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 3 ');
+        document.writeln('end if ');
+        document.writeln('&lt;/scr' + 'ipt&gt;');
+        }
+        }
+        }
+
+        if (flashVersion &gt;= 6)
+        {
+        document.writeln('&lt;table align="center" valign="top" border="0" cellspacing="0" cellpadding="0"&gt;');document.writeln('&lt;tr&gt;&lt;td width="247"&gt;&lt;tr&gt;&lt;td align="right" valign="top"&gt;');document.writeln('&lt;OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="752" HEIGHT="320" id="auctivastorewindow" ALIGN="middle"&gt;');document.writeln('&lt;PARAM NAME=movie VALUE="http://asw.auctiva.com/StoreWindow_Slim.swf"&gt;');document.writeln('&lt;PARAM NAME=FlashVars VALUE="'+passpara()+'"&gt;');document.writeln('&lt;PARAM NAME=quality VALUE=high&gt;');
+        document.writeln('&lt;PARAM NAME=wmode VALUE=transparent&gt;');
+        document.writeln('&lt;PARAM NAME=allowScriptAccess VALUE=always&gt;');document.writeln('&lt;EMBED src="http://asw.auctiva.com/StoreWindow_Slim.swf" FlashVars="'+passpara()+'"quality=high ');document.writeln('WIDTH="752" HEIGHT="320" NAME="auctivastorewindow" ALIGN="middle"');document.writeln('TYPE="application/x-shockwave-flash"');document.writeln('PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"&gt;');document.writeln('&lt;/EMBED&gt;');
+        document.writeln('&lt;/OBJECT&gt;');
+        document.writeln('&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;');
+        }
+        else
+        {document.write('&lt;a href="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank"&gt;&lt;img src="http://www.auctiva.com/images/StoreWin_NoFlashPlayer_Hor.jpg" border="0"&gt;&lt;/a&gt;&lt;div style="text-align:center"&gt;&lt;table align="center"&gt;&lt;tr&gt;&lt;td&gt;&lt;a style="text-decoration:none" href="http://store.auctiva.com/trilbone"&gt;&lt;img src="http://ti2.auctiva.com/sw/browse2.gif" border="0"&gt;&lt;/a&gt;&lt;/td&gt;&lt;td height="21px" valign="middle" align="center"&gt;&lt;font face="arial" size="2"&gt;&lt;b&gt;&lt;a href="http://store.auctiva.com/trilbone"&gt;trilbone&lt;/a&gt; Store&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;');}
+
+
+        --&gt;
+        &lt;/script&gt;
+        &lt;noscript&gt;
+        &lt;p class="remarks" align="center"&gt;Please enable JavaScipt for view..&lt;/p&gt;
+        &lt;/noscript&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </FullDescriptionValue>
+      <FullDescriptionValue lang="en-US">
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;META http-equiv="Content-Type" content="text/html; charset=windows-1251" /&gt;
+        &lt;title&gt;Kimberella quadrata (Glaessner,Wade,1966)&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+        /* CSS Document */
+        /*body*/
+        .body_color {
+        background-color:#cebf96;
+        }
+        .main_block {
+        background-color:#d3cfb1;
+        border-style: ridge;
+        border-color: rgb(78,63,33);
+        }
+        /*caption*/
+        .caption_sample {
+        font-family: "Bodoni MT";
+        font-size: x-large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: bold;
+        color: rgb(78,63,33);
+        text-align:center;
+        vertical-align:top;
+        }
+
+        /*found in*/
+        .locality {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*age field*/
+        .age {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        background-color: #c7acbd;
+        text-align:center;
+        }
+
+        /*vid description*/
+        .described {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style:normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        text-align:left;
+        }
+
+        /*size*/
+        .size {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*remarks*/
+        .remarks {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*addtext*/
+        .addtext {
+        font-family: "Bodoni MT";
+        font-size: large;
+        font-style: normal;
+        line-height: normal;
+        font-weight: normal;
+        color: rgb(78,63,33);
+        }
+
+        /*barcode*/
+        .bartext {
+        font-family: "Bodoni MT";
+        font-size: 10pt;
+        font-style: normal;
+        line-height: normal;
+        font-weight: lighter;
+        color: rgb(78,63,33);
+        }
+
+        /*Arrow*/
+        .arrow
+        {
+        width: 20px;
+        height: 20px;
+
+
+        }
+
+        /*body_color*/
+        .body_color {
+        background-color:#cebf96;
+        font-family: "Bodoni MT";
+        line-height: normal;
+        font-size:small;
+        color: rgb(78,63,33);
+        }
+
+
+
+        .hr_sample{
+        height: 5px;
+        background-color: rgb(78,63,33);
+        }
+
+
+
+        .hr_catalog{
+        height: 7px;
+        background-color: rgb(78,63,33);
+        }
+
+
+
+        .caption_catalog {
+        background-color: #C0C0C0;
+        font-size: x-large;
+        font-weight: bold;
+        text-align:center;
+        vertical-align:top;
+        }
+
+
+
+        .div_main
+        {
+        display:block;
+        left: 5%;
+        top: 0px;
+        height: 100%;
+        }
+
+
+        .NUMBER
+        {
+        font-size: x-small;
+        font-weight: lighter;
+        }
+
+        .alt
+        {
+        font-size: medium;
+        font-weight: bold;
+        }
+
+
+        .div_title
+        {
+        /*background-color: #C0C0C0;*/
+        /*padding-left: 140px;*/
+        font-size: large;
+        align=center
+        /*font-weight: bold;*/
+        /*border : 1px inset #000000;*/
+        }
+
+
+        .div_upperright
+        {
+        font-size: medium;
+        }
+
+
+
+        .div_upperleft
+        {
+        font-size: medium;
+        }
+
+
+        .div_down
+        {
+        font-size: medium;
+        }
+
+
+        .div_image
+        {
+        width: 100%;
+        }
+
+
+        .sample_image
+        {
+        height : 171px;
+        border : medium double #000000;
+        }
+
+
+        .summary
+        {
+        font-size: x-large;
+        font-weight: bold;
+        }
+
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;div class="main_block"&gt;
+        &lt;table&gt;
+        &lt;tr&gt;
+        &lt;td&gt;
+        &lt;table style="width:100%;"&gt;
+        &lt;tr&gt;
+        &lt;td id="title_block" style="width: 50%" valign="top"&gt;
+        &lt;div class="div_title" align="left"&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Specimen name:	&lt;/font&gt;Kimberella quadrata (Glaessner,Wade,1966)&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;/div&gt;
+        &lt;br /&gt;
+        &lt;div class="div_upperleft"&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Size of Kimberella quadrata (Glaessner,Wade,1966):	&lt;/font&gt;3,3x1,9cm&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Block size:	&lt;/font&gt;12,0x10,5x2,5cm&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Net weight:	&lt;/font&gt;0,510kg&lt;br /&gt;&lt;span id="bw"&gt;&lt;font class="alt"&gt;Brutto weight:	586g&lt;font style="font-size: x-small;"&gt;	(use this value to calculate the combine shipping [&lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-usd" target="_blank"&gt;Postage rates(usd)&lt;/a&gt;] [&lt;/span&gt;&lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-eur" target="_blank"&gt;Postage rates(eur)&lt;/a&gt;&lt;/span&gt;])&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;/div&gt;
+        &lt;br /&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td id="63" /&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td id="64" /&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td id="down_block" colspan="2"&gt;
+        &lt;div class="div_down"&gt;
+        &lt;ul&gt;
+        &lt;li&gt;
+        &lt;p class="alt" style="text-decoration: underline;"&gt;Information about item: &lt;/p&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Systematica:	&lt;/font&gt;Coelenterata-&gt; Phylum Cnidaria-&gt; Class Cubozoa-&gt; Order Carybdeida-&gt; Kimberella quadrata (Glaessner,Wade,1966)&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Locality:	&lt;/font&gt;Arkhangelsk region, Winter Coast, Erga stream&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;span style="border: 0px outset rgb(78,63,33); "&gt;
+        &lt;font class="alt"&gt;Stratigraphy:	&lt;/font&gt;Yorga fm&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/td&gt;
+        &lt;td valign="top"&gt;
+        &lt;ul&gt;
+        &lt;li&gt;
+        &lt;a href="#shipping"&gt;Combine shipping to worldwide&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#deliveryterms"&gt;Shipping terms&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#parceltracking"&gt;Parcel tracking&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#parcelinsurance"&gt;Parcel insurance&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#damagesondelivery"&gt;Damages on delivery terms&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#return"&gt;Returns and money back terms&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+        &lt;a href="#other"&gt;Other our items&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;span /&gt;
+        &lt;a name="ourpolicy" /&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p class="remarks"&gt;
+        All samples offered by us undergo obligatory checking for authenticity. We guarantee lack of fakes in our assortment.For all samples we try to provide the fullest and accurate information on location, geological age and the name of species. Unfortunately, in connection with a certain complexity of definition of paleontological samples various opinions in the name are possible. If you don't agree with our definition, please, contact us.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="shipping" class="size" align="center"&gt;
+        &lt;strong&gt;WE COMBINE SH&amp;H TO WORLDWIDE&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        We combine shipping the items bought within one week. Buying from us more than one items, you can significantly save on shipping.
+        To calculate the cost of the combined shipping, please, add up the &lt;span&gt;&lt;a href="#bw"&gt;brutto&lt;/a&gt;&lt;/span&gt; weight of each item and look total shipping costs in the postage pricelist [
+        &lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-usd" target="_blank"&gt;Postage rates(usd)&lt;/a&gt;&lt;/span&gt;
+        ]		[
+        &lt;span&gt;&lt;a href="http://stores.ebay.com/russianfossilsandminerals/pages/rates-for-combine-shipping-eur" target="_blank"&gt;	Postage rates(eur)&lt;/a&gt;&lt;/span&gt;].
+        Please, be attentive, it is necessary to add the brutto weight of items.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="deliveryterms" class="size" align="center"&gt;
+        &lt;strong&gt;SHIPPING TERMS&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        Your purchase will be shipped within 2-7 days after we receive payment.  We surely send the mail with shipping confirmation and track number. The parcel will posted necessarily with track number. We post an item with Estonian company EESTI POST, thus, when receiving a parcel outside EU additional customs payments are possible. Please, specify the amount of customs payments in your customs department.&lt;br /&gt;&lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="parceltracking" class="size" align="center"&gt;
+        &lt;strong&gt;PARCEL TRACKING&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        Typically, the time of parcel delivery, rarely exceed 14 days. In case of a delay, please, check status of delivery follow link &lt;span&gt;&lt;a href="http://www.track-trace.com/post" target="_blank"&gt;www.track-trace.com&lt;/a&gt;&lt;/span&gt;. The track number you can see in the mail on confirmation of sending your purchase. In case of difficulty, please contact us specifying the track number.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="parcelinsurance" class="size" align="center"&gt;
+        &lt;strong&gt;PARCEL INSURANCE&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        You can order the parcel insurance by your additional request. The cost of insurance services is 10% of a cost for parcel up to 2 kg brutto weight, and 5% of a cost for parcel more than 2 kg brutto weight. If you want to book insurance the parcel, please contact us immediately after winning the auction.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="damagesondelivery" class="size" align="center"&gt;
+        &lt;strong&gt;DAMAGES ON DELIVERY TERMS&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        If in the course of delivery the item is damaged through our fault, we completely compensate the item cost, cost of shipping and cost of the return posting of an item. In this case free repair of an item and 100% compensation of postage are possible too (on your choice).
+        If the item is damaged because of the post company, that, regardless of insurance existence, we will offer you FREE repair an item in our laboratory. In this case, unfortunately, we cannot compensate you postage.
+        Please contact us before you leave negative feedback, and we will do our best to remedy the situation by providing a full refund of the auction price.
+        &lt;/p&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="return" class="size" align="center"&gt;
+        &lt;strong&gt;RETURNS AND MONEY BACK TERMS&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;p class="remarks"&gt;
+        We guarantee 100% money back of the purchase within 14 days of your receipt of purchase. If for whatever reason, the item that you receive does not match the auction description, we are happy to work with you on resolving the issue. Please contact us before you leave negative feedback, and we will do our best to remedy the situation by providing a full refund of the auction price. Below are the pre-conditions for refunds on returned items:
+        &lt;/p&gt;
+        &lt;span class="remarks"&gt;
+        &lt;ul&gt;
+        &lt;li&gt;
+        Please return item to address shown on package.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Return item must also be in its original condition including box and packaging.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Return shipping is at the buyer's expense.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Shipping and handling is non-refundable.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Please be aware that although some of our items are offered with free shipping, our actual outbound shipping costs will be deducted from the return refund.
+        &lt;/li&gt;
+        &lt;li&gt;
+        Refund is carried out within 3 days after we receive the sample.
+        &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/span&gt;
+        &lt;hr style="height: 7px; background-color: rgb(78,63,33);" /&gt;
+        &lt;p id="other" class="remarks" align="center"&gt;You may be interested in our other listings on eBay:&lt;/p&gt;
+        &lt;table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"&gt;
+        &lt;tr&gt;
+        &lt;td&gt;
+        &lt;script language="JavaScript" type="text/javascript"&gt;
+        &lt;!--
+
+        function scrapeCat(){
+        var are = /.+\/category(\d+?)\//im; var ama = document.body.innerHTML.match(are); if (ama != null &amp;&amp; ama.length == 2) { return ama[1]; } else { return '-1'; } }function passpara(){return '&amp;id=1138098&amp;itembgcolor=0xFFFFFF&amp;bordercolor=0x000006&amp;storewindowbgcolor=0xCEBF96&amp;toptextcolor=0xFFFFFF&amp;bottomtextcolor=0xFFFFFF&amp;stripcolor=0x4E3F21&amp;auctionclosemessagecolor=0x4E3F21&amp;emptyboxmessagecolor=0x4E3F21&amp;buttovercolor=0x4E3F21&amp;buttoutcolor=0x4E3F21&amp;searchtitlecolor=0xFFFFFF&amp;searchbuttbgcolor=0xFFFFFF&amp;searchbutttextcolor=0x4E3F21&amp;searchbuttbordercolor=0xCEBF96&amp;itemhighlightcolor=0xCEBF96&amp;navbuttonactivecolor=0xCEBF96&amp;navbuttonoutlinecolor=0xCEBF96&amp;navbuttoninactivebgcolor=0xCEBF96&amp;siteid=0&amp;cat=' + scrapeCat() + '&amp;baseurl='+escape(location.href.substring(0, location.href.lastIndexOf('/') + 1));
+        }
+        --&gt;
+        &lt;/script&gt;
+        &lt;script language="JavaScript" type="text/javascript"&gt;
+        &lt;!--
+
+
+        var flashVersion = window.flashVersion ? window.flashVersion : 0;
+        if (flashVersion &lt;= 0)
+        {
+        var agent = navigator.userAgent.toLowerCase();
+        if (navigator.plugins != null &amp;&amp; navigator.plugins.length &gt; 0)
+        {
+        var flashPlugin = navigator.plugins['Shockwave Flash'];
+        if (typeof flashPlugin == 'object')
+        {
+        /*
+        need flash version 6 or higher (this code should work with future flash plugins.)
+        */
+        if (flashPlugin.description.indexOf(' 5.') != -1)
+        flashVersion = 5;
+        else if (flashPlugin.description.indexOf(' 4.') != -1)
+        flashVersion = 4;
+        else if (flashPlugin.description.indexOf(' 3.') != -1)
+        flashVersion = 3;
+        else if (flashPlugin.description.indexOf(' 2.') != -1)
+        flashVersion = 2;
+        else if (flashPlugin.description.indexOf(' 1.') != -1)
+        flashVersion = 1;
+        else  if (flashPlugin.description.indexOf(' 6.') != -1)
+        flashVersion = 6;
+        else  if (flashPlugin.description.indexOf(' 7.') != -1)
+        flashVersion = 7;
+        else
+        flashVersion = 8;
+        }
+        }
+        else if (agent.indexOf('msie') != -1 &amp;&amp; parseInt(navigator.appVersion) &gt;= 4 &amp;&amp; agent.indexOf('win')!=-1 &amp;&amp; agent.indexOf('16bit')==-1)
+        {
+        if (window.sqHasFlash || typeof(window.andale_fv) != 'undefined')
+        {
+        if (window.sqHasFlash || andale_fv &gt;= 6)
+        {
+        flashVersion = 6;
+        }
+        }
+        else
+        {
+        document.writeln('&lt;scr' + 'ipt language="VBScript"&gt;');
+        document.writeln('on error resume next');
+        document.writeln('dim obFlash ');
+        document.writeln('set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.7")');
+        document.writeln('if IsObject(obFlash) then ');
+        document.writeln('flashVersion = 7 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.6") end if ');
+        document.writeln('if flashVersion &lt; 7 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 6 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.5") end if ');
+        document.writeln('if flashVersion &lt; 6 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 5 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.4") end if ');
+        document.writeln('if flashVersion &lt; 5 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 4 ');
+        document.writeln('else set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash.3") end if ');
+        document.writeln('if flashVersion &lt; 4 and IsObject(obFlash) then ');
+        document.writeln('flashVersion = 3 ');
+        document.writeln('end if ');
+        document.writeln('&lt;/scr' + 'ipt&gt;');
+        }
+        }
+        }
+
+        if (flashVersion &gt;= 6)
+        {
+        document.writeln('&lt;table align="center" valign="top" border="0" cellspacing="0" cellpadding="0"&gt;');document.writeln('&lt;tr&gt;&lt;td width="247"&gt;&lt;tr&gt;&lt;td align="right" valign="top"&gt;');document.writeln('&lt;OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="752" HEIGHT="320" id="auctivastorewindow" ALIGN="middle"&gt;');document.writeln('&lt;PARAM NAME=movie VALUE="http://asw.auctiva.com/StoreWindow_Slim.swf"&gt;');document.writeln('&lt;PARAM NAME=FlashVars VALUE="'+passpara()+'"&gt;');document.writeln('&lt;PARAM NAME=quality VALUE=high&gt;');
+        document.writeln('&lt;PARAM NAME=wmode VALUE=transparent&gt;');
+        document.writeln('&lt;PARAM NAME=allowScriptAccess VALUE=always&gt;');document.writeln('&lt;EMBED src="http://asw.auctiva.com/StoreWindow_Slim.swf" FlashVars="'+passpara()+'"quality=high ');document.writeln('WIDTH="752" HEIGHT="320" NAME="auctivastorewindow" ALIGN="middle"');document.writeln('TYPE="application/x-shockwave-flash"');document.writeln('PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"&gt;');document.writeln('&lt;/EMBED&gt;');
+        document.writeln('&lt;/OBJECT&gt;');
+        document.writeln('&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;');
+        }
+        else
+        {document.write('&lt;a href="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" target="_blank"&gt;&lt;img src="http://www.auctiva.com/images/StoreWin_NoFlashPlayer_Hor.jpg" border="0"&gt;&lt;/a&gt;&lt;div style="text-align:center"&gt;&lt;table align="center"&gt;&lt;tr&gt;&lt;td&gt;&lt;a style="text-decoration:none" href="http://store.auctiva.com/trilbone"&gt;&lt;img src="http://ti2.auctiva.com/sw/browse2.gif" border="0"&gt;&lt;/a&gt;&lt;/td&gt;&lt;td height="21px" valign="middle" align="center"&gt;&lt;font face="arial" size="2"&gt;&lt;b&gt;&lt;a href="http://store.auctiva.com/trilbone"&gt;trilbone&lt;/a&gt; Store&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;');}
+
+
+        --&gt;
+        &lt;/script&gt;
+        &lt;noscript&gt;
+        &lt;p class="remarks" align="center"&gt;Please enable JavaScipt for view..&lt;/p&gt;
+        &lt;/noscript&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </FullDescriptionValue>
+    </FullDescriptions>
+    <AdminComment></AdminComment>
+    <VendorId>0</VendorId>
+    <ProductTemplateId>1</ProductTemplateId>
+    <ShowOnHomePage>true</ShowOnHomePage>
+    <MetaKeywords />
+    <MetaDescription />
+    <MetaTitle />
+    <SEName></SEName>
+    <AllowCustomerReviews>true</AllowCustomerReviews>
+    <SKU>8-3919</SKU>
+    <ManufacturerPartNumber></ManufacturerPartNumber>
+    <Gtin></Gtin>
+    <IsGiftCard>false</IsGiftCard>
+    <GiftCardType>Virtual</GiftCardType>
+    <RequireOtherProducts>false</RequireOtherProducts>
+    <RequiredProductIds></RequiredProductIds>
+    <AutomaticallyAddRequiredProducts>false</AutomaticallyAddRequiredProducts>
+    <IsDownload>false</IsDownload>
+    <DownloadId>0</DownloadId>
+    <UnlimitedDownloads>true</UnlimitedDownloads>
+    <MaxNumberOfDownloads>10</MaxNumberOfDownloads>
+    <DownloadExpirationDays></DownloadExpirationDays>
+    <DownloadActivationType>WhenOrderIsPaid</DownloadActivationType>
+    <HasSampleDownload>false</HasSampleDownload>
+    <SampleDownloadId>0</SampleDownloadId>
+    <HasUserAgreement>false</HasUserAgreement>
+    <UserAgreementText></UserAgreementText>
+    <IsRecurring>false</IsRecurring>
+    <RecurringCycleLength>100</RecurringCycleLength>
+    <RecurringCyclePeriodId>0</RecurringCyclePeriodId>
+    <RecurringTotalCycles>10</RecurringTotalCycles>
+    <IsRental>false</IsRental>
+    <RentalPriceLength>1</RentalPriceLength>
+    <RentalPricePeriodId>0</RentalPricePeriodId>
+    <IsShipEnabled>true</IsShipEnabled>
+    <IsFreeShipping>false</IsFreeShipping>
+    <ShipSeparately>false</ShipSeparately>
+    <AdditionalShippingCharge>0.0000</AdditionalShippingCharge>
+    <DeliveryDateId>0</DeliveryDateId>
+    <IsTaxExempt>false</IsTaxExempt>
+    <TaxCategoryId>0</TaxCategoryId>
+    <IsTelecommunicationsOrBroadcastingOrElectronicServices>false</IsTelecommunicationsOrBroadcastingOrElectronicServices>
+    <ManageInventoryMethodId>0</ManageInventoryMethodId>
+    <UseMultipleWarehouses>false</UseMultipleWarehouses>
+    <WarehouseId>0</WarehouseId>
+    <StockQuantity>1</StockQuantity>
+    <DisplayStockAvailability>false</DisplayStockAvailability>
+    <DisplayStockQuantity>false</DisplayStockQuantity>
+    <MinStockQuantity>0</MinStockQuantity>
+    <LowStockActivityId>0</LowStockActivityId>
+    <NotifyAdminForQuantityBelow>1</NotifyAdminForQuantityBelow>
+    <BackorderModeId>0</BackorderModeId>
+    <AllowBackInStockSubscriptions>false</AllowBackInStockSubscriptions>
+    <OrderMinimumQuantity>1</OrderMinimumQuantity>
+    <OrderMaximumQuantity>1</OrderMaximumQuantity>
+    <AllowedQuantities>1</AllowedQuantities>
+    <AllowAddingOnlyExistingAttributeCombinations>false</AllowAddingOnlyExistingAttributeCombinations>
+    <DisableBuyButton>false</DisableBuyButton>
+    <DisableWishlistButton>false</DisableWishlistButton>
+    <AvailableForPreOrder>false</AvailableForPreOrder>
+    <PreOrderAvailabilityStartDateTimeUtc></PreOrderAvailabilityStartDateTimeUtc>
+    <CallForPrice>false</CallForPrice>
+    <Price>0</Price>
+    <OldPrice>0</OldPrice>
+    <ProductCost>0</ProductCost>
+    <SpecialPrice>0</SpecialPrice>
+    <SpecialPriceStartDateTimeUtc></SpecialPriceStartDateTimeUtc>
+    <SpecialPriceEndDateTimeUtc></SpecialPriceEndDateTimeUtc>
+    <CustomerEntersPrice>false</CustomerEntersPrice>
+    <MinimumCustomerEnteredPrice>0</MinimumCustomerEnteredPrice>
+    <MaximumCustomerEnteredPrice>0</MaximumCustomerEnteredPrice>
+    <Weight>0.510</Weight>
+    <Length>0.12</Length>
+    <Width>0.105</Width>
+    <Height>0.025</Height>
+    <Published>true</Published>
+    <CreatedOnUtc>3/3/2015 1:58:31 PM</CreatedOnUtc>
+    <UpdatedOnUtc>3/7/2015 2:20:04 PM</UpdatedOnUtc>
+    <ProductDiscounts></ProductDiscounts>
+    <TierPrices />
+    <ProductAttributes></ProductAttributes>
+    <ProductPictures>
+      <ProductPicture>
+        <ProductPictureId>0</ProductPictureId>
+        <PictureId>0</PictureId>
+        <DisplayOrder>0</DisplayOrder>
+        <PicturePath>866403103\1-IMG_4328.JPG</PicturePath>
+        <PictureURI></PictureURI>
+        <PictureSeoName>866403103\1-IMG_4328.JPG</PictureSeoName>
+      </ProductPicture>
+      <ProductPicture>
+        <ProductPictureId>0</ProductPictureId>
+        <PictureId>0</PictureId>
+        <DisplayOrder>0</DisplayOrder>
+        <PicturePath>866403103\2-IMG_4313.JPG</PicturePath>
+        <PictureURI></PictureURI>
+        <PictureSeoName>866403103\2-IMG_4313.JPG</PictureSeoName>
+      </ProductPicture>
+      <ProductPicture>
+        <ProductPictureId>0</ProductPictureId>
+        <PictureId>0</PictureId>
+        <DisplayOrder>0</DisplayOrder>
+        <PicturePath>866403103\3-IMG_4331.JPG</PicturePath>
+        <PictureURI></PictureURI>
+        <PictureSeoName>866403103\3-IMG_4331.JPG</PictureSeoName>
+      </ProductPicture>
+    </ProductPictures>
+    <ProductCategories />
+    <ProductManufacturers>
+      <ProductManufacturer>
+        <ProductManufacturerId>0</ProductManufacturerId>
+        <ManufacturerId>0</ManufacturerId>
+        <IsFeaturedProduct>false</IsFeaturedProduct>
+        <DisplayOrder>0</DisplayOrder>
+        <ManufacturerName invariantvalue="Архангельск,Зимний Берег,ручей Ерга">
+          <ManufacturerValue lang="invariant">Архангельск,Зимний Берег,ручей Ерга</ManufacturerValue>
+          <ManufacturerValue lang="ru-RU">Архангельск,Зимний Берег,ручей Ерга</ManufacturerValue>
+          <ManufacturerValue lang="en-US">Arkhangelsk region,Winter Coast,Erga stream</ManufacturerValue>
+        </ManufacturerName>
+      </ProductManufacturer>
+    </ProductManufacturers>
+    <ProductSpecificationAttributes>
+      <ProductSpecificationAttribute>
+        <!--Установлено значение CustomText-->
+        <ProductSpecificationAttributeId>0</ProductSpecificationAttributeId>
+        <SpecificationAttributeOptionId>0</SpecificationAttributeOptionId>
+        <CustomValue>0,510kg</CustomValue>
+        <AllowFiltering>false</AllowFiltering>
+        <ShowOnProductPage>true</ShowOnProductPage>
+        <DisplayOrder>0</DisplayOrder>
+        <AttributeName type="CustomText" invariantname="Вес образца" invariantvalue="0,510кг">
+          <AttribueValue lang="invariant">0,510кг</AttribueValue>
+          <AttribueValue lang="ru-RU">0,510кг</AttribueValue>
+          <AttribueValue lang="en-US">0,510kg</AttribueValue>
+        </AttributeName>
+      </ProductSpecificationAttribute>
+      <ProductSpecificationAttribute>
+        <!--Установлено значение CustomText-->
+        <ProductSpecificationAttributeId>0</ProductSpecificationAttributeId>
+        <SpecificationAttributeOptionId>0</SpecificationAttributeOptionId>
+        <CustomValue>12,0x10,5x2,5cm</CustomValue>
+        <AllowFiltering>false</AllowFiltering>
+        <ShowOnProductPage>true</ShowOnProductPage>
+        <DisplayOrder>0</DisplayOrder>
+        <AttributeName type="CustomText" invariantname="Размеры образца" invariantvalue="12,0x10,5x2,5см">
+          <AttribueValue lang="invariant">12,0x10,5x2,5см</AttribueValue>
+          <AttribueValue lang="ru-RU">12,0x10,5x2,5см</AttribueValue>
+          <AttribueValue lang="en-US">12,0x10,5x2,5cm</AttribueValue>
+        </AttributeName>
+      </ProductSpecificationAttribute>
+      <ProductSpecificationAttribute>
+        <!--Установлено значение CustomText-->
+        <ProductSpecificationAttributeId>0</ProductSpecificationAttributeId>
+        <SpecificationAttributeOptionId>0</SpecificationAttributeOptionId>
+        <CustomValue>3,3x1,9cm</CustomValue>
+        <AllowFiltering>false</AllowFiltering>
+        <ShowOnProductPage>true</ShowOnProductPage>
+        <DisplayOrder>0</DisplayOrder>
+        <AttributeName type="CustomText" invariantname="Размеры" invariantvalue="3,3x1,9см">
+          <AttribueValue lang="invariant">3,3x1,9см</AttribueValue>
+          <AttribueValue lang="ru-RU">3,3x1,9см</AttribueValue>
+          <AttribueValue lang="en-US">3,3x1,9cm</AttribueValue>
+        </AttributeName>
+      </ProductSpecificationAttribute>
+      <ProductSpecificationAttribute>
+        <!--Установлено значение CustomText-->
+        <ProductSpecificationAttributeId>0</ProductSpecificationAttributeId>
+        <SpecificationAttributeOptionId>0</SpecificationAttributeOptionId>
+        <CustomValue>Coelenterata-&gt;Phylum Cnidaria-&gt;Class Cubozoa-&gt;Order Carybdeida-&gt;Kimberella quadrata (Glaessner,Wade,1966)</CustomValue>
+        <AllowFiltering>false</AllowFiltering>
+        <ShowOnProductPage>true</ShowOnProductPage>
+        <DisplayOrder>0</DisplayOrder>
+        <AttributeName type="CustomText" invariantname="Классификация" invariantvalue="Кишечнополостные-&gt;Тип Стрекающие-&gt;Класс Кубомедузы-&gt;Order Carybdeida-&gt;Kimberella quadrata (Glaessner,Wade,1966)">
+          <AttribueValue lang="invariant">Кишечнополостные-&gt;Тип Стрекающие-&gt;Класс Кубомедузы-&gt;Order Carybdeida-&gt;Kimberella quadrata (Glaessner,Wade,1966)</AttribueValue>
+          <AttribueValue lang="ru-RU">Кишечнополостные-&gt;Тип Стрекающие-&gt;Класс Кубомедузы-&gt;Order Carybdeida-&gt;Kimberella quadrata (Glaessner,Wade,1966)</AttribueValue>
+          <AttribueValue lang="en-US">Coelenterata-&gt;Phylum Cnidaria-&gt;Class Cubozoa-&gt;Order Carybdeida-&gt;Kimberella quadrata (Glaessner,Wade,1966)</AttribueValue>
+        </AttributeName>
+      </ProductSpecificationAttribute>
+      <ProductSpecificationAttribute>
+        <!--Order Carybdeida, как поисковое имя, должно совпадать со значением для инвариантного языка-->
+        <ProductSpecificationAttributeId>0</ProductSpecificationAttributeId>
+        <SpecificationAttributeOptionId>0</SpecificationAttributeOptionId>
+        <CustomValue></CustomValue>
+        <AllowFiltering>true</AllowFiltering>
+        <ShowOnProductPage>true</ShowOnProductPage>
+        <DisplayOrder>0</DisplayOrder>
+        <AttributeName type="Option" invariantname="Отряд (палеонтологич.)" invariantvalue="Order Carybdeida">
+          <AttribueValue lang="invariant">Order Carybdeida</AttribueValue>
+          <AttribueValue lang="ru-RU">Order Carybdeida</AttribueValue>
+          <AttribueValue lang="en-US">Order Carybdeida</AttribueValue>
+        </AttributeName>
+      </ProductSpecificationAttribute>
+    </ProductSpecificationAttributes>
+    <ProductTags />
+    <ProductAcl />
+  </Product>
+</Products>

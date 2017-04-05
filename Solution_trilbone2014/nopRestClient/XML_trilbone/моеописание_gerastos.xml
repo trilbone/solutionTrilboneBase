@@ -1,0 +1,71 @@
+<DATA>
+  <ELEMENT filename="MRTrilobites.tree" name="Systematica" root="Systematica" lang="en-US" id="321">
+    <NODE order="1" nodeid="316">class Trilobita (Walch 1771)</NODE>
+    <NODE order="2" nodeid="267">order Proetida (Fortey &amp; Owens, 1975)<INFO>Fortey et Owens, 1975</INFO></NODE>
+    <NODE order="3" nodeid="317">suborder Proetina (Fortey &amp; Owens 1975)</NODE>
+    <NODE order="4" nodeid="318">superfamily Proetoidea (Hawle &amp; Corda, 1847)</NODE>
+    <NODE order="5" nodeid="319">family Proetidae (Salter, 1864)</NODE>
+    <NODE order="6" nodeid="324">subfamily Proetinae (HAWLE &amp; CORDA, 1847)</NODE>
+    <NODE order="7" nodeid="320">genus Gerastos (Goldfuss, 1843)<INFO>Type species: Proetus cuvieri STEININGER, 1831</INFO></NODE>
+<NODE order="8" nodeid="321">Gerastos granulosus (Goldfuss, 1843)
+	<DESCRIPTION>Gerastos granulosus, which is sometimes called Proetus granulosus - small trilobite existed since the Devonian period up to the Upper Permian . It is known from the findings in the Atlas Mountains in Morocco.
+
+The most outstanding feature is the kind of high granularity ( granularity - hence the species name ) its onion- convex glabella - the middle of the head shield - and very short schёchnye spikes. Length adult trilobite reached 5.5 cm, width 4.5 cm and height of 2.5 cm</DESCRIPTION>
+
+<LINKS>
+<LINK treename="Localities">
+<NODEID value="323"></NODEID>
+<NODEID value="326"></NODEID></LINK>
+<LINK treename="Age">
+<NODEID value="269">
+</NODEID>
+</LINK>
+</LINKS>
+</NODE>
+
+  </ELEMENT>
+  <ELEMENT filename="MRTrilobites.tree" name="Systematica" root="Систематика" lang="ru-RU" id="321">
+    <NODE order="1" nodeid="316">Класс Trilobita (Walch 1771)</NODE>
+    <NODE order="2" nodeid="267"> отряд Proetida (Fortey &amp; Owens, 1975)<INFO>Fortey et Owens, 1975</INFO></NODE>
+    <NODE order="3" nodeid="317"> подотряд Proetina (Fortey &amp; Owens 1975)</NODE>
+    <NODE order="4" nodeid="318">надсемейство Proetoidea (Hawle &amp; Corda, 1847)</NODE>
+    <NODE order="5" nodeid="319">семейство Proetidae (Salter, 1864)</NODE>
+    <NODE order="6" nodeid="324">subfamily Proetinae (HAWLE &amp; CORDA, 1847)</NODE>
+    <NODE order="7" nodeid="320"> род Gerastos (Goldfuss, 1843)<INFO>Type species: Proetus cuvieri STEININGER, 1831</INFO></NODE>
+    <NODE order="8" nodeid="321">Gerastos granulosus (Goldfuss, 1843)<DESCRIPTION>Gerastos granulosus, который иногда называют Proetus granulosus – небольшой трилобит, существовавший с девонского периода вплоть до верхней перми. Это известно из находок в Атласских горах в Марокко.
+
+Наиболее отличительными чертами вида является высокая зернистость (гранулированность – отсюда и название вида) его луковицеобразной выпуклой глабели – средней части головного щита – и очень короткие щёчные шипы. Длина взрослого трилобита достигала 5,5 см, ширина 4,5 см и высота 2,5 см.
+
+Тело состояло из трёх частей – головы, защищенной прочным панцирем, туловища (торакса), состоявшего из подвижных сегментов, каждый из которых оканчивался по бокам короткими остриями, и хвоста (пигидия), сформированного сросшимися сегментами. Выпуклые глаза фасеточного типа располагались по бокам глабели на верхней стороне головного щита – цефалона. Рот и конечности находились на брюшной стороне тела.
+
+Gerastos granulosus обитал в море, в его мелководных участках и вел донный образ жизни. Фоссилии обнаруживаются, в основном, в песчаниках Антиатласа, бывших в девонском периоде краем – заливом мелкого тёплого моря. Острые края цефалона и короткие шипы, которыми оканчиваются щёки (либригены) указывают на то, что Gerastos granulosus легко и быстро зарывался в донный ил, но неглубоко, так как глаза не выдаются над глабелью.
+
+Относительно большие глаза говорят о том, что он обитал в прозрачных светлых водах с относительно малым содержанием илистых отложений и вёл дневной образ жизни. Расположение глаз показывает, что они использовались, в первую очередь, для наблюдения за хищниками. Гибкость сегментов торакса позволяла Gerastos granulosus быстро сворачиваться в плотный клубок, прочно защищённый щитами цефалона и лигидия. По-видимому, это животное питалось илом и его содержимым.
+
+Предполагается, что появление надсемейства Proetoidea можно отнести к самому началу ордовикского периода, когда многие группы трилобитов, процветавших в кембрии, уже вымерли. Proetoidea начало развиваться с середины силура и вымерло позже всех других – в верхней перми, пережив остальных трилобитов, вымерших в девоне, на 60 миллионов лет. Продолжительность существования этого надсемейства также была наиболее длительной и составляла 170 миллионов лет.
+
+Исчезновение его приходится на время «пермской катастрофы» – самого массового вымирания в истории Земли. Тогда перестало существовать свыше 90% всех морских видов и 70 % наземных видов позвоночных, почти 60% родов и более 80 % видов всего класса насекомых. Основной причиной считается резкое повышение средней температуры на Земле (на 10-20 градусов), которое привело к сильному уменьшению содержания кислорода в воде. Впрочем, существует несколько версий причин этого катастрофического явления.
+
+Некоторые исследователи, в частности, R.M. Owens (Великобритания), полагают, что некоторые виды трилобитов могли пермское вымирание пережить.</DESCRIPTION><LINKS><LINK treename="Localities"><NODEID value="323"></NODEID><NODEID value="326"></NODEID></LINK><LINK treename="Age"><NODEID value="269"></NODEID></LINK></LINKS></NODE>
+  </ELEMENT>
+  <ELEMENT filename="MRTrilobites.tree" name="TimeScale" root="TimeScale" lang="en-US" id="269">
+    <NODE order="1" nodeid="267">Devonian</NODE>
+    <NODE order="2" nodeid="268">middle devonian (393.3 – 382.7 Ma)</NODE>
+    <NODE order="3" nodeid="269">Eifelian stage(393.3 – 387.7 Ma)<LINKS><LINK treename="Devonian"><NODEID value="321"></NODEID><NODEID value="322"></NODEID></LINK></LINKS></NODE>
+  </ELEMENT>
+  <ELEMENT filename="MRTrilobites.tree" name="TimeScale" root="Геологический возраст" lang="ru-RU" id="269">
+    <NODE order="1" nodeid="267">девон</NODE>
+    <NODE order="2" nodeid="268">средний девон (393.3 – 382.7 млн.лет)</NODE>
+    <NODE order="3" nodeid="269">Эйфельский ярус(393.3 – 387.7 млн.лет)<LINKS><LINK treename="Devonian"><NODEID value="321"></NODEID><NODEID value="322"></NODEID></LINK></LINKS></NODE>
+  </ELEMENT>
+  <ELEMENT filename="MRTrilobites.tree" name="Locality" root="Locality" lang="en-US" id="326">
+    <NODE order="1" nodeid="324">Germany</NODE>
+    <NODE order="2" nodeid="325">Eifel Region</NODE>
+    <NODE order="3" nodeid="326">Ahrdorf formation<LINKS><LINK treename="Devonian"><NODEID value="321"></NODEID></LINK></LINKS></NODE>
+  </ELEMENT>
+  <ELEMENT filename="MRTrilobites.tree" name="Locality" root="Местонахождение" lang="ru-RU" id="326">
+    <NODE order="1" nodeid="324">Германия</NODE>
+    <NODE order="2" nodeid="325">район Эйфель</NODE>
+    <NODE order="3" nodeid="326">формация Ahrdorf<LINKS><LINK treename="Devonian"><NODEID value="321"></NODEID></LINK></LINKS></NODE>
+  </ELEMENT>
+</DATA>

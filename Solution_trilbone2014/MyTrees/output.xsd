@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns:treeout="http://www.trilbone.com/treeout"
+           targetNamespace="http://www.trilbone.com/treeout">
+  <xs:element name="DATA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="ELEMENT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="NODE">
+                <xs:complexType mixed="true">
+                  <xs:sequence minOccurs="0">
+                    <xs:element name="DESCRIPTION" minOccurs="0" type="xs:string" />
+                    <xs:element name="INFO" minOccurs="0" type="xs:string" />
+                    <xs:element name="IMAGES" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="IMG" maxOccurs="unbounded" >
+                            <xs:complexType>
+                              <xs:attribute name="href" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="LINKS" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0">
+                          <xs:element name="LINK" maxOccurs="unbounded" >
+                            <xs:complexType>
+                              <xs:sequence minOccurs="0">
+                                <xs:element name="NODEID" maxOccurs="unbounded" >
+                                  <xs:complexType>
+                                    <xs:attribute name="value" type="xs:integer" use="required" />
+                                  </xs:complexType>
+                                 </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="nodeid" type="xs:integer" use="required" />
+                              <xs:attribute name="treename" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    
+                  </xs:sequence>
+                  <xs:attribute name="order" type="xs:integer" use="required" />
+                  <xs:attribute name="nodeid" type="xs:integer" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            
+            <xs:attribute name="filename" type="xs:string" use="required" />
+            <xs:attribute name="name" type="xs:string" use="required" />
+            <xs:attribute name="root" type="xs:string" use="required" />
+            <xs:attribute name="lang" type="xs:string" use="required" />
+            <xs:attribute name="id" type="xs:integer" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,2009 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBREADYSAMPLEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="Clients">
+          <Key>
+            <PropertyRef Name="ClientID" />
+          </Key>
+          <Property Name="ClientID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SecondName" Type="nvarchar" MaxLength="50" />
+          <Property Name="NickName" Type="nvarchar" MaxLength="50" />
+          <Property Name="PrimaryDiscount" Type="numeric" Precision="2" Scale="0" />
+          <Property Name="MailBox1" Type="nvarchar" MaxLength="50" />
+          <Property Name="MailBox2" Type="nvarchar" MaxLength="50" />
+          <Property Name="MailBox3" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhoneNumber1" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhoneNumber2" Type="nvarchar" MaxLength="50" />
+          <Property Name="PhoneNumber3" Type="nvarchar" MaxLength="50" />
+          <Property Name="Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="ConfirmOrders">
+          <Key>
+            <PropertyRef Name="ConfirmOrderID" />
+          </Key>
+          <Property Name="ConfirmOrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClientID" Type="int" />
+          <Property Name="CurrencyName" Type="nchar" MaxLength="3" />
+          <Property Name="RateOfExchange" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="ConfirmTotalOrderPrice" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="ConfirmShippingPrice" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="ConfirmStockOutFlag" Type="bit" />
+          <Property Name="ConfirmStockOutDate" Type="date" />
+          <Property Name="CheckoutFlag" Type="bit" />
+          <Property Name="CheckoutDate" Type="date" />
+          <Property Name="CancellationFlag" Type="bit" />
+          <Property Name="CancellationDate" Type="date" />
+          <Property Name="CancellationRules" Type="nvarchar" MaxLength="250" />
+          <Property Name="ShipmentID" Type="int" />
+          <Property Name="PaymentOperationID" Type="int" />
+          <Property Name="PaymentUncompleteFlag" Type="bit" />
+          <Property Name="Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="Description" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ClientID" Type="int" Nullable="false" />
+          <Property Name="OrderInfoPaper" Type="xml" />
+          <Property Name="OrderDate" Type="date" Nullable="false" />
+          <Property Name="ExpierensDate" Type="date" />
+          <Property Name="OrderTotalPrice" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="FreeShippingFlag" Type="bit" />
+          <Property Name="ShippingPrice" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="CurrencyName" Type="nchar" MaxLength="3" />
+          <Property Name="RateOfExchange" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="ConfirmTotalOrderPrice" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="ConfirmShippingPrice" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="ConfirmStockOutFlag" Type="bit" />
+          <Property Name="ConfirmStockOutDate" Type="date" />
+          <Property Name="CheckoutFlag" Type="bit" />
+          <Property Name="CheckoutDate" Type="date" />
+          <Property Name="CancellationFlag" Type="bit" />
+          <Property Name="CancellationDate" Type="date" />
+          <Property Name="Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="SamplesAndOrders">
+          <Key>
+            <PropertyRef Name="SampleNumber" />
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="SampleNumber" Type="numeric" Precision="13" Scale="0" Nullable="false" />
+          <Property Name="OrderID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Price" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+          <Property Name="Discount" Type="numeric" Precision="3" Scale="1" Nullable="false" />
+          <Property Name="ConfirmFlag" Type="bit" />
+          <Property Name="ConfirmPrice" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="ConfirmShippingPrice" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="FreeShippingFlag" Type="bit" />
+          <Property Name="CurrencyName" Type="nchar" MaxLength="3" />
+          <Property Name="RateOfExchange" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="CheckoutFlag" Type="bit" />
+          <Property Name="CheckoutDate" Type="date" />
+          <Property Name="Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="SamplesOnSale">
+          <Key>
+            <PropertyRef Name="SampleNumber" />
+          </Key>
+          <Property Name="SampleNumber" Type="numeric" Precision="13" Scale="0" Nullable="false" />
+          <Property Name="OnSaleFlag" Type="bit" />
+          <Property Name="ConfirmOrderID" Type="int" />
+          <Property Name="BasePrice" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="SoldPrice" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="Costs" Type="numeric" Precision="8" Scale="2" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="SampleXMLDescription" Type="xml" />
+          <Property Name="Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="SampleXMLFile" Type="xml" />
+          <Property Name="OnSaleDate" Type="datetime2" Precision="7" />
+          <Property Name="OnSaleCreator" Type="nchar" MaxLength="50" />
+          <Property Name="SampleXMLFileRU" Type="xml" />
+          <Property Name="id_treeCode" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_label">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="labelid" Type="int" Nullable="false" />
+          <Property Name="IndexName" Type="nvarchar" MaxLength="50" />
+          <Property Name="group" Type="nvarchar" MaxLength="50" />
+          <Property Name="lang" Type="nchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="tb_LabelFile">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="href" Type="nvarchar" MaxLength="300" />
+          <Property Name="labeltype" Type="nvarchar" MaxLength="50" />
+          <Property Name="labelID" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_labelInfo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="labelInfoID" Type="int" Nullable="false" />
+          <Property Name="group" Type="nvarchar" MaxLength="50" />
+          <Property Name="treename" Type="nvarchar" MaxLength="50" />
+          <Property Name="rootnode" Type="nvarchar" MaxLength="50" />
+          <Property Name="nodeID" Type="int" />
+          <Property Name="order" Type="int" />
+          <Property Name="lang" Type="nchar" MaxLength="5" />
+          <Property Name="value" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="tb_node">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="order" Type="int" />
+          <Property Name="treename" Type="nvarchar" MaxLength="50" />
+          <Property Name="rootnode" Type="nvarchar" MaxLength="50" />
+          <Property Name="combined" Type="nchar" MaxLength="5" />
+          <Property Name="value" Type="nvarchar(max)" />
+          <Property Name="labelID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_nodeid">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="labelinfoid" Type="int" />
+          <Property Name="nodeid" Type="int" />
+          <Property Name="nodenodID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbActualWord">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Word" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="LangID" Type="nvarchar" MaxLength="6" />
+          <Property Name="Description" Type="nvarchar" MaxLength="200" />
+          <Property Name="Tracking" Type="bit" Nullable="false" />
+          <Property Name="HasTracked" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbNoiseSellerCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WordID" Type="int" Nullable="false" />
+          <Property Name="SellerID" Type="nvarchar" MaxLength="150" />
+          <Property Name="CategoryID" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="tbNoiseWord">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Word" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="LangID" Type="nvarchar" MaxLength="6" />
+          <Property Name="Description" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="tbSLoperation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="tbSLResource">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="tbSLSales">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TimeMarker" Type="datetime2" Precision="0" Nullable="false" />
+          <Property Name="shippinginamount" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="auctionfee" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="getmoneyfee" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="shippingoutfee" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="exportfee" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="nalogifee" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="trilbonefee" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="totalamount" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="closed" Type="bit" />
+          <Property Name="CalcTimeMarker" Type="datetime2" Precision="0" />
+          <Property Name="PartnerPaid" Type="bit" />
+          <Property Name="PaidTimeMarker" Type="datetime2" Precision="0" />
+          <Property Name="demandUUID" Type="nvarchar" MaxLength="50" />
+          <Property Name="ParcelWeight" Type="numeric" Precision="4" Scale="3" />
+          <Property Name="ParcelSizeA" Type="numeric" Precision="3" Scale="3" />
+          <Property Name="ParcelSizeB" Type="numeric" Precision="3" Scale="3" />
+          <Property Name="ParcelSizeC" Type="numeric" Precision="3" Scale="3" />
+        </EntityType>
+        <EntityType Name="tbSLSample">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TimeMarker" Type="datetime2" Precision="0" Nullable="false" />
+          <Property Name="SampleNumber" Type="numeric" Precision="13" Scale="0" />
+          <Property Name="SLoperationID" Type="int" Nullable="false" />
+          <Property Name="SLResourceID" Type="int" />
+          <Property Name="SLResourceName" Type="nvarchar" MaxLength="50" />
+          <Property Name="clientMCID" Type="nvarchar" MaxLength="50" />
+          <Property Name="clientName" Type="nvarchar" MaxLength="150" />
+          <Property Name="clientEmail" Type="nvarchar" MaxLength="50" />
+          <Property Name="Title" Type="nvarchar(max)" />
+          <Property Name="Condition" Type="nvarchar(max)" />
+          <Property Name="amount" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="currency" Type="nvarchar" MaxLength="3" />
+          <Property Name="rate" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="resourceFee" Type="numeric" Precision="6" Scale="2" />
+          <Property Name="emailSended" Type="bit" />
+        </EntityType>
+        <EntityType Name="tbSLSampleSales">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tbSLSampleID" Type="int" Nullable="false" />
+          <Property Name="tbSLSalesID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbWordHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="itemId" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="location" Type="nvarchar" MaxLength="150" />
+          <Property Name="galleryURL" Type="nvarchar" MaxLength="300" />
+          <Property Name="viewItemURL" Type="nvarchar" MaxLength="300" />
+          <Property Name="primaryCategory" Type="nvarchar" MaxLength="150" />
+          <Property Name="sellingStatus" Type="nvarchar" MaxLength="30" />
+          <Property Name="bidCountSpecified" Type="bit" />
+          <Property Name="bidCount" Type="int" />
+          <Property Name="currentPrice" Type="decimal" Precision="6" Scale="2" />
+          <Property Name="currencyId" Type="nvarchar" MaxLength="3" />
+          <Property Name="shippingServiceCost" Type="decimal" Precision="6" Scale="2" />
+          <Property Name="ShippingCurrencyId" Type="nvarchar" MaxLength="3" />
+          <Property Name="startTime" Type="datetime2" Precision="7" />
+          <Property Name="startTimeSpecified" Type="bit" />
+          <Property Name="endTime" Type="datetime2" Precision="7" />
+          <Property Name="endTimeSpecified" Type="bit" />
+          <Property Name="timeLeft" Type="bigint" />
+          <Property Name="listingType" Type="nvarchar" MaxLength="30" />
+          <Property Name="buyItNowAvailable" Type="bit" />
+          <Property Name="bestOfferEnabled" Type="bit" />
+          <Property Name="WatchCount" Type="int" />
+          <Property Name="WatchCountSpecified" Type="bit" />
+          <Property Name="ListingStatus" Type="nvarchar" MaxLength="30" />
+          <Property Name="TimeMarker" Type="datetime2" Precision="7" />
+          <Property Name="WordID" Type="int" />
+          <Property Name="IsClosed" Type="bit" />
+          <Property Name="Seller" Type="nvarchar" MaxLength="150" />
+          <Property Name="QtySold" Type="int" />
+          <Property Name="title" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="tbWordQuryHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TimeMarker" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Success" Type="bit" />
+          <Property Name="QueryCount" Type="int" />
+          <Property Name="TrackItemsCount" Type="int" />
+          <Property Name="EndItemsCount" Type="int" />
+          <Property Name="SoldItemsCount" Type="int" />
+          <Property Name="Message" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "DBREADYSAMPLE.dbo.VW_NumberOnSale" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+        <EntityType Name="VW_NumberOnSale">
+          <Key>
+            <PropertyRef Name="NumberOnSale" />
+          </Key>
+          <Property Name="NumberOnSale" Type="numeric" Precision="13" Scale="0" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ConfirmOrders_Clients">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="0..1" />
+          <End Role="ConfirmOrders" Type="Self.ConfirmOrders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="ClientID" />
+            </Principal>
+            <Dependent Role="ConfirmOrders">
+              <PropertyRef Name="ClientID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Orders_Clients">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="ClientID" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="ClientID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SamplesAndOrders_Orders">
+          <End Role="Orders" Type="Self.Orders" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SamplesAndOrders" Type="Self.SamplesAndOrders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="SamplesAndOrders">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_LabelFile_0">
+          <End Role="tb_label" Type="Self.tb_label" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tb_LabelFile" Type="Self.tb_LabelFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_label">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tb_LabelFile">
+              <PropertyRef Name="labelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_node_tb_label">
+          <End Role="tb_label" Type="Self.tb_label" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tb_node" Type="Self.tb_node" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_label">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tb_node">
+              <PropertyRef Name="labelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_nodeid_tb_node">
+          <End Role="tb_node" Type="Self.tb_node" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tb_nodeid" Type="Self.tb_nodeid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_node">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tb_nodeid">
+              <PropertyRef Name="nodenodID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbSLSample_0">
+          <End Role="tbSLoperation" Type="Self.tbSLoperation" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tbSLSample" Type="Self.tbSLSample" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbSLoperation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tbSLSample">
+              <PropertyRef Name="SLoperationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbSLSample_1">
+          <End Role="tbSLResource" Type="Self.tbSLResource" Multiplicity="0..1" />
+          <End Role="tbSLSample" Type="Self.tbSLSample" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbSLResource">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tbSLSample">
+              <PropertyRef Name="SLResourceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbSLSampleSales_0">
+          <End Role="tbSLSample" Type="Self.tbSLSample" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tbSLSampleSales" Type="Self.tbSLSampleSales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbSLSample">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tbSLSampleSales">
+              <PropertyRef Name="tbSLSampleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbSLSampleSales_1">
+          <End Role="tbSLSales" Type="Self.tbSLSales" Multiplicity="1" />
+          <End Role="tbSLSampleSales" Type="Self.tbSLSampleSales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbSLSales">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tbSLSampleSales">
+              <PropertyRef Name="tbSLSalesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="Delete_tb_Orders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Original_OrderID" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="Delete_tb_SampleOnSale" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Original_SampleNumber" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Delete_tb_SamplesAndOrders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Original_SampleNumber" Type="numeric" Mode="In" />
+          <Parameter Name="Original_OrderID" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="fn_GetLabelText" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="nvarchar(max)">
+          <Parameter Name="lid" Type="int" Mode="In" />
+        </Function>
+        <Function Name="fn_GetLastFrase" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="nvarchar(max)">
+          <Parameter Name="value" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="delimeter" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="GetEbayInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OnlySold" Type="bit" Mode="In" />
+          <Parameter Name="OnlyUnSold" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="getLabelInfoIdByID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="labelinfoid" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetLabelTextById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="labelID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Insert_client" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+          <Parameter Name="NickName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Insert_tb_Orders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="nchar" Mode="In" />
+          <Parameter Name="ClientID" Type="numeric" Mode="In" />
+          <Parameter Name="OrderDate" Type="date" Mode="In" />
+          <Parameter Name="OrderInfoPaper" Type="xml" Mode="In" />
+          <Parameter Name="OrderTotalPrice" Type="numeric" Mode="In" />
+          <Parameter Name="FreeShippingFlag" Type="bit" Mode="In" />
+          <Parameter Name="ShippingPrice" Type="numeric" Mode="In" />
+          <Parameter Name="CurrencyName" Type="nchar" Mode="In" />
+          <Parameter Name="RateOfExchange" Type="numeric" Mode="In" />
+          <Parameter Name="ConfirmStockOutFlag" Type="bit" Mode="In" />
+          <Parameter Name="ConfirmStockOutDate" Type="date" Mode="In" />
+          <Parameter Name="ConfirmTotalOrderPrice" Type="numeric" Mode="In" />
+          <Parameter Name="ConfirmShippingPrice" Type="numeric" Mode="In" />
+          <Parameter Name="CheckoutFlag" Type="bit" Mode="In" />
+          <Parameter Name="CheckoutDate" Type="date" Mode="In" />
+          <Parameter Name="ExpierensDate" Type="date" Mode="In" />
+          <Parameter Name="CancellationFlag" Type="bit" Mode="In" />
+          <Parameter Name="CancellationDate" Type="date" Mode="In" />
+        </Function>
+        <Function Name="Insert_tb_SamplesAndOrders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+          <Parameter Name="OrderID" Type="nchar" Mode="In" />
+          <Parameter Name="Price" Type="numeric" Mode="In" />
+          <Parameter Name="Discount" Type="numeric" Mode="In" />
+          <Parameter Name="ConfirmFlag" Type="bit" Mode="In" />
+          <Parameter Name="ConfirmPrice" Type="numeric" Mode="In" />
+          <Parameter Name="ConfirmShippingPrice" Type="numeric" Mode="In" />
+          <Parameter Name="FreeShippingFlag" Type="bit" Mode="In" />
+          <Parameter Name="CurrencyName" Type="nchar" Mode="In" />
+          <Parameter Name="RateOfExchange" Type="numeric" Mode="In" />
+          <Parameter Name="CheckoutFlag" Type="bit" Mode="In" />
+          <Parameter Name="CheckoutDate" Type="date" Mode="In" />
+        </Function>
+        <Function Name="Insert_tb_SamplesOnSale" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+          <Parameter Name="OnSaleFlag" Type="bit" Mode="In" />
+          <Parameter Name="Description" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="pc_GetLabelsByIndexName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="indexname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="pc_GetLabelsByIndexName_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="indexname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="pc_GetLabelTextByID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="lid" Type="int" Mode="In" />
+        </Function>
+        <Function Name="pSLAddDemandUUID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+          <Parameter Name="demandUUID" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="pSLAddInfoToSaleByDemandUUID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="demandUUID" Type="nvarchar" Mode="In" />
+          <Parameter Name="auctionfee" Type="numeric" Mode="In" />
+          <Parameter Name="exportfee" Type="numeric" Mode="In" />
+          <Parameter Name="getmoneyfee" Type="numeric" Mode="In" />
+          <Parameter Name="nalogifee" Type="numeric" Mode="In" />
+          <Parameter Name="trilbonefee" Type="numeric" Mode="In" />
+          <Parameter Name="SubTotal" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="pSLAddOutShippingFee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="demandUUID" Type="nvarchar" Mode="In" />
+          <Parameter Name="TotalInShippingFee" Type="numeric" Mode="In" />
+          <Parameter Name="ParcelWeight" Type="numeric" Mode="In" />
+          <Parameter Name="ParcelSizeA" Type="numeric" Mode="In" />
+          <Parameter Name="ParcelSizeB" Type="numeric" Mode="In" />
+          <Parameter Name="ParcelSizeC" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="pSLGetSampleHistoryInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="pSLGetSampleInsectionFeeTotal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="pSLGetSampleLastSaleInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="pSLSampleEnd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+          <Parameter Name="SLResourceID" Type="int" Mode="In" />
+          <Parameter Name="SLResourceName" Type="nvarchar" Mode="In" />
+          <Parameter Name="TimeMarker" Type="datetime2" Mode="In" />
+        </Function>
+        <Function Name="pSLSampleInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+          <Parameter Name="SLResourceID" Type="int" Mode="In" />
+          <Parameter Name="SLResourceName" Type="nvarchar" Mode="In" />
+          <Parameter Name="title" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="Condition" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="amount" Type="numeric" Mode="In" />
+          <Parameter Name="currency" Type="nvarchar" Mode="In" />
+          <Parameter Name="rate" Type="numeric" Mode="In" />
+          <Parameter Name="TimeMarker" Type="datetime2" Mode="In" />
+          <Parameter Name="clientMCID" Type="nvarchar" Mode="In" />
+          <Parameter Name="clientName" Type="nvarchar" Mode="In" />
+          <Parameter Name="clientEmail" Type="nvarchar" Mode="In" />
+          <Parameter Name="resourceFee" Type="numeric" Mode="In" />
+          <Parameter Name="emailSended" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="pSLSampleLost" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+          <Parameter Name="TimeMarker" Type="datetime2" Mode="In" />
+        </Function>
+        <Function Name="pSLSampleSingleSold" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="samplenumber" Type="numeric" Mode="In" />
+          <Parameter Name="shippinginamount" Type="numeric" Mode="In" />
+          <Parameter Name="auctionfee" Type="numeric" Mode="In" />
+          <Parameter Name="getmoneyfee" Type="numeric" Mode="In" />
+          <Parameter Name="shippingoutfee" Type="numeric" Mode="In" />
+          <Parameter Name="exportfee" Type="numeric" Mode="In" />
+          <Parameter Name="nalogifee" Type="numeric" Mode="In" />
+          <Parameter Name="trilbonefee" Type="numeric" Mode="In" />
+          <Parameter Name="TimeMarker" Type="datetime2" Mode="In" />
+          <Parameter Name="SLResourceID" Type="int" Mode="In" />
+          <Parameter Name="SLResourceName" Type="nvarchar" Mode="In" />
+          <Parameter Name="clientMCID" Type="nvarchar" Mode="In" />
+          <Parameter Name="clientName" Type="nvarchar" Mode="In" />
+          <Parameter Name="clientEmail" Type="nvarchar" Mode="In" />
+          <Parameter Name="currency" Type="nvarchar" Mode="In" />
+          <Parameter Name="amount" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Select_AllActiveOrders_tb_Orders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Select_AllOrders_tb_Orders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Select_AllSamplesInOrders_tb_SamplesAndOrders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="Select_Clients_tb_Clients" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Select_LastOrderNonClosed" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Select_OnSale_tb_SamplesOnSale" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Select_OrderedSamplesInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="Select_OrdersForClient" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ClientID" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Select_SampleOrdersInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Select_tb_Orders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="Select_tb_SamplesAndOrders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+          <Parameter Name="OrderID" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="Select_tb_SamplesOnSale" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Update_tb_Orders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ClientID" Type="numeric" Mode="In" />
+          <Parameter Name="OrderDate" Type="date" Mode="In" />
+          <Parameter Name="OrderInfoPaper" Type="xml" Mode="In" />
+          <Parameter Name="OrderTotalPrice" Type="numeric" Mode="In" />
+          <Parameter Name="FreeShippingFlag" Type="bit" Mode="In" />
+          <Parameter Name="ShippingPrice" Type="numeric" Mode="In" />
+          <Parameter Name="CurrencyName" Type="nchar" Mode="In" />
+          <Parameter Name="RateOfExchange" Type="numeric" Mode="In" />
+          <Parameter Name="ConfirmStockOutFlag" Type="bit" Mode="In" />
+          <Parameter Name="ConfirmStockOutDate" Type="date" Mode="In" />
+          <Parameter Name="ConfirmTotalOrderPrice" Type="numeric" Mode="In" />
+          <Parameter Name="ConfirmShippingPrice" Type="numeric" Mode="In" />
+          <Parameter Name="CheckoutFlag" Type="bit" Mode="In" />
+          <Parameter Name="CheckoutDate" Type="date" Mode="In" />
+          <Parameter Name="ExpierensDate" Type="date" Mode="In" />
+          <Parameter Name="CancellationFlag" Type="bit" Mode="In" />
+          <Parameter Name="CancellationDate" Type="date" Mode="In" />
+          <Parameter Name="Original_OrderID" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="Update_tb_SamplesAndOrders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SampleNumber" Type="numeric" Mode="In" />
+          <Parameter Name="OrderID" Type="nchar" Mode="In" />
+          <Parameter Name="Price" Type="numeric" Mode="In" />
+          <Parameter Name="Discount" Type="numeric" Mode="In" />
+          <Parameter Name="ConfirmFlag" Type="bit" Mode="In" />
+          <Parameter Name="ConfirmPrice" Type="numeric" Mode="In" />
+          <Parameter Name="ConfirmShippingPrice" Type="numeric" Mode="In" />
+          <Parameter Name="FreeShippingFlag" Type="bit" Mode="In" />
+          <Parameter Name="CurrencyName" Type="nchar" Mode="In" />
+          <Parameter Name="RateOfExchange" Type="numeric" Mode="In" />
+          <Parameter Name="CheckoutFlag" Type="bit" Mode="In" />
+          <Parameter Name="CheckoutDate" Type="date" Mode="In" />
+          <Parameter Name="Original_SampleNumber" Type="numeric" Mode="In" />
+          <Parameter Name="Original_OrderID" Type="nchar" Mode="In" />
+        </Function>
+        <Function Name="Update_tb_SamplesOnSale" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Original_SampleNumber" Type="numeric" Mode="In" />
+          <Parameter Name="OnSaleFlag" Type="bit" Mode="In" />
+          <Parameter Name="Description" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <EntityContainer Name="DBREADYSAMPLEModelStoreContainer">
+          <EntitySet Name="Clients" EntityType="Self.Clients" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ConfirmOrders" EntityType="Self.ConfirmOrders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SamplesAndOrders" EntityType="Self.SamplesAndOrders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SamplesOnSale" EntityType="Self.SamplesOnSale" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_label" EntityType="Self.tb_label" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_LabelFile" EntityType="Self.tb_LabelFile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_labelInfo" EntityType="Self.tb_labelInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_node" EntityType="Self.tb_node" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_nodeid" EntityType="Self.tb_nodeid" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbActualWord" EntityType="Self.tbActualWord" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbNoiseSellerCategory" EntityType="Self.tbNoiseSellerCategory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbNoiseWord" EntityType="Self.tbNoiseWord" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbSLoperation" EntityType="Self.tbSLoperation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbSLResource" EntityType="Self.tbSLResource" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbSLSales" EntityType="Self.tbSLSales" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbSLSample" EntityType="Self.tbSLSample" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbSLSampleSales" EntityType="Self.tbSLSampleSales" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbWordHistory" EntityType="Self.tbWordHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbWordQuryHistory" EntityType="Self.tbWordQuryHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VW_NumberOnSale" EntityType="Self.VW_NumberOnSale" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[VW_NumberOnSale].[NumberOnSale] AS [NumberOnSale]
+FROM [dbo].[VW_NumberOnSale] AS [VW_NumberOnSale]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_ConfirmOrders_Clients" Association="Self.FK_ConfirmOrders_Clients">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="ConfirmOrders" EntitySet="ConfirmOrders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Orders_Clients" Association="Self.FK_Orders_Clients">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SamplesAndOrders_Orders" Association="Self.FK_SamplesAndOrders_Orders">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="SamplesAndOrders" EntitySet="SamplesAndOrders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_LabelFile_0" Association="Self.FK_tb_LabelFile_0">
+            <End Role="tb_label" EntitySet="tb_label" />
+            <End Role="tb_LabelFile" EntitySet="tb_LabelFile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_node_tb_label" Association="Self.FK_tb_node_tb_label">
+            <End Role="tb_label" EntitySet="tb_label" />
+            <End Role="tb_node" EntitySet="tb_node" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_nodeid_tb_node" Association="Self.FK_tb_nodeid_tb_node">
+            <End Role="tb_node" EntitySet="tb_node" />
+            <End Role="tb_nodeid" EntitySet="tb_nodeid" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbSLSample_0" Association="Self.FK_tbSLSample_0">
+            <End Role="tbSLoperation" EntitySet="tbSLoperation" />
+            <End Role="tbSLSample" EntitySet="tbSLSample" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbSLSample_1" Association="Self.FK_tbSLSample_1">
+            <End Role="tbSLResource" EntitySet="tbSLResource" />
+            <End Role="tbSLSample" EntitySet="tbSLSample" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbSLSampleSales_0" Association="Self.FK_tbSLSampleSales_0">
+            <End Role="tbSLSample" EntitySet="tbSLSample" />
+            <End Role="tbSLSampleSales" EntitySet="tbSLSampleSales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbSLSampleSales_1" Association="Self.FK_tbSLSampleSales_1">
+            <End Role="tbSLSales" EntitySet="tbSLSales" />
+            <End Role="tbSLSampleSales" EntitySet="tbSLSampleSales" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBREADYSAMPLEModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DBREADYSAMPLEEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Orders" EntityType="DBREADYSAMPLEModel.Orders" />
+          <EntitySet Name="SamplesAndOrders" EntityType="DBREADYSAMPLEModel.SamplesAndOrders" />
+          <EntitySet Name="SamplesOnSale" EntityType="DBREADYSAMPLEModel.SamplesOnSale" />
+          <AssociationSet Name="FK_SamplesAndOrders_Orders" Association="DBREADYSAMPLEModel.FK_SamplesAndOrders_Orders">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="SamplesAndOrders" EntitySet="SamplesAndOrders" />
+          </AssociationSet>
+          <EntitySet Name="tb_label" EntityType="DBREADYSAMPLEModel.tb_label" />
+          <EntitySet Name="tb_labelInfo" EntityType="DBREADYSAMPLEModel.tb_labelInfo" />
+          <EntitySet Name="tb_node" EntityType="DBREADYSAMPLEModel.tb_node" />
+          <EntitySet Name="tb_nodeid" EntityType="DBREADYSAMPLEModel.tb_nodeid" />
+          <AssociationSet Name="FK_tb_node_tb_label" Association="DBREADYSAMPLEModel.FK_tb_node_tb_label">
+            <End Role="tb_label" EntitySet="tb_label" />
+            <End Role="tb_node" EntitySet="tb_node" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tb_nodeid_tb_node" Association="DBREADYSAMPLEModel.FK_tb_nodeid_tb_node">
+            <End Role="tb_node" EntitySet="tb_node" />
+            <End Role="tb_nodeid" EntitySet="tb_nodeid" />
+          </AssociationSet>
+          <FunctionImport Name="InsertClient">
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="NickName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="GetLabelInfoByID" ReturnType="Collection(DBREADYSAMPLEModel.GetLabelInfoByID_Result)">
+          <Parameter Name="labelinfoid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="pc_GetLabelsByIndexName" ReturnType="Collection(DBREADYSAMPLEModel.pc_GetLabelsByIndexName_Result)">
+          <Parameter Name="indexname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="pc_GetLabelsByIndexName_2" ReturnType="Collection(DBREADYSAMPLEModel.pc_GetLabelsByIndexName_2_Result)">
+          <Parameter Name="indexname" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="tb_LabelFile" EntityType="DBREADYSAMPLEModel.tb_LabelFile" />
+          <AssociationSet Name="FK_tb_LabelFile_0" Association="DBREADYSAMPLEModel.FK_tb_LabelFile_0">
+            <End Role="tb_label" EntitySet="tb_label" />
+            <End Role="tb_LabelFile" EntitySet="tb_LabelFile" />
+          </AssociationSet>
+          <EntitySet Name="tbNoiseWord" EntityType="DBREADYSAMPLEModel.tbNoiseWord" />
+          <FunctionImport Name="pSLGetSamplePriceInfo" ReturnType="Collection(DBREADYSAMPLEModel.pSLGetSamplePriceInfo_Result)">
+            <Parameter Name="SampleNumber" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="pSLSampleInsert">
+            <Parameter Name="SampleNumber" Mode="In" Type="Decimal" />
+            <Parameter Name="SLResourceID" Mode="In" Type="Int32" />
+            <Parameter Name="SLResourceName" Mode="In" Type="String" />
+            <Parameter Name="title" Mode="In" Type="String" />
+            <Parameter Name="Condition" Mode="In" Type="String" />
+            <Parameter Name="amount" Mode="In" Type="Decimal" />
+            <Parameter Name="currency" Mode="In" Type="String" />
+            <Parameter Name="rate" Mode="In" Type="Decimal" />
+            <Parameter Name="TimeMarker" Mode="In" Type="DateTime" />
+            <Parameter Name="clientMCID" Mode="In" Type="String" />
+            <Parameter Name="clientName" Mode="In" Type="String" />
+            <Parameter Name="clientEmail" Mode="In" Type="String" />
+            <Parameter Name="resourceFee" Mode="In" Type="Decimal" />
+            <Parameter Name="emailSended" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="pSLSampleSingleSold">
+            <Parameter Name="samplenumber" Mode="In" Type="Decimal" />
+            <Parameter Name="shippinginamount" Mode="In" Type="Decimal" />
+            <Parameter Name="auctionfee" Mode="In" Type="Decimal" />
+            <Parameter Name="getmoneyfee" Mode="In" Type="Decimal" />
+            <Parameter Name="shippingoutfee" Mode="In" Type="Decimal" />
+            <Parameter Name="exportfee" Mode="In" Type="Decimal" />
+            <Parameter Name="nalogifee" Mode="In" Type="Decimal" />
+            <Parameter Name="trilbonefee" Mode="In" Type="Decimal" />
+            <Parameter Name="TimeMarker" Mode="In" Type="DateTime" />
+            <Parameter Name="SLResourceID" Mode="In" Type="Int32" />
+            <Parameter Name="SLResourceName" Mode="In" Type="String" />
+            <Parameter Name="clientMCID" Mode="In" Type="String" />
+            <Parameter Name="clientName" Mode="In" Type="String" />
+            <Parameter Name="clientEmail" Mode="In" Type="String" />
+            <Parameter Name="currency" Mode="In" Type="String" />
+            <Parameter Name="amount" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <EntitySet Name="Clients" EntityType="DBREADYSAMPLEModel.Clients" />
+          <EntitySet Name="tbSLoperation" EntityType="DBREADYSAMPLEModel.tbSLoperation" />
+          <EntitySet Name="tbSLResource" EntityType="DBREADYSAMPLEModel.tbSLResource" />
+          <EntitySet Name="tbSLSales" EntityType="DBREADYSAMPLEModel.tbSLSales" />
+          <EntitySet Name="tbSLSample" EntityType="DBREADYSAMPLEModel.tbSLSample" />
+          <EntitySet Name="tbSLSampleSales" EntityType="DBREADYSAMPLEModel.tbSLSampleSales" />
+          <AssociationSet Name="FK_Orders_Clients" Association="DBREADYSAMPLEModel.FK_Orders_Clients">
+            <End EntitySet="Clients" Role="Clients" />
+            <End EntitySet="Orders" Role="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbSLSample_0" Association="DBREADYSAMPLEModel.FK_tbSLSample_0">
+            <End Role="tbSLoperation" EntitySet="tbSLoperation" />
+            <End Role="tbSLSample" EntitySet="tbSLSample" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbSLSample_1" Association="DBREADYSAMPLEModel.FK_tbSLSample_1">
+            <End Role="tbSLResource" EntitySet="tbSLResource" />
+            <End Role="tbSLSample" EntitySet="tbSLSample" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbSLSampleSales_1" Association="DBREADYSAMPLEModel.FK_tbSLSampleSales_1">
+            <End Role="tbSLSales" EntitySet="tbSLSales" />
+            <End Role="tbSLSampleSales" EntitySet="tbSLSampleSales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbSLSampleSales_0" Association="DBREADYSAMPLEModel.FK_tbSLSampleSales_0">
+            <End Role="tbSLSample" EntitySet="tbSLSample" />
+            <End Role="tbSLSampleSales" EntitySet="tbSLSampleSales" />
+          </AssociationSet>
+          <FunctionImport Name="pSLAddDemandUUID">
+            <Parameter Name="SampleNumber" Mode="In" Type="Decimal" />
+            <Parameter Name="demandUUID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="pSLGetSampleHistoryInfo" ReturnType="Collection(DBREADYSAMPLEModel.pSLGetSampleHistoryInfo_Result)">
+          <Parameter Name="SampleNumber" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="pSLGetSampleInsectionFeeTotal" ReturnType="Collection(DBREADYSAMPLEModel.pSLGetSampleInsectionFeeTotal_Result)">
+          <Parameter Name="SampleNumber" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="pSLGetSampleLastSaleInfo" ReturnType="Collection(DBREADYSAMPLEModel.pSLGetSampleLastSaleInfo_Result)">
+          <Parameter Name="SampleNumber" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="pSLSampleEnd">
+            <Parameter Name="SampleNumber" Mode="In" Type="Decimal" />
+            <Parameter Name="SLResourceID" Mode="In" Type="Int32" />
+            <Parameter Name="SLResourceName" Mode="In" Type="String" />
+            <Parameter Name="TimeMarker" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="pSLSampleLost">
+            <Parameter Name="SampleNumber" Mode="In" Type="Decimal" />
+            <Parameter Name="TimeMarker" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="pSLAddOutShippingFee">
+            <Parameter Name="demandUUID" Mode="In" Type="String" />
+            <Parameter Name="TotalInShippingFee" Mode="In" Type="Decimal" />
+            <Parameter Name="ParcelWeight" Mode="In" Type="Decimal" />
+            <Parameter Name="ParcelSizeA" Mode="In" Type="Decimal" />
+            <Parameter Name="ParcelSizeB" Mode="In" Type="Decimal" />
+            <Parameter Name="ParcelSizeC" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="pSLAddInfoToSaleByDemandUUID">
+            <Parameter Name="demandUUID" Mode="In" Type="String" />
+            <Parameter Name="auctionfee" Mode="In" Type="Decimal" />
+            <Parameter Name="exportfee" Mode="In" Type="Decimal" />
+            <Parameter Name="getmoneyfee" Mode="In" Type="Decimal" />
+            <Parameter Name="nalogifee" Mode="In" Type="Decimal" />
+            <Parameter Name="trilbonefee" Mode="In" Type="Decimal" />
+            <Parameter Name="SubTotal" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="OrderInfo" ReturnType="Collection(DBREADYSAMPLEModel.OrderInfo_Result)">
+          <Parameter Name="SampleNumber" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <EntitySet Name="tbActualWord" EntityType="DBREADYSAMPLEModel.tbActualWord" />
+          <EntitySet Name="tbWordHistory" EntityType="DBREADYSAMPLEModel.tbWordHistory" />
+          <EntitySet Name="tbWordQuryHistory" EntityType="DBREADYSAMPLEModel.tbWordQuryHistory" />
+          <FunctionImport Name="GetEbayInfo" ReturnType="Collection(DBREADYSAMPLEModel.GetEbayInfo_Result)">
+            <Parameter Name="OnlySold" Mode="In" Type="Boolean" />
+            <Parameter Name="OnlyUnSold" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <EntitySet Name="tbNoiseSellerCategory" EntityType="DBREADYSAMPLEModel.tbNoiseSellerCategory" />
+          <EntitySet Name="ConfirmOrders" EntityType="DBREADYSAMPLEModel.ConfirmOrders" />
+          <AssociationSet Name="FK_ConfirmOrders_Clients" Association="DBREADYSAMPLEModel.FK_ConfirmOrders_Clients">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="ConfirmOrders" EntitySet="ConfirmOrders" />
+          </AssociationSet>
+          <EntitySet Name="VW_NumberOnSale" EntityType="DBREADYSAMPLEModel.VW_NumberOnSale" />
+        </EntityContainer>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="ClientID" Type="Int32" Nullable="false" />
+          <Property Name="OrderInfoPaper" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ExpierensDate" Type="DateTime" Precision="0" />
+          <Property Name="OrderTotalPrice" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="FreeShippingFlag" Type="Boolean" />
+          <Property Name="ShippingPrice" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="CurrencyName" Type="String" MaxLength="3" Unicode="true" FixedLength="true" />
+          <Property Name="RateOfExchange" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="ConfirmTotalOrderPrice" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="ConfirmShippingPrice" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="ConfirmStockOutFlag" Type="Boolean" />
+          <Property Name="ConfirmStockOutDate" Type="DateTime" Precision="0" />
+          <Property Name="CheckoutFlag" Type="Boolean" />
+          <Property Name="CheckoutDate" Type="DateTime" Precision="0" />
+          <Property Name="CancellationFlag" Type="Boolean" />
+          <Property Name="CancellationDate" Type="DateTime" Precision="0" />
+          <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="SamplesAndOrders" Relationship="DBREADYSAMPLEModel.FK_SamplesAndOrders_Orders" FromRole="Orders" ToRole="SamplesAndOrders" />
+          <NavigationProperty Name="Clients" Relationship="DBREADYSAMPLEModel.FK_Orders_Clients" FromRole="Orders" ToRole="Clients" />
+        </EntityType>
+        <EntityType Name="SamplesAndOrders">
+          <Key>
+            <PropertyRef Name="SampleNumber" />
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="SampleNumber" Type="Decimal" Nullable="false" Precision="13" Scale="0" />
+          <Property Name="OrderID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+          <Property Name="Discount" Type="Decimal" Nullable="false" Precision="3" Scale="1" />
+          <Property Name="ConfirmFlag" Type="Boolean" />
+          <Property Name="ConfirmPrice" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="ConfirmShippingPrice" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="FreeShippingFlag" Type="Boolean" />
+          <Property Name="CurrencyName" Type="String" MaxLength="3" Unicode="true" FixedLength="true" />
+          <Property Name="RateOfExchange" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="CheckoutFlag" Type="Boolean" />
+          <Property Name="CheckoutDate" Type="DateTime" Precision="0" />
+          <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Orders" Relationship="DBREADYSAMPLEModel.FK_SamplesAndOrders_Orders" FromRole="SamplesAndOrders" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="SamplesOnSale">
+          <Key>
+            <PropertyRef Name="SampleNumber" />
+          </Key>
+          <Property Name="SampleNumber" Type="Decimal" Nullable="false" Precision="13" Scale="0" />
+          <Property Name="OnSaleFlag" Type="Boolean" />
+          <Property Name="ConfirmOrderID" Type="Int32" />
+          <Property Name="BasePrice" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="SoldPrice" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="Costs" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="SampleXMLDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Type="String" Name="SampleXMLFile" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OnSaleDate" Type="DateTime" Precision="7" />
+          <Property Name="OnSaleCreator" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="SampleXMLFileRU" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="id_treeCode" Type="Int32" />
+        </EntityType>
+        <Association Name="FK_SamplesAndOrders_Orders">
+          <End Role="Orders" Type="DBREADYSAMPLEModel.Orders" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SamplesAndOrders" Type="DBREADYSAMPLEModel.SamplesAndOrders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="SamplesAndOrders">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="tb_label">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="labelid" Nullable="false" />
+          <Property Type="String" Name="group" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="lang" MaxLength="5" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="tb_node" Relationship="DBREADYSAMPLEModel.FK_tb_node_tb_label" FromRole="tb_label" ToRole="tb_node" />
+          <Property Type="String" Name="IndexName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tb_LabelFile" Relationship="DBREADYSAMPLEModel.FK_tb_LabelFile_0" FromRole="tb_label" ToRole="tb_LabelFile" />
+        </EntityType>
+        <EntityType Name="tb_labelInfo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="labelInfoID" Nullable="false" />
+          <Property Type="String" Name="group" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="treename" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="rootnode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="nodeID" />
+          <Property Type="Int32" Name="order" />
+          <Property Type="String" Name="lang" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="value" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tb_node">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="order" />
+          <Property Type="String" Name="treename" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="rootnode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="combined" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="value" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="labelID" Nullable="false" />
+          <NavigationProperty Name="tb_label" Relationship="DBREADYSAMPLEModel.FK_tb_node_tb_label" FromRole="tb_node" ToRole="tb_label" />
+          <NavigationProperty Name="tb_nodeid" Relationship="DBREADYSAMPLEModel.FK_tb_nodeid_tb_node" FromRole="tb_node" ToRole="tb_nodeid" />
+        </EntityType>
+        <EntityType Name="tb_nodeid">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="labelinfoid" />
+          <Property Type="Int32" Name="nodeid" />
+          <Property Type="Int32" Name="nodenodID" Nullable="false" />
+          <NavigationProperty Name="tb_node" Relationship="DBREADYSAMPLEModel.FK_tb_nodeid_tb_node" FromRole="tb_nodeid" ToRole="tb_node" />
+        </EntityType>
+        <Association Name="FK_tb_node_tb_label">
+          <End Type="DBREADYSAMPLEModel.tb_label" Role="tb_label" Multiplicity="1" />
+          <End Type="DBREADYSAMPLEModel.tb_node" Role="tb_node" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_label">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tb_node">
+              <PropertyRef Name="labelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tb_nodeid_tb_node">
+          <End Type="DBREADYSAMPLEModel.tb_node" Role="tb_node" Multiplicity="1" />
+          <End Type="DBREADYSAMPLEModel.tb_nodeid" Role="tb_nodeid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_node">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tb_nodeid">
+              <PropertyRef Name="nodenodID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="GetLabelInfoByID_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Int32" Name="labelInfoID" Nullable="false" />
+          <Property Type="String" Name="group" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="treename" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="rootnode" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="nodeID" Nullable="true" />
+          <Property Type="Int32" Name="order" Nullable="true" />
+          <Property Type="String" Name="lang" Nullable="true" MaxLength="5" />
+          <Property Type="String" Name="value" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="pc_GetLabelsByIndexName_Result">
+          <Property Type="String" Name="IndName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="LblID" Nullable="false" />
+          <Property Type="String" Name="value" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="pc_GetLabelsByIndexName_2_Result">
+          <Property Type="String" Name="IndName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="LblID" Nullable="false" />
+          <Property Type="String" Name="value" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="tb_LabelFile">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="href" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="labeltype" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="labelID" />
+          <NavigationProperty Name="tb_label" Relationship="DBREADYSAMPLEModel.FK_tb_LabelFile_0" FromRole="tb_LabelFile" ToRole="tb_label" />
+        </EntityType>
+        <Association Name="FK_tb_LabelFile_0">
+          <End Type="DBREADYSAMPLEModel.tb_label" Role="tb_label" Multiplicity="0..1" />
+          <End Type="DBREADYSAMPLEModel.tb_LabelFile" Role="tb_LabelFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_label">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tb_LabelFile">
+              <PropertyRef Name="labelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="tbNoiseWord">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Word" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LangID" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <ComplexType Name="pSLGetSamplePriceInfo_Result">
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <Property Type="String" Name="Operation" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Resource" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ResourceInnerType" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="clientName" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="clientEmail" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="startPrice" Nullable="true" Precision="6" Scale="2" />
+          <Property Type="Decimal" Name="TotalMoney" Nullable="true" Precision="6" Scale="2" />
+          <Property Type="String" Name="currency" Nullable="true" MaxLength="3" />
+          <Property Type="Decimal" Name="Totalfee" Nullable="true" Precision="7" Scale="2" />
+          <Property Type="Decimal" Name="procent" Nullable="true" Precision="2" Scale="0" />
+        </ComplexType>
+        <EntityType Name="Clients">
+          <Key>
+            <PropertyRef Name="ClientID" />
+          </Key>
+          <Property Name="ClientID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SecondName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NickName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PrimaryDiscount" Type="Decimal" Precision="2" Scale="0" />
+          <Property Name="MailBox1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MailBox2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MailBox3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Orders" Relationship="DBREADYSAMPLEModel.FK_Orders_Clients" FromRole="Clients" ToRole="Orders" />
+          <NavigationProperty Name="ConfirmOrders" Relationship="DBREADYSAMPLEModel.FK_ConfirmOrders_Clients" FromRole="Clients" ToRole="ConfirmOrders" />
+        </EntityType>
+        <EntityType Name="tbSLoperation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbSLSample" Relationship="DBREADYSAMPLEModel.FK_tbSLSample_0" FromRole="tbSLoperation" ToRole="tbSLSample" />
+        </EntityType>
+        <EntityType Name="tbSLResource">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbSLSample" Relationship="DBREADYSAMPLEModel.FK_tbSLSample_1" FromRole="tbSLResource" ToRole="tbSLSample" />
+        </EntityType>
+        <EntityType Name="tbSLSales">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TimeMarker" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="shippinginamount" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="auctionfee" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="getmoneyfee" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="shippingoutfee" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="exportfee" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="nalogifee" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="trilbonefee" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="totalamount" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="closed" Type="Boolean" />
+          <Property Name="CalcTimeMarker" Type="DateTime" Precision="0" />
+          <Property Name="PartnerPaid" Type="Boolean" />
+          <Property Name="PaidTimeMarker" Type="DateTime" Precision="0" />
+          <Property Name="demandUUID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbSLSampleSales" Relationship="DBREADYSAMPLEModel.FK_tbSLSampleSales_1" FromRole="tbSLSales" ToRole="tbSLSampleSales" />
+          <Property Name="ParcelWeight" Type="Decimal" Precision="4" Scale="3" />
+          <Property Name="ParcelSizeA" Type="Decimal" Precision="3" Scale="3" />
+          <Property Name="ParcelSizeB" Type="Decimal" Precision="3" Scale="3" />
+          <Property Name="ParcelSizeC" Type="Decimal" Precision="3" Scale="3" />
+        </EntityType>
+        <EntityType Name="tbSLSample">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TimeMarker" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="SampleNumber" Type="Decimal" Precision="13" Scale="0" />
+          <Property Name="SLoperationID" Type="Int32" Nullable="false" />
+          <Property Name="SLResourceID" Type="Int32" />
+          <Property Name="SLResourceName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="clientMCID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="clientName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="clientEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Condition" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="amount" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="currency" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="rate" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="resourceFee" Type="Decimal" Precision="6" Scale="2" />
+          <NavigationProperty Name="tbSLoperation" Relationship="DBREADYSAMPLEModel.FK_tbSLSample_0" FromRole="tbSLSample" ToRole="tbSLoperation" />
+          <NavigationProperty Name="tbSLResource" Relationship="DBREADYSAMPLEModel.FK_tbSLSample_1" FromRole="tbSLSample" ToRole="tbSLResource" />
+          <NavigationProperty Name="tbSLSampleSales" Relationship="DBREADYSAMPLEModel.FK_tbSLSampleSales_0" FromRole="tbSLSample" ToRole="tbSLSampleSales" />
+          <Property Type="Boolean" Name="emailSended" />
+        </EntityType>
+        <EntityType Name="tbSLSampleSales">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tbSLSampleID" Type="Int32" Nullable="false" />
+          <Property Name="tbSLSalesID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tbSLSales" Relationship="DBREADYSAMPLEModel.FK_tbSLSampleSales_1" FromRole="tbSLSampleSales" ToRole="tbSLSales" />
+          <NavigationProperty Name="tbSLSample" Relationship="DBREADYSAMPLEModel.FK_tbSLSampleSales_0" FromRole="tbSLSampleSales" ToRole="tbSLSample" />
+        </EntityType>
+        <Association Name="FK_Orders_Clients">
+          <End Type="DBREADYSAMPLEModel.Clients" Multiplicity="1" Role="Clients">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="DBREADYSAMPLEModel.Orders" Multiplicity="*" Role="Orders" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="ClientID" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="ClientID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbSLSample_0">
+          <End Type="DBREADYSAMPLEModel.tbSLoperation" Role="tbSLoperation" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="DBREADYSAMPLEModel.tbSLSample" Role="tbSLSample" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbSLoperation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tbSLSample">
+              <PropertyRef Name="SLoperationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbSLSample_1">
+          <End Type="DBREADYSAMPLEModel.tbSLResource" Role="tbSLResource" Multiplicity="0..1" />
+          <End Type="DBREADYSAMPLEModel.tbSLSample" Role="tbSLSample" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbSLResource">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tbSLSample">
+              <PropertyRef Name="SLResourceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbSLSampleSales_1">
+          <End Type="DBREADYSAMPLEModel.tbSLSales" Role="tbSLSales" Multiplicity="1" />
+          <End Type="DBREADYSAMPLEModel.tbSLSampleSales" Role="tbSLSampleSales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbSLSales">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tbSLSampleSales">
+              <PropertyRef Name="tbSLSalesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbSLSampleSales_0">
+          <End Type="DBREADYSAMPLEModel.tbSLSample" Role="tbSLSample" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="DBREADYSAMPLEModel.tbSLSampleSales" Role="tbSLSampleSales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbSLSample">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tbSLSampleSales">
+              <PropertyRef Name="tbSLSampleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="pSLGetSampleHistoryInfo_Result">
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <Property Type="String" Name="Operation" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Resource" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ResourceInnerType" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="clientName" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="clientEmail" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="startPrice" Nullable="true" Precision="6" Scale="2" />
+          <Property Type="Decimal" Name="TotalMoney" Nullable="true" Precision="6" Scale="2" />
+          <Property Type="String" Name="currency" Nullable="true" MaxLength="3" />
+          <Property Type="Decimal" Name="Totalfee" Nullable="true" Precision="7" Scale="2" />
+          <Property Type="Decimal" Name="procent" Nullable="true" Precision="2" Scale="0" />
+          <Property Type="Boolean" Name="emailSended" Nullable="true" />
+          <Property Type="Int32" Name="SLoperationID" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="pSLGetSampleLastSaleInfo_Result">
+          <Property Type="Int32" Name="SLSampleID" Nullable="false" />
+          <Property Type="Int32" Name="SLSalesID" Nullable="false" />
+          <Property Type="String" Name="demandUUID" Nullable="true" MaxLength="50" />
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <Property Type="String" Name="Operation" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Resource" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ResourceInnerType" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="clientName" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="clientEmail" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="startPrice" Nullable="true" Precision="6" Scale="2" />
+          <Property Type="Decimal" Name="TotalMoney" Nullable="true" Precision="6" Scale="2" />
+          <Property Type="String" Name="currency" Nullable="true" MaxLength="3" />
+          <Property Type="Decimal" Name="Totalfee" Nullable="true" Precision="7" Scale="2" />
+          <Property Type="Decimal" Name="ShippingOutFee" Nullable="true" Precision="6" Scale="2" />
+          <Property Type="Decimal" Name="getmoneyfee" Nullable="true" Precision="6" Scale="2" />
+          <Property Type="Decimal" Name="actionfee" Nullable="true" Precision="6" Scale="2" />
+        </ComplexType>
+        <ComplexType Name="OrderInfo_Result">
+          <Property Type="Decimal" Name="SampleNumber" Nullable="false" Precision="13" Scale="0" />
+          <Property Type="String" Name="OrderID" Nullable="false" MaxLength="10" />
+          <Property Type="DateTime" Name="OrderDate" Nullable="false" />
+          <Property Type="String" Name="Client_full_name" Nullable="true" MaxLength="101" />
+          <Property Type="String" Name="Client_NickName" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="Retail_price" Nullable="false" Precision="8" Scale="2" />
+          <Property Type="Decimal" Name="Offer_Discount" Nullable="true" Precision="2" Scale="0" />
+          <Property Type="Decimal" Name="Offer_Price" Nullable="true" Precision="19" />
+          <Property Type="Decimal" Name="Sample_Confirm_Price" Nullable="true" Precision="8" Scale="2" />
+          <Property Type="Decimal" Name="Sample_shipping_price" Nullable="true" Precision="6" Scale="2" />
+          <Property Type="String" Name="Currency" Nullable="true" MaxLength="3" />
+          <Property Type="Boolean" Name="OnSaleFlag" Nullable="true" />
+          <Property Type="Boolean" Name="Sample_Confirm_Status" Nullable="true" />
+          <Property Type="Boolean" Name="Sample_CheckOut_Status" Nullable="true" />
+          <Property Type="DateTime" Name="Sample_CheckOut_Date" Nullable="true" />
+          <Property Type="Boolean" Name="Order_StockOut_Status" Nullable="true" />
+          <Property Type="DateTime" Name="Order_StockOut_Date" Nullable="true" />
+          <Property Type="Boolean" Name="Order_Cancellation_Status" Nullable="true" />
+          <Property Type="DateTime" Name="Order_Cancellation_Date" Nullable="true" />
+          <Property Type="Boolean" Name="Order_CheckOut_Status" Nullable="true" />
+          <Property Type="DateTime" Name="Order_CheckOut_Date" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="tbActualWord">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Word" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="LangID" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Tracking" Type="Boolean" Nullable="false" />
+          <Property Name="HasTracked" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbWordHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="itemId" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="location" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="galleryURL" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="viewItemURL" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="primaryCategory" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="sellingStatus" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="bidCountSpecified" Type="Boolean" />
+          <Property Name="bidCount" Type="Int32" />
+          <Property Name="currentPrice" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="currencyId" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="shippingServiceCost" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="ShippingCurrencyId" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="startTime" Type="DateTime" Precision="7" />
+          <Property Name="startTimeSpecified" Type="Boolean" />
+          <Property Name="endTime" Type="DateTime" Precision="7" />
+          <Property Name="endTimeSpecified" Type="Boolean" />
+          <Property Name="timeLeft" Type="Int64" />
+          <Property Name="listingType" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="buyItNowAvailable" Type="Boolean" />
+          <Property Name="bestOfferEnabled" Type="Boolean" />
+          <Property Name="WatchCount" Type="Int32" />
+          <Property Name="WatchCountSpecified" Type="Boolean" />
+          <Property Name="ListingStatus" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="TimeMarker" Type="DateTime" Precision="7" />
+          <Property Name="WordID" Type="Int32" />
+          <Property Name="IsClosed" Type="Boolean" />
+          <Property Name="Seller" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="QtySold" Type="Int32" />
+          <Property Name="title" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbWordQuryHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="TimeMarker" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Success" Type="Boolean" />
+          <Property Name="QueryCount" Type="Int32" />
+          <Property Name="TrackItemsCount" Type="Int32" />
+          <Property Name="EndItemsCount" Type="Int32" />
+          <Property Name="SoldItemsCount" Type="Int32" />
+          <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <ComplexType Name="GetEbayInfo_Result">
+          <Property Type="String" Name="Word" Nullable="false" MaxLength="100" />
+          <Property Type="Decimal" Name="TotalPrice" Nullable="true" Precision="7" Scale="2" />
+          <Property Type="String" Name="currencyId" Nullable="true" MaxLength="3" />
+          <Property Type="String" Name="ListingStatus" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="listingType" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="bidCount" Nullable="true" />
+          <Property Type="Int32" Name="QtySold" Nullable="true" />
+          <Property Type="String" Name="Seller" Nullable="true" MaxLength="150" />
+          <Property Type="Int64" Name="timeLeft" Nullable="true" />
+          <Property Type="String" Name="galleryURL" Nullable="true" MaxLength="300" />
+          <Property Type="String" Name="viewItemURL" Nullable="true" MaxLength="300" />
+          <Property Type="Boolean" Name="IsClosed" Nullable="true" />
+          <Property Type="String" Name="location" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="primaryCategory" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="itemId" Nullable="false" MaxLength="30" />
+          <Property Type="DateTime" Name="endTime" Nullable="true" />
+          <Property Type="Int32" Name="wordID" Nullable="false" />
+          <Property Type="String" Name="title" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <EntityType Name="tbNoiseSellerCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WordID" Type="Int32" Nullable="false" />
+          <Property Name="SellerID" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="CategoryID" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <ComplexType Name="pSLGetSampleInsectionFeeTotal_Result">
+          <Property Type="Decimal" Name="totalfee" Nullable="true" Precision="38" Scale="2" />
+          <Property Type="String" Name="currency" Nullable="true" MaxLength="3" />
+        </ComplexType>
+        <EntityType Name="ConfirmOrders">
+          <Key>
+            <PropertyRef Name="ConfirmOrderID" />
+          </Key>
+          <Property Name="ConfirmOrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClientID" Type="Int32" />
+          <Property Name="CurrencyName" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Name="RateOfExchange" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="ConfirmTotalOrderPrice" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="ConfirmShippingPrice" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="ConfirmStockOutFlag" Type="Boolean" />
+          <Property Name="ConfirmStockOutDate" Type="DateTime" Precision="0" />
+          <Property Name="CheckoutFlag" Type="Boolean" />
+          <Property Name="CheckoutDate" Type="DateTime" Precision="0" />
+          <Property Name="CancellationFlag" Type="Boolean" />
+          <Property Name="CancellationDate" Type="DateTime" Precision="0" />
+          <Property Name="CancellationRules" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="ShipmentID" Type="Int32" />
+          <Property Name="PaymentOperationID" Type="Int32" />
+          <Property Name="PaymentUncompleteFlag" Type="Boolean" />
+          <Property Name="Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Clients" Relationship="DBREADYSAMPLEModel.FK_ConfirmOrders_Clients" FromRole="ConfirmOrders" ToRole="Clients" />
+        </EntityType>
+        <Association Name="FK_ConfirmOrders_Clients">
+          <End Type="DBREADYSAMPLEModel.Clients" Role="Clients" Multiplicity="0..1" />
+          <End Type="DBREADYSAMPLEModel.ConfirmOrders" Role="ConfirmOrders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="ClientID" />
+            </Principal>
+            <Dependent Role="ConfirmOrders">
+              <PropertyRef Name="ClientID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="VW_NumberOnSale">
+          <Key>
+            <PropertyRef Name="NumberOnSale" />
+          </Key>
+          <Property Name="NumberOnSale" Type="Decimal" Nullable="false" Precision="13" Scale="0" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBREADYSAMPLEModelStoreContainer" CdmEntityContainer="DBREADYSAMPLEEntities">
+          <EntitySetMapping Name="Orders"><EntityTypeMapping TypeName="DBREADYSAMPLEModel.Orders"><MappingFragment StoreEntitySet="Orders">
+            <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+            <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+            <ScalarProperty Name="OrderInfoPaper" ColumnName="OrderInfoPaper" />
+            <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+            <ScalarProperty Name="ExpierensDate" ColumnName="ExpierensDate" />
+            <ScalarProperty Name="OrderTotalPrice" ColumnName="OrderTotalPrice" />
+            <ScalarProperty Name="FreeShippingFlag" ColumnName="FreeShippingFlag" />
+            <ScalarProperty Name="ShippingPrice" ColumnName="ShippingPrice" />
+            <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+            <ScalarProperty Name="RateOfExchange" ColumnName="RateOfExchange" />
+            <ScalarProperty Name="ConfirmTotalOrderPrice" ColumnName="ConfirmTotalOrderPrice" />
+            <ScalarProperty Name="ConfirmShippingPrice" ColumnName="ConfirmShippingPrice" />
+            <ScalarProperty Name="ConfirmStockOutFlag" ColumnName="ConfirmStockOutFlag" />
+            <ScalarProperty Name="ConfirmStockOutDate" ColumnName="ConfirmStockOutDate" />
+            <ScalarProperty Name="CheckoutFlag" ColumnName="CheckoutFlag" />
+            <ScalarProperty Name="CheckoutDate" ColumnName="CheckoutDate" />
+            <ScalarProperty Name="CancellationFlag" ColumnName="CancellationFlag" />
+            <ScalarProperty Name="CancellationDate" ColumnName="CancellationDate" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SamplesAndOrders"><EntityTypeMapping TypeName="DBREADYSAMPLEModel.SamplesAndOrders"><MappingFragment StoreEntitySet="SamplesAndOrders">
+            <ScalarProperty Name="SampleNumber" ColumnName="SampleNumber" />
+            <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+            <ScalarProperty Name="Price" ColumnName="Price" />
+            <ScalarProperty Name="Discount" ColumnName="Discount" />
+            <ScalarProperty Name="ConfirmFlag" ColumnName="ConfirmFlag" />
+            <ScalarProperty Name="ConfirmPrice" ColumnName="ConfirmPrice" />
+            <ScalarProperty Name="ConfirmShippingPrice" ColumnName="ConfirmShippingPrice" />
+            <ScalarProperty Name="FreeShippingFlag" ColumnName="FreeShippingFlag" />
+            <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+            <ScalarProperty Name="RateOfExchange" ColumnName="RateOfExchange" />
+            <ScalarProperty Name="CheckoutFlag" ColumnName="CheckoutFlag" />
+            <ScalarProperty Name="CheckoutDate" ColumnName="CheckoutDate" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SamplesOnSale"><EntityTypeMapping TypeName="DBREADYSAMPLEModel.SamplesOnSale"><MappingFragment StoreEntitySet="SamplesOnSale">
+            <ScalarProperty Name="id_treeCode" ColumnName="id_treeCode" />
+                <ScalarProperty Name="SampleXMLFileRU" ColumnName="SampleXMLFileRU" />
+                <ScalarProperty Name="OnSaleCreator" ColumnName="OnSaleCreator" />
+                <ScalarProperty Name="OnSaleDate" ColumnName="OnSaleDate" />
+                <ScalarProperty Name="SampleXMLFile" ColumnName="SampleXMLFile" />
+                <ScalarProperty Name="SampleNumber" ColumnName="SampleNumber" />
+            <ScalarProperty Name="OnSaleFlag" ColumnName="OnSaleFlag" />
+            <ScalarProperty Name="ConfirmOrderID" ColumnName="ConfirmOrderID" />
+            <ScalarProperty Name="BasePrice" ColumnName="BasePrice" />
+            <ScalarProperty Name="SoldPrice" ColumnName="SoldPrice" />
+            <ScalarProperty Name="Costs" ColumnName="Costs" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="SampleXMLDescription" ColumnName="SampleXMLDescription" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tb_label">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tb_label">
+              <MappingFragment StoreEntitySet="tb_label">
+                <ScalarProperty Name="IndexName" ColumnName="IndexName" />
+                <ScalarProperty Name="lang" ColumnName="lang" />
+                <ScalarProperty Name="group" ColumnName="group" />
+                <ScalarProperty Name="labelid" ColumnName="labelid" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_labelInfo">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tb_labelInfo">
+              <MappingFragment StoreEntitySet="tb_labelInfo">
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="lang" ColumnName="lang" />
+                <ScalarProperty Name="order" ColumnName="order" />
+                <ScalarProperty Name="nodeID" ColumnName="nodeID" />
+                <ScalarProperty Name="rootnode" ColumnName="rootnode" />
+                <ScalarProperty Name="treename" ColumnName="treename" />
+                <ScalarProperty Name="group" ColumnName="group" />
+                <ScalarProperty Name="labelInfoID" ColumnName="labelInfoID" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_node">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tb_node">
+              <MappingFragment StoreEntitySet="tb_node">
+                <ScalarProperty Name="labelID" ColumnName="labelID" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="combined" ColumnName="combined" />
+                <ScalarProperty Name="rootnode" ColumnName="rootnode" />
+                <ScalarProperty Name="treename" ColumnName="treename" />
+                <ScalarProperty Name="order" ColumnName="order" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_nodeid">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tb_nodeid">
+              <MappingFragment StoreEntitySet="tb_nodeid">
+                <ScalarProperty Name="nodenodID" ColumnName="nodenodID" />
+                <ScalarProperty Name="nodeid" ColumnName="nodeid" />
+                <ScalarProperty Name="labelinfoid" ColumnName="labelinfoid" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="InsertClient" FunctionName="DBREADYSAMPLEModel.Store.Insert_client" />
+          <FunctionImportMapping FunctionImportName="GetLabelInfoByID" FunctionName="DBREADYSAMPLEModel.Store.getLabelInfoIdByID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBREADYSAMPLEModel.GetLabelInfoByID_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="labelInfoID" ColumnName="labelInfoID" />
+                <ScalarProperty Name="group" ColumnName="group" />
+                <ScalarProperty Name="treename" ColumnName="treename" />
+                <ScalarProperty Name="rootnode" ColumnName="rootnode" />
+                <ScalarProperty Name="nodeID" ColumnName="nodeID" />
+                <ScalarProperty Name="order" ColumnName="order" />
+                <ScalarProperty Name="lang" ColumnName="lang" />
+                <ScalarProperty Name="value" ColumnName="value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="pc_GetLabelsByIndexName" FunctionName="DBREADYSAMPLEModel.Store.pc_GetLabelsByIndexName">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBREADYSAMPLEModel.pc_GetLabelsByIndexName_Result">
+                <ScalarProperty Name="IndName" ColumnName="IndName" />
+                <ScalarProperty Name="LblID" ColumnName="LblID" />
+                <ScalarProperty Name="value" ColumnName="value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="pc_GetLabelsByIndexName_2" FunctionName="DBREADYSAMPLEModel.Store.pc_GetLabelsByIndexName_2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBREADYSAMPLEModel.pc_GetLabelsByIndexName_2_Result">
+                <ScalarProperty Name="IndName" ColumnName="IndName" />
+                <ScalarProperty Name="LblID" ColumnName="LblID" />
+                <ScalarProperty Name="value" ColumnName="value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="tb_LabelFile">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tb_LabelFile">
+              <MappingFragment StoreEntitySet="tb_LabelFile">
+                <ScalarProperty Name="labelID" ColumnName="labelID" />
+                <ScalarProperty Name="labeltype" ColumnName="labeltype" />
+                <ScalarProperty Name="href" ColumnName="href" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbNoiseWord">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tbNoiseWord">
+              <MappingFragment StoreEntitySet="tbNoiseWord">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="LangID" ColumnName="LangID" />
+                <ScalarProperty Name="Word" ColumnName="Word" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="pSLSampleInsert" FunctionName="DBREADYSAMPLEModel.Store.pSLSampleInsert" />
+          <FunctionImportMapping FunctionImportName="pSLSampleSingleSold" FunctionName="DBREADYSAMPLEModel.Store.pSLSampleSingleSold" />
+          <EntitySetMapping Name="Clients">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.Clients">
+              <MappingFragment StoreEntitySet="Clients">
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="PhoneNumber3" ColumnName="PhoneNumber3" />
+                <ScalarProperty Name="PhoneNumber2" ColumnName="PhoneNumber2" />
+                <ScalarProperty Name="PhoneNumber1" ColumnName="PhoneNumber1" />
+                <ScalarProperty Name="MailBox3" ColumnName="MailBox3" />
+                <ScalarProperty Name="MailBox2" ColumnName="MailBox2" />
+                <ScalarProperty Name="MailBox1" ColumnName="MailBox1" />
+                <ScalarProperty Name="PrimaryDiscount" ColumnName="PrimaryDiscount" />
+                <ScalarProperty Name="NickName" ColumnName="NickName" />
+                <ScalarProperty Name="SecondName" ColumnName="SecondName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbSLoperation">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tbSLoperation">
+              <MappingFragment StoreEntitySet="tbSLoperation">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbSLResource">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tbSLResource">
+              <MappingFragment StoreEntitySet="tbSLResource">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbSLSales">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tbSLSales">
+              <MappingFragment StoreEntitySet="tbSLSales">
+                <ScalarProperty Name="ParcelSizeC" ColumnName="ParcelSizeC" />
+                <ScalarProperty Name="ParcelSizeB" ColumnName="ParcelSizeB" />
+                <ScalarProperty Name="ParcelSizeA" ColumnName="ParcelSizeA" />
+                <ScalarProperty Name="ParcelWeight" ColumnName="ParcelWeight" />
+                <ScalarProperty Name="demandUUID" ColumnName="demandUUID" />
+                <ScalarProperty Name="PaidTimeMarker" ColumnName="PaidTimeMarker" />
+                <ScalarProperty Name="PartnerPaid" ColumnName="PartnerPaid" />
+                <ScalarProperty Name="CalcTimeMarker" ColumnName="CalcTimeMarker" />
+                <ScalarProperty Name="closed" ColumnName="closed" />
+                <ScalarProperty Name="totalamount" ColumnName="totalamount" />
+                <ScalarProperty Name="trilbonefee" ColumnName="trilbonefee" />
+                <ScalarProperty Name="nalogifee" ColumnName="nalogifee" />
+                <ScalarProperty Name="exportfee" ColumnName="exportfee" />
+                <ScalarProperty Name="shippingoutfee" ColumnName="shippingoutfee" />
+                <ScalarProperty Name="getmoneyfee" ColumnName="getmoneyfee" />
+                <ScalarProperty Name="auctionfee" ColumnName="auctionfee" />
+                <ScalarProperty Name="shippinginamount" ColumnName="shippinginamount" />
+                <ScalarProperty Name="TimeMarker" ColumnName="TimeMarker" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbSLSample">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tbSLSample">
+              <MappingFragment StoreEntitySet="tbSLSample">
+                <ScalarProperty Name="emailSended" ColumnName="emailSended" />
+                <ScalarProperty Name="resourceFee" ColumnName="resourceFee" />
+                <ScalarProperty Name="rate" ColumnName="rate" />
+                <ScalarProperty Name="currency" ColumnName="currency" />
+                <ScalarProperty Name="amount" ColumnName="amount" />
+                <ScalarProperty Name="Condition" ColumnName="Condition" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="clientEmail" ColumnName="clientEmail" />
+                <ScalarProperty Name="clientName" ColumnName="clientName" />
+                <ScalarProperty Name="clientMCID" ColumnName="clientMCID" />
+                <ScalarProperty Name="SLResourceName" ColumnName="SLResourceName" />
+                <ScalarProperty Name="SLResourceID" ColumnName="SLResourceID" />
+                <ScalarProperty Name="SLoperationID" ColumnName="SLoperationID" />
+                <ScalarProperty Name="SampleNumber" ColumnName="SampleNumber" />
+                <ScalarProperty Name="TimeMarker" ColumnName="TimeMarker" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbSLSampleSales">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tbSLSampleSales">
+              <MappingFragment StoreEntitySet="tbSLSampleSales">
+                <ScalarProperty Name="tbSLSalesID" ColumnName="tbSLSalesID" />
+                <ScalarProperty Name="tbSLSampleID" ColumnName="tbSLSampleID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="pSLAddDemandUUID" FunctionName="DBREADYSAMPLEModel.Store.pSLAddDemandUUID" />
+          <FunctionImportMapping FunctionImportName="pSLGetSampleHistoryInfo" FunctionName="DBREADYSAMPLEModel.Store.pSLGetSampleHistoryInfo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBREADYSAMPLEModel.pSLGetSampleHistoryInfo_Result">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Operation" ColumnName="Operation" />
+                <ScalarProperty Name="Resource" ColumnName="Resource" />
+                <ScalarProperty Name="ResourceInnerType" ColumnName="ResourceInnerType" />
+                <ScalarProperty Name="clientName" ColumnName="clientName" />
+                <ScalarProperty Name="clientEmail" ColumnName="clientEmail" />
+                <ScalarProperty Name="startPrice" ColumnName="startPrice" />
+                <ScalarProperty Name="TotalMoney" ColumnName="TotalMoney" />
+                <ScalarProperty Name="currency" ColumnName="currency" />
+                <ScalarProperty Name="Totalfee" ColumnName="Totalfee" />
+                <ScalarProperty Name="procent" ColumnName="procent" />
+                <ScalarProperty Name="emailSended" ColumnName="emailSended" />
+                <ScalarProperty Name="SLoperationID" ColumnName="SLoperationID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="pSLGetSampleInsectionFeeTotal" FunctionName="DBREADYSAMPLEModel.Store.pSLGetSampleInsectionFeeTotal" >
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBREADYSAMPLEModel.pSLGetSampleInsectionFeeTotal_Result">
+                <ScalarProperty Name="totalfee" ColumnName="totalfee" />
+                <ScalarProperty Name="currency" ColumnName="currency" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="pSLGetSampleLastSaleInfo" FunctionName="DBREADYSAMPLEModel.Store.pSLGetSampleLastSaleInfo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBREADYSAMPLEModel.pSLGetSampleLastSaleInfo_Result">
+                <ScalarProperty Name="SLSampleID" ColumnName="SLSampleID" />
+                <ScalarProperty Name="SLSalesID" ColumnName="SLSalesID" />
+                <ScalarProperty Name="demandUUID" ColumnName="demandUUID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Operation" ColumnName="Operation" />
+                <ScalarProperty Name="Resource" ColumnName="Resource" />
+                <ScalarProperty Name="ResourceInnerType" ColumnName="ResourceInnerType" />
+                <ScalarProperty Name="clientName" ColumnName="clientName" />
+                <ScalarProperty Name="clientEmail" ColumnName="clientEmail" />
+                <ScalarProperty Name="startPrice" ColumnName="startPrice" />
+                <ScalarProperty Name="TotalMoney" ColumnName="TotalMoney" />
+                <ScalarProperty Name="currency" ColumnName="currency" />
+                <ScalarProperty Name="Totalfee" ColumnName="Totalfee" />
+                <ScalarProperty Name="ShippingOutFee" ColumnName="ShippingOutFee" />
+                <ScalarProperty Name="getmoneyfee" ColumnName="getmoneyfee" />
+                <ScalarProperty Name="actionfee" ColumnName="actionfee" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="pSLSampleEnd" FunctionName="DBREADYSAMPLEModel.Store.pSLSampleEnd" />
+          <FunctionImportMapping FunctionImportName="pSLSampleLost" FunctionName="DBREADYSAMPLEModel.Store.pSLSampleLost" />
+          <FunctionImportMapping FunctionImportName="pSLAddOutShippingFee" FunctionName="DBREADYSAMPLEModel.Store.pSLAddOutShippingFee" />
+          <FunctionImportMapping FunctionImportName="pSLAddInfoToSaleByDemandUUID" FunctionName="DBREADYSAMPLEModel.Store.pSLAddInfoToSaleByDemandUUID" />
+          <FunctionImportMapping FunctionImportName="OrderInfo" FunctionName="DBREADYSAMPLEModel.Store.Select_SampleOrdersInfo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBREADYSAMPLEModel.OrderInfo_Result">
+                <ScalarProperty Name="SampleNumber" ColumnName="SampleNumber" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="Client_full_name" ColumnName="Client full name" />
+                <ScalarProperty Name="Client_NickName" ColumnName="Client NickName" />
+                <ScalarProperty Name="Retail_price" ColumnName="Retail price" />
+                <ScalarProperty Name="Offer_Discount" ColumnName="Offer Discount" />
+                <ScalarProperty Name="Offer_Price" ColumnName="Offer Price" />
+                <ScalarProperty Name="Sample_Confirm_Price" ColumnName="Sample Confirm Price" />
+                <ScalarProperty Name="Sample_shipping_price" ColumnName="Sample shipping price" />
+                <ScalarProperty Name="Currency" ColumnName="Currency" />
+                <ScalarProperty Name="OnSaleFlag" ColumnName="OnSaleFlag" />
+                <ScalarProperty Name="Sample_Confirm_Status" ColumnName="Sample Confirm Status" />
+                <ScalarProperty Name="Sample_CheckOut_Status" ColumnName="Sample CheckOut Status" />
+                <ScalarProperty Name="Sample_CheckOut_Date" ColumnName="Sample CheckOut Date" />
+                <ScalarProperty Name="Order_StockOut_Status" ColumnName="Order StockOut Status" />
+                <ScalarProperty Name="Order_StockOut_Date" ColumnName="Order StockOut Date" />
+                <ScalarProperty Name="Order_Cancellation_Status" ColumnName="Order Cancellation Status" />
+                <ScalarProperty Name="Order_Cancellation_Date" ColumnName="Order Cancellation Date" />
+                <ScalarProperty Name="Order_CheckOut_Status" ColumnName="Order CheckOut Status" />
+                <ScalarProperty Name="Order_CheckOut_Date" ColumnName="Order CheckOut Date" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="tbActualWord">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tbActualWord">
+              <MappingFragment StoreEntitySet="tbActualWord">
+                <ScalarProperty Name="HasTracked" ColumnName="HasTracked" />
+                <ScalarProperty Name="Tracking" ColumnName="Tracking" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="LangID" ColumnName="LangID" />
+                <ScalarProperty Name="Word" ColumnName="Word" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbWordHistory">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tbWordHistory">
+              <MappingFragment StoreEntitySet="tbWordHistory">
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="QtySold" ColumnName="QtySold" />
+                <ScalarProperty Name="Seller" ColumnName="Seller" />
+                <ScalarProperty Name="IsClosed" ColumnName="IsClosed" />
+                <ScalarProperty Name="WordID" ColumnName="WordID" />
+                <ScalarProperty Name="TimeMarker" ColumnName="TimeMarker" />
+                <ScalarProperty Name="ListingStatus" ColumnName="ListingStatus" />
+                <ScalarProperty Name="WatchCountSpecified" ColumnName="WatchCountSpecified" />
+                <ScalarProperty Name="WatchCount" ColumnName="WatchCount" />
+                <ScalarProperty Name="bestOfferEnabled" ColumnName="bestOfferEnabled" />
+                <ScalarProperty Name="buyItNowAvailable" ColumnName="buyItNowAvailable" />
+                <ScalarProperty Name="listingType" ColumnName="listingType" />
+                <ScalarProperty Name="timeLeft" ColumnName="timeLeft" />
+                <ScalarProperty Name="endTimeSpecified" ColumnName="endTimeSpecified" />
+                <ScalarProperty Name="endTime" ColumnName="endTime" />
+                <ScalarProperty Name="startTimeSpecified" ColumnName="startTimeSpecified" />
+                <ScalarProperty Name="startTime" ColumnName="startTime" />
+                <ScalarProperty Name="ShippingCurrencyId" ColumnName="ShippingCurrencyId" />
+                <ScalarProperty Name="shippingServiceCost" ColumnName="shippingServiceCost" />
+                <ScalarProperty Name="currencyId" ColumnName="currencyId" />
+                <ScalarProperty Name="currentPrice" ColumnName="currentPrice" />
+                <ScalarProperty Name="bidCount" ColumnName="bidCount" />
+                <ScalarProperty Name="bidCountSpecified" ColumnName="bidCountSpecified" />
+                <ScalarProperty Name="sellingStatus" ColumnName="sellingStatus" />
+                <ScalarProperty Name="primaryCategory" ColumnName="primaryCategory" />
+                <ScalarProperty Name="viewItemURL" ColumnName="viewItemURL" />
+                <ScalarProperty Name="galleryURL" ColumnName="galleryURL" />
+                <ScalarProperty Name="location" ColumnName="location" />
+                <ScalarProperty Name="itemId" ColumnName="itemId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbWordQuryHistory">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tbWordQuryHistory">
+              <MappingFragment StoreEntitySet="tbWordQuryHistory">
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="SoldItemsCount" ColumnName="SoldItemsCount" />
+                <ScalarProperty Name="EndItemsCount" ColumnName="EndItemsCount" />
+                <ScalarProperty Name="TrackItemsCount" ColumnName="TrackItemsCount" />
+                <ScalarProperty Name="QueryCount" ColumnName="QueryCount" />
+                <ScalarProperty Name="Success" ColumnName="Success" />
+                <ScalarProperty Name="TimeMarker" ColumnName="TimeMarker" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetEbayInfo" FunctionName="DBREADYSAMPLEModel.Store.GetEbayInfo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBREADYSAMPLEModel.GetEbayInfo_Result">
+                <ScalarProperty Name="Word" ColumnName="Word" />
+                <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+                <ScalarProperty Name="currencyId" ColumnName="currencyId" />
+                <ScalarProperty Name="ListingStatus" ColumnName="ListingStatus" />
+                <ScalarProperty Name="listingType" ColumnName="listingType" />
+                <ScalarProperty Name="bidCount" ColumnName="bidCount" />
+                <ScalarProperty Name="QtySold" ColumnName="QtySold" />
+                <ScalarProperty Name="Seller" ColumnName="Seller" />
+                <ScalarProperty Name="timeLeft" ColumnName="timeLeft" />
+                <ScalarProperty Name="galleryURL" ColumnName="galleryURL" />
+                <ScalarProperty Name="viewItemURL" ColumnName="viewItemURL" />
+                <ScalarProperty Name="IsClosed" ColumnName="IsClosed" />
+                <ScalarProperty Name="location" ColumnName="location" />
+                <ScalarProperty Name="primaryCategory" ColumnName="primaryCategory" />
+                <ScalarProperty Name="itemId" ColumnName="itemId" />
+                <ScalarProperty Name="endTime" ColumnName="endTime" />
+                <ScalarProperty Name="wordID" ColumnName="wordID" />
+                <ScalarProperty Name="title" ColumnName="title" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="tbNoiseSellerCategory">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.tbNoiseSellerCategory">
+              <MappingFragment StoreEntitySet="tbNoiseSellerCategory">
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="SellerID" ColumnName="SellerID" />
+                <ScalarProperty Name="WordID" ColumnName="WordID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ConfirmOrders">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.ConfirmOrders">
+              <MappingFragment StoreEntitySet="ConfirmOrders">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="PaymentUncompleteFlag" ColumnName="PaymentUncompleteFlag" />
+                <ScalarProperty Name="PaymentOperationID" ColumnName="PaymentOperationID" />
+                <ScalarProperty Name="ShipmentID" ColumnName="ShipmentID" />
+                <ScalarProperty Name="CancellationRules" ColumnName="CancellationRules" />
+                <ScalarProperty Name="CancellationDate" ColumnName="CancellationDate" />
+                <ScalarProperty Name="CancellationFlag" ColumnName="CancellationFlag" />
+                <ScalarProperty Name="CheckoutDate" ColumnName="CheckoutDate" />
+                <ScalarProperty Name="CheckoutFlag" ColumnName="CheckoutFlag" />
+                <ScalarProperty Name="ConfirmStockOutDate" ColumnName="ConfirmStockOutDate" />
+                <ScalarProperty Name="ConfirmStockOutFlag" ColumnName="ConfirmStockOutFlag" />
+                <ScalarProperty Name="ConfirmShippingPrice" ColumnName="ConfirmShippingPrice" />
+                <ScalarProperty Name="ConfirmTotalOrderPrice" ColumnName="ConfirmTotalOrderPrice" />
+                <ScalarProperty Name="RateOfExchange" ColumnName="RateOfExchange" />
+                <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+                <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+                <ScalarProperty Name="ConfirmOrderID" ColumnName="ConfirmOrderID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VW_NumberOnSale">
+            <EntityTypeMapping TypeName="DBREADYSAMPLEModel.VW_NumberOnSale">
+              <MappingFragment StoreEntitySet="VW_NumberOnSale">
+                <ScalarProperty Name="NumberOnSale" ColumnName="NumberOnSale" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="dbReadySample" ZoomLevel="74">
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.Orders" Width="2.125" PointX="1.125" PointY="5.5" Height="5.1834724934895853" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.SamplesAndOrders" Width="2.875" PointX="4.875" PointY="4.5" Height="3.9465340169270853" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.SamplesOnSale" Width="2.5" PointX="1.125" PointY="0.5" Height="4.1526904296875" IsExpanded="true" />
+        <AssociationConnector Association="DBREADYSAMPLEModel.FK_SamplesAndOrders_Orders" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.25" PointY="7.5982670084635417" />
+          <ConnectorPoint PointX="4.875" PointY="7.5982670084635417" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tb_label" Width="1.5" PointX="9.875" PointY="1.25" Height="2.29728271484375" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tb_labelInfo" Width="1.5" PointX="6.625" PointY="0.625" Height="2.9157519531250031" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tb_node" Width="1.5" PointX="13" PointY="0.75" Height="2.9157519531250067" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tb_nodeid" Width="1.5" PointX="15.75" PointY="0.75" Height="2.0911263020833246" />
+        <AssociationConnector Association="DBREADYSAMPLEModel.FK_tb_node_tb_label" >
+          <ConnectorPoint PointX="11.375" PointY="2.4578759765625033" />
+          <ConnectorPoint PointX="13" PointY="2.4578759765625033" />
+        </AssociationConnector>
+        <AssociationConnector Association="DBREADYSAMPLEModel.FK_tb_nodeid_tb_node" >
+          <ConnectorPoint PointX="14.5" PointY="1.7955631510416623" />
+          <ConnectorPoint PointX="15.75" PointY="1.7955631510416623" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tb_LabelFile" Width="1.5" PointX="12.125" PointY="5.375" Height="2.2972827148437496" />
+        <AssociationConnector Association="DBREADYSAMPLEModel.FK_tb_LabelFile_0" >
+          <ConnectorPoint PointX="10.65625" PointY="3.7534391276041661" />
+          <ConnectorPoint PointX="10.65625" PointY="6.5236413574218748" />
+          <ConnectorPoint PointX="12.125" PointY="6.5236413574218748" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tbNoiseWord" Width="2.125" PointX="8.625" PointY="7" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.Clients" Width="1.5" PointX="1.375" PointY="11.875" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tbSLoperation" Width="1.5" PointX="8.375" PointY="11.375" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tbSLResource" Width="1.5" PointX="8.375" PointY="14.375" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tbSLSales" Width="1.5" PointX="10.625" PointY="16.25" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tbSLSample" Width="1.5" PointX="10.625" PointY="10" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tbSLSampleSales" Width="1.5" PointX="12.875" PointY="11.25" />
+        <AssociationConnector Association="DBREADYSAMPLEModel.FK_Orders_Clients" />
+        <AssociationConnector Association="DBREADYSAMPLEModel.FK_tbSLSample_0" />
+        <AssociationConnector Association="DBREADYSAMPLEModel.FK_tbSLSample_1" />
+        <AssociationConnector Association="DBREADYSAMPLEModel.FK_tbSLSampleSales_1" />
+        <AssociationConnector Association="DBREADYSAMPLEModel.FK_tbSLSampleSales_0" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tbActualWord" Width="1.5" PointX="4.375" PointY="9.75" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tbWordHistory" Width="1.5" PointX="3.375" PointY="12.75" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tbWordQuryHistory" Width="1.5" PointX="5.375" PointY="12.75" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.tbNoiseSellerCategory" Width="1.5" PointX="15.375" PointY="3.875" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.ConfirmOrders" Width="1.5" PointX="3.625" PointY="20.375" />
+        <AssociationConnector Association="DBREADYSAMPLEModel.FK_ConfirmOrders_Clients" />
+        <EntityTypeShape EntityType="DBREADYSAMPLEModel.VW_NumberOnSale" Width="1.5" PointX="8.375" PointY="4.75" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

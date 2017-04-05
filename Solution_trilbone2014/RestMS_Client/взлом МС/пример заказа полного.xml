@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection total="2" start="0" count="1000">
+
+
+
+<customerOrder deliveryPlannedMoment="2015-01-08T15:45:00+03:00" reservedSum="339360.0" stateUuid="3ab42ff2-7bd6-11e4-90a2-8ecb0016aa97" targetAgentUuid="5a4ba7b2-4993-11e3-ce8c-7054d21a8d1e" sourceAgentUuid="b3bd9069-966a-11e4-90a2-8ecb00866fde" applicable="true" projectUuid="3d8a69e9-f25d-11e3-6d72-002590a28eca" moment="2015-01-07T15:45:00+03:00" targetAccountUuid="36ef1857-e5dc-11e3-0e03-002590a28eca" sourceAccountUuid="b3bd9376-966a-11e4-90a2-8ecb00866fdf" payerVat="false" currencyUuid="a487d989-4c83-11e3-ce68-7054d21a8d1e" rate="60.6" vatIncluded="true" created="2015-01-07T16:08:53.341+03:00" createdBy="admin@trilbone" employeeUuid="b14d201d-489b-11e3-321c-7054d21a8d1e" name="00001" updated="2015-02-16T17:33:54.055+03:00" updatedBy="admin@trilbone" readMode="SELF" changeMode="SELF">
+
+<accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>641daaac-966e-11e4-90a2-8ecb00869e03</uuid>
+
+<groupUuid>5a4a11a4-4993-11e3-7e43-7054d21a8d1e</groupUuid>
+<externalcode>yRPUbHzajGaVUDjM3COcU3</externalcode>
+
+<attribute operationUuid="641daaac-966e-11e4-90a2-8ecb00869e03" metadataUuid="619a10ee-0dc4-11e4-6f23-002590a28eca" booleanValue="false" updated="2015-02-16T17:33:54.078+03:00" updatedBy="admin@trilbone" readMode="SELF" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>641e1667-966e-11e4-90a2-8ecb00869e06</uuid><groupUuid>5a4a11a4-4993-11e3-7e43-7054d21a8d1e</groupUuid></attribute><attribute operationUuid="641daaac-966e-11e4-90a2-8ecb00869e03" metadataUuid="a79cefcf-280c-11e4-fab6-002590a28eca" booleanValue="false" updated="2015-02-16T17:33:54.078+03:00" updatedBy="admin@trilbone" readMode="SELF" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>641e180b-966e-11e4-90a2-8ecb00869e09</uuid><groupUuid>5a4a11a4-4993-11e3-7e43-7054d21a8d1e</groupUuid></attribute><attribute operationUuid="641daaac-966e-11e4-90a2-8ecb00869e03" metadataUuid="0e742186-db63-11e3-7bb0-002590a28eca" entityValueUuid="97c20675-db61-11e3-a884-002590a28eca" updated="2015-02-16T17:33:54.078+03:00" updatedBy="admin@trilbone" readMode="SELF" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>641e1771-966e-11e4-90a2-8ecb00869e08</uuid><groupUuid>5a4a11a4-4993-11e3-7e43-7054d21a8d1e</groupUuid></attribute><attribute operationUuid="641daaac-966e-11e4-90a2-8ecb00869e03" metadataUuid="99312d52-e802-11e3-081d-002590a28eca" booleanValue="false" updated="2015-02-16T17:33:54.078+03:00" updatedBy="admin@trilbone" readMode="SELF" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>641e1534-966e-11e4-90a2-8ecb00869e05</uuid><groupUuid>5a4a11a4-4993-11e3-7e43-7054d21a8d1e</groupUuid></attribute><attribute operationUuid="641daaac-966e-11e4-90a2-8ecb00869e03" metadataUuid="0e932c7e-e802-11e3-8658-002590a28eca" booleanValue="false" updated="2015-02-16T17:33:54.078+03:00" updatedBy="admin@trilbone" readMode="SELF" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>641e16ee-966e-11e4-90a2-8ecb00869e07</uuid><groupUuid>5a4a11a4-4993-11e3-7e43-7054d21a8d1e</groupUuid></attribute>
+
+<sum sum="339360.0" sumInCurrency="5600.0"/>
+
+[UUID отгрузки]
+<demandsUuid><demandRef>b7b88e91-9695-11e4-90a2-8ecb0088b054</demandRef></demandsUuid>
+
+<invoicesOutUuid/>
+[UUID входящего платежа]
+<paymentsUuid><financeInRef>296f1d85-96a2-11e4-90a2-8ecb0088fa53</financeInRef></paymentsUuid>
+
+<customerOrderPosition discount="0.0" quantity="1.0" consignmentUuid="805495f8-9b3a-11e3-4249-002590a28eca" goodUuid="805490e9-9b3a-11e3-d048-002590a28eca" vat="0" readMode="SELF" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>1d34257f-9695-11e4-90a2-8ecb0088ad16</uuid><groupUuid>5a4a11a4-4993-11e3-7e43-7054d21a8d1e</groupUuid><basePrice sum="266640.0" sumInCurrency="4400.0"/><price sum="266640.0" sumInCurrency="4400.0"/><things/><reserve>1.0</reserve></customerOrderPosition>
+<customerOrderPosition discount="0.0" quantity="1.0" consignmentUuid="93961e0e-968e-11e4-90a2-8ecb00887e67" goodUuid="93961544-968e-11e4-90a2-8ecb00887e5e" vat="0" readMode="SELF" changeMode="SELF"><accountUuid>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountUuid><accountId>b12f19f1-489b-11e3-0ba6-7054d21a8d1e</accountId><uuid>5ee6df47-9695-11e4-90a2-8ecb0088ae72</uuid><groupUuid>5a4a11a4-4993-11e3-7e43-7054d21a8d1e</groupUuid><basePrice sum="72720.0" sumInCurrency="1200.0"/><price sum="72720.0" sumInCurrency="1200.0"/><things/><reserve>1.0</reserve></customerOrderPosition>
+
+<purchaseOrdersUuid/></customerOrder>
+</collection>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="DeviceMaxHeigh и ширина - задается в конструкторе - это размеры панели, где будем рисовать. Соответственно, надо задать размеры бумаги с ДОПУСКОМ на поля. Тут чистый размер!!!">
+    <Position X="3.875" Y="1.021" Height="0.75" Width="2.919" />
+  </Comment>
+  <Class Name="RestMS_Client.clsPage">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="RestMS_Client.clsPage.Row">
+        <NestedTypes>
+          <Class Name="RestMS_Client.clsPage.Row.RowHeigthChangedEventArgs" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>clsPage.vb</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>clsPage.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="RestMS_Client.clsPage.Label">
+        <TypeIdentifier>
+          <NewMemberFileName>clsPage.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAEAIAAAgAQgAAAAAAMAAAAAAgAECA=</HashCode>
+      <FileName>clsPage.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

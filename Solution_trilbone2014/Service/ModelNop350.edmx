@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ModelNop350.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ModelNop350StoreContainer">
+          <EntitySet Name="AclRecord" EntityType="ModelNop350.Store.AclRecord" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Category" EntityType="ModelNop350.Store.Category" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Currency" EntityType="ModelNop350.Store.Currency" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CustomerRole" EntityType="ModelNop350.Store.CustomerRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Product" EntityType="ModelNop350.Store.Product" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Store" EntityType="ModelNop350.Store.Store" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="StoreMapping" EntityType="ModelNop350.Store.StoreMapping" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TierPrice" EntityType="ModelNop350.Store.TierPrice" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="AclRecord_CustomerRole" Association="ModelNop350.Store.AclRecord_CustomerRole">
+            <End Role="CustomerRole" EntitySet="CustomerRole" />
+            <End Role="AclRecord" EntitySet="AclRecord" />
+          </AssociationSet>
+          <AssociationSet Name="StoreMapping_Store" Association="ModelNop350.Store.StoreMapping_Store">
+            <End Role="Store" EntitySet="Store" />
+            <End Role="StoreMapping" EntitySet="StoreMapping" />
+          </AssociationSet>
+          <AssociationSet Name="TierPrice_CustomerRole" Association="ModelNop350.Store.TierPrice_CustomerRole">
+            <End Role="CustomerRole" EntitySet="CustomerRole" />
+            <End Role="TierPrice" EntitySet="TierPrice" />
+          </AssociationSet>
+          <AssociationSet Name="TierPrice_Product" Association="ModelNop350.Store.TierPrice_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="TierPrice" EntitySet="TierPrice" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AclRecord">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EntityId" Type="int" Nullable="false" />
+          <Property Name="EntityName" Type="nvarchar" Nullable="false" MaxLength="400" />
+          <Property Name="CustomerRoleId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="400" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="CategoryTemplateId" Type="int" Nullable="false" />
+          <Property Name="MetaKeywords" Type="nvarchar" MaxLength="400" />
+          <Property Name="MetaDescription" Type="nvarchar(max)" />
+          <Property Name="MetaTitle" Type="nvarchar" MaxLength="400" />
+          <Property Name="ParentCategoryId" Type="int" Nullable="false" />
+          <Property Name="PictureId" Type="int" Nullable="false" />
+          <Property Name="PageSize" Type="int" Nullable="false" />
+          <Property Name="AllowCustomersToSelectPageSize" Type="bit" Nullable="false" />
+          <Property Name="PageSizeOptions" Type="nvarchar" MaxLength="200" />
+          <Property Name="PriceRanges" Type="nvarchar" MaxLength="400" />
+          <Property Name="ShowOnHomePage" Type="bit" Nullable="false" />
+          <Property Name="IncludeInTopMenu" Type="bit" Nullable="false" />
+          <Property Name="HasDiscountsApplied" Type="bit" Nullable="false" />
+          <Property Name="SubjectToAcl" Type="bit" Nullable="false" />
+          <Property Name="LimitedToStores" Type="bit" Nullable="false" />
+          <Property Name="Published" Type="bit" Nullable="false" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+          <Property Name="DisplayOrder" Type="int" Nullable="false" />
+          <Property Name="CreatedOnUtc" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedOnUtc" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Currency">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CurrencyCode" Type="nvarchar" Nullable="false" MaxLength="5" />
+          <Property Name="Rate" Type="decimal" Nullable="false" Scale="4" />
+          <Property Name="DisplayLocale" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustomFormatting" Type="nvarchar" MaxLength="50" />
+          <Property Name="LimitedToStores" Type="bit" Nullable="false" />
+          <Property Name="Published" Type="bit" Nullable="false" />
+          <Property Name="DisplayOrder" Type="int" Nullable="false" />
+          <Property Name="CreatedOnUtc" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedOnUtc" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CustomerRole">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="FreeShipping" Type="bit" Nullable="false" />
+          <Property Name="TaxExempt" Type="bit" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="IsSystemRole" Type="bit" Nullable="false" />
+          <Property Name="SystemName" Type="nvarchar" MaxLength="255" />
+          <Property Name="PurchasedWithProductId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProductTypeId" Type="int" Nullable="false" />
+          <Property Name="ParentGroupedProductId" Type="int" Nullable="false" />
+          <Property Name="VisibleIndividually" Type="bit" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="400" />
+          <Property Name="ShortDescription" Type="nvarchar(max)" />
+          <Property Name="FullDescription" Type="nvarchar(max)" />
+          <Property Name="AdminComment" Type="nvarchar(max)" />
+          <Property Name="ProductTemplateId" Type="int" Nullable="false" />
+          <Property Name="VendorId" Type="int" Nullable="false" />
+          <Property Name="ShowOnHomePage" Type="bit" Nullable="false" />
+          <Property Name="MetaKeywords" Type="nvarchar" MaxLength="400" />
+          <Property Name="MetaDescription" Type="nvarchar(max)" />
+          <Property Name="MetaTitle" Type="nvarchar" MaxLength="400" />
+          <Property Name="AllowCustomerReviews" Type="bit" Nullable="false" />
+          <Property Name="ApprovedRatingSum" Type="int" Nullable="false" />
+          <Property Name="NotApprovedRatingSum" Type="int" Nullable="false" />
+          <Property Name="ApprovedTotalReviews" Type="int" Nullable="false" />
+          <Property Name="NotApprovedTotalReviews" Type="int" Nullable="false" />
+          <Property Name="SubjectToAcl" Type="bit" Nullable="false" />
+          <Property Name="LimitedToStores" Type="bit" Nullable="false" />
+          <Property Name="Sku" Type="nvarchar" MaxLength="400" />
+          <Property Name="ManufacturerPartNumber" Type="nvarchar" MaxLength="400" />
+          <Property Name="Gtin" Type="nvarchar" MaxLength="400" />
+          <Property Name="IsGiftCard" Type="bit" Nullable="false" />
+          <Property Name="GiftCardTypeId" Type="int" Nullable="false" />
+          <Property Name="RequireOtherProducts" Type="bit" Nullable="false" />
+          <Property Name="RequiredProductIds" Type="nvarchar" MaxLength="1000" />
+          <Property Name="AutomaticallyAddRequiredProducts" Type="bit" Nullable="false" />
+          <Property Name="IsDownload" Type="bit" Nullable="false" />
+          <Property Name="DownloadId" Type="int" Nullable="false" />
+          <Property Name="UnlimitedDownloads" Type="bit" Nullable="false" />
+          <Property Name="MaxNumberOfDownloads" Type="int" Nullable="false" />
+          <Property Name="DownloadExpirationDays" Type="int" />
+          <Property Name="DownloadActivationTypeId" Type="int" Nullable="false" />
+          <Property Name="HasSampleDownload" Type="bit" Nullable="false" />
+          <Property Name="SampleDownloadId" Type="int" Nullable="false" />
+          <Property Name="HasUserAgreement" Type="bit" Nullable="false" />
+          <Property Name="UserAgreementText" Type="nvarchar(max)" />
+          <Property Name="IsRecurring" Type="bit" Nullable="false" />
+          <Property Name="RecurringCycleLength" Type="int" Nullable="false" />
+          <Property Name="RecurringCyclePeriodId" Type="int" Nullable="false" />
+          <Property Name="RecurringTotalCycles" Type="int" Nullable="false" />
+          <Property Name="IsRental" Type="bit" Nullable="false" />
+          <Property Name="RentalPriceLength" Type="int" Nullable="false" />
+          <Property Name="RentalPricePeriodId" Type="int" Nullable="false" />
+          <Property Name="IsShipEnabled" Type="bit" Nullable="false" />
+          <Property Name="IsFreeShipping" Type="bit" Nullable="false" />
+          <Property Name="ShipSeparately" Type="bit" Nullable="false" />
+          <Property Name="AdditionalShippingCharge" Type="decimal" Nullable="false" Scale="4" />
+          <Property Name="DeliveryDateId" Type="int" Nullable="false" />
+          <Property Name="IsTaxExempt" Type="bit" Nullable="false" />
+          <Property Name="TaxCategoryId" Type="int" Nullable="false" />
+          <Property Name="IsTelecommunicationsOrBroadcastingOrElectronicServices" Type="bit" Nullable="false" />
+          <Property Name="ManageInventoryMethodId" Type="int" Nullable="false" />
+          <Property Name="UseMultipleWarehouses" Type="bit" Nullable="false" />
+          <Property Name="WarehouseId" Type="int" Nullable="false" />
+          <Property Name="StockQuantity" Type="int" Nullable="false" />
+          <Property Name="DisplayStockAvailability" Type="bit" Nullable="false" />
+          <Property Name="DisplayStockQuantity" Type="bit" Nullable="false" />
+          <Property Name="MinStockQuantity" Type="int" Nullable="false" />
+          <Property Name="LowStockActivityId" Type="int" Nullable="false" />
+          <Property Name="NotifyAdminForQuantityBelow" Type="int" Nullable="false" />
+          <Property Name="BackorderModeId" Type="int" Nullable="false" />
+          <Property Name="AllowBackInStockSubscriptions" Type="bit" Nullable="false" />
+          <Property Name="OrderMinimumQuantity" Type="int" Nullable="false" />
+          <Property Name="OrderMaximumQuantity" Type="int" Nullable="false" />
+          <Property Name="AllowedQuantities" Type="nvarchar" MaxLength="1000" />
+          <Property Name="AllowAddingOnlyExistingAttributeCombinations" Type="bit" Nullable="false" />
+          <Property Name="DisableBuyButton" Type="bit" Nullable="false" />
+          <Property Name="DisableWishlistButton" Type="bit" Nullable="false" />
+          <Property Name="AvailableForPreOrder" Type="bit" Nullable="false" />
+          <Property Name="PreOrderAvailabilityStartDateTimeUtc" Type="datetime" />
+          <Property Name="CallForPrice" Type="bit" Nullable="false" />
+          <Property Name="Price" Type="decimal" Nullable="false" Scale="4" />
+          <Property Name="OldPrice" Type="decimal" Nullable="false" Scale="4" />
+          <Property Name="ProductCost" Type="decimal" Nullable="false" Scale="4" />
+          <Property Name="SpecialPrice" Type="decimal" Scale="4" />
+          <Property Name="SpecialPriceStartDateTimeUtc" Type="datetime" />
+          <Property Name="SpecialPriceEndDateTimeUtc" Type="datetime" />
+          <Property Name="CustomerEntersPrice" Type="bit" Nullable="false" />
+          <Property Name="MinimumCustomerEnteredPrice" Type="decimal" Nullable="false" Scale="4" />
+          <Property Name="MaximumCustomerEnteredPrice" Type="decimal" Nullable="false" Scale="4" />
+          <Property Name="HasTierPrices" Type="bit" Nullable="false" />
+          <Property Name="HasDiscountsApplied" Type="bit" Nullable="false" />
+          <Property Name="Weight" Type="decimal" Nullable="false" Scale="4" />
+          <Property Name="Length" Type="decimal" Nullable="false" Scale="4" />
+          <Property Name="Width" Type="decimal" Nullable="false" Scale="4" />
+          <Property Name="Height" Type="decimal" Nullable="false" Scale="4" />
+          <Property Name="AvailableStartDateTimeUtc" Type="datetime" />
+          <Property Name="AvailableEndDateTimeUtc" Type="datetime" />
+          <Property Name="DisplayOrder" Type="int" Nullable="false" />
+          <Property Name="Published" Type="bit" Nullable="false" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedOnUtc" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedOnUtc" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Store">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="400" />
+          <Property Name="Url" Type="nvarchar" Nullable="false" MaxLength="400" />
+          <Property Name="SslEnabled" Type="bit" Nullable="false" />
+          <Property Name="SecureUrl" Type="nvarchar" MaxLength="400" />
+          <Property Name="Hosts" Type="nvarchar" MaxLength="1000" />
+          <Property Name="DisplayOrder" Type="int" Nullable="false" />
+          <Property Name="CompanyName" Type="nvarchar" MaxLength="1000" />
+          <Property Name="CompanyAddress" Type="nvarchar" MaxLength="1000" />
+          <Property Name="CompanyPhoneNumber" Type="nvarchar" MaxLength="1000" />
+          <Property Name="CompanyVat" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="StoreMapping">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EntityId" Type="int" Nullable="false" />
+          <Property Name="EntityName" Type="nvarchar" Nullable="false" MaxLength="400" />
+          <Property Name="StoreId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TierPrice">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+          <Property Name="StoreId" Type="int" Nullable="false" />
+          <Property Name="CustomerRoleId" Type="int" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="Price" Type="decimal" Nullable="false" Scale="4" />
+        </EntityType>
+        <Association Name="AclRecord_CustomerRole">
+          <End Role="CustomerRole" Type="ModelNop350.Store.CustomerRole" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AclRecord" Type="ModelNop350.Store.AclRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CustomerRole">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AclRecord">
+              <PropertyRef Name="CustomerRoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="StoreMapping_Store">
+          <End Role="Store" Type="ModelNop350.Store.Store" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="StoreMapping" Type="ModelNop350.Store.StoreMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Store">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="StoreMapping">
+              <PropertyRef Name="StoreId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TierPrice_CustomerRole">
+          <End Role="CustomerRole" Type="ModelNop350.Store.CustomerRole" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TierPrice" Type="ModelNop350.Store.TierPrice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CustomerRole">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TierPrice">
+              <PropertyRef Name="CustomerRoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TierPrice_Product">
+          <End Role="Product" Type="ModelNop350.Store.Product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TierPrice" Type="ModelNop350.Store.TierPrice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TierPrice">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="GetActivityByNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="shotNumber" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="GetProduct" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="categoryID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetProductACLinfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="sku" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="GetProductStoreInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="sku" Type="nvarchar" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModelNop350" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" >
+        <EntityContainer Name="ModelNop350Container" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AclRecord" EntityType="ModelNop350.AclRecord" />
+          <EntitySet Name="Category" EntityType="ModelNop350.Category" />
+          <EntitySet Name="CustomerRole" EntityType="ModelNop350.CustomerRole" />
+          <EntitySet Name="Product" EntityType="ModelNop350.Product" />
+          <AssociationSet Name="AclRecord_CustomerRole" Association="ModelNop350.AclRecord_CustomerRole">
+            <End Role="CustomerRole" EntitySet="CustomerRole" />
+            <End Role="AclRecord" EntitySet="AclRecord" />
+          </AssociationSet>
+          <FunctionImport Name="GetProduct" ReturnType="Collection(ModelNop350.GetProduct_Result)">
+          <Parameter Name="categoryID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetProductACLinfo" ReturnType="Collection(ModelNop350.GetProductACLinfo_Result)">
+          <Parameter Name="sku" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="Currency" EntityType="ModelNop350.Currency" />
+          <EntitySet Name="Store" EntityType="ModelNop350.Store" />
+          <EntitySet Name="TierPrice" EntityType="ModelNop350.TierPrice" />
+          <AssociationSet Name="TierPrice_CustomerRole" Association="ModelNop350.TierPrice_CustomerRole">
+            <End Role="CustomerRole" EntitySet="CustomerRole" />
+            <End Role="TierPrice" EntitySet="TierPrice" />
+          </AssociationSet>
+          <AssociationSet Name="TierPrice_Product" Association="ModelNop350.TierPrice_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="TierPrice" EntitySet="TierPrice" />
+          </AssociationSet>
+          <EntitySet Name="StoreMapping" EntityType="ModelNop350.StoreMapping" />
+          <AssociationSet Name="StoreMapping_Store" Association="ModelNop350.StoreMapping_Store">
+            <End Role="Store" EntitySet="Store" />
+            <End Role="StoreMapping" EntitySet="StoreMapping" />
+          </AssociationSet>
+          <FunctionImport Name="GetProductStoreInfo" ReturnType="Collection(ModelNop350.GetProductStoreInfo_Result)">
+          <Parameter Name="sku" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="GetActivityByNumber" ReturnType="Collection(ModelNop350.GetActivityByNumber_Result)">
+            <Parameter Name="shotNumber" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="AclRecord">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EntityId" Type="Int32" Nullable="false" />
+          <Property Name="EntityName" Type="String" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerRoleId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CustomerRole" Relationship="ModelNop350.AclRecord_CustomerRole" FromRole="AclRecord" ToRole="CustomerRole" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CategoryTemplateId" Type="Int32" Nullable="false" />
+          <Property Name="MetaKeywords" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="MetaDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MetaTitle" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="ParentCategoryId" Type="Int32" Nullable="false" />
+          <Property Name="PictureId" Type="Int32" Nullable="false" />
+          <Property Name="PageSize" Type="Int32" Nullable="false" />
+          <Property Name="AllowCustomersToSelectPageSize" Type="Boolean" Nullable="false" />
+          <Property Name="PageSizeOptions" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="PriceRanges" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="ShowOnHomePage" Type="Boolean" Nullable="false" />
+          <Property Name="IncludeInTopMenu" Type="Boolean" Nullable="false" />
+          <Property Name="HasDiscountsApplied" Type="Boolean" Nullable="false" />
+          <Property Name="SubjectToAcl" Type="Boolean" Nullable="false" />
+          <Property Name="LimitedToStores" Type="Boolean" Nullable="false" />
+          <Property Name="Published" Type="Boolean" Nullable="false" />
+          <Property Name="Deleted" Type="Boolean" Nullable="false" />
+          <Property Name="DisplayOrder" Type="Int32" Nullable="false" />
+          <Property Name="CreatedOnUtc" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedOnUtc" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="CustomerRole">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FreeShipping" Type="Boolean" Nullable="false" />
+          <Property Name="TaxExempt" Type="Boolean" Nullable="false" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+          <Property Name="IsSystemRole" Type="Boolean" Nullable="false" />
+          <Property Name="SystemName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PurchasedWithProductId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AclRecord" Relationship="ModelNop350.AclRecord_CustomerRole" FromRole="CustomerRole" ToRole="AclRecord" />
+          <NavigationProperty Name="TierPrice" Relationship="ModelNop350.TierPrice_CustomerRole" FromRole="CustomerRole" ToRole="TierPrice" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductTypeId" Type="Int32" Nullable="false" />
+          <Property Name="ParentGroupedProductId" Type="Int32" Nullable="false" />
+          <Property Name="VisibleIndividually" Type="Boolean" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="ShortDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FullDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AdminComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ProductTemplateId" Type="Int32" Nullable="false" />
+          <Property Name="VendorId" Type="Int32" Nullable="false" />
+          <Property Name="ShowOnHomePage" Type="Boolean" Nullable="false" />
+          <Property Name="MetaKeywords" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="MetaDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MetaTitle" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="AllowCustomerReviews" Type="Boolean" Nullable="false" />
+          <Property Name="ApprovedRatingSum" Type="Int32" Nullable="false" />
+          <Property Name="NotApprovedRatingSum" Type="Int32" Nullable="false" />
+          <Property Name="ApprovedTotalReviews" Type="Int32" Nullable="false" />
+          <Property Name="NotApprovedTotalReviews" Type="Int32" Nullable="false" />
+          <Property Name="SubjectToAcl" Type="Boolean" Nullable="false" />
+          <Property Name="LimitedToStores" Type="Boolean" Nullable="false" />
+          <Property Name="Sku" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="ManufacturerPartNumber" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="Gtin" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="IsGiftCard" Type="Boolean" Nullable="false" />
+          <Property Name="GiftCardTypeId" Type="Int32" Nullable="false" />
+          <Property Name="RequireOtherProducts" Type="Boolean" Nullable="false" />
+          <Property Name="RequiredProductIds" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="AutomaticallyAddRequiredProducts" Type="Boolean" Nullable="false" />
+          <Property Name="IsDownload" Type="Boolean" Nullable="false" />
+          <Property Name="DownloadId" Type="Int32" Nullable="false" />
+          <Property Name="UnlimitedDownloads" Type="Boolean" Nullable="false" />
+          <Property Name="MaxNumberOfDownloads" Type="Int32" Nullable="false" />
+          <Property Name="DownloadExpirationDays" Type="Int32" />
+          <Property Name="DownloadActivationTypeId" Type="Int32" Nullable="false" />
+          <Property Name="HasSampleDownload" Type="Boolean" Nullable="false" />
+          <Property Name="SampleDownloadId" Type="Int32" Nullable="false" />
+          <Property Name="HasUserAgreement" Type="Boolean" Nullable="false" />
+          <Property Name="UserAgreementText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsRecurring" Type="Boolean" Nullable="false" />
+          <Property Name="RecurringCycleLength" Type="Int32" Nullable="false" />
+          <Property Name="RecurringCyclePeriodId" Type="Int32" Nullable="false" />
+          <Property Name="RecurringTotalCycles" Type="Int32" Nullable="false" />
+          <Property Name="IsRental" Type="Boolean" Nullable="false" />
+          <Property Name="RentalPriceLength" Type="Int32" Nullable="false" />
+          <Property Name="RentalPricePeriodId" Type="Int32" Nullable="false" />
+          <Property Name="IsShipEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="IsFreeShipping" Type="Boolean" Nullable="false" />
+          <Property Name="ShipSeparately" Type="Boolean" Nullable="false" />
+          <Property Name="AdditionalShippingCharge" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="DeliveryDateId" Type="Int32" Nullable="false" />
+          <Property Name="IsTaxExempt" Type="Boolean" Nullable="false" />
+          <Property Name="TaxCategoryId" Type="Int32" Nullable="false" />
+          <Property Name="IsTelecommunicationsOrBroadcastingOrElectronicServices" Type="Boolean" Nullable="false" />
+          <Property Name="ManageInventoryMethodId" Type="Int32" Nullable="false" />
+          <Property Name="UseMultipleWarehouses" Type="Boolean" Nullable="false" />
+          <Property Name="WarehouseId" Type="Int32" Nullable="false" />
+          <Property Name="StockQuantity" Type="Int32" Nullable="false" />
+          <Property Name="DisplayStockAvailability" Type="Boolean" Nullable="false" />
+          <Property Name="DisplayStockQuantity" Type="Boolean" Nullable="false" />
+          <Property Name="MinStockQuantity" Type="Int32" Nullable="false" />
+          <Property Name="LowStockActivityId" Type="Int32" Nullable="false" />
+          <Property Name="NotifyAdminForQuantityBelow" Type="Int32" Nullable="false" />
+          <Property Name="BackorderModeId" Type="Int32" Nullable="false" />
+          <Property Name="AllowBackInStockSubscriptions" Type="Boolean" Nullable="false" />
+          <Property Name="OrderMinimumQuantity" Type="Int32" Nullable="false" />
+          <Property Name="OrderMaximumQuantity" Type="Int32" Nullable="false" />
+          <Property Name="AllowedQuantities" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="AllowAddingOnlyExistingAttributeCombinations" Type="Boolean" Nullable="false" />
+          <Property Name="DisableBuyButton" Type="Boolean" Nullable="false" />
+          <Property Name="DisableWishlistButton" Type="Boolean" Nullable="false" />
+          <Property Name="AvailableForPreOrder" Type="Boolean" Nullable="false" />
+          <Property Name="PreOrderAvailabilityStartDateTimeUtc" Type="DateTime" Precision="3" />
+          <Property Name="CallForPrice" Type="Boolean" Nullable="false" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="OldPrice" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="ProductCost" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="SpecialPrice" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="SpecialPriceStartDateTimeUtc" Type="DateTime" Precision="3" />
+          <Property Name="SpecialPriceEndDateTimeUtc" Type="DateTime" Precision="3" />
+          <Property Name="CustomerEntersPrice" Type="Boolean" Nullable="false" />
+          <Property Name="MinimumCustomerEnteredPrice" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="MaximumCustomerEnteredPrice" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="HasTierPrices" Type="Boolean" Nullable="false" />
+          <Property Name="HasDiscountsApplied" Type="Boolean" Nullable="false" />
+          <Property Name="Weight" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="Length" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="Width" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="Height" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="AvailableStartDateTimeUtc" Type="DateTime" Precision="3" />
+          <Property Name="AvailableEndDateTimeUtc" Type="DateTime" Precision="3" />
+          <Property Name="DisplayOrder" Type="Int32" Nullable="false" />
+          <Property Name="Published" Type="Boolean" Nullable="false" />
+          <Property Name="Deleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedOnUtc" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedOnUtc" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="TierPrice" Relationship="ModelNop350.TierPrice_Product" FromRole="Product" ToRole="TierPrice" />
+        </EntityType>
+        <Association Name="AclRecord_CustomerRole">
+          <End Type="ModelNop350.CustomerRole" Role="CustomerRole" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="ModelNop350.AclRecord" Role="AclRecord" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CustomerRole">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AclRecord">
+              <PropertyRef Name="CustomerRoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="GetProduct_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="400" />
+          <Property Type="String" Name="Sku" Nullable="true" MaxLength="400" />
+          <Property Type="Int32" Name="StockQuantity" Nullable="false" />
+          <Property Type="Int32" Name="WarehouseId" Nullable="false" />
+          <Property Type="String" Name="warename" Nullable="true" MaxLength="400" />
+          <Property Type="Decimal" Name="Price" Nullable="false" Precision="18" Scale="4" />
+          <Property Type="Boolean" Name="Published" Nullable="false" />
+          <Property Type="Boolean" Name="ShowOnHomePage" Nullable="false" />
+          <Property Type="Int32" Name="StockQuantity1" Nullable="false" />
+          <Property Type="Boolean" Name="LimitedToStores" Nullable="false" />
+          <Property Type="Boolean" Name="HasTierPrices" Nullable="false" />
+          <Property Type="Boolean" Name="SubjectToAcl" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetProductACLinfo_Result">
+          <Property Type="Decimal" Name="price" Nullable="false" Precision="18" Scale="4" />
+          <Property Type="Decimal" Name="tierprice" Nullable="false" Precision="18" Scale="4" />
+          <Property Type="Decimal" Name="discount" Nullable="true" Precision="19" />
+          <Property Type="Int32" Name="Quantity" Nullable="false" />
+          <Property Type="Int32" Name="StoreId" Nullable="false" />
+          <Property Type="String" Name="storename" Nullable="true" MaxLength="400" />
+          <Property Type="Int32" Name="roleid" Nullable="false" />
+          <Property Type="String" Name="rolename" Nullable="false" MaxLength="255" />
+          <Property Type="Boolean" Name="LimitedToStores" Nullable="false" />
+          <Property Type="Boolean" Name="SubjectToAcl" Nullable="false" />
+          <Property Type="Int32" Name="productid" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="400" />
+          <Property Type="String" Name="Sku" Nullable="true" MaxLength="400" />
+        </ComplexType>
+        <EntityType Name="Currency">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CurrencyCode" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="Rate" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="DisplayLocale" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CustomFormatting" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LimitedToStores" Type="Boolean" Nullable="false" />
+          <Property Name="Published" Type="Boolean" Nullable="false" />
+          <Property Name="DisplayOrder" Type="Int32" Nullable="false" />
+          <Property Name="CreatedOnUtc" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedOnUtc" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Store">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="Url" Type="String" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="SslEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="SecureUrl" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="Hosts" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="DisplayOrder" Type="Int32" Nullable="false" />
+          <Property Name="CompanyName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="CompanyAddress" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="CompanyPhoneNumber" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="CompanyVat" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="StoreMapping" Relationship="ModelNop350.StoreMapping_Store" FromRole="Store" ToRole="StoreMapping" />
+        </EntityType>
+        <EntityType Name="TierPrice">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <Property Name="StoreId" Type="Int32" Nullable="false" />
+          <Property Name="CustomerRoleId" Type="Int32" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <NavigationProperty Name="CustomerRole" Relationship="ModelNop350.TierPrice_CustomerRole" FromRole="TierPrice" ToRole="CustomerRole" />
+          <NavigationProperty Name="Product" Relationship="ModelNop350.TierPrice_Product" FromRole="TierPrice" ToRole="Product" />
+        </EntityType>
+        <Association Name="TierPrice_CustomerRole">
+          <End Type="ModelNop350.CustomerRole" Role="CustomerRole" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="ModelNop350.TierPrice" Role="TierPrice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CustomerRole">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TierPrice">
+              <PropertyRef Name="CustomerRoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TierPrice_Product">
+          <End Type="ModelNop350.Product" Role="Product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="ModelNop350.TierPrice" Role="TierPrice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TierPrice">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="StoreMapping">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EntityId" Type="Int32" Nullable="false" />
+          <Property Name="EntityName" Type="String" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="StoreId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Store" Relationship="ModelNop350.StoreMapping_Store" FromRole="StoreMapping" ToRole="Store" />
+        </EntityType>
+        <Association Name="StoreMapping_Store">
+          <End Type="ModelNop350.Store" Role="Store" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="ModelNop350.StoreMapping" Role="StoreMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Store">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="StoreMapping">
+              <PropertyRef Name="StoreId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="GetProductStoreInfo_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="400" />
+        </ComplexType>
+        <ComplexType Name="GetActivityByNumber_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Comment" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedOnUtc" Nullable="false" Precision="23" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="ModelNop350" />
+        <Alias Key="Target" Value="ModelNop350.Store" />
+        <EntityContainerMapping CdmEntityContainer="ModelNop350Container" StorageEntityContainer="ModelNop350StoreContainer">
+          <EntitySetMapping Name="AclRecord">
+            <EntityTypeMapping TypeName="ModelNop350.AclRecord">
+              <MappingFragment StoreEntitySet="AclRecord">
+                <ScalarProperty Name="CustomerRoleId" ColumnName="CustomerRoleId" />
+                <ScalarProperty Name="EntityName" ColumnName="EntityName" />
+                <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Category">
+            <EntityTypeMapping TypeName="ModelNop350.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="UpdatedOnUtc" ColumnName="UpdatedOnUtc" />
+                <ScalarProperty Name="CreatedOnUtc" ColumnName="CreatedOnUtc" />
+                <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="Published" ColumnName="Published" />
+                <ScalarProperty Name="LimitedToStores" ColumnName="LimitedToStores" />
+                <ScalarProperty Name="SubjectToAcl" ColumnName="SubjectToAcl" />
+                <ScalarProperty Name="HasDiscountsApplied" ColumnName="HasDiscountsApplied" />
+                <ScalarProperty Name="IncludeInTopMenu" ColumnName="IncludeInTopMenu" />
+                <ScalarProperty Name="ShowOnHomePage" ColumnName="ShowOnHomePage" />
+                <ScalarProperty Name="PriceRanges" ColumnName="PriceRanges" />
+                <ScalarProperty Name="PageSizeOptions" ColumnName="PageSizeOptions" />
+                <ScalarProperty Name="AllowCustomersToSelectPageSize" ColumnName="AllowCustomersToSelectPageSize" />
+                <ScalarProperty Name="PageSize" ColumnName="PageSize" />
+                <ScalarProperty Name="PictureId" ColumnName="PictureId" />
+                <ScalarProperty Name="ParentCategoryId" ColumnName="ParentCategoryId" />
+                <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
+                <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+                <ScalarProperty Name="MetaKeywords" ColumnName="MetaKeywords" />
+                <ScalarProperty Name="CategoryTemplateId" ColumnName="CategoryTemplateId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CustomerRole">
+            <EntityTypeMapping TypeName="ModelNop350.CustomerRole">
+              <MappingFragment StoreEntitySet="CustomerRole">
+                <ScalarProperty Name="PurchasedWithProductId" ColumnName="PurchasedWithProductId" />
+                <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+                <ScalarProperty Name="IsSystemRole" ColumnName="IsSystemRole" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="TaxExempt" ColumnName="TaxExempt" />
+                <ScalarProperty Name="FreeShipping" ColumnName="FreeShipping" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product">
+            <EntityTypeMapping TypeName="ModelNop350.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="UpdatedOnUtc" ColumnName="UpdatedOnUtc" />
+                <ScalarProperty Name="CreatedOnUtc" ColumnName="CreatedOnUtc" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="Published" ColumnName="Published" />
+                <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+                <ScalarProperty Name="AvailableEndDateTimeUtc" ColumnName="AvailableEndDateTimeUtc" />
+                <ScalarProperty Name="AvailableStartDateTimeUtc" ColumnName="AvailableStartDateTimeUtc" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="HasDiscountsApplied" ColumnName="HasDiscountsApplied" />
+                <ScalarProperty Name="HasTierPrices" ColumnName="HasTierPrices" />
+                <ScalarProperty Name="MaximumCustomerEnteredPrice" ColumnName="MaximumCustomerEnteredPrice" />
+                <ScalarProperty Name="MinimumCustomerEnteredPrice" ColumnName="MinimumCustomerEnteredPrice" />
+                <ScalarProperty Name="CustomerEntersPrice" ColumnName="CustomerEntersPrice" />
+                <ScalarProperty Name="SpecialPriceEndDateTimeUtc" ColumnName="SpecialPriceEndDateTimeUtc" />
+                <ScalarProperty Name="SpecialPriceStartDateTimeUtc" ColumnName="SpecialPriceStartDateTimeUtc" />
+                <ScalarProperty Name="SpecialPrice" ColumnName="SpecialPrice" />
+                <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
+                <ScalarProperty Name="OldPrice" ColumnName="OldPrice" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="CallForPrice" ColumnName="CallForPrice" />
+                <ScalarProperty Name="PreOrderAvailabilityStartDateTimeUtc" ColumnName="PreOrderAvailabilityStartDateTimeUtc" />
+                <ScalarProperty Name="AvailableForPreOrder" ColumnName="AvailableForPreOrder" />
+                <ScalarProperty Name="DisableWishlistButton" ColumnName="DisableWishlistButton" />
+                <ScalarProperty Name="DisableBuyButton" ColumnName="DisableBuyButton" />
+                <ScalarProperty Name="AllowAddingOnlyExistingAttributeCombinations" ColumnName="AllowAddingOnlyExistingAttributeCombinations" />
+                <ScalarProperty Name="AllowedQuantities" ColumnName="AllowedQuantities" />
+                <ScalarProperty Name="OrderMaximumQuantity" ColumnName="OrderMaximumQuantity" />
+                <ScalarProperty Name="OrderMinimumQuantity" ColumnName="OrderMinimumQuantity" />
+                <ScalarProperty Name="AllowBackInStockSubscriptions" ColumnName="AllowBackInStockSubscriptions" />
+                <ScalarProperty Name="BackorderModeId" ColumnName="BackorderModeId" />
+                <ScalarProperty Name="NotifyAdminForQuantityBelow" ColumnName="NotifyAdminForQuantityBelow" />
+                <ScalarProperty Name="LowStockActivityId" ColumnName="LowStockActivityId" />
+                <ScalarProperty Name="MinStockQuantity" ColumnName="MinStockQuantity" />
+                <ScalarProperty Name="DisplayStockQuantity" ColumnName="DisplayStockQuantity" />
+                <ScalarProperty Name="DisplayStockAvailability" ColumnName="DisplayStockAvailability" />
+                <ScalarProperty Name="StockQuantity" ColumnName="StockQuantity" />
+                <ScalarProperty Name="WarehouseId" ColumnName="WarehouseId" />
+                <ScalarProperty Name="UseMultipleWarehouses" ColumnName="UseMultipleWarehouses" />
+                <ScalarProperty Name="ManageInventoryMethodId" ColumnName="ManageInventoryMethodId" />
+                <ScalarProperty Name="IsTelecommunicationsOrBroadcastingOrElectronicServices" ColumnName="IsTelecommunicationsOrBroadcastingOrElectronicServices" />
+                <ScalarProperty Name="TaxCategoryId" ColumnName="TaxCategoryId" />
+                <ScalarProperty Name="IsTaxExempt" ColumnName="IsTaxExempt" />
+                <ScalarProperty Name="DeliveryDateId" ColumnName="DeliveryDateId" />
+                <ScalarProperty Name="AdditionalShippingCharge" ColumnName="AdditionalShippingCharge" />
+                <ScalarProperty Name="ShipSeparately" ColumnName="ShipSeparately" />
+                <ScalarProperty Name="IsFreeShipping" ColumnName="IsFreeShipping" />
+                <ScalarProperty Name="IsShipEnabled" ColumnName="IsShipEnabled" />
+                <ScalarProperty Name="RentalPricePeriodId" ColumnName="RentalPricePeriodId" />
+                <ScalarProperty Name="RentalPriceLength" ColumnName="RentalPriceLength" />
+                <ScalarProperty Name="IsRental" ColumnName="IsRental" />
+                <ScalarProperty Name="RecurringTotalCycles" ColumnName="RecurringTotalCycles" />
+                <ScalarProperty Name="RecurringCyclePeriodId" ColumnName="RecurringCyclePeriodId" />
+                <ScalarProperty Name="RecurringCycleLength" ColumnName="RecurringCycleLength" />
+                <ScalarProperty Name="IsRecurring" ColumnName="IsRecurring" />
+                <ScalarProperty Name="UserAgreementText" ColumnName="UserAgreementText" />
+                <ScalarProperty Name="HasUserAgreement" ColumnName="HasUserAgreement" />
+                <ScalarProperty Name="SampleDownloadId" ColumnName="SampleDownloadId" />
+                <ScalarProperty Name="HasSampleDownload" ColumnName="HasSampleDownload" />
+                <ScalarProperty Name="DownloadActivationTypeId" ColumnName="DownloadActivationTypeId" />
+                <ScalarProperty Name="DownloadExpirationDays" ColumnName="DownloadExpirationDays" />
+                <ScalarProperty Name="MaxNumberOfDownloads" ColumnName="MaxNumberOfDownloads" />
+                <ScalarProperty Name="UnlimitedDownloads" ColumnName="UnlimitedDownloads" />
+                <ScalarProperty Name="DownloadId" ColumnName="DownloadId" />
+                <ScalarProperty Name="IsDownload" ColumnName="IsDownload" />
+                <ScalarProperty Name="AutomaticallyAddRequiredProducts" ColumnName="AutomaticallyAddRequiredProducts" />
+                <ScalarProperty Name="RequiredProductIds" ColumnName="RequiredProductIds" />
+                <ScalarProperty Name="RequireOtherProducts" ColumnName="RequireOtherProducts" />
+                <ScalarProperty Name="GiftCardTypeId" ColumnName="GiftCardTypeId" />
+                <ScalarProperty Name="IsGiftCard" ColumnName="IsGiftCard" />
+                <ScalarProperty Name="Gtin" ColumnName="Gtin" />
+                <ScalarProperty Name="ManufacturerPartNumber" ColumnName="ManufacturerPartNumber" />
+                <ScalarProperty Name="Sku" ColumnName="Sku" />
+                <ScalarProperty Name="LimitedToStores" ColumnName="LimitedToStores" />
+                <ScalarProperty Name="SubjectToAcl" ColumnName="SubjectToAcl" />
+                <ScalarProperty Name="NotApprovedTotalReviews" ColumnName="NotApprovedTotalReviews" />
+                <ScalarProperty Name="ApprovedTotalReviews" ColumnName="ApprovedTotalReviews" />
+                <ScalarProperty Name="NotApprovedRatingSum" ColumnName="NotApprovedRatingSum" />
+                <ScalarProperty Name="ApprovedRatingSum" ColumnName="ApprovedRatingSum" />
+                <ScalarProperty Name="AllowCustomerReviews" ColumnName="AllowCustomerReviews" />
+                <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
+                <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+                <ScalarProperty Name="MetaKeywords" ColumnName="MetaKeywords" />
+                <ScalarProperty Name="ShowOnHomePage" ColumnName="ShowOnHomePage" />
+                <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+                <ScalarProperty Name="ProductTemplateId" ColumnName="ProductTemplateId" />
+                <ScalarProperty Name="AdminComment" ColumnName="AdminComment" />
+                <ScalarProperty Name="FullDescription" ColumnName="FullDescription" />
+                <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="VisibleIndividually" ColumnName="VisibleIndividually" />
+                <ScalarProperty Name="ParentGroupedProductId" ColumnName="ParentGroupedProductId" />
+                <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetProduct" FunctionName="ModelNop350.Store.GetProduct">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModelNop350.GetProduct_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Sku" ColumnName="Sku" />
+                <ScalarProperty Name="StockQuantity" ColumnName="StockQuantity" />
+                <ScalarProperty Name="WarehouseId" ColumnName="WarehouseId" />
+                <ScalarProperty Name="warename" ColumnName="warename" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Published" ColumnName="Published" />
+                <ScalarProperty Name="ShowOnHomePage" ColumnName="ShowOnHomePage" />
+                <ScalarProperty Name="StockQuantity1" ColumnName="StockQuantity" />
+                <ScalarProperty Name="LimitedToStores" ColumnName="LimitedToStores" />
+                <ScalarProperty Name="HasTierPrices" ColumnName="HasTierPrices" />
+                <ScalarProperty Name="SubjectToAcl" ColumnName="SubjectToAcl" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetProductACLinfo" FunctionName="ModelNop350.Store.GetProductACLinfo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModelNop350.GetProductACLinfo_Result">
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="tierprice" ColumnName="tierprice" />
+                <ScalarProperty Name="discount" ColumnName="discount" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+                <ScalarProperty Name="storename" ColumnName="storename" />
+                <ScalarProperty Name="roleid" ColumnName="roleid" />
+                <ScalarProperty Name="rolename" ColumnName="rolename" />
+                <ScalarProperty Name="LimitedToStores" ColumnName="LimitedToStores" />
+                <ScalarProperty Name="SubjectToAcl" ColumnName="SubjectToAcl" />
+                <ScalarProperty Name="productid" ColumnName="productid" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Sku" ColumnName="Sku" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="Currency">
+            <EntityTypeMapping TypeName="ModelNop350.Currency">
+              <MappingFragment StoreEntitySet="Currency">
+                <ScalarProperty Name="UpdatedOnUtc" ColumnName="UpdatedOnUtc" />
+                <ScalarProperty Name="CreatedOnUtc" ColumnName="CreatedOnUtc" />
+                <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+                <ScalarProperty Name="Published" ColumnName="Published" />
+                <ScalarProperty Name="LimitedToStores" ColumnName="LimitedToStores" />
+                <ScalarProperty Name="CustomFormatting" ColumnName="CustomFormatting" />
+                <ScalarProperty Name="DisplayLocale" ColumnName="DisplayLocale" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Store">
+            <EntityTypeMapping TypeName="ModelNop350.Store">
+              <MappingFragment StoreEntitySet="Store">
+                <ScalarProperty Name="CompanyVat" ColumnName="CompanyVat" />
+                <ScalarProperty Name="CompanyPhoneNumber" ColumnName="CompanyPhoneNumber" />
+                <ScalarProperty Name="CompanyAddress" ColumnName="CompanyAddress" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+                <ScalarProperty Name="Hosts" ColumnName="Hosts" />
+                <ScalarProperty Name="SecureUrl" ColumnName="SecureUrl" />
+                <ScalarProperty Name="SslEnabled" ColumnName="SslEnabled" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TierPrice">
+            <EntityTypeMapping TypeName="ModelNop350.TierPrice">
+              <MappingFragment StoreEntitySet="TierPrice">
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="CustomerRoleId" ColumnName="CustomerRoleId" />
+                <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StoreMapping">
+            <EntityTypeMapping TypeName="ModelNop350.StoreMapping">
+              <MappingFragment StoreEntitySet="StoreMapping">
+                <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+                <ScalarProperty Name="EntityName" ColumnName="EntityName" />
+                <ScalarProperty Name="EntityId" ColumnName="EntityId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetProductStoreInfo" FunctionName="ModelNop350.Store.GetProductStoreInfo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModelNop350.GetProductStoreInfo_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetActivityByNumber" FunctionName="ModelNop350.Store.GetActivityByNumber">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ModelNop350.GetActivityByNumber_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="CreatedOnUtc" ColumnName="CreatedOnUtc" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="По умолчанию" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

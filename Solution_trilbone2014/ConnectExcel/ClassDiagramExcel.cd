@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConnectExcel.uc_Sample_data">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ConnectExcel.uc_Sample_data.ConfirmOrder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>UserControl1.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>u4NKM1AuECIBEqAggAaKY0ALfBD/YRIkBQQAQARQAAA=</HashCode>
+      <FileName>UserControl1.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConnectExcel.fmExcelConnect">
+    <Position X="5.25" Y="0.5" Width="4" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="ConnectExcel.fmExcelConnect.AddColumnDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>fmExcelConnect.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="ConnectExcel.fmExcelConnect.AddRowDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>fmExcelConnect.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="ConnectExcel.fmExcelConnect.ClearGridDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>fmExcelConnect.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Enum Name="ConnectExcel.fmExcelConnect.emOperations" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>fmExcelConnect.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAACAAXEAgCCIAAAICAAAACAkAABAAIGAAAAQAAAAA=</HashCode>
+      <FileName>fmExcelConnect.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="9.75" />
+</ClassDiagram>

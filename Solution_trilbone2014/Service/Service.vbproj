@@ -1,0 +1,1215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{D5C9DC73-04FE-4F8C-937C-A7FE91D4BEC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Service</RootNamespace>
+    <AssemblyName>Service</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Service.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisInputAssembly>bin\x86\Debug\Service.dll</CodeAnalysisInputAssembly>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Service.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisInputAssembly>bin\x86\Release\Service.dll</CodeAnalysisInputAssembly>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'IncludeExcel|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\IncludeExcel\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Service.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'IncludeExcel|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\IncludeExcel\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Service.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'OnlyExcel|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\OnlyExcel\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Service.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'OnlyExcel|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\OnlyExcel\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Service.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;E:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\packages\DotNetZip.1.9.3\lib\net20\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveSwitch.TextControl">
+      <HintPath>..\TextControl\bin\x86\Debug\LiveSwitch.TextControl.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WindowsAzure.Storage.4.3.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="nopTypes">
+      <HintPath>..\nopTypes\bin\x86\Debug\nopTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="PDFLibNet">
+      <HintPath>..\packages\PdfLibNet\PDFLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationTypes.vb" />
+    <Compile Include="Azure.vb" />
+    <Compile Include="CATALOGSAMPLEMAPOVERLAY.vb" />
+    <Compile Include="CATALOGSAMPLEROOTINFO.vb" />
+    <Compile Include="clsAgentParameters.vb" />
+    <Compile Include="clsdbMoySklad.vb" />
+    <Compile Include="clsFindingService.vb" />
+    <Compile Include="clsImportManager.vb" />
+    <Compile Include="clsLabelInfo.vb" />
+    <Compile Include="clsMailTrilbone.vb" />
+    <Compile Include="clsNetworkTime.vb" />
+    <Compile Include="clsNopDataBuilder.vb" />
+    <Compile Include="clsRestMS_CustomerOrder.vb" />
+    <Compile Include="clsBoxes.vb" />
+    <Compile Include="clsConnection.vb" />
+    <Compile Include="clsPage.vb" />
+    <Compile Include="clsPakages.vb" />
+    <Compile Include="clsRfidManager.vb" />
+    <Compile Include="clsSampleInfoManager.vb" />
+    <Compile Include="clsSampleList.vb" />
+    <Compile Include="clsSampleListManager.vb" />
+    <Compile Include="clsSellInfo.vb" />
+    <Compile Include="clsServicedbPhoto.vb" />
+    <Compile Include="clsTemplateManager.vb" />
+    <Compile Include="clsTemplates.vb" />
+    <Compile Include="clsUser.vb" />
+    <Compile Include="cls_partial_tbSMOperation.vb" />
+    <Compile Include="DataClasses1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_oldGoodMap.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_oldGoodMap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_oldGoodMap.vb">
+      <DependentUpon>DataSet_oldGoodMap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbPhoto.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbPhoto.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="dbReadySample.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbReadySample.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="dbReadySample.vb" />
+    <Compile Include="EbayHelper.vb" />
+    <Compile Include="fmBrowser.Designer.vb">
+      <DependentUpon>fmBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fmBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmSelectNames.Designer.vb">
+      <DependentUpon>fmSelectNames.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fmSelectNames.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ieBayDataProvider.vb" />
+    <Compile Include="iMoySkladDataProvider.vb" />
+    <Compile Include="iMyTreesDataProvider.vb" />
+    <Compile Include="iNopDataProvider.vb" />
+    <Compile Include="ModelNop350.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelNop350.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PhotoDriveMarker.vb" />
+    <Compile Include="PhotoDriveObject.vb" />
+    <Compile Include="PublicEventArgs.vb" />
+    <Compile Include="Resource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AgentsFields.vb">
+      <DependentUpon>AgentsFields.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resource_sql.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource_sql.resx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucActiveWord.Designer.vb">
+      <DependentUpon>ucActiveWord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucActiveWord.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucClient.Designer.vb">
+      <DependentUpon>ucClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucClient.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDeclaration.Designer.vb">
+      <DependentUpon>ucDeclaration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucDeclaration.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEbayHistory.Designer.vb">
+      <DependentUpon>ucEbayHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucEbayHistory.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucExpence.Designer.vb">
+      <DependentUpon>ucExpence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucExpence.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucGoodLabel.Designer.vb">
+      <DependentUpon>ucGoodLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucGoodLabel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLocationInfo.Designer.vb">
+      <DependentUpon>ucLocationInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucLocationInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMCOrder.Designer.vb">
+      <DependentUpon>ucMCOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucMCOrder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucGoodList.Designer.vb">
+      <DependentUpon>ucGoodList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucGoodList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPaymentDemand.Designer.vb">
+      <DependentUpon>ucPaymentDemand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucPaymentDemand.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhotoList.Designer.vb">
+      <DependentUpon>ucPhotoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhotoList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhotoManager.Designer.vb">
+      <DependentUpon>ucPhotoManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhotoManager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPriceCalc.Designer.vb">
+      <DependentUpon>ucPriceCalc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucPriceCalc.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucReadySamples.Designer.vb">
+      <DependentUpon>ucReadySamples.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucReadySamples.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSellGood.Designer.vb">
+      <DependentUpon>ucSellGood.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucSellGood.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTrilboneRegister.Designer.vb">
+      <DependentUpon>ucTrilboneRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucTrilboneRegister.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Cell.Designer.vb">
+      <DependentUpon>uc_Cell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Cell.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_createSample.Designer.vb">
+      <DependentUpon>uc_createSample.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_createSample.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_DataQwery.Designer.vb">
+      <DependentUpon>uc_DataQwery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_DataQwery.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Employee.Designer.vb">
+      <DependentUpon>uc_Employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Employee.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_lot.Designer.vb">
+      <DependentUpon>uc_lot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_lot.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_mailer.Designer.vb">
+      <DependentUpon>uc_mailer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_mailer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_oldMC.Designer.vb">
+      <DependentUpon>uc_oldMC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_oldMC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_preparator_calc.Designer.vb">
+      <DependentUpon>UC_preparator_calc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UC_preparator_calc.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_rfid.Designer.vb">
+      <DependentUpon>UC_rfid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UC_rfid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_siteCheck.Designer.vb">
+      <DependentUpon>UC_siteCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UC_siteCheck.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlEbaySearch.Designer.vb">
+      <DependentUpon>UserControlEbaySearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlEbaySearch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMC.Designer.vb">
+      <DependentUpon>UserControlMC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlQality.Designer.vb">
+      <DependentUpon>UserControlQality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlQality.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserPermission.vb">
+      <DependentUpon>UserPermission.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uс_trilbone_history.Designer.vb">
+      <DependentUpon>Uс_trilbone_history.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Uс_trilbone_history.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Web References\com.ebay.developer\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="XMLVisualCatalog.vb">
+      <DependentUpon>XMLVisualCatalog.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HTMLCatalogPage.htm" />
+    <Content Include="HTMLPage1.htm" />
+    <Content Include="SQL\JScript1.js" />
+    <Content Include="SQL\JScript2.js" />
+    <None Include="cdCatalogMap.cd" />
+    <None Include="cdCatalogXML.cd" />
+    <None Include="cdiEbayDataProvider.cd" />
+    <None Include="cdiMyThreesDataProvider.cd" />
+    <None Include="cdRFID.cd" />
+    <None Include="cdTemplates.cd" />
+    <None Include="cd_Agents.cd" />
+    <None Include="cd_DataResult_forGrids.cd" />
+    <None Include="cd_iMoySkladDataProvider.cd" />
+    <EntityDeploy Include="ModelNop350.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelNop350.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="cd_nopData.cd" />
+    <None Include="cd_SellInfo.cd" />
+    <None Include="DataSet_oldGoodMap.xsc">
+      <DependentUpon>DataSet_oldGoodMap.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_oldGoodMap.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_oldGoodMap.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet_oldGoodMap.xss">
+      <DependentUpon>DataSet_oldGoodMap.xsd</DependentUpon>
+    </None>
+    <None Include="ModelNop350.edmx.diagram">
+      <DependentUpon>ModelNop350.edmx</DependentUpon>
+    </None>
+    <None Include="My Project\DataSources\eBayFinding.clseBayHistoryItem.datasource" />
+    <None Include="My Project\DataSources\eBayFinding.eBayFindingServiceReference.SearchItem.datasource" />
+    <None Include="My Project\DataSources\eBayFinding.eBayShopping.SimpleItemType.datasource" />
+    <None Include="My Project\DataSources\GetEbayInfo_Result.datasource" />
+    <None Include="My Project\DataSources\iMoySkladDataProvider.clsEntity.datasource" />
+    <None Include="My Project\DataSources\iMoySkladDataProvider.strGoodMapQty.datasource" />
+    <None Include="My Project\DataSources\ModelNop350Container.datasource" />
+    <None Include="My Project\DataSources\oldGoodMap_Result.datasource" />
+    <None Include="My Project\DataSources\tbActualWord.datasource" />
+    <None Include="My Project\DataSources\tbEmployee.datasource" />
+    <None Include="My Project\DataSources\ucPriceCalc.clsPriceData.datasource" />
+    <None Include="Resources\AgentsFields.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\saved.jpg" />
+    <None Include="Resources\noimage.png" />
+    <Content Include="Resources\Warning.ico" />
+    <Content Include="SQL\SQLQuery_wTime2.sql" />
+    <Content Include="SQL\SQLQuery_wTime_зарплата за 2 мес и текущая.sql" />
+    <Content Include="SQL\SQLQuery_wTime_итог зарплата.sql" />
+    <Content Include="SQL\SQLQuery_wTime_корректировка.sql" />
+    <Content Include="SQL\SQLQuery_wTime_стоп.sql" />
+    <Content Include="SQL\SQLQuery_кто в офисе.sql" />
+    <Content Include="SQL\SQLQuery_поиск выставленных.sql" />
+    <Content Include="SQL\SQLQuery_последняя операция.sql" />
+    <Content Include="SQL\копирование.sql" />
+    <Content Include="SQL\проверка номера.sql" />
+    <Content Include="SQL\проверка процедуры.sql" />
+    <Content Include="SQL\цикл.sql" />
+    <Content Include="testout.html" />
+    <Content Include="ThisIsMarkerFile.xml" />
+    <Content Include="UserPermission.xml" />
+    <Content Include="XMLVisualCatalog.html" />
+    <Content Include="XMLVisualCatalog.xml" />
+    <Content Include="XSLTCatalog.xslt" />
+    <Content Include="XSLTCatalog_text.xslt" />
+    <Content Include="XSLTEbayOld.xslt" />
+    <Content Include="XSLTSample.xslt" />
+    <Content Include="Описание ресурсов.txt" />
+    <None Include="app.config" />
+    <None Include="cd_dbPhoto.cd" />
+    <None Include="cd_Packages.cd" />
+    <None Include="cd_USER.cd" />
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbPhoto.edmx.diagram">
+      <DependentUpon>dbPhoto.edmx</DependentUpon>
+    </None>
+    <None Include="old_cdPhotoDrive.cd" />
+    <None Include="cd_SampleList.cd" />
+    <None Include="cd_ApplicationTypes.cd" />
+    <Content Include="My Project\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings1.Designer.vb</LastGenOutput>
+    </Content>
+    <EntityDeploy Include="dbReadySample.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbReadySample.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="dbPhoto.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbPhoto.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="cd_iSource.cd" />
+    <None Include="old_cd_PhotoObjects.cd" />
+    <None Include="My Project\DataSources\DBOPHOTOEntities.datasource" />
+    <None Include="My Project\DataSources\DBREADYSAMPLEEntities.datasource" />
+    <None Include="My Project\DataSources\dbSamplesListsContainer.datasource" />
+    <None Include="packages.config" />
+    <None Include="ThisIsMarkerFile.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UserPermission.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddDisputeResponseResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddDisputeResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddFixedPriceItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddItemFromSellingManagerTemplateResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddItemsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddMemberMessageAAQToPartnerResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddMemberMessageRTQResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddMemberMessagesAAQToBidderResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddOrderResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddSecondChanceItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddSellingManagerInventoryFolderResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddSellingManagerProductResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddSellingManagerTemplateResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddToItemDescriptionResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddToWatchListResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\AddTransactionConfirmationItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\CompleteSaleResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ConfirmIdentityResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\DeleteMyMessagesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\DeleteSellingManagerInventoryFolderResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\DeleteSellingManagerItemAutomationRuleResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\DeleteSellingManagerProductResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\DeleteSellingManagerTemplateAutomationRuleResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\DeleteSellingManagerTemplateResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\DisableUnpaidItemAssistanceResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ebaySvc.wsdl" />
+    <None Include="Web References\com.ebay.developer\EndFixedPriceItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\EndItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\EndItemsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ExtendSiteHostedPicturesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\FetchTokenResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetAccountResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetAdFormatLeadsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetAllBiddersResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetApiAccessRulesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetBestOffersResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetBidderListResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetCategoriesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetCategoryFeaturesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetCategoryMappingsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetCategorySpecificsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetChallengeTokenResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetCharitiesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetClientAlertsAuthTokenResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetContextualKeywordsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetDescriptionTemplatesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetDisputeResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GeteBayDetailsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GeteBayOfficialTimeResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetFeedbackResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetItemsAwaitingFeedbackResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetItemShippingResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetItemTransactionsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetMemberMessagesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetMessagePreferencesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetMyeBayBuyingResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetMyeBayRemindersResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetMyeBaySellingResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetMyMessagesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetNotificationPreferencesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetNotificationsUsageResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetOrdersResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetOrderTransactionsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetProductSellingPagesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetPromotionalSaleDetailsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellerDashboardResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellerEventsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellerListResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellerPaymentsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellerTransactionsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellingManagerAlertsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellingManagerEmailLogResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellingManagerInventoryFolderResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellingManagerInventoryResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellingManagerItemAutomationRuleResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellingManagerSaleRecordResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellingManagerSoldListingsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellingManagerTemplateAutomationRuleResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSellingManagerTemplatesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSessionIDResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetShippingDiscountProfilesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetStoreCategoryUpdateStatusResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetStoreCustomPageResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetStoreOptionsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetStorePreferencesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetStoreResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetSuggestedCategoriesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetTaxTableResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetTokenStatusResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetUserContactDetailsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetUserDisputesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetUserPreferencesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetUserResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetVeROReasonCodeDetailsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\GetVeROReportStatusResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\IssueRefundResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\LeaveFeedbackResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\MoveSellingManagerInventoryFolderResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\PlaceOfferResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\com.ebay.developer\RelistFixedPriceItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\RelistItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\RemoveFromWatchListResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\RespondToBestOfferResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\RespondToFeedbackResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ReviseCheckoutStatusResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ReviseFixedPriceItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ReviseInventoryStatusResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ReviseItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ReviseMyMessagesFoldersResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ReviseMyMessagesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ReviseSellingManagerInventoryFolderResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ReviseSellingManagerProductResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ReviseSellingManagerSaleRecordResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ReviseSellingManagerTemplateResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\RevokeTokenResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SaveItemToSellingManagerTemplateResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SellerReverseDisputeResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SendInvoiceResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetMessagePreferencesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetNotificationPreferencesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetPromotionalSaleListingsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetPromotionalSaleResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetSellingManagerFeedbackOptionsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetSellingManagerItemAutomationRuleResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetSellingManagerTemplateAutomationRuleResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetShippingDiscountProfilesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetStoreCategoriesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetStoreCustomPageResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetStorePreferencesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetStoreResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetTaxTableResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetUserNotesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\SetUserPreferencesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\UploadSiteHostedPicturesResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ValidateChallengeInputResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\ValidateTestUserRegistrationResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\VerifyAddFixedPriceItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\VerifyAddItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\VerifyAddSecondChanceItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\VerifyRelistItemResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.ebay.developer\VeROReportItemsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="XMLVisualCatalog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fmBrowser.resx">
+      <DependentUpon>fmBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmSelectNames.resx">
+      <DependentUpon>fmSelectNames.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource_sql.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_sql.Designer.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucActiveWord.resx">
+      <DependentUpon>ucActiveWord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucClient.resx">
+      <DependentUpon>ucClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDeclaration.resx">
+      <DependentUpon>ucDeclaration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEbayHistory.resx">
+      <DependentUpon>ucEbayHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucExpence.resx">
+      <DependentUpon>ucExpence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucGoodLabel.resx">
+      <DependentUpon>ucGoodLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLocationInfo.resx">
+      <DependentUpon>ucLocationInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMCOrder.resx">
+      <DependentUpon>ucMCOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucGoodList.resx">
+      <DependentUpon>ucGoodList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPaymentDemand.resx">
+      <DependentUpon>ucPaymentDemand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhotoManager.resx">
+      <DependentUpon>ucPhotoManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPriceCalc.resx">
+      <DependentUpon>ucPriceCalc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucReadySamples.resx">
+      <DependentUpon>ucReadySamples.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSellGood.resx">
+      <DependentUpon>ucSellGood.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTrilboneRegister.resx">
+      <DependentUpon>ucTrilboneRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Cell.resx">
+      <DependentUpon>uc_Cell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_createSample.resx">
+      <DependentUpon>uc_createSample.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_DataQwery.resx">
+      <DependentUpon>uc_DataQwery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Employee.resx">
+      <DependentUpon>uc_Employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_lot.resx">
+      <DependentUpon>uc_lot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_mailer.resx">
+      <DependentUpon>uc_mailer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_oldMC.resx">
+      <DependentUpon>uc_oldMC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_preparator_calc.resx">
+      <DependentUpon>UC_preparator_calc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_rfid.resx">
+      <DependentUpon>UC_rfid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_siteCheck.resx">
+      <DependentUpon>UC_siteCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlEbaySearch.resx">
+      <DependentUpon>UserControlEbaySearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMC.resx">
+      <DependentUpon>UserControlMC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlQality.resx">
+      <DependentUpon>UserControlQality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uс_trilbone_history.resx">
+      <DependentUpon>Uс_trilbone_history.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Resource.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhotoList.resx">
+      <DependentUpon>ucPhotoList.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eBayFinding\eBayFinding.vbproj">
+      <Project>{9e621ffb-01f2-4aa8-8c3a-2712a7f802c8}</Project>
+      <Name>eBayFinding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nopRestClient\nopRestClient.vbproj">
+      <Project>{26860B85-6B6C-4D04-86AE-DF92DBC0FC74}</Project>
+      <Name>nopRestClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PriceCalculator\PriceCalculator.vbproj">
+      <Project>{9e3cb161-4941-4f86-8855-c75c95826a3f}</Project>
+      <Name>PriceCalculator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RFID\RFID.vbproj">
+      <Project>{835b3459-536c-4bb9-8703-47869ab31da1}</Project>
+      <Name>RFID</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShotCodeConverter_Net\ShotCodeConverter_Net.vbproj">
+      <Project>{3174983d-ca17-47b7-a6f6-20a14136bf06}</Project>
+      <Name>ShotCodeConverter_Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://developer.ebay.com/webservices/latest/ebaySvc.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.ebay.developer\</RelPath>
+      <UpdateFromURL>http://developer.ebay.com/webservices/latest/ebaySvc.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Service_com_ebay_developer_eBayAPIInterfaceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

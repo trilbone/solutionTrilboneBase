@@ -1,0 +1,370 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly PDFLibNet, Version=1.0.6.6, Culture=neutral, PublicKeyToken=26d87f7d66fb2aee: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class PDFLibNet.LinkDest: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    Int32 Page 'get ' : 
+    Boolean ChangeZoom 'get ' : 
+    Boolean ChangeTop 'get ' : 
+    Boolean ChangeLeft 'get ' : 
+    Double Zoom 'get ' : 
+    Double Bottom 'get ' : 
+    Double Top 'get ' : 
+    Double Right 'get ' : 
+    Double Left 'get ' : 
+  Methods:
+    get_Left(): PrivateScope, Public, HideBySig, SpecialName
+    get_Right(): PrivateScope, Public, HideBySig, SpecialName
+    get_Top(): PrivateScope, Public, HideBySig, SpecialName
+    get_Bottom(): PrivateScope, Public, HideBySig, SpecialName
+    get_Zoom(): PrivateScope, Public, HideBySig, SpecialName
+    get_ChangeLeft(): PrivateScope, Public, HideBySig, SpecialName
+    get_ChangeTop(): PrivateScope, Public, HideBySig, SpecialName
+    get_ChangeZoom(): PrivateScope, Public, HideBySig, SpecialName
+    get_Page(): PrivateScope, Public, HideBySig, SpecialName
+Class PDFLibNet.PageLinkAction: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    PDFLibNet.LinkActionKind Kind 'get ' : 
+  Methods:
+    get_Kind(): PrivateScope, Public, HideBySig, SpecialName
+Class PDFLibNet.PageLinkURI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PDFLibNet.PageLinkAction
+  Properties:
+    System.String URL 'get ' : 
+  Methods:
+    get_URL(): PrivateScope, Public, HideBySig, SpecialName
+Class PDFLibNet.PageLinkGoTo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :PDFLibNet.PageLinkAction
+  Properties:
+    System.String DestinationName 'get ' : 
+    PDFLibNet.LinkDest Destination 'get ' : 
+  Methods:
+    get_Destination(): PrivateScope, Public, HideBySig, SpecialName
+    get_DestinationName(): PrivateScope, Public, HideBySig, SpecialName
+Class PDFLibNet.PageLink: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Drawing.Rectangle Bounds 'get ' : 
+    PDFLibNet.PageLinkAction Action 'get ' : 
+  Methods:
+    get_Action(): PrivateScope, Public, HideBySig, SpecialName
+    get_Bounds(): PrivateScope, Public, HideBySig, SpecialName
+Class PDFLibNet.OutlineItem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.String Title 'get ' : 
+    System.Collections.Generic.IList`1[PDFLibNet.OutlineItem] Childrens 'get ' : 
+    Int32 KidsCount 'get ' : 
+    PDFLibNet.LinkDest Destination 'get ' : 
+  Methods:
+    DoAction(): PrivateScope, Public, HideBySig
+    GetKind(): PrivateScope, Public, HideBySig
+    get_Destination(): PrivateScope, Public, HideBySig, SpecialName
+    get_KidsCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_Childrens(): PrivateScope, Public, HideBySig, SpecialName
+    get_Title(): PrivateScope, Public, HideBySig, SpecialName
+Class PDFLibNet.OutlineItemCollection`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T, PDFLibNet.OutlineItem
+  :System.Collections.Generic.List`1[T]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class PDFLibNet.PDFSearchResult: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    Int32 Page 'get ' IsLong : 
+    System.Drawing.Rectangle Position 'get ' : 
+  Methods:
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    get_Page(): PrivateScope, Public, HideBySig, SpecialName
+Class PDFLibNet.PageLinkCollection`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T, PDFLibNet.PageLink
+  :System.Collections.Generic.List`1[T]
+Class PDFLibNet.WriteToStreamHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Char*, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Char*, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PDFLibNet.ReadFromStreamHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Byte*, Int32, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Byte*, Int32, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PDFLibNet.RenderNotifyFinishedHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, Boolean(HasFieldMarshal), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PDFLibNet.xPDFStream: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.IO.StreamWriter
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.Stream): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.Stream, System.Text.Encoding): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class PDFLibNet.xPDFBinaryReader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.IO.BinaryReader
+    Void .ctor(System.IO.Stream): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class PDFLibNet.PDFPage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.String Text 'get ' : 
+    System.IO.StreamWriter TextStream 'get ' : 
+    Double Height 'get ' : 
+    Double Width 'get ' : 
+    Int32 Rotation 'get ' : 
+    System.String ISOAName 'get ' : 
+    Int32 ImagesCount 'get ' : 
+  Events:
+    PDFLibNet.RenderNotifyFinishedHandler RenderThumbnailFinished: SpecialName
+  Methods:
+    get_ImagesCount(): PrivateScope, Public, HideBySig, SpecialName
+    GetImage(Int32): PrivateScope, Public, HideBySig
+    ExtractText(Rectangle): PrivateScope, Public, HideBySig
+    get_ISOAName(): PrivateScope, Public, HideBySig, SpecialName
+    get_Rotation(): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    get_TextStream(): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    HasText(Int32, Int32): PrivateScope, Public, HideBySig
+    LoadThumbnail(Int32, Int32): PrivateScope, Public, HideBySig
+    GetBitmap(Double): PrivateScope, Public, HideBySig
+    GetBitmap(Double, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    GetBitmap(Int32, Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    GetBitmap(Int32, Int32): PrivateScope, Public, HideBySig
+    add_RenderThumbnailFinished(RenderNotifyFinishedHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RenderThumbnailFinished(RenderNotifyFinishedHandler): PrivateScope, Public, HideBySig, SpecialName
+    raise_RenderThumbnailFinished(Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class PDFLibNet.PDFLoadCompletedHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PDFLibNet.PDFLoadBeginHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PDFLibNet.PageChanged: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PDFLibNet.PageZoomChanged: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Size, Size): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Size, Size, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PDFLibNet.ExportJpgProgressHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PDFLibNet.ExportJpgFinishedHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PDFLibNet.RenderFinishedHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PDFLibNet.PDFWrapper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.String OwnerPassword 'set' : 
+    System.String UserPassword 'set' : 
+    System.Collections.Generic.List`1[PDFLibNet.PDFSearchResult] SearchResults 'get set' : 
+    System.Collections.Generic.List`1[PDFLibNet.OutlineItem] Outline 'get ' : 
+    System.Drawing.Rectangle ClientBounds 'get set' : 
+    Int32 CurrentPage 'get set' IsLong : 
+    Int32 PageCount 'get ' IsLong : 
+    Int32 CurrentY 'get set' IsLong : 
+    Int32 CurrentX 'get set' IsLong : 
+    Int32 PageHeight 'get ' IsLong : 
+    Int32 PageWidth 'get ' IsLong : 
+    Double Zoom 'get set' : 
+    System.DateTime LastModifiedDate 'get ' : 
+    System.DateTime CreationDate 'get ' : 
+    System.String Producer 'get ' : 
+    System.String Creator 'get ' : 
+    System.String Keywords 'get ' : 
+    System.String Subject 'get ' : 
+    System.String Title 'get ' : 
+    System.String Author 'get ' : 
+    Double RenderDPI 'get set' : 
+    Boolean SearchCaseSensitive 'get set' : 
+    System.Drawing.Rectangle SliceBox 'get set' : 
+    Boolean IsBusy 'get ' : 
+    Boolean IsJpgBusy 'get ' : 
+    Boolean UseMuPDF 'get set' : 
+    Boolean SupportsMuPDF 'get ' : 
+    System.Collections.Generic.Dictionary`2[System.Int32,PDFLibNet.PDFPage] Pages 'get ' : 
+  Events:
+    PDFLibNet.ExportJpgFinishedHandler ExportJpgFinished: SpecialName
+    PDFLibNet.ExportJpgProgressHandler ExportJpgProgress: SpecialName
+    PDFLibNet.RenderNotifyFinishedHandler RenderNotifyFinished: SpecialName
+    PDFLibNet.RenderFinishedHandler RenderFinished: SpecialName
+    PDFLibNet.PDFLoadBeginHandler PDFLoadBegin: SpecialName
+    PDFLibNet.PDFLoadCompletedHandler PDFLoadCompleted: SpecialName
+  Methods:
+    add_RenderFinished(RenderFinishedHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RenderFinished(RenderFinishedHandler): PrivateScope, Public, HideBySig, SpecialName
+    raise_RenderFinished(): PrivateScope, Public, HideBySig, SpecialName
+    add_RenderNotifyFinished(RenderNotifyFinishedHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RenderNotifyFinished(RenderNotifyFinishedHandler): PrivateScope, Public, HideBySig, SpecialName
+    raise_RenderNotifyFinished(Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    add_ExportJpgProgress(ExportJpgProgressHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ExportJpgProgress(ExportJpgProgressHandler): PrivateScope, Public, HideBySig, SpecialName
+    raise_ExportJpgProgress(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName
+    add_ExportJpgFinished(ExportJpgFinishedHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ExportJpgFinished(ExportJpgFinishedHandler): PrivateScope, Public, HideBySig, SpecialName
+    raise_ExportJpgFinished(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+    ExportJpg(String, Int32, Int32, Double, Int32, Int32): PrivateScope, Public, HideBySig
+    ExportJpg(String, Int32, Int32, Double, Int32): PrivateScope, Public, HideBySig
+    ExportJpg(String, Int32): PrivateScope, Public, HideBySig
+    CancelJpgExport(): PrivateScope, Public, HideBySig
+    get_Pages(): PrivateScope, Public, HideBySig, SpecialName
+    get_SupportsMuPDF(): PrivateScope, Public, HideBySig, SpecialName
+    get_UseMuPDF(): PrivateScope, Public, HideBySig, SpecialName
+    set_UseMuPDF(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_IsJpgBusy(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsBusy(): PrivateScope, Public, HideBySig, SpecialName
+    ExportText(String, Int32, Int32, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    ExportHtml(String, Int32, Int32, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    PerfomLinkAction(Int32): PrivateScope, Public, HideBySig
+    LoadPDF(Stream): PrivateScope, Public, HideBySig
+    LoadPDF(String): PrivateScope, Public, HideBySig
+    RenderPageThread(IntPtr, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    RenderPage(IntPtr, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    RenderPage(IntPtr, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    RenderPage(IntPtr): PrivateScope, Public, HideBySig
+    CancelThumbProcess(): PrivateScope, Public, HideBySig
+    DrawPageHDC(IntPtr): PrivateScope, Public, HideBySig
+    FitToWidth(IntPtr): PrivateScope, Public, HideBySig
+    FitToHeight(IntPtr): PrivateScope, Public, HideBySig
+    ZoomIN(): PrivateScope, Public, HideBySig
+    ZoomOut(): PrivateScope, Public, HideBySig
+    NextPage(): PrivateScope, Public, HideBySig
+    PreviousPage(): PrivateScope, Public, HideBySig
+    FindDestination(String): PrivateScope, Public, HideBySig
+    FindText(String, Int32, PDFSearchOrder, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    FindText(String, Int32, PDFSearchOrder, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    FindText(String, Int32, PDFSearchOrder, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    FindFirst(String, PDFSearchOrder, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    FindNext(String): PrivateScope, Public, HideBySig
+    FindPrevious(String): PrivateScope, Public, HideBySig
+    PreserveSearchResults(): PrivateScope, Public, HideBySig
+    RecoverSearchResults(): PrivateScope, Public, HideBySig
+    PrintToFile(String, Int32, Int32): PrivateScope, Public, HideBySig
+    NoEmbedFontExists(): PrivateScope, Public, HideBySig
+    GetLinks(Int32): PrivateScope, Public, HideBySig
+    PointUserToDev(PointF): PrivateScope, Public, HideBySig
+    PointDevToUser(PointF): PrivateScope, Public, HideBySig
+    get_SliceBox(): PrivateScope, Public, HideBySig, SpecialName
+    set_SliceBox(Rectangle): PrivateScope, Public, HideBySig, SpecialName
+    get_SearchCaseSensitive(): PrivateScope, Public, HideBySig, SpecialName
+    set_SearchCaseSensitive(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_RenderDPI(): PrivateScope, Public, HideBySig, SpecialName
+    set_RenderDPI(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Author(): PrivateScope, Public, HideBySig, SpecialName
+    get_Title(): PrivateScope, Public, HideBySig, SpecialName
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    get_Keywords(): PrivateScope, Public, HideBySig, SpecialName
+    get_Creator(): PrivateScope, Public, HideBySig, SpecialName
+    get_Producer(): PrivateScope, Public, HideBySig, SpecialName
+    get_CreationDate(): PrivateScope, Public, HideBySig, SpecialName
+    get_LastModifiedDate(): PrivateScope, Public, HideBySig, SpecialName
+    get_Zoom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Zoom(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_PageWidth(): PrivateScope, Public, HideBySig, SpecialName
+    get_PageHeight(): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentX(): PrivateScope, Public, HideBySig, SpecialName
+    set_CurrentX(Int32 IsLong): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentY(): PrivateScope, Public, HideBySig, SpecialName
+    set_CurrentY(Int32 IsLong): PrivateScope, Public, HideBySig, SpecialName
+    get_PageCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentPage(): PrivateScope, Public, HideBySig, SpecialName
+    set_CurrentPage(Int32 IsLong): PrivateScope, Public, HideBySig, SpecialName
+    get_ClientBounds(): PrivateScope, Public, HideBySig, SpecialName
+    set_ClientBounds(Rectangle): PrivateScope, Public, HideBySig, SpecialName
+    get_Outline(): PrivateScope, Public, HideBySig, SpecialName
+    get_SearchResults(): PrivateScope, Public, HideBySig, SpecialName
+    set_SearchResults(List`1): PrivateScope, Public, HideBySig, SpecialName
+    set_UserPassword(String): PrivateScope, Public, HideBySig, SpecialName
+    set_OwnerPassword(String): PrivateScope, Public, HideBySig, SpecialName
+    add_PDFLoadCompleted(PDFLoadCompletedHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PDFLoadCompleted(PDFLoadCompletedHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_PDFLoadBegin(PDFLoadBeginHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PDFLoadBegin(PDFLoadBeginHandler): PrivateScope, Public, HideBySig, SpecialName
+Struct PDFLibNet.LinkActionKind: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    PDFLibNet.LinkActionKind actionGoTo = 0 : Public, Static, Literal, HasDefault
+    PDFLibNet.LinkActionKind actionGoToR = 1 : Public, Static, Literal, HasDefault
+    PDFLibNet.LinkActionKind actionLaunch = 2 : Public, Static, Literal, HasDefault
+    PDFLibNet.LinkActionKind actionURI = 3 : Public, Static, Literal, HasDefault
+    PDFLibNet.LinkActionKind actionNamed = 4 : Public, Static, Literal, HasDefault
+    PDFLibNet.LinkActionKind actionMovie = 5 : Public, Static, Literal, HasDefault
+    PDFLibNet.LinkActionKind actionUnknown = 6 : Public, Static, Literal, HasDefault
+Struct PDFLibNet.PDFSearchOrder: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    PDFLibNet.PDFSearchOrder PDFSearchFromdBegin = 0 : Public, Static, Literal, HasDefault
+    PDFLibNet.PDFSearchOrder PDFSearchFromCurrent = 1 : Public, Static, Literal, HasDefault
+Class PDFLibNet.xPDFParams: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ErrorFile 'get set' : 
+    Boolean ErrorQuiet 'get set' : 
+    Boolean VectorAntialias 'get set' : 
+    Boolean Antialias 'get set' : 
+    System.String FileName 'get set' : 
+  Methods:
+    get_FileName(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_FileName(String): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Antialias(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Antialias(Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_VectorAntialias(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_VectorAntialias(Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ErrorQuiet(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_ErrorQuiet(Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ErrorFile(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_ErrorFile(String): PrivateScope, Public, Static, HideBySig, SpecialName

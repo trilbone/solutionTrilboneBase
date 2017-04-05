@@ -1,0 +1,43 @@
+﻿shot code converter  -- not linked
+содержит параметры основ кодов для восстановления короткого кода
+
+
+Photo_reader:  -- link to service
+GoodsGroup - группы товаров для экспорта цсв
+CSVComma - разделитель цсв
+CSVpath - последний путь сохранения цсв
+
+
+
+MyTrees:  --  link to catalog
+DescrFilePath  -- хранит путь к файлу с деревьями (последнего открытого)
+Help  -- хранит хелп по программе деревьев
+//данные текущего сеанса//
+//при размещении в сети нужно иметь возможность привязать к service//
+
+
+Catalog:  --  not linked
+(**)TemplateFolderPath -- путь к папке с шаблонами, где лежит также и файл-описатель
+TemplateCollectionFile --  имя файла с описателем шаблонов (содержит коллекцию ключ/имяфайла)
+//при размещении в сети нужно иметь возможность привязать к service//
+
+
+Service:
+(**)13 RootPath -- от него начинаются пути нижележащих = 9, 8, 1
+	(**)1 CurrentPhotoPath -- используется в процедуре FindDrive 
+	(**)8 DataFilePath -- использует Property LocalDataFilePath() - как корень для записи контейнеров
+	(**)9 xmldboPhotoStorePath - путь к локальному файлу (работа офф-лайн) использует: fmSampleData через Property 		
+		xmldboPhotoStorePath, также задается в options
+				
+(**)3 OrdersPath -- путь к папке с заказами, используется в fmOrders, fmPhotoList, clsConnection
+(**)16 ExcelBookPath - Property ExcelBookPath: used in fmExcelConnect and fmOptions
+(**)15 PhotoManagerStarUpFolder - Property PhotoManagerStarUpFolder (похоже, путь для фото менеджера) используют: fmImageManager and fmPhotoList
+
+
+6 OptimizeImageWight  --  для обрезки изображения, использует только fmPhotoList! есть в fmOptions
+5 PhotoWokers -- список работников для указания в fmSampleData
+
+10 dbReadySampleConnectionString
+11 dboPhotoConnectionString
+12 DbServersNames - список серверов: used in InitDbConnection, AddServerName, RemoveServerName  into clsApplicationTypes
+7 PhotoDriveFileMarkerName -- используется в процедуре FindDrive (ThisIsMarkerFile.xml)

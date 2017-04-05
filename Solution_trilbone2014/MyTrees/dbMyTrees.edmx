@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="dbMyTrees.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="edmFileSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="edmUserID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="edmLinkedNodeSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PathID" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="edmNodeImageSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StorageImageName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="StorageBlockName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="URI" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Caption" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="edmNodeObjectedmTag">
+          <Key>
+            <PropertyRef Name="edmNodeObject_Id" />
+            <PropertyRef Name="edmTag_Id" />
+          </Key>
+          <Property Name="edmNodeObject_Id" Type="int" Nullable="false" />
+          <Property Name="edmTag_Id" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6005: Тип данных "hierarchyid" в настоящее время не поддерживается для целевой версии платформы Entity Framework; столбец "HierID" в таблице "MyTrees.dbo.edmNodeObjectSet" был исключен.-->
+        <EntityType Name="edmNodeObjectSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ParentNodeID" Type="int" Nullable="false" />
+          <Property Name="VirtualFullPath" Type="nvarchar(max)" />
+          <Property Name="ComplexDescription_DescriptionEN" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ComplexDescription_DescriptionRUS" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ComplexDescription_Info" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ComplexDescription_NameEN" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ComplexDescription_NameRUS" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="edmVirtualTree_Id" Type="int" />
+          <Property Name="edmOwnUser_Id" Type="int" />
+          <Property Name="edmLinkedNode_Id" Type="int" />
+        </EntityType>
+        <EntityType Name="edmPrivateTreeSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="edmFileID" Type="int" Nullable="false" />
+          <Property Name="edmVirtualTree_Id" Type="int" />
+        </EntityType>
+        <EntityType Name="edmTagSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="edmUserSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="edmVirtualTreeSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameEN" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="NameRUS" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_edmBlockTreeedmVolume">
+          <End Role="edmFileSet" Type="Self.edmFileSet" Multiplicity="1" />
+          <End Role="edmPrivateTreeSet" Type="Self.edmPrivateTreeSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="edmFileSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="edmPrivateTreeSet">
+              <PropertyRef Name="edmFileID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_edmNodeObjectedmLinkedNode">
+          <End Role="edmLinkedNodeSet" Type="Self.edmLinkedNodeSet" Multiplicity="0..1" />
+          <End Role="edmNodeObjectSet" Type="Self.edmNodeObjectSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="edmLinkedNodeSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="edmNodeObjectSet">
+              <PropertyRef Name="edmLinkedNode_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_edmNodeObjectedmTag_edmNodeObject">
+          <End Role="edmNodeObjectSet" Type="Self.edmNodeObjectSet" Multiplicity="1" />
+          <End Role="edmNodeObjectedmTag" Type="Self.edmNodeObjectedmTag" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="edmNodeObjectSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="edmNodeObjectedmTag">
+              <PropertyRef Name="edmNodeObject_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_edmNodeObjectedmTag_edmTag">
+          <End Role="edmTagSet" Type="Self.edmTagSet" Multiplicity="1" />
+          <End Role="edmNodeObjectedmTag" Type="Self.edmNodeObjectedmTag" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="edmTagSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="edmNodeObjectedmTag">
+              <PropertyRef Name="edmTag_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_edmNodeObjectedmVirtualTrees">
+          <End Role="edmVirtualTreeSet" Type="Self.edmVirtualTreeSet" Multiplicity="0..1" />
+          <End Role="edmNodeObjectSet" Type="Self.edmNodeObjectSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="edmVirtualTreeSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="edmNodeObjectSet">
+              <PropertyRef Name="edmVirtualTree_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_edmOwnerNode">
+          <End Role="edmUserSet" Type="Self.edmUserSet" Multiplicity="0..1" />
+          <End Role="edmNodeObjectSet" Type="Self.edmNodeObjectSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="edmUserSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="edmNodeObjectSet">
+              <PropertyRef Name="edmOwnUser_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_edmUseredmBlockTree">
+          <End Role="edmUserSet" Type="Self.edmUserSet" Multiplicity="1" />
+          <End Role="edmFileSet" Type="Self.edmFileSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="edmUserSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="edmFileSet">
+              <PropertyRef Name="edmUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_edmVirtualTreeedmPrivateTree">
+          <End Role="edmVirtualTreeSet" Type="Self.edmVirtualTreeSet" Multiplicity="0..1" />
+          <End Role="edmPrivateTreeSet" Type="Self.edmPrivateTreeSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="edmVirtualTreeSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="edmPrivateTreeSet">
+              <PropertyRef Name="edmVirtualTree_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="dbMyTreesStoreContainer">
+          <EntitySet Name="edmFileSet" EntityType="Self.edmFileSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="edmLinkedNodeSet" EntityType="Self.edmLinkedNodeSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="edmNodeImageSet" EntityType="Self.edmNodeImageSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="edmNodeObjectedmTag" EntityType="Self.edmNodeObjectedmTag" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="edmNodeObjectSet" EntityType="Self.edmNodeObjectSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="edmPrivateTreeSet" EntityType="Self.edmPrivateTreeSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="edmTagSet" EntityType="Self.edmTagSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="edmUserSet" EntityType="Self.edmUserSet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="edmVirtualTreeSet" EntityType="Self.edmVirtualTreeSet" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_edmBlockTreeedmVolume" Association="Self.FK_edmBlockTreeedmVolume">
+            <End Role="edmFileSet" EntitySet="edmFileSet" />
+            <End Role="edmPrivateTreeSet" EntitySet="edmPrivateTreeSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_edmNodeObjectedmLinkedNode" Association="Self.FK_edmNodeObjectedmLinkedNode">
+            <End Role="edmLinkedNodeSet" EntitySet="edmLinkedNodeSet" />
+            <End Role="edmNodeObjectSet" EntitySet="edmNodeObjectSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_edmNodeObjectedmTag_edmNodeObject" Association="Self.FK_edmNodeObjectedmTag_edmNodeObject">
+            <End Role="edmNodeObjectSet" EntitySet="edmNodeObjectSet" />
+            <End Role="edmNodeObjectedmTag" EntitySet="edmNodeObjectedmTag" />
+          </AssociationSet>
+          <AssociationSet Name="FK_edmNodeObjectedmTag_edmTag" Association="Self.FK_edmNodeObjectedmTag_edmTag">
+            <End Role="edmTagSet" EntitySet="edmTagSet" />
+            <End Role="edmNodeObjectedmTag" EntitySet="edmNodeObjectedmTag" />
+          </AssociationSet>
+          <AssociationSet Name="FK_edmNodeObjectedmVirtualTrees" Association="Self.FK_edmNodeObjectedmVirtualTrees">
+            <End Role="edmVirtualTreeSet" EntitySet="edmVirtualTreeSet" />
+            <End Role="edmNodeObjectSet" EntitySet="edmNodeObjectSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_edmOwnerNode" Association="Self.FK_edmOwnerNode">
+            <End Role="edmUserSet" EntitySet="edmUserSet" />
+            <End Role="edmNodeObjectSet" EntitySet="edmNodeObjectSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_edmUseredmBlockTree" Association="Self.FK_edmUseredmBlockTree">
+            <End Role="edmUserSet" EntitySet="edmUserSet" />
+            <End Role="edmFileSet" EntitySet="edmFileSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_edmVirtualTreeedmPrivateTree" Association="Self.FK_edmVirtualTreeedmPrivateTree">
+            <End Role="edmVirtualTreeSet" EntitySet="edmVirtualTreeSet" />
+            <End Role="edmPrivateTreeSet" EntitySet="edmPrivateTreeSet" />
+          </AssociationSet>
+          </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="dbMyTrees" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" >
+        <EntityContainer Name="dbMyTreesContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="edmNodeObjectSet" EntityType="dbMyTrees.edmNodeObject" />
+          <EntitySet Name="edmVirtualTreeSet" EntityType="dbMyTrees.edmVirtualTree" />
+          <EntitySet Name="edmFileSet" EntityType="dbMyTrees.edmFile" />
+          <EntitySet Name="edmNodeImageSet" EntityType="dbMyTrees.edmNodeImage" />
+          <EntitySet Name="edmPrivateTreeSet" EntityType="dbMyTrees.edmPrivateTree" />
+          <AssociationSet Name="edmBlockTreeedmVolume" Association="dbMyTrees.edmBlockTreeedmVolume">
+            <End Role="edmBlockTree" EntitySet="edmFileSet" />
+            <End Role="edmVolume" EntitySet="edmPrivateTreeSet" />
+          </AssociationSet>
+          <EntitySet Name="edmUserSet" EntityType="dbMyTrees.edmUser" />
+          <AssociationSet Name="edmUseredmBlockTree" Association="dbMyTrees.edmUseredmBlockTree">
+            <End Role="edmUser" EntitySet="edmUserSet" />
+            <End Role="edmBlockTree" EntitySet="edmFileSet" />
+          </AssociationSet>
+          <EntitySet Name="edmTagSet" EntityType="dbMyTrees.edmTag" />
+          <AssociationSet Name="edmNodeObjectedmTag" Association="dbMyTrees.edmNodeObjectedmTag">
+            <End Role="edmNodeObject" EntitySet="edmNodeObjectSet" />
+            <End Role="edmTag" EntitySet="edmTagSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmVirtualTreeedmPrivateTree" Association="dbMyTrees.edmVirtualTreeedmPrivateTree">
+            <End Role="edmVirtualTree" EntitySet="edmVirtualTreeSet" />
+            <End Role="edmPrivateTree" EntitySet="edmPrivateTreeSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmOwnerNode" Association="dbMyTrees.edmOwnerNode">
+            <End Role="edmUser" EntitySet="edmUserSet" />
+            <End Role="edmNodeObject" EntitySet="edmNodeObjectSet" />
+          </AssociationSet>
+          <EntitySet Name="edmAttachedNodeSet" EntityType="dbMyTrees.edmAttachedNode" />
+          <EntitySet Name="edmNodePositionSet" EntityType="dbMyTrees.edmNodePosition" />
+          <AssociationSet Name="edmPrivateTreeedmNodePosition" Association="dbMyTrees.edmPrivateTreeedmNodePosition">
+            <End Role="edmPrivateTree" EntitySet="edmPrivateTreeSet" />
+            <End Role="edmNodePosition" EntitySet="edmNodePositionSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmVirtualTreeedmNodePosition" Association="dbMyTrees.edmVirtualTreeedmNodePosition">
+            <End Role="edmVirtualTree" EntitySet="edmVirtualTreeSet" />
+            <End Role="edmNodePosition" EntitySet="edmNodePositionSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmNodeObjectedmNodePosition" Association="dbMyTrees.edmNodeObjectedmNodePosition">
+            <End Role="edmNodeObject" EntitySet="edmNodeObjectSet" />
+            <End Role="edmNodePosition" EntitySet="edmNodePositionSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmNodePositionedmNodePosition" Association="dbMyTrees.edmNodePositionedmNodePosition">
+            <End Role="edmNodePosition" EntitySet="edmNodePositionSet" />
+            <End Role="edmNodePosition1" EntitySet="edmNodePositionSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmLinkedNodeedmNodePosition" Association="dbMyTrees.edmLinkedNodeedmNodePosition">
+            <End Role="edmLinkedNode" EntitySet="edmAttachedNodeSet" />
+            <End Role="edmNodePosition" EntitySet="edmNodePositionSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmUseredmNodePosition" Association="dbMyTrees.edmUseredmNodePosition">
+            <End Role="edmUser" EntitySet="edmUserSet" />
+            <End Role="edmNodePosition" EntitySet="edmNodePositionSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmUseredmLinkedNode" Association="dbMyTrees.edmUseredmLinkedNode">
+            <End Role="edmUser" EntitySet="edmUserSet" />
+            <End Role="edmLinkedNode" EntitySet="edmAttachedNodeSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmUseredmNodeImage" Association="dbMyTrees.edmUseredmNodeImage">
+            <End Role="edmUser" EntitySet="edmUserSet" />
+            <End Role="edmNodeImage" EntitySet="edmNodeImageSet" />
+          </AssociationSet>
+          <EntitySet Name="edmImagePositionSet" EntityType="dbMyTrees.edmImagePosition" />
+          <AssociationSet Name="edmUseredmImagePosition" Association="dbMyTrees.edmUseredmImagePosition">
+            <End Role="edmUser" EntitySet="edmUserSet" />
+            <End Role="edmImagePosition" EntitySet="edmImagePositionSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmNodeImageedmImagePosition" Association="dbMyTrees.edmNodeImageedmImagePosition">
+            <End Role="edmNodeImage" EntitySet="edmNodeImageSet" />
+            <End Role="edmImagePosition" EntitySet="edmImagePositionSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmNodeObjectedmImagePosition" Association="dbMyTrees.edmNodeObjectedmImagePosition">
+            <End Role="edmNodeObject" EntitySet="edmNodeObjectSet" />
+            <End Role="edmImagePosition" EntitySet="edmImagePositionSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmUseredmAttachedNode" Association="dbMyTrees.edmUseredmAttachedNode">
+            <End Role="edmUser" EntitySet="edmUserSet" />
+            <End Role="edmAttachedNode" EntitySet="edmAttachedNodeSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmUseredmFile" Association="dbMyTrees.edmUseredmFile">
+            <End Role="edmUser" EntitySet="edmUserSet" />
+            <End Role="edmFile" EntitySet="edmFileSet" />
+          </AssociationSet>
+          <EntitySet Name="edmResourceSet" EntityType="dbMyTrees.edmResource" />
+          <AssociationSet Name="edmNodeImageedmResource" Association="dbMyTrees.edmNodeImageedmResource">
+            <End Role="edmNodeImage" EntitySet="edmNodeImageSet" />
+            <End Role="edmResource" EntitySet="edmResourceSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmNodeObjectedmResource" Association="dbMyTrees.edmNodeObjectedmResource">
+            <End Role="edmNodeObject" EntitySet="edmNodeObjectSet" />
+            <End Role="edmResource" EntitySet="edmResourceSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmVirtualTreeedmResource" Association="dbMyTrees.edmVirtualTreeedmResource">
+            <End Role="edmVirtualTree" EntitySet="edmVirtualTreeSet" />
+            <End Role="edmResource" EntitySet="edmResourceSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmPrivateTreeedmResource" Association="dbMyTrees.edmPrivateTreeedmResource">
+            <End Role="edmPrivateTree" EntitySet="edmPrivateTreeSet" />
+            <End Role="edmResource" EntitySet="edmResourceSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmAttachedNodeedmResource" Association="dbMyTrees.edmAttachedNodeedmResource">
+            <End Role="edmAttachedNode" EntitySet="edmAttachedNodeSet" />
+            <End Role="edmResource" EntitySet="edmResourceSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmFileedmResource" Association="dbMyTrees.edmFileedmResource">
+            <End Role="edmFile" EntitySet="edmFileSet" />
+            <End Role="edmResource" EntitySet="edmResourceSet" />
+          </AssociationSet>
+          <AssociationSet Name="edmUseredmResource" Association="dbMyTrees.edmUseredmResource">
+            <End Role="edmUser" EntitySet="edmUserSet" />
+            <End Role="edmResource" EntitySet="edmResourceSet" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="edmNodeObject">
+          <Documentation>
+            <LongDescription>Сущность, характеризуемая НАЗВАНИЕМ
+владелец NULL значит видима для всех</LongDescription>
+          </Documentation>
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OldNodeID" Type="Int32" Nullable="false" >
+            <Documentation>
+              <LongDescription>нужно для импорта старого</LongDescription>
+            </Documentation>
+          </Property>
+          <NavigationProperty Name="edmTagList" Relationship="dbMyTrees.edmNodeObjectedmTag" FromRole="edmNodeObject" ToRole="edmTag" />
+          <NavigationProperty Name="edmOwnUser" Relationship="dbMyTrees.edmOwnerNode" FromRole="edmNodeObject" ToRole="edmUser" />
+          <NavigationProperty Name="edmNodePositionList" Relationship="dbMyTrees.edmNodeObjectedmNodePosition" FromRole="edmNodeObject" ToRole="edmNodePosition" />
+          <NavigationProperty Name="edmImagePositionList" Relationship="dbMyTrees.edmNodeObjectedmImagePosition" FromRole="edmNodeObject" ToRole="edmImagePosition" />
+          <NavigationProperty Name="edmResource" Relationship="dbMyTrees.edmNodeObjectedmResource" FromRole="edmNodeObject" ToRole="edmResource" />
+        </EntityType>
+        <EntityType Name="edmVirtualTree">
+          <Documentation>
+            <Summary>например, систематика</Summary>
+            <LongDescription>общие глобальные деревья</LongDescription>
+          </Documentation>
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="edmPrivateTreeList" Relationship="dbMyTrees.edmVirtualTreeedmPrivateTree" FromRole="edmVirtualTree" ToRole="edmPrivateTree" >
+            <Documentation>
+              <LongDescription>частные поддеревья</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <NavigationProperty Name="edmNodePositionList" Relationship="dbMyTrees.edmVirtualTreeedmNodePosition" FromRole="edmVirtualTree" ToRole="edmNodePosition" >
+            <Documentation>
+              <LongDescription>позиции, входящие в дерево</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <NavigationProperty Name="edmResource" Relationship="dbMyTrees.edmVirtualTreeedmResource" FromRole="edmVirtualTree" ToRole="edmResource" />
+        </EntityType>
+        <EntityType Name="edmFile">
+          <Documentation>
+            <Summary>аналог файла</Summary>
+            <LongDescription>Обьект группировки частных деревьев</LongDescription>
+          </Documentation>
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="edmPrivateTreeList" Relationship="dbMyTrees.edmBlockTreeedmVolume" FromRole="edmBlockTree" ToRole="edmVolume" />
+          <NavigationProperty Name="edmUserList" Relationship="dbMyTrees.edmUseredmBlockTree" FromRole="edmBlockTree" ToRole="edmUser" >
+            <Documentation>
+              <LongDescription>пользователи, использующие этот файл
+NULL = общий для всех пользователей</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <NavigationProperty Name="edmOwnUser" Relationship="dbMyTrees.edmUseredmFile" FromRole="edmFile" ToRole="edmUser" />
+          <NavigationProperty Name="edmResource" Relationship="dbMyTrees.edmFileedmResource" FromRole="edmFile" ToRole="edmResource" />
+        </EntityType>
+        <EntityType Name="edmNodeImage">
+          <Documentation>
+            <LongDescription>Изображение. Может привязываться к разным сущностям разными пользователями</LongDescription>
+          </Documentation>
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StorageImageName" Type="String" Nullable="false" Unicode="true" MaxLength="100" FixedLength="false" >
+            <Documentation>
+              <Summary>название файла в папке</Summary>
+            </Documentation>
+          </Property>
+          <Property Name="StorageBlockName" Type="String" Nullable="false" Unicode="true" MaxLength="100" FixedLength="false">
+            <Documentation>
+              <Summary>Название блока (папки) хранения</Summary>
+              <LongDescription>Как в старой системе хранения по ИД</LongDescription>
+            </Documentation>
+          </Property>
+          <NavigationProperty Name="edmUser" Relationship="dbMyTrees.edmUseredmNodeImage" FromRole="edmNodeImage" ToRole="edmUser" />
+          <NavigationProperty Name="edmImagePositionList" Relationship="dbMyTrees.edmNodeImageedmImagePosition" FromRole="edmNodeImage" ToRole="edmImagePosition" />
+          <NavigationProperty Name="edmResource" Relationship="dbMyTrees.edmNodeImageedmResource" FromRole="edmNodeImage" ToRole="edmResource" />
+        </EntityType>
+        <EntityType Name="edmPrivateTree">
+          <Documentation>
+            <LongDescription>частное дерево в файле</LongDescription>
+          </Documentation>
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="edmFile" Relationship="dbMyTrees.edmBlockTreeedmVolume" FromRole="edmVolume" ToRole="edmBlockTree" >
+            <Documentation>
+              <LongDescription>Файл, содержащий дерево</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <NavigationProperty Name="edmVirtualTree" Relationship="dbMyTrees.edmVirtualTreeedmPrivateTree" FromRole="edmPrivateTree" ToRole="edmVirtualTree" >
+            <Documentation>
+              <LongDescription>NULL - частное независимое дерево
+иначе - поддерево виртуального дерева</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <Property Name="edmFileID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="edmNodePositionList" Relationship="dbMyTrees.edmPrivateTreeedmNodePosition" FromRole="edmPrivateTree" ToRole="edmNodePosition" >
+            <Documentation>
+              <LongDescription>позиции входящие в дерево</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <NavigationProperty Name="edmResource" Relationship="dbMyTrees.edmPrivateTreeedmResource" FromRole="edmPrivateTree" ToRole="edmResource" />
+        </EntityType>
+        <Association Name="edmBlockTreeedmVolume">
+          <Documentation>
+            <LongDescription>локальное дерево принадлежит только одному файлу</LongDescription>
+          </Documentation>
+          <End Type="dbMyTrees.edmFile" Role="edmBlockTree" Multiplicity="1" />
+          <End Type="dbMyTrees.edmPrivateTree" Role="edmVolume" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="edmBlockTree">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="edmVolume">
+              <PropertyRef Name="edmFileID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="edmUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="edmFileList" Relationship="dbMyTrees.edmUseredmBlockTree" FromRole="edmUser" ToRole="edmBlockTree" />
+          <NavigationProperty Name="edmOwnedNodeObjectList" Relationship="dbMyTrees.edmOwnerNode" FromRole="edmUser" ToRole="edmNodeObject" />
+          <NavigationProperty Name="edmNodePositionList" Relationship="dbMyTrees.edmUseredmNodePosition" FromRole="edmUser" ToRole="edmNodePosition" />
+          <NavigationProperty Name="edmLinkedNodeList" Relationship="dbMyTrees.edmUseredmLinkedNode" FromRole="edmUser" ToRole="edmLinkedNode" />
+          <NavigationProperty Name="edmNodeImageList" Relationship="dbMyTrees.edmUseredmNodeImage" FromRole="edmUser" ToRole="edmNodeImage" />
+          <NavigationProperty Name="edmImagePositionList" Relationship="dbMyTrees.edmUseredmImagePosition" FromRole="edmUser" ToRole="edmImagePosition" />
+          <NavigationProperty Name="edmAttachedNodeList" Relationship="dbMyTrees.edmUseredmAttachedNode" FromRole="edmUser" ToRole="edmAttachedNode" />
+          <NavigationProperty Name="edmFile" Relationship="dbMyTrees.edmUseredmFile" FromRole="edmUser" ToRole="edmFile" />
+          <NavigationProperty Name="edmResource" Relationship="dbMyTrees.edmUseredmResource" FromRole="edmUser" ToRole="edmResource" />
+        </EntityType>
+        <Association Name="edmUseredmBlockTree">
+          <End Type="dbMyTrees.edmUser" Role="edmUser" Multiplicity="*" />
+          <End Type="dbMyTrees.edmFile" Role="edmBlockTree" Multiplicity="*" />
+        </Association>
+        <EntityType Name="edmTag">
+          <Documentation>
+            <LongDescription>облако тегов. Шрифт по кол-ву ссылок</LongDescription>
+          </Documentation>
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="edmNodeObject" Relationship="dbMyTrees.edmNodeObjectedmTag" FromRole="edmTag" ToRole="edmNodeObject" />
+        </EntityType>
+        <Association Name="edmNodeObjectedmTag">
+          <End Type="dbMyTrees.edmNodeObject" Role="edmNodeObject" Multiplicity="*" />
+          <End Type="dbMyTrees.edmTag" Role="edmTag" Multiplicity="*" />
+        </Association>
+        <ComplexType Name="Description">
+          <Property Type="String" Name="BigDescription" Nullable="false" Unicode="true" />
+          <Property Type="String" Name="Info" Nullable="false" Unicode="true" />
+          <Property Type="String" Name="Name" Nullable="false" Unicode="true" />
+          <Property Type="String" Name="URI" Nullable="false" />
+        </ComplexType>
+        <Association Name="edmVirtualTreeedmPrivateTree">
+          <Documentation>
+            <LongDescription>Чтобы нельзя было смешать систематику и время??</LongDescription>
+          </Documentation>
+          <End Type="dbMyTrees.edmVirtualTree" Role="edmVirtualTree" Multiplicity="0..1" />
+          <End Type="dbMyTrees.edmPrivateTree" Role="edmPrivateTree" Multiplicity="*" />
+        </Association>
+        <Association Name="edmOwnerNode">
+          <End Type="dbMyTrees.edmUser" Role="edmUser" Multiplicity="0..1" />
+          <End Type="dbMyTrees.edmNodeObject" Role="edmNodeObject" Multiplicity="*" />
+        </Association>
+        <EntityType Name="edmAttachedNode">
+          <Documentation>
+            <LongDescription>это связанные узлы типа Коваль из вильповиц</LongDescription>
+          </Documentation>
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PathID" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false">
+            <Documentation>
+              <LongDescription>сюда пока пишется артикул в виде 123/256/12... (номера связанных узлов)</LongDescription>
+            </Documentation>
+          </Property>
+          <NavigationProperty Name="edmNodePositionList" Relationship="dbMyTrees.edmLinkedNodeedmNodePosition" FromRole="edmLinkedNode" ToRole="edmNodePosition" >
+            <Documentation>
+              <LongDescription>Позиции, составляющие конкретный комплекс</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <NavigationProperty Name="edmUserList" Relationship="dbMyTrees.edmUseredmLinkedNode" FromRole="edmLinkedNode" ToRole="edmUser" >
+            <Documentation>
+              <LongDescription>Список пользователей, одобряющий данный комплекс
+NULL комплекс для всех</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <NavigationProperty Name="edmOwnUser" Relationship="dbMyTrees.edmUseredmAttachedNode" FromRole="edmAttachedNode" ToRole="edmUser" >
+            <Documentation>
+              <LongDescription>Создатель комплекса</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <NavigationProperty Name="edmResource" Relationship="dbMyTrees.edmAttachedNodeedmResource" FromRole="edmAttachedNode" ToRole="edmResource" />
+        </EntityType>
+        <EntityType Name="edmNodePosition">
+          <Documentation>
+            <LongDescription>Позиция сущности в деревьях
+привязка к частному может быть NULL
+привязка к виртуальному может быть NULL
+две привязки НЕ могут быть NULL</LongDescription>
+          </Documentation>
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullPath" Type="String" Nullable="false" />
+          <NavigationProperty Name="edmPrivateTree" Relationship="dbMyTrees.edmPrivateTreeedmNodePosition" FromRole="edmNodePosition" ToRole="edmPrivateTree" />
+          <NavigationProperty Name="edmVirtualTree" Relationship="dbMyTrees.edmVirtualTreeedmNodePosition" FromRole="edmNodePosition" ToRole="edmVirtualTree" />
+          <NavigationProperty Name="edmNodeObject" Relationship="dbMyTrees.edmNodeObjectedmNodePosition" FromRole="edmNodePosition" ToRole="edmNodeObject" />
+          <NavigationProperty Name="edmLinkList" Relationship="dbMyTrees.edmNodePositionedmNodePosition" FromRole="edmNodePosition" ToRole="edmNodePosition1" >
+            <Documentation>
+              <LongDescription>список связей данной позиции = в частном случае сущности</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <NavigationProperty Name="edmFromNodePosition" Relationship="dbMyTrees.edmNodePositionedmNodePosition" FromRole="edmNodePosition1" ToRole="edmNodePosition" />
+          <NavigationProperty Name="edmAttachedNodeList" Relationship="dbMyTrees.edmLinkedNodeedmNodePosition" FromRole="edmNodePosition" ToRole="edmLinkedNode" >
+            <Documentation>
+              <LongDescription>прикрепленные к позиции комплексы из связей,
+например ковалевский из вильпов, коваль из волхова и т.д.</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <NavigationProperty Name="edmUser" Relationship="dbMyTrees.edmUseredmNodePosition" FromRole="edmNodePosition" ToRole="edmUser" />
+        </EntityType>
+        <Association Name="edmPrivateTreeedmNodePosition">
+          <End Type="dbMyTrees.edmPrivateTree" Role="edmPrivateTree" Multiplicity="0..1" />
+          <End Type="dbMyTrees.edmNodePosition" Role="edmNodePosition" Multiplicity="*" />
+        </Association>
+        <Association Name="edmVirtualTreeedmNodePosition">
+          <End Type="dbMyTrees.edmVirtualTree" Role="edmVirtualTree" Multiplicity="0..1" />
+          <End Type="dbMyTrees.edmNodePosition" Role="edmNodePosition" Multiplicity="*" />
+        </Association>
+        <Association Name="edmNodeObjectedmNodePosition">
+          <End Type="dbMyTrees.edmNodeObject" Role="edmNodeObject" Multiplicity="1" />
+          <End Type="dbMyTrees.edmNodePosition" Role="edmNodePosition" Multiplicity="*" />
+        </Association>
+        <Association Name="edmNodePositionedmNodePosition">
+          <End Type="dbMyTrees.edmNodePosition" Role="edmNodePosition" Multiplicity="1" />
+          <End Type="dbMyTrees.edmNodePosition" Role="edmNodePosition1" Multiplicity="*" />
+        </Association>
+        <Association Name="edmLinkedNodeedmNodePosition">
+          <End Type="dbMyTrees.edmAttachedNode" Role="edmLinkedNode" Multiplicity="*" />
+          <End Type="dbMyTrees.edmNodePosition" Role="edmNodePosition" Multiplicity="*" />
+        </Association>
+        <Association Name="edmUseredmNodePosition">
+          <End Type="dbMyTrees.edmUser" Role="edmUser" Multiplicity="*" />
+          <End Type="dbMyTrees.edmNodePosition" Role="edmNodePosition" Multiplicity="*" />
+        </Association>
+        <Association Name="edmUseredmLinkedNode">
+          <End Type="dbMyTrees.edmUser" Role="edmUser" Multiplicity="*" />
+          <End Type="dbMyTrees.edmAttachedNode" Role="edmLinkedNode" Multiplicity="*" />
+        </Association>
+        <Association Name="edmUseredmNodeImage">
+          <End Type="dbMyTrees.edmUser" Role="edmUser" Multiplicity="1" />
+          <End Type="dbMyTrees.edmNodeImage" Role="edmNodeImage" Multiplicity="*" />
+        </Association>
+        <EntityType Name="edmImagePosition">
+          <Documentation>
+            <LongDescription>Таблица привязки изображений к сущностям</LongDescription>
+          </Documentation>
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="edmUserList" Relationship="dbMyTrees.edmUseredmImagePosition" FromRole="edmImagePosition" ToRole="edmUser" >
+            <Documentation>
+              <LongDescription>Null - значит все пользователи согласны
+[list] - список согласных
+С привязкой изображения к узлу</LongDescription>
+            </Documentation>
+          </NavigationProperty>
+          <NavigationProperty Name="edmNodeImage" Relationship="dbMyTrees.edmNodeImageedmImagePosition" FromRole="edmImagePosition" ToRole="edmNodeImage" />
+          <NavigationProperty Name="edmNodeObject" Relationship="dbMyTrees.edmNodeObjectedmImagePosition" FromRole="edmImagePosition" ToRole="edmNodeObject" />
+        </EntityType>
+        <Association Name="edmUseredmImagePosition">
+          <End Type="dbMyTrees.edmUser" Role="edmUser" Multiplicity="*" />
+          <End Type="dbMyTrees.edmImagePosition" Role="edmImagePosition" Multiplicity="*" />
+        </Association>
+        <Association Name="edmNodeImageedmImagePosition">
+          <End Type="dbMyTrees.edmNodeImage" Role="edmNodeImage" Multiplicity="1" />
+          <End Type="dbMyTrees.edmImagePosition" Role="edmImagePosition" Multiplicity="*" />
+        </Association>
+        <Association Name="edmNodeObjectedmImagePosition">
+          <End Type="dbMyTrees.edmNodeObject" Role="edmNodeObject" Multiplicity="1" />
+          <End Type="dbMyTrees.edmImagePosition" Role="edmImagePosition" Multiplicity="*" />
+        </Association>
+        <Association Name="edmUseredmAttachedNode">
+          <End Type="dbMyTrees.edmUser" Role="edmUser" Multiplicity="1" />
+          <End Type="dbMyTrees.edmAttachedNode" Role="edmAttachedNode" Multiplicity="*" />
+        </Association>
+        <Association Name="edmUseredmFile">
+          <Documentation>
+            <LongDescription>владелец файла</LongDescription>
+          </Documentation>
+          <End Type="dbMyTrees.edmUser" Role="edmUser" Multiplicity="1" />
+          <End Type="dbMyTrees.edmFile" Role="edmFile" Multiplicity="*" />
+        </Association>
+        <EntityType Name="edmResource">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LangID" Type="String" Nullable="false" />
+          <Property Name="ComplexDescription" Type="dbMyTrees.Description" Nullable="false" />
+        </EntityType>
+        <Association Name="edmNodeImageedmResource">
+          <End Type="dbMyTrees.edmNodeImage" Role="edmNodeImage" Multiplicity="0..1" />
+          <End Type="dbMyTrees.edmResource" Role="edmResource" Multiplicity="*" />
+        </Association>
+        <Association Name="edmNodeObjectedmResource">
+          <End Type="dbMyTrees.edmNodeObject" Role="edmNodeObject" Multiplicity="0..1" />
+          <End Type="dbMyTrees.edmResource" Role="edmResource" Multiplicity="*" />
+        </Association>
+        <Association Name="edmVirtualTreeedmResource">
+          <End Type="dbMyTrees.edmVirtualTree" Role="edmVirtualTree" Multiplicity="0..1" />
+          <End Type="dbMyTrees.edmResource" Role="edmResource" Multiplicity="*" />
+        </Association>
+        <Association Name="edmPrivateTreeedmResource">
+          <End Type="dbMyTrees.edmPrivateTree" Role="edmPrivateTree" Multiplicity="0..1" />
+          <End Type="dbMyTrees.edmResource" Role="edmResource" Multiplicity="*" />
+        </Association>
+        <Association Name="edmAttachedNodeedmResource">
+          <End Type="dbMyTrees.edmAttachedNode" Role="edmAttachedNode" Multiplicity="0..1" />
+          <End Type="dbMyTrees.edmResource" Role="edmResource" Multiplicity="*" />
+        </Association>
+        <Association Name="edmFileedmResource">
+          <End Type="dbMyTrees.edmFile" Role="edmFile" Multiplicity="0..1" />
+          <End Type="dbMyTrees.edmResource" Role="edmResource" Multiplicity="*" />
+        </Association>
+        <Association Name="edmUseredmResource">
+          <End Type="dbMyTrees.edmUser" Role="edmUser" Multiplicity="0..1" />
+          <End Type="dbMyTrees.edmResource" Role="edmResource" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbMyTreesStoreContainer" CdmEntityContainer="dbMyTreesContainer">
+    <AssociationSetMapping Name="edmNodeObjectedmTag" TypeName="dbMyTrees.edmNodeObjectedmTag" StoreEntitySet="edmNodeObjectedmTag">
+      <EndProperty Name="edmNodeObject">
+        <ScalarProperty Name="Id" ColumnName="edmNodeObject_Id" />
+      </EndProperty>
+      <EndProperty Name="edmTag">
+        <ScalarProperty Name="Id" ColumnName="edmTag_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="edmVirtualTreeedmPrivateTree" TypeName="dbMyTrees.edmVirtualTreeedmPrivateTree" StoreEntitySet="edmPrivateTreeSet">
+      <EndProperty Name="edmVirtualTree">
+        <ScalarProperty Name="Id" ColumnName="edmVirtualTree_Id" />
+      </EndProperty>
+      <EndProperty Name="edmPrivateTree">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="edmVirtualTree_Id" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="edmOwnerNode" TypeName="dbMyTrees.edmOwnerNode" StoreEntitySet="edmNodeObjectSet">
+      <EndProperty Name="edmUser">
+        <ScalarProperty Name="Id" ColumnName="edmOwnUser_Id" />
+      </EndProperty>
+      <EndProperty Name="edmNodeObject">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <Condition ColumnName="edmOwnUser_Id" IsNull="false" />
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="По умолчанию" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

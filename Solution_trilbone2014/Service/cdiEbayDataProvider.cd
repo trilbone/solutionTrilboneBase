@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="Service.ieBayDataProvider">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Service.ieBayDataProvider.strAmount" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ieBayDataProvider.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Interface Name="Service.ieBayDataProvider.ieBayTransactionItem">
+        <TypeIdentifier>
+          <NewMemberFileName>ieBayDataProvider.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Interface Name="Service.ieBayDataProvider.ieBayTransactionList">
+        <TypeIdentifier>
+          <NewMemberFileName>ieBayDataProvider.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Interface Name="Service.ieBayDataProvider.ieBayTransactionOrder">
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Enum Name="Service.ieBayDataProvider.ieBayTransactionOrder.emOrderStatus">
+            <TypeIdentifier>
+              <NewMemberFileName>ieBayDataProvider.vb</NewMemberFileName>
+            </TypeIdentifier>
+          </Enum>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>ieBayDataProvider.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Interface Name="Service.ieBayDataProvider.ieBayExternalTransaction">
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Enum Name="Service.ieBayDataProvider.ieBayExternalTransaction.emTransactionStatus" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>ieBayDataProvider.vb</NewMemberFileName>
+            </TypeIdentifier>
+          </Enum>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>ieBayDataProvider.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ieBayDataProvider.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Service.iSoldItem">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAgAAAAAAAAA=</HashCode>
+      <FileName>ieBayDataProvider.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

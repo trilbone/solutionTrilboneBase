@@ -1,0 +1,150 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://moysklad.ru/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://moysklad.ru/">
+<xs:element name="id" type="tns:id"/>
+<xs:element name="slotStateReportTO" type="tns:slotStateReportTO"/>
+<xs:element name="stockGoodTO" type="tns:stockGoodTO"/>
+<xs:element name="stockTO" type="tns:stockTO"/>
+<xs:complexType name="stockGoodTO">
+<xs:complexContent>
+<xs:extension base="tns:stockTO">
+<xs:sequence>
+<xs:element minOccurs="0" name="agentRef" type="tns:refTO"/>
+<xs:element minOccurs="0" name="slotRef" type="tns:refTO"/>
+<xs:element minOccurs="0" name="stateRef" type="tns:stateTO"/>
+</xs:sequence>
+<xs:attribute name="deliveryUuid" type="tns:id"/>
+<xs:attribute name="deliveryName" type="xs:string"/>
+<xs:attribute name="documentMoment" type="xs:dateTime"/>
+<xs:attribute name="deliveryMoment" type="xs:dateTime"/>
+<xs:attribute name="deliveryType" type="xs:string"/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:complexType name="stockTO">
+<xs:complexContent>
+<xs:extension base="tns:abstractPositionReport">
+<xs:sequence>
+<xs:element minOccurs="0" name="goodRef" type="tns:refTO"/>
+<xs:element minOccurs="0" name="storeRef" type="tns:refTO"/>
+<xs:element minOccurs="0" name="realGoodRef" type="tns:refTO"/>
+</xs:sequence>
+<xs:attribute name="productCode" type="xs:string"/>
+<xs:attribute name="uomName" type="xs:string"/>
+<xs:attribute name="consignmentName" type="xs:string"/>
+<xs:attribute name="consignmentUuid" type="xs:string"/>
+<xs:attribute name="quantity" type="xs:double"/>
+<xs:attribute name="reserve" type="xs:double"/>
+<xs:attribute name="reserveForSelectedAgent" type="xs:double"/>
+<xs:attribute name="inTransit" type="xs:double"/>
+<xs:attribute name="inTransitForSelectedAgent" type="xs:double"/>
+<xs:attribute name="stock" type="xs:double"/>
+<xs:attribute name="sumTotal" type="xs:double"/>
+<xs:attribute name="saleAmount" type="xs:double"/>
+<xs:attribute name="minimumBalance" type="xs:double"/>
+<xs:attribute name="category" type="xs:string"/>
+<xs:attribute name="externalCode" type="xs:string"/>
+<xs:attribute name="parentUuid" type="xs:string"/>
+<xs:attribute name="defaultConsignment" type="xs:boolean" use="required"/>
+<xs:attribute name="salePrice" type="xs:double"/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:complexType abstract="true" name="abstractPositionReport">
+<xs:sequence/>
+</xs:complexType>
+<xs:simpleType name="id">
+<xs:restriction base="xs:string"/>
+</xs:simpleType>
+<xs:complexType name="refTO">
+<xs:sequence/>
+<xs:attribute name="uuid" type="xs:string"/>
+<xs:attribute name="name" type="xs:string"/>
+<xs:attribute name="code" type="xs:string"/>
+<xs:attribute name="objectType" type="xs:string"/>
+</xs:complexType>
+<xs:complexType name="stateTO">
+<xs:complexContent>
+<xs:extension base="tns:baseLegendTO">
+<xs:sequence/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:complexType abstract="true" name="baseLegendTO">
+<xs:complexContent>
+<xs:extension base="tns:entityTO">
+<xs:sequence>
+<xs:element minOccurs="0" name="description" type="xs:string"/>
+</xs:sequence>
+<xs:attribute name="name" type="xs:string"/>
+<xs:attribute name="externalCode" type="xs:string"/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:complexType abstract="true" name="entityTO">
+<xs:sequence/>
+<xs:attribute name="uuid" type="xs:string"/>
+<xs:attribute name="version" type="xs:long" use="required"/>
+<xs:attribute name="readMode" type="tns:accessMode"/>
+<xs:attribute name="changeMode" type="tns:accessMode"/>
+<xs:attribute name="accountUuid" type="xs:string"/>
+<xs:attribute name="groupUuid" type="xs:string"/>
+</xs:complexType>
+<xs:complexType name="slotStateReportTO">
+<xs:complexContent>
+<xs:extension base="tns:abstractPositionReport">
+<xs:sequence>
+<xs:element minOccurs="0" name="consignmentRef" type="tns:refTO"/>
+<xs:element minOccurs="0" name="goodRef" type="tns:refTO"/>
+<xs:element minOccurs="0" name="slotRef" type="tns:refTO"/>
+<xs:element minOccurs="0" name="warehouseRef" type="tns:refTO"/>
+</xs:sequence>
+<xs:attribute name="productCode" type="xs:string"/>
+<xs:attribute name="uomName" type="xs:string"/>
+<xs:attribute name="quantity" type="xs:double"/>
+<xs:attribute name="category" type="xs:string"/>
+<xs:attribute name="goodUuid" type="xs:string"/>
+<xs:attribute name="consignmentName" type="xs:string"/>
+<xs:attribute name="defaultConsignment" type="xs:boolean" use="required"/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:simpleType name="accessMode">
+<xs:restriction base="xs:string">
+<xs:enumeration value="NONE"/>
+<xs:enumeration value="SELF"/>
+<xs:enumeration value="PARENT"/>
+<xs:enumeration value="NEIGHBOUR"/>
+<xs:enumeration value="ALL"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="stockModeEnum">
+<xs:restriction base="xs:string">
+<xs:enumeration value="ALL_STOCK"/>
+<xs:enumeration value="POSITIVE_ONLY"/>
+<xs:enumeration value="POSITIVE_INCLUDING_RESERVE_ONLY"/>
+<xs:enumeration value="NEGATIVE_ONLY"/>
+<xs:enumeration value="EMPTY"/>
+<xs:enumeration value="NON_EMPTY"/>
+<xs:enumeration value="UNDER_MINIMUM_BALANCE_ONLY"/>
+<xs:enumeration value="USE_RESERVES"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:complexType final="#all" name="stockGoodTOArray">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="tns:stockGoodTO"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType final="#all" name="stockTOArray">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="tns:stockTO"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType final="#all" name="slotStateReportTOArray">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="tns:slotStateReportTO"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="webFaultException" type="tns:webFaultException"/>
+<xs:complexType name="webFaultException">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>

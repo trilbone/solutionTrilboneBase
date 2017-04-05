@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RestMS_Client.MoySkladAPI.thing">
+    <Position X="5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAQAAAQAAAAAAAE=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.legendEntity">
+    <Position X="7.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIIAIAAAAIAAEAAAEAAAAAAAABAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.financeIn">
+    <Position X="3" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAABAgAACAgAgAAABAAAAAAwAAwAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.abstractCashIn">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.paymentIn">
+    <Position X="6.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQiIAAAAAAAAAAAQAAAIAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.cashIn">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.cashOut">
+    <Position X="10.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.abstractCashOut">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.financeOut" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAIAAAgAAIAAAEAAAAAFAIAAAAQQBA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.MoySkladAPI.paymentOut">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MOYsklad.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

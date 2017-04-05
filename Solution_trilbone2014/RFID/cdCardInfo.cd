@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="для первого китайского ридера">
+    <Position X="2.542" Y="0.542" Height="0.469" Width="1.7" />
+  </Comment>
+  <Class Name="RFID.cls_SDTAPI">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="RFID.cls_SDTAPI.emLEDid">
+        <TypeIdentifier>
+          <NewMemberFileName>cls_SDTAPI.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQIEBIAAAAQBAgAAAABAAAAACQEoQAIFAACAABADBAA=</HashCode>
+      <FileName>cls_SDTAPI.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="RFID.iRFIDDataProvider">
+    <Position X="5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="RFID.iRFIDDataProvider.clsCardInfo">
+        <TypeIdentifier>
+          <NewMemberFileName>iRFIDDataProvider.vb</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAAIAAAAQBAAAAAAAAAAAAAQAgAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>iRFIDDataProvider.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

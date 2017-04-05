@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DATA>
+  <ELEMENT id="125" filename="Ammonites.tree" name="Systematica" root="Systematica" lang="en-US">
+    <NODE order="1">Class Cephalopoda (Cuvier 1798)
+    <DESCRIPTION></DESCRIPTION>
+    <INFO></INFO>
+    <IMAGES>
+      <IMG href=""></IMG>
+      <IMG href=""></IMG>
+    </IMAGES>
+    </NODE>
+    <NODE order="2">Subclass Ammonoidea (Zittel 1884)</NODE>
+    <NODE order="3">Suborder Lytoceratina (Hyatt 1899)</NODE>
+    <NODE order="4">Superfamily Tetragonitoidea (Hyatt 1900)</NODE>
+    <NODE order="5">Family Gaudryceratidae (Spath 1927)</NODE>
+    <NODE order="6">Genus Eogaudryceras (Spath 1927)</NODE>
+    <NODE order="7">Eogaudryceras (Eotetragonites) duvali (Orbigny 1840)</NODE>
+  </ELEMENT>
+  <ELEMENT root="Localities" lang="en-US">
+    <NODE order="1">Nord Kavkaz</NODE>
+    <NODE order="2">Kurdjips</NODE>
+    </ELEMENT>
+  <ELEMENT root="TimeScale" lang="en-US">
+    <NODE order="1">Cretaceous</NODE>
+    <NODE order="2">Lower epoch</NODE>
+    <NODE order="3">Aptian stage (113.0-125.0 Ma)</NODE>
+  </ELEMENT>
+</DATA>

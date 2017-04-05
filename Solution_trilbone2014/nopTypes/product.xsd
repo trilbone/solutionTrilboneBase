@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="lng" final="#all">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="en-US"/>
+      <xs:enumeration value="ru-RU"/>
+      <xs:enumeration value="invariant"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Products">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="Product">
+          <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+              <xs:element name="ProductId" type="xs:int" />
+              <xs:element name="ProductTypeId" type="xs:int" />
+              <xs:element name="ParentGroupedProductId" type="xs:int" />
+              <!--все значения bool сериализуются не верно, в исходнике 350 убрать .tostring для всех Bool-->
+              <xs:element name="VisibleIndividually" type="xs:boolean" />
+              <xs:element name="Names" >
+                <xs:complexType>
+                  <xs:sequence minOccurs="0" maxOccurs="1">
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="NameValue">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="lang" type="lng" use="required">
+                            </xs:attribute>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+
+              </xs:element>
+              <xs:element name="ShortDescriptions" >
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="ShortDescriptionValue">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="lang" type="lng" use="required">
+                            </xs:attribute>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="FullDescriptions" >
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="FullDescriptionValue">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="lang" type="lng" use="required">
+                            </xs:attribute>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="AdminComment" type="xs:string"/>
+              <xs:element name="VendorId" type="xs:int" />
+              <xs:element name="ProductTemplateId" type="xs:int" />
+              <xs:element name="ShowOnHomePage" type="xs:boolean" />
+              <!--===================================-->
+
+              <xs:element name="MetaKeywords" >
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="MetaKeywordsValue">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="word" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="lang" type="lng" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!--===================================-->
+              <xs:element name="MetaDescription" >
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="MetaDescriptionValue">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="lang" type="lng" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!--===================================-->
+              <xs:element name="MetaTitle" >
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="MetaTitleValue">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="lang" type="lng" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!--===================================-->
+
+              <!--as type??-->
+              <xs:element name="SEName" type="xs:string" />
+              <xs:element name="AllowCustomerReviews" type="xs:boolean" />
+              <xs:element name="SKU" type="xs:string" />
+              <xs:element name="ManufacturerPartNumber" type="xs:string"/>
+              <xs:element name="Gtin" type="xs:string"/>
+              <xs:element name="IsGiftCard" type="xs:boolean" />
+              <xs:element name="GiftCardType" type="xs:string" />
+              <xs:element name="RequireOtherProducts" type="xs:boolean" />
+              <xs:element name="RequiredProductIds" type="xs:string" nillable="true"/>
+              <xs:element name="AutomaticallyAddRequiredProducts" type="xs:boolean" />
+              <xs:element name="IsDownload" type="xs:boolean" />
+              <xs:element name="DownloadId" type="xs:int" />
+              <xs:element name="UnlimitedDownloads" type="xs:boolean" />
+              <xs:element name="MaxNumberOfDownloads" type="xs:int" />
+              <!--int? DownloadExpirationDays - переделать исходник для правильной сериализации-->
+              <xs:element name="DownloadExpirationDays" type="xs:string" nillable="true"/>
+              <!--enum DownloadActivationType-->
+              <xs:element name="DownloadActivationType" type="xs:string" />
+              <xs:element name="HasSampleDownload" type="xs:boolean" />
+              <xs:element name="SampleDownloadId" type="xs:int" />
+              <xs:element name="HasUserAgreement" type="xs:boolean" />
+              <xs:element name="UserAgreementText" type="xs:string"/>
+              <xs:element name="IsRecurring" type="xs:boolean" />
+              <xs:element name="RecurringCycleLength" type="xs:int" />
+              <xs:element name="RecurringCyclePeriodId" type="xs:int" />
+              <xs:element name="RecurringTotalCycles" type="xs:int" />
+              <xs:element name="IsRental" type="xs:boolean" />
+              <xs:element name="RentalPriceLength" type="xs:int" />
+              <xs:element name="RentalPricePeriodId" type="xs:int" />
+              <xs:element name="IsShipEnabled" type="xs:boolean" />
+              <xs:element name="IsFreeShipping" type="xs:boolean" />
+              <xs:element name="ShipSeparately" type="xs:boolean" />
+              <!--значения decimal могут выдать ошибку, если в исходнике стоит вывод пустой строки при пустом значении-->
+              <xs:element name="AdditionalShippingCharge" type="xs:decimal" />
+              <xs:element name="DeliveryDateId" type="xs:int" />
+              <xs:element name="IsTaxExempt" type="xs:boolean" />
+              <xs:element name="TaxCategoryId" type="xs:int" />
+              <xs:element name="IsTelecommunicationsOrBroadcastingOrElectronicServices" type="xs:boolean" />
+              <xs:element name="ManageInventoryMethodId" type="xs:int" />
+              <xs:element name="UseMultipleWarehouses" type="xs:boolean" />
+              <xs:element name="WarehouseId" type="xs:int" />
+              <xs:element name="StockQuantity" type="xs:int" />
+              <xs:element name="DisplayStockAvailability" type="xs:boolean" />
+              <xs:element name="DisplayStockQuantity" type="xs:boolean" />
+              <xs:element name="MinStockQuantity" type="xs:int" />
+              <xs:element name="LowStockActivityId" type="xs:int" />
+              <xs:element name="NotifyAdminForQuantityBelow" type="xs:int" />
+              <xs:element name="BackorderModeId" type="xs:int" />
+              <xs:element name="AllowBackInStockSubscriptions" type="xs:boolean" />
+              <xs:element name="OrderMinimumQuantity" type="xs:int" />
+              <xs:element name="OrderMaximumQuantity" type="xs:int" />
+              <xs:element name="AllowedQuantities" type="xs:string" />
+              <xs:element name="AllowAddingOnlyExistingAttributeCombinations" type="xs:boolean" />
+              <xs:element name="DisableBuyButton" type="xs:boolean" />
+              <xs:element name="DisableWishlistButton" type="xs:boolean" />
+              <xs:element name="AvailableForPreOrder" type="xs:boolean" />
+              <!--переделать исходник для корректной сериализации datetime-->
+              <xs:element name="PreOrderAvailabilityStartDateTimeUtc" type="xs:string" nillable="true" />
+              <xs:element name="CallForPrice" type="xs:boolean" />
+              <xs:element name="Price" type="xs:decimal" />
+              <xs:element name="OldPrice" type="xs:decimal" />
+              <xs:element name="ProductCost" type="xs:decimal" />
+
+              <!--need renew Export method for correct data type Decimal-->
+              <xs:element name="SpecialPrice" type="xs:string" nillable="true"/>
+              <!--переделать исходник для корректной сериализации datetime-->
+              <xs:element name="SpecialPriceStartDateTimeUtc" type="xs:string" nillable="true"/>
+              <!--переделать исходник для корректной сериализации datetime-->
+              <xs:element name="SpecialPriceEndDateTimeUtc" type="xs:string" nillable="true"/>
+
+              <xs:element name="CustomerEntersPrice" type="xs:boolean" />
+              <xs:element name="MinimumCustomerEnteredPrice" type="xs:decimal" />
+              <xs:element name="MaximumCustomerEnteredPrice" type="xs:decimal" />
+              <xs:element name="Weight" type="xs:decimal" />
+              <xs:element name="Length" type="xs:decimal" />
+              <xs:element name="Width" type="xs:decimal" />
+              <xs:element name="Height" type="xs:decimal" />
+              <xs:element name="Published" type="xs:boolean" />
+              <xs:element name="CreatedOnUtc" type="xs:string" />
+              <xs:element name="UpdatedOnUtc" type="xs:string" />
+              <!--=========================-->
+              <xs:element name="ProductDiscounts" >
+                <xs:complexType>
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="Discount">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="1" maxOccurs="1">
+                          <xs:element name="DiscountId" type="xs:int" />
+                          <xs:element name="Name" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!--=====================-->
+              <xs:element name="TierPrices">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="TierPrice">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="1" maxOccurs="1">
+                          <xs:element name="TierPriceId" type="xs:int" />
+                          <xs:element name="StoreId" type="xs:int" />
+                          <!--int? в исходнике ставится 0 -->
+                          <xs:element name="CustomerRoleId" type="xs:int" nillable="true" />
+                          <xs:element name="Quantity" type="xs:int" />
+                          <xs:element name="Price" type="xs:decimal" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!--===========не используем пока===========-->
+              <xs:element name="ProductAttributes">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="ProductAttributeMapping">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0" maxOccurs="1">
+                          <xs:element name="ProductAttributeMappingId" type="xs:int"/>
+                          <xs:element name="ProductAttributeId" type="xs:int" />
+                          <xs:element name="ProductAttributeName" type="xs:string" />
+                          <xs:element name="TextPrompt" type="xs:string" />
+                          <xs:element name="IsRequired" type="xs:boolean" />
+                          <xs:element name="AttributeControlTypeId" type="xs:int" />
+                          <xs:element name="DisplayOrder" type="xs:int" />
+                          <xs:element name="ValidationMinLength" type="xs:int" minOccurs="0" maxOccurs="1" nillable="true" />
+                          <xs:element name="ValidationMaxLength" type="xs:int" minOccurs="0" maxOccurs="1" nillable="true" />
+                          <xs:element name="ValidationFileAllowedExtensions" type="xs:string" minOccurs="0" maxOccurs="1" nillable="true" />
+                          <xs:element name="ValidationFileMaximumSize" type="xs:int" minOccurs="0" maxOccurs="1" nillable="true" />
+                          <xs:element name="DefaultValue" type="xs:string" minOccurs="0" maxOccurs="1"  nillable="true"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ProductAttributeValues" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                          <xs:element name="ProductAttributeValue">
+                            <xs:complexType>
+                              <xs:sequence minOccurs="1" maxOccurs="1">
+                                <xs:element name="ProductAttributeId" type="xs:int" />
+                                <xs:element name="Name" type="xs:string" />
+                                <xs:element name="AttributeValueTypeId" type="xs:int" />
+                                <xs:element name="IsRequired" type="xs:boolean" />
+                                <xs:element name="AssociatedProductId" type="xs:int" />
+                                <xs:element name="ColorSquaresRgb" type="xs:string" />
+                                <xs:element name="PriceAdjustment" type="xs:decimal"  />
+                                <xs:element name="WeightAdjustment" type="xs:decimal"  />
+                                <xs:element name="Cost" type="xs:decimal"  />
+                                <xs:element name="Quantity" type="xs:int" />
+                                <xs:element name="IsPreSelected" type="xs:boolean" />
+                                <xs:element name="DisplayOrder" type="xs:int" />
+                                <xs:element name="PictureId" type="xs:int" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!--===============фотки=================-->
+              <xs:element name="ProductPictures">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="ProductPicture">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0" maxOccurs="1">
+                          <xs:element name="ProductPictureId" type="xs:int" />
+                          <xs:element name="PictureId" type="xs:int" />
+                          <xs:element name="DisplayOrder" type="xs:int" />
+                          <!--addided new in schema 350 -->
+                          <!--path to server file (local)-->
+                          <xs:element name="PicturePath" type="xs:string" minOccurs="0" maxOccurs="1" />
+                          <!--path to URI file (http)-->
+                          <xs:element name="PictureURI" type="xs:string" minOccurs="0" maxOccurs="1" />
+                          <xs:element name="PictureSeoName" type="xs:string" minOccurs="0" maxOccurs="1" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!--=============Категории====================-->
+              <xs:element name="ProductCategories">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="ProductCategory">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="1" maxOccurs="1">
+                          <xs:element name="ProductCategoryId" type="xs:int" />
+                          <xs:element name="CategoryId" type="xs:int" />
+                          <xs:element name="IsFeaturedProduct" type="xs:boolean" />
+                          <xs:element name="DisplayOrder" type="xs:int" />
+                          <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!--==============Местонахождения===================-->
+              <xs:element name="ProductManufacturers">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="ProductManufacturer">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="1" maxOccurs="1">
+                          <xs:element name="ProductManufacturerId" type="xs:int" />
+                          <xs:element name="ManufacturerId" type="xs:int" />
+                          <xs:element name="IsFeaturedProduct" type="xs:boolean" />
+                          <xs:element name="DisplayOrder" type="xs:int" />
+                          <xs:element name="ManufacturerName" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                                <xs:element minOccurs="1" maxOccurs="unbounded" name="ManufacturerValue">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="lang" type="lng" use="required"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="invariantvalue" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <!--======Особенности===========================-->
+              <xs:element name="ProductSpecificationAttributes">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="ProductSpecificationAttribute">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="1" maxOccurs="1">
+                          <xs:element name="ProductSpecificationAttributeId" type="xs:int" />
+                          <xs:element name="SpecificationAttributeOptionId" type="xs:int" />
+                          <xs:element name="CustomValue" type="xs:string" />
+                          <xs:element name="AllowFiltering" type="xs:boolean" />
+                          <xs:element name="ShowOnProductPage" type="xs:boolean" />
+                          <xs:element name="DisplayOrder" type="xs:int" />
+                          <xs:element name="AttributeName" minOccurs="0" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="AttribueValue">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="lang" type="lng" use="required"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="invariantname" type="xs:string" use="required" />
+                              <xs:attribute name="invariantvalue" type="xs:string" use="required" />
+                              <xs:attribute name="type"  use="required">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Option"/>
+                                    <xs:enumeration value="CustomText"/>
+                                    <xs:enumeration value="Hyperlink"/>
+                                    <xs:enumeration value="CustomHtmlText"/>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!--===========Теги продукта======================-->
+              <xs:element name="ProductTags" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="ProductTag">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="TagValue" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="value" type="xs:string" use="required" />
+                              <xs:attribute name="lang" type="lng" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="invariantvalue" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!--=========Доступ========================-->
+              <xs:element name="ProductAcl" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                    <xs:element name="CustomerRoles" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                          <xs:element name="CustomerRoleID" type="xs:string" minOccurs="1"></xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Stores" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                          <xs:element name="StoreID" type="xs:string" minOccurs="1"></xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <!--=================================-->
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

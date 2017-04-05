@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RestMS_Client.SerialObj.slotStateReportTO">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAGgACAAAAQAAAAwAAAKAABAEAIDAACAAETIAACAIAE=</HashCode>
+      <FileName>ver1.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="slotRef" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RestMS_Client.SerialObj.refTO">
+    <Position X="3" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAABAAAAAAAIAAAAAAIAAEAAQEACAAAAAAAAA=</HashCode>
+      <FileName>ver1.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.SerialObj.entityTO">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACAAABhCAAAAAAEAAAAAAAADAAkCACQAQAACAAA=</HashCode>
+      <FileName>ver1.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.SerialObj.baseLegendTO">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIIAIAAAAAAAEAAAAAAAAAAAABAA=</HashCode>
+      <FileName>ver1.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.SerialObj.stateTO">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ver1.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.SerialObj.abstractPositionReport">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ver1.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestMS_Client.SerialObj.stockGoodTO">
+    <Position X="2.75" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BggAkAAAAAASAAAAAAIAAAgAAIAgAAAACChIIBABIAA=</HashCode>
+      <FileName>ver1.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="slotRef" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RestMS_Client.SerialObj.stockTO">
+    <Position X="5.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QoGgEDggQAIGAFglEBAKAEDhGcJLAIKQAQCIEUHkBCk=</HashCode>
+      <FileName>ver1.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="goodRef" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="RestMS_Client.SerialObj.accessMode">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEABRAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ver1.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

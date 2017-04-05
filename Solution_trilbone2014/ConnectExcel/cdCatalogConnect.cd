@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConnectExcel.clsImageFolder">
+    <Position X="9.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAUAEAAAAAEBEAAAAAIAAAAACgAAAAAAAAAAAIAA=</HashCode>
+      <FileName>strImage.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConnectExcel.clsCatalog">
+    <Position X="3.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAGAAEAEAAAAAAAAAAAAQAwAIAAAAAAAAEAAAABAIAA=</HashCode>
+      <FileName>clsCatalog.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConnectExcel.clsImageCatalog">
+    <Position X="6.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAEAAAAAAAAAgAAEAAAAAAAAAAAJBA=</HashCode>
+      <FileName>strImage.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ConnectExcel.strGroup">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAIAAAAAAAAAAAAgAEIAAAAAAAAAIAAAIEA=</HashCode>
+      <FileName>strGroup.vb</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ConnectExcel.strSample">
+    <Position X="0.5" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAACAEAABAAQIEBAUGAAAgAQEAIAAAAAAAIAAEIkA=</HashCode>
+      <FileName>strSample.vb</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Tahoma" Size="9.75" />
+</ClassDiagram>

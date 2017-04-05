@@ -1,0 +1,20 @@
+﻿metadatauuid
+
+
+
+
+
+
+uuid
+2bf72248-e5f8-11e3-09b2-002590a28eca = ebay 
+2bf71fd2-e5f8-11e3-04ed-002590a28eca
+2bf71d6d-e5f8-11e3-dee1-002590a28eca
+2bf71ae5-e5f8-11e3-a5be-002590a28eca
+2bf713c4-e5f8-11e3-4671-002590a28eca = сайт
+2bf71877-e5f8-11e3-497f-002590a28eca = Молоток
+
+booleanValueSpecified	//  booleanValue
+
+{RestMS_Client.MoySkladAPI.goodAttributeValue}
+
+другие ид - это также булевы значения, этикетка и т.п.

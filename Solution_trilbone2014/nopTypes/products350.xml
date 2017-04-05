@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Products Version="3.50">
+  <Product>
+    <ProductId>21</ProductId>
+    <ProductTypeId>5</ProductTypeId>
+    <ParentGroupedProductId>0</ParentGroupedProductId>
+    <VisibleIndividually>true</VisibleIndividually>
+    
+    <Name>Acanthohoplites nolani (assemblage)<NameValue lang="ru-RU">Русское имя</NameValue>
+    <NameValue lang="en-US">Английское имя</NameValue>
+    
+    </Name>
+    
+    <ShortDescription>Shot description<ShortDescriptionValue lang="ru-RU">короткое описание</ShortDescriptionValue>
+      <ShortDescriptionValue lang="en-US">Английское короткое описание</ShortDescriptionValue>
+      
+    </ShortDescription>
+
+    <FullDescription>FullDescription<FullDescriptionValue lang="ru-RU">полное описание</FullDescriptionValue>
+      <FullDescriptionValue lang="en-US">Английское полное описание</FullDescriptionValue>
+      
+    </FullDescription>
+    
+    <AdminComment />
+    <VendorId>0</VendorId>
+    <ProductTemplateId>1</ProductTemplateId>
+    <ShowOnHomePage>true</ShowOnHomePage>
+    <MetaKeywords >MetaKeywords<MetaKeywordsValue lang="ru-RU">мета слово</MetaKeywordsValue>
+      <MetaKeywordsValue lang="en-US">мета слово английское</MetaKeywordsValue>
+      
+    </MetaKeywords>
+    <MetaDescription>MetaDescription<MetaDescriptionValue lang="ru-RU">мета описание</MetaDescriptionValue>
+      <MetaDescriptionValue lang="en-US">мета описание английское</MetaDescriptionValue>
+      
+    </MetaDescription>
+    <MetaTitle>MetaTitle<MetaTitleValue lang="ru-RU">мета титул</MetaTitleValue>
+      <MetaTitleValue lang="en-US">мета титул английское</MetaTitleValue>
+      
+    </MetaTitle>
+    <SEName>acanthohoplites-nolani-assemblage</SEName>
+    <AllowCustomerReviews>true</AllowCustomerReviews>
+    <SKU>8-2446-7t</SKU>
+    <ManufacturerPartNumber />
+    <Gtin />
+    <IsGiftCard>false</IsGiftCard>
+    <GiftCardType>Virtual</GiftCardType>
+    <RequireOtherProducts>false</RequireOtherProducts>
+    <RequiredProductIds />
+    <AutomaticallyAddRequiredProducts>false</AutomaticallyAddRequiredProducts>
+    <IsDownload>false</IsDownload>
+    <DownloadId>0</DownloadId>
+    <UnlimitedDownloads>true</UnlimitedDownloads>
+    <MaxNumberOfDownloads>10</MaxNumberOfDownloads>
+    <DownloadExpirationDays />
+    <DownloadActivationType>WhenOrderIsPaid</DownloadActivationType>
+    <HasSampleDownload>false</HasSampleDownload>
+    <SampleDownloadId>0</SampleDownloadId>
+    <HasUserAgreement>false</HasUserAgreement>
+    <UserAgreementText />
+    <IsRecurring>false</IsRecurring>
+    <RecurringCycleLength>100</RecurringCycleLength>
+    <RecurringCyclePeriodId>0</RecurringCyclePeriodId>
+    <RecurringTotalCycles>10</RecurringTotalCycles>
+    <IsRental>false</IsRental>
+    <RentalPriceLength>1</RentalPriceLength>
+    <RentalPricePeriodId>0</RentalPricePeriodId>
+    <IsShipEnabled>true</IsShipEnabled>
+    <IsFreeShipping>false</IsFreeShipping>
+    <ShipSeparately>false</ShipSeparately>
+    <AdditionalShippingCharge>0.0000</AdditionalShippingCharge>
+    <DeliveryDateId>0</DeliveryDateId>
+    <IsTaxExempt>false</IsTaxExempt>
+    <TaxCategoryId>0</TaxCategoryId>
+    <IsTelecommunicationsOrBroadcastingOrElectronicServices>false</IsTelecommunicationsOrBroadcastingOrElectronicServices>
+    <ManageInventoryMethodId>0</ManageInventoryMethodId>
+    <UseMultipleWarehouses>false</UseMultipleWarehouses>
+    <WarehouseId>0</WarehouseId>
+    <StockQuantity>10000</StockQuantity>
+    <DisplayStockAvailability>false</DisplayStockAvailability>
+    <DisplayStockQuantity>false</DisplayStockQuantity>
+    <MinStockQuantity>0</MinStockQuantity>
+    <LowStockActivityId>0</LowStockActivityId>
+    <NotifyAdminForQuantityBelow>1</NotifyAdminForQuantityBelow>
+    <BackorderModeId>0</BackorderModeId>
+    <AllowBackInStockSubscriptions>false</AllowBackInStockSubscriptions>
+    <OrderMinimumQuantity>1</OrderMinimumQuantity>
+    <OrderMaximumQuantity>1</OrderMaximumQuantity>
+    <AllowedQuantities>1</AllowedQuantities>
+    <AllowAddingOnlyExistingAttributeCombinations>false</AllowAddingOnlyExistingAttributeCombinations>
+    <DisableBuyButton>false</DisableBuyButton>
+    <DisableWishlistButton>false</DisableWishlistButton>
+    <AvailableForPreOrder>false</AvailableForPreOrder>
+    <PreOrderAvailabilityStartDateTimeUtc />
+    <CallForPrice>false</CallForPrice>
+    <Price>12800.0000</Price>
+    <OldPrice>12800.0000</OldPrice>
+    <ProductCost>6000.0000</ProductCost>
+    <SpecialPrice />
+    <SpecialPriceStartDateTimeUtc />
+    <SpecialPriceEndDateTimeUtc />
+    <CustomerEntersPrice>false</CustomerEntersPrice>
+    <MinimumCustomerEnteredPrice>9000.0000</MinimumCustomerEnteredPrice>
+    <MaximumCustomerEnteredPrice>1000.0000</MaximumCustomerEnteredPrice>
+    <Weight>0.0000</Weight>
+    <Length>0.0000</Length>
+    <Width>0.0000</Width>
+    <Height>0.0000</Height>
+    <Published>true</Published>
+    <CreatedOnUtc>3/3/2015 1:58:31 PM</CreatedOnUtc>
+    <UpdatedOnUtc>3/7/2015 2:20:04 PM</UpdatedOnUtc>
+    <ProductDiscounts />
+    <TierPrices>
+      <TierPrice>
+        <TierPriceId>2</TierPriceId>
+        <StoreId>1</StoreId>
+        <CustomerRoleId>6</CustomerRoleId>
+        <Quantity>1</Quantity>
+        <Price>8000.0000</Price>
+       </TierPrice>
+    </TierPrices>
+    <ProductAttributes />
+    <ProductPictures>
+      <ProductPicture>
+        <ProductPictureId>17</ProductPictureId>
+        <PictureId>22</PictureId>
+        <DisplayOrder>1</DisplayOrder>
+        <PicturePath>8-2505\3-IMG_9729.JPG</PicturePath>
+        <PictureURI></PictureURI>
+        <PictureSeoName>acantohoplit</PictureSeoName>
+      </ProductPicture>
+    </ProductPictures>
+    <ProductCategories>
+      <ProductCategory>
+        <ProductCategoryId>21</ProductCategoryId>
+        <CategoryId>1</CategoryId>
+        <IsFeaturedProduct>false</IsFeaturedProduct>
+        <DisplayOrder>1</DisplayOrder>
+        <CategoryName>Trilobites</CategoryName>
+      </ProductCategory>
+    </ProductCategories>
+    <ProductManufacturers>
+      <ProductManufacturer>
+        <ProductManufacturerId>1</ProductManufacturerId>
+        <ManufacturerId>1</ManufacturerId>
+        <IsFeaturedProduct>false</IsFeaturedProduct>
+        <DisplayOrder>0</DisplayOrder>
+        <ManufacturerName value="Ленинградская область">
+          <ManufacturerValue lang="en-US">Leningradskaya district</ManufacturerValue>
+          <ManufacturerValue lang="ru-RU">Ленинградская область</ManufacturerValue>
+        </ManufacturerName>
+      </ProductManufacturer>
+    </ProductManufacturers>
+    
+    <ProductSpecificationAttributes>
+      <ProductSpecificationAttribute>
+        <ProductSpecificationAttributeId>6</ProductSpecificationAttributeId>
+        <SpecificationAttributeOptionId>13</SpecificationAttributeOptionId>
+        <CustomValue></CustomValue>
+        <AllowFiltering>false</AllowFiltering>
+        <ShowOnProductPage>true</ShowOnProductPage>
+        <DisplayOrder>0</DisplayOrder>
+        
+        <AttributeName type="Option" name="Геологический возраст (период)" value="Меловая система">
+        </AttributeName>
+        
+      </ProductSpecificationAttribute>
+     
+      <ProductSpecificationAttribute>
+        <ProductSpecificationAttributeId>9</ProductSpecificationAttributeId>
+        <SpecificationAttributeOptionId>10</SpecificationAttributeOptionId>
+        <CustomValue />
+        <AllowFiltering>true</AllowFiltering>
+        <ShowOnProductPage>true</ShowOnProductPage>
+        <DisplayOrder>0</DisplayOrder>
+        <AttributeName type="Option" name="Свита (формация)" value="Волховская свита">
+          <AttribueValue lang="ru-RU">Волховская свита</AttribueValue>
+          <AttribueValue lang="en-US">Volkhov formation</AttribueValue>
+        </AttributeName>
+      </ProductSpecificationAttribute>
+   
+     
+      <ProductSpecificationAttribute>
+        <ProductSpecificationAttributeId>12</ProductSpecificationAttributeId>
+        <SpecificationAttributeOptionId>11</SpecificationAttributeOptionId>
+        <CustomValue>Systematica: Class Cephalopoda (Cuvier 1798)-&gt; subclass Ammonoidea (Zittel 1884)-&gt; Family Parahoplitidae (Spath 1922)-&gt; Subfamily Acanthohoplitinae (Stoyanow 1949)-&gt; Genus Acanthohoplites (Sinzow 1908)-&gt; Acanthohoplites bigoureti (Seunes, 1887) </CustomValue>
+        <AllowFiltering>false</AllowFiltering>
+        <ShowOnProductPage>true</ShowOnProductPage>
+        <DisplayOrder>0</DisplayOrder>
+        <AttributeName name="Классификация" value="TrilboneDB" type="CustomText">
+          <AttribueValue lang="en-US">TrilboneDB</AttribueValue>
+          <AttribueValue lang="ru-RU">Из базы Trilbone</AttribueValue>
+        </AttributeName>
+      </ProductSpecificationAttribute>
+      
+    </ProductSpecificationAttributes>
+    
+    <ProductTags>
+      <ProductTag value="трилобиты">
+      <TagValue value="trilobite" lang="en-US"/>
+      <TagValue value="трилобиты" lang="ru-RU"/>
+      </ProductTag>
+      <ProductTag value="трилобиты">
+        <TagValue value="trilobite" lang="en-US"/>
+        <TagValue value="трилобиты" lang="ru-RU"/>
+      </ProductTag>
+    </ProductTags>
+   
+    
+    <ProductAcl>
+      <CustomerRoles>
+        <CustomerRoleID>1</CustomerRoleID>
+        <CustomerRoleID>6</CustomerRoleID>
+      </CustomerRoles>
+      <Stores>
+        <StoreID>1</StoreID>
+      </Stores>
+    </ProductAcl>
+  </Product>
+</Products>

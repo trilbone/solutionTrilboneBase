@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="CodeSplitter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-</Value>
+    </Setting>
+    <Setting Name="OldSeriesColl" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;10120&lt;/string&gt;
+  &lt;string&gt;12290&lt;/string&gt;
+  &lt;string&gt;20193&lt;/string&gt;
+  &lt;string&gt;20294&lt;/string&gt;
+  &lt;string&gt;22093&lt;/string&gt;
+  &lt;string&gt;31290&lt;/string&gt;
+  &lt;string&gt;40290&lt;/string&gt;
+  &lt;string&gt;51290&lt;/string&gt;
+  &lt;string&gt;50290&lt;/string&gt;
+  &lt;string&gt;60290&lt;/string&gt;
+  &lt;string&gt;27295&lt;/string&gt;
+  &lt;string&gt;70290&lt;/string&gt;
+  &lt;string&gt;98290&lt;/string&gt;
+  &lt;string&gt;90290&lt;/string&gt;
+  &lt;string&gt;80290&lt;/string&gt;
+  &lt;string&gt;10290&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
